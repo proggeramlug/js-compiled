@@ -32,7 +32,12 @@ for (const fixture of manifest.cases) {
       // These fixtures first take an empty entry checkpoint, then read live
       // runtime roots from beforeExit. Require moving collection to happen.
       if (fixture.name.includes('startup_empty_checkpoint')) {
-        const env = { ...command.env, PERRY_GC_SCHEDULE_SEED: '7', PERRY_GC_SCHEDULE_RATE: '1', PERRY_GC_PROTECT_FROMSPACE: '1' };
+        // These programs have no allocating loops. Select boundary-only
+        // scheduling explicitly: the generic loop-coverage guard otherwise
+        // exits 70 despite successful copying at every event-loop checkpoint.
+        // Still require real collections AND moved objects below. Ordinary
+        // oracle runs and runtime host-safepoint tests keep default loop polls.
+        const env = { ...command.env, PERRY_GC_SCHEDULE_SEED: '7', PERRY_GC_SCHEDULE_RATE: '1', PERRY_GC_PROTECT_FROMSPACE: '1', PERRY_GC_MOVING_LOOP_POLLS: '0' };
         const stressed = await timeRun(command.argv, { env: experimentEnvironment(env), timeoutMs: 30000 });
         row[label].gcStress = { env, ...stressed };
         const forced = [...stressed.stderr.matchAll(/forced_collections=(\d+)/g)].some(m => Number(m[1]) > 0);

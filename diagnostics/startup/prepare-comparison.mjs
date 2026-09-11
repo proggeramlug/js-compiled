@@ -73,7 +73,7 @@ for (const [label, setting] of Object.entries(settings)) {
 
 for (const [name, source] of cases) {
   const oracle = command([process.execPath, source]);
-  const fixture = { name, source: binaryRecord(source), expected: { stdout: oracle.stdout, stderr: oracle.stderr }, commands: {} };
+  const fixture = { name, source: binaryRecord(source), expected: { stdout: oracle.stdout, stderr: oracle.stderr }, commands: {}, gcStress: config.gcStressCases?.includes(name) === true };
   for (const [label, setting] of Object.entries(settings)) {
     const variant = manifest.variants[label];
     const identicalBuild = label === 'candidate' && variant.compiler.sha256 === manifest.variants.baseline.compiler.sha256

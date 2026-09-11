@@ -1,0 +1,74 @@
+name: startup class candidate
+on:
+  push:
+    branches: [perf/startup-verification]
+    paths:
+      - .github/workflows/startup-class-candidate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  runtime:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-15]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: PerryTS/perry
+          ref: 603b074ace01464bc66fc07cc8d532f26ccf5a0f
+          path: .startup-baseline
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: proggeramlug/perry
+          ref: 8516ab90bae4e5af5ef9d7d2a74ffd020392e87f
+          path: .startup-candidate
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '26.5.1'
+          cache: npm
+      - if: runner.os == 'Linux'
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends clang libssl-dev pkg-config
+      - run: npm ci
+      - uses: ./.startup-baseline/.github/actions/setup-llvm22
+      - run: rustup toolchain install nightly-2026-08-20 --profile minimal
+      - run: node --test harness/exec.test.mjs diagnostics/startup/compare.test.mjs
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: results/runtime-candidate/cargo-target
+          key: startup-class-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-8516ab90b
+          restore-keys: |
+            startup-class-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
+      - id: builds
+        run: python3 diagnostics/startup/build-candidate.py .startup-baseline .startup-candidate results/runtime-candidate
+      - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/startup results/runtime-candidate/startup-config.json
+      - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/workloads results/runtime-candidate/workloads-config.json
+      - run: python3 diagnostics/startup/prepare-class-fixtures.py results/runtime-candidate .startup-candidate
+      - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/fixtures results/runtime-candidate/class-fixtures-config.json
+      - run: node diagnostics/startup/compare.mjs results/runtime-candidate/startup/manifest.json results/runtime-candidate/startup/measurements.json
+      - run: node diagnostics/startup/verify-workloads.mjs results/runtime-candidate/workloads/manifest.json results/runtime-candidate/workloads/verification.json
+      - if: ${{ !cancelled() && steps.builds.outcome == 'success' }}
+        run: node diagnostics/startup/verify-fixtures.mjs results/runtime-candidate/fixtures/manifest.json results/runtime-candidate/fixtures/verification.json
+      - name: Focused runtime tests
+        if: ${{ !cancelled() && steps.builds.outcome == 'success' }}
+        working-directory: .startup-candidate
+        env:
+          RUST_TEST_THREADS: '1'
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target
+        run: cargo test --locked --profile perry-dev --lib -p perry-runtime -- object::class_image::tests class_meta_registry class_registry::tests gc::tests::host_safepoints --test-threads=1 > ../results/runtime-candidate/runtime-tests.log 2>&1
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: runtime-candidate-${{ matrix.os }}
+          path: |
+            results/runtime-candidate/**/*.json
+            results/runtime-candidate/**/*.log
+            !results/runtime-candidate/cargo-target/**

@@ -31,7 +31,7 @@ for (const fixture of manifest.cases) {
       }
       // These fixtures first take an empty entry checkpoint, then read live
       // runtime roots from beforeExit. Require moving collection to happen.
-      if (fixture.name.includes('startup_empty_checkpoint')) {
+      if (fixture.gcStress || fixture.name.includes('startup_empty_checkpoint')) {
         // These programs have no allocating loops. Select boundary-only
         // scheduling explicitly: the generic loop-coverage guard otherwise
         // exits 70 despite successful copying at every event-loop checkpoint.

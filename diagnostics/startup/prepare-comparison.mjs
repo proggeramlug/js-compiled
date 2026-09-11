@@ -22,7 +22,7 @@ const flags = ['--no-cache', '-v', ...(config.compileArgs ?? [])];
 const settings = config.variants ?? { baseline: { compiler: perry }, candidate: { compiler: perry } };
 if (!settings.baseline || !settings.candidate) throw new Error('Both baseline and candidate settings are required');
 const allowedBuildEnv = /^(PERRY_(WORKSPACE_ROOT|LIB_DIR|RUNTIME_DIR|NO_AUTO_OPT|SIZE_OPT|SIZE_LTO|SIZE_PANIC|EXTRA_LINK_ARGS|TARGET_CPU)|CARGO_TARGET_DIR|CARGO_PROFILE_RELEASE_[A-Z_]+|RUSTFLAGS|MACOSX_DEPLOYMENT_TARGET|CC|CXX|CFLAGS|CXXFLAGS)$/;
-const allowedRuntimeEnv = /^(MIMALLOC_[A-Z_]+|PERRY_GC_[A-Z_]+)$/;
+const allowedRuntimeEnv = /^(MIMALLOC_[A-Z_]+|mimalloc_[a-z_]+|PERRY_GC_[A-Z_]+|PERRY_MEMORY_PROFILE)$/;
 for (const [label, setting] of Object.entries(settings)) {
   for (const key of Object.keys(setting.buildEnv ?? {})) if (!allowedBuildEnv.test(key)) throw new Error(`Unrecordable build setting: ${label}/${key}`);
   for (const key of Object.keys(setting.runtimeEnv ?? {})) if (!allowedRuntimeEnv.test(key)) throw new Error(`Unrecordable runtime setting: ${label}/${key}`);

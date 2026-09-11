@@ -34,3 +34,19 @@ test('a hanging candidate fails the check', async () => {
   await assert.rejects(checkedRun([process.execPath, '-e', 'setInterval(() => {}, 1000)'],
     { stdout: '', stderr: '' }, {}, false, 150), /verification/);
 });
+
+test('allocator environment isolates uppercase and lowercase operator settings', async () => {
+  const keys = ['MIMALLOC_ALLOW_THP', 'mimalloc_allow_thp', 'PERRY_MEMORY_PROFILE'];
+  const saved = Object.fromEntries(keys.map(key => [key, process.env[key]]));
+  try {
+    for (const key of keys) process.env[key] = 'ambient';
+    for (const key of keys) assert.equal(experimentEnvironment()[key], undefined);
+    await checkedRun([process.execPath, '-e', 'console.log(process.env.PERRY_MEMORY_PROFILE, process.env.mimalloc_allow_thp, process.env.MIMALLOC_ALLOW_THP)'],
+      { stdout: 'small 1 undefined\n', stderr: '' }, { PERRY_MEMORY_PROFILE: 'small', mimalloc_allow_thp: '1' });
+  } finally {
+    for (const key of keys) {
+      if (saved[key] === undefined) delete process.env[key];
+      else process.env[key] = saved[key];
+    }
+  }
+});

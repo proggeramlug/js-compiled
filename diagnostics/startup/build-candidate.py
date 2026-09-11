@@ -22,7 +22,7 @@ out = pathlib.Path(args.output).resolve()
 out.mkdir(parents=True, exist_ok=True)
 target = out / 'cargo-target'
 receipt = {'variants': {}, 'commands': []}
-env = {k: v for k, v in os.environ.items() if not k.startswith(('PERRY_', 'MIMALLOC_', 'CARGO_PROFILE_'))
+env = {k: v for k, v in os.environ.items() if not k.upper().startswith(('PERRY_', 'MIMALLOC_', 'CARGO_PROFILE_'))
        and k not in ('RUSTFLAGS', 'CARGO_ENCODED_RUSTFLAGS', 'CARGO_TARGET_DIR')}
 env['CARGO_TARGET_DIR'] = str(target)
 
@@ -78,6 +78,9 @@ fixtures = pathlib.Path(args.candidate).resolve() / 'test-files'
 names = [
     'test_gap_startup_empty_checkpoint_before_exit.ts',
     'test_gap_startup_empty_checkpoint_timing.ts',
+    'test_gap_startup_before_exit_microtasks_only.ts',
+    'test_gap_startup_before_exit_unref.ts',
+    'test_gap_startup_exit_job_boundary.ts',
     'test_gap_6077_unhandled_rejection_event.ts',
     'test_gap_6077_unhandled_rejection_sources.ts',
     'test_issue_9305_throw_in_microtask.ts',

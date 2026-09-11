@@ -13,7 +13,7 @@ export const binaryRecord = file => ({ file, bytes: statSync(file).size, sha256:
 export function experimentEnvironment(overrides = {}) {
   return {
     ...Object.fromEntries(Object.entries(process.env).filter(([key]) =>
-      !/^(PERRY_|MIMALLOC_|LD_PRELOAD$|LD_DEBUG$|DYLD_INSERT_LIBRARIES$|RUSTFLAGS$|CARGO_ENCODED_RUSTFLAGS$|CARGO_PROFILE_|CARGO_TARGET_DIR$|CC$|CXX$|CFLAGS$|CXXFLAGS$|MACOSX_DEPLOYMENT_TARGET$)/.test(key))),
+      !/^(PERRY_|MIMALLOC_|LD_PRELOAD$|LD_DEBUG$|DYLD_INSERT_LIBRARIES$|RUSTFLAGS$|CARGO_ENCODED_RUSTFLAGS$|CARGO_PROFILE_|CARGO_TARGET_DIR$|CC$|CXX$|CFLAGS$|CXXFLAGS$|MACOSX_DEPLOYMENT_TARGET$)/i.test(key))),
     ...overrides,
   };
 }

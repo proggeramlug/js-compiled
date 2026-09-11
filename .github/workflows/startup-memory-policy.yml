@@ -1,0 +1,30 @@
+name: startup memory policy
+on:
+  push:
+    branches: [perf/startup-verification]
+    paths:
+      - .github/workflows/startup-memory-policy.yml
+      - diagnostics/startup/verify-memory-policy.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  constructor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: proggeramlug/perry
+          ref: 55a29934b1f1fd6dd1ce9f47e9f4d9b71286a04c
+          path: .startup-memory
+          persist-credentials: false
+      - run: python3 diagnostics/startup/verify-memory-policy.py .startup-memory results/memory-policy
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: memory-policy
+          path: results/memory-policy/policy-verification.json

@@ -1,0 +1,39 @@
+name: startup comparison
+on:
+  push:
+    branches: [perf/startup-verification]
+    paths:
+      - diagnostics/startup/compare*.mjs
+      - diagnostics/startup/prepare-comparison.mjs
+      - harness/exec.mjs
+      - .github/workflows/startup-comparison.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unchanged:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-15]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '26.5.1'
+          cache: npm
+      - if: runner.os == 'Linux'
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends clang
+      - run: npm ci
+      - run: node --test harness/exec.test.mjs diagnostics/startup/compare.test.mjs
+      - run: node diagnostics/startup/prepare-comparison.mjs
+      - run: node diagnostics/startup/compare.mjs results/startup-comparison/manifest.json results/startup-comparison/measurements.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: startup-comparison-${{ matrix.os }}
+          path: results/startup-comparison/**

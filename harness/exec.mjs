@@ -57,10 +57,10 @@ function macTreeRssKb(pid) {
   return total;
 }
 
-function run(argv, { cwd, timeoutMs = 300000, memLimitKb = 0 } = {}) {
+function run(argv, { cwd, timeoutMs = 300000, memLimitKb = 0, env = process.env } = {}) {
   return new Promise((resolve) => {
     const t0 = process.hrtime.bigint();
-    const child = spawn(argv[0], argv.slice(1), { cwd, detached: PROCESS_GROUPS, stdio: ["ignore", "pipe", "pipe"] });
+    const child = spawn(argv[0], argv.slice(1), { cwd, env, detached: PROCESS_GROUPS, stdio: ["ignore", "pipe", "pipe"] });
     let stdout = "";
     let stderr = "";
     let timedOut = false;

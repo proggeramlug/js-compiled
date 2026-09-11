@@ -4,12 +4,22 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { cpus, release, loadavg } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { binaryRecord, checkedRun, distribution, pairedDifference, validateManifest } from './compare.mjs';
+import { binaryRecord, checkedRun, distribution, pairedDifference, sha256, validateManifest } from './compare.mjs';
 
-const [manifestFile, outputFile, policy] = process.argv.slice(2);
+const [manifestFile, outputFile, policy, oracleFile] = process.argv.slice(2);
 if (!manifestFile || !outputFile) throw new Error('Usage: node verify-workloads.mjs MANIFEST.json OUTPUT.json');
 const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'));
-if (policy && policy !== '--record-profile-tradeoffs') throw new Error(`Unknown policy: ${policy}`);
+if (policy && !['--record-profile-tradeoffs', '--verified-oracles'].includes(policy)) throw new Error(`Unknown policy: ${policy}`);
+if ((policy === '--verified-oracles') !== Boolean(oracleFile)) throw new Error('--verified-oracles requires one completed oracle file');
+const priorOracle = oracleFile ? JSON.parse(readFileSync(oracleFile)) : null;
+const priorOracleRecord = oracleFile ? binaryRecord(oracleFile) : null;
+if (priorOracle && (!priorOracle.complete || !priorOracle.passed
+    || JSON.stringify(priorOracle.manifest) !== JSON.stringify(manifest)
+    || Object.keys(priorOracle.cases ?? {}).length !== 22
+    || manifest.cases.some(fixture => ['baseline', 'candidate'].some(label =>
+      !priorOracle.cases[fixture.name]?.[label]?.matchesNode)))) {
+  throw new Error('Prior Node oracles must be complete and match this exact manifest');
+}
 const recordTradeoffs = policy === '--record-profile-tradeoffs';
 if (recordTradeoffs && (manifest.variants.candidate.runtimeEnv?.PERRY_MEMORY_PROFILE !== 'small'
     || Object.keys(manifest.variants.baseline.runtimeEnv ?? {}).length !== 0)) {
@@ -23,6 +33,7 @@ if (manifest.cases.length !== 22) throw new Error(`Expected all 22 workloads, fo
 const result = {
   startedAt: new Date().toISOString(), manifest,
   code: binaryRecord(fileURLToPath(import.meta.url)),
+  priorOracle: priorOracleRecord,
   host: { platform: process.platform, arch: process.arch, cpu: cpus()[0]?.model, kernel: release(), loadBefore: loadavg() },
   settings: { initialPairedSamples: 5, confirmationPairedSamples: 10, slowdownThreshold: 0.03, timeoutMs: 300000, recordTradeoffs },
   profileTradeoffs: [],
@@ -35,6 +46,10 @@ for (const fixture of manifest.cases) {
   const row = result.cases[fixture.name] = { oracle: {}, throughput: null };
   try {
     for (const label of labels) {
+      if (priorOracle && !sentinels.includes(fixture.name)) {
+        row.oracle[label] = { ...priorOracle.cases[fixture.name][label], reused: true };
+        continue;
+      }
       const command = fixture.commands[label];
       const run = await checkedRun(command.argv, fixture.expected, command.env, false, 300000);
       row.oracle[label] = { matchesNode: true, warmupMs: run.wallMs };
@@ -73,6 +88,7 @@ for (const fixture of manifest.cases) {
   console.log(fixture.name, row.error ?? row.throughput?.assessment ?? 'matches Node');
 }
 validateManifest(manifest, { labels });
+if (priorOracleRecord && sha256(oracleFile) !== priorOracleRecord.sha256) throw new Error('Prior oracle evidence changed');
 result.host.loadAfter = loadavg();
 result.finishedAt = new Date().toISOString();
 result.passed = !failed;

@@ -91,7 +91,7 @@ for (const [name, source] of cases) {
       const link = text.split('\n').find(line => line.includes('[link] invoking:'));
       if (!link) throw new Error(`Missing linker receipt: ${label}/${name}`);
       const libraries = [...new Set([...link.matchAll(/(\/[^\s"']*libperry_[^\s"']+\.a)(?=\s|$)/g)].map(match => match[1]))];
-      if (!libraries.some(file => /libperry_runtime(?:_abort)?\.a$/.test(file))) {
+      if (!libraries.some(file => /libperry_runtime(?:_abort|_core)?\.a$/.test(file))) {
         throw new Error(`Cannot identify runtime archive in linker receipt: ${label}/${name}`);
       }
       for (const file of libraries) if (!variant.runtimeLibraries.some(record => record.file === file)) variant.runtimeLibraries.push(binaryRecord(file));

@@ -1,0 +1,66 @@
+name: startup memory archive
+on:
+  push:
+    branches: [perf/startup-verification]
+    paths: [.github/workflows/startup-memory-archive.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: proggeramlug/perry
+          ref: 55a29934b1f1fd6dd1ce9f47e9f4d9b71286a04c
+          path: .startup-memory
+          persist-credentials: false
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .startup-memory/target
+          key: startup-memory-archive-linux-nightly-2026-08-20-55a29934b
+      - run: rustup toolchain install nightly-2026-08-20 --profile minimal
+      - name: Build production release archive
+        working-directory: .startup-memory
+        run: |
+          mkdir -p ../results/memory-archive
+          cargo build --locked --release -p perry-runtime-static -vv > ../results/memory-archive/build.log 2>&1
+      - name: Inspect and externally link the archive
+        if: ${{ !cancelled() }}
+        working-directory: .startup-memory
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess, json, hashlib, os
+          out = Path('../results/memory-archive')
+          archive = Path('target/release/libperry_runtime.a')
+          for i, p in enumerate(Path('target/release/build').glob('perry-runtime/**/output')):
+              (out / f'build-script-{i}.log').write_text(p.read_text())
+          for name, cmd in [('members', ['ar','t',str(archive)]), ('symbols',['nm','--defined-only',str(archive)])]:
+              r = subprocess.run(cmd, capture_output=True, text=True)
+              (out / f'{name}.log').write_text(r.stdout + r.stderr)
+          headers = next((Path.home()/'.cargo/registry/src').glob('*/libmimalloc-sys-0.1.49/c_src/mimalloc/v3/include'))
+          cmd = ['cc','-O3','-I',str(headers),'crates/perry-runtime/tests/fixtures/memory_profile_probe.c',str(archive),'-Wl,--gc-sections','-lm','-lpthread','-ldl','-o',str(out/'probe')]
+          r = subprocess.run(cmd, capture_output=True, text=True)
+          receipt = {'archiveSha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'link':{'argv':cmd,'exitCode':r.returncode,'stdout':r.stdout,'stderr':r.stderr},'cases':[]}
+          if r.returncode == 0:
+              for label, settings, allow in [('normal',{},1),('small',{'PERRY_MEMORY_PROFILE':'small'},0),('override',{'PERRY_MEMORY_PROFILE':'small','MIMALLOC_ALLOW_THP':'1'},1)]:
+                  env = {k:v for k,v in os.environ.items() if not k.upper().startswith(('PERRY_','MIMALLOC_'))}
+                  p = subprocess.run([str(out/'probe'),str(allow),str(1-allow)],env={**env,**settings},capture_output=True,text=True)
+                  receipt['cases'].append({'name':label,'env':settings,'exitCode':p.returncode,'stdout':p.stdout,'stderr':p.stderr})
+          (out/'verification.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          if r.returncode or any(c['exitCode'] for c in receipt['cases']):
+              raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: memory-archive
+          path: |
+            results/memory-archive/*.json
+            results/memory-archive/*.log

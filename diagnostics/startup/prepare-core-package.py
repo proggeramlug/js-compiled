@@ -75,6 +75,7 @@ for label in ['perry', f'perry-{suffix}']:
     tarballs.append(tarball)
     receipt.setdefault('tarballs', []).append(record(tarball))
 run(['npm', 'init', '-y'], install, 'npm-init.log')
+run(['npm', 'pkg', 'set', 'type=module'], install, 'npm-module-type.log')
 run(['npm', 'install', '--ignore-scripts', '--no-audit', '--no-fund', *tarballs], install, 'npm-install.log')
 compiler = install / 'node_modules' / '@perryts' / f'perry-{suffix}' / 'bin' / 'perry'
 receipt['installedCompiler'] = record(compiler)

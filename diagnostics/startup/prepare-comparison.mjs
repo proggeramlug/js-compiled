@@ -78,25 +78,29 @@ for (const [name, source] of cases) {
     const variant = manifest.variants[label];
     const identicalBuild = label === 'candidate' && variant.compiler.sha256 === manifest.variants.baseline.compiler.sha256
       && JSON.stringify(variant.buildEnv) === JSON.stringify(manifest.variants.baseline.buildEnv);
-    let binary;
+    let binary, runtimeProfile;
     if (identicalBuild) {
       binary = fixture.commands.baseline.argv[0];
       variant.runtimeLibraries = manifest.variants.baseline.runtimeLibraries;
+      runtimeProfile = fixture.commands.baseline.runtimeProfile;
     } else {
       binary = path.join(out, label, name);
       const built = command([variant.compiler.file, 'compile', source, ...flags, '-o', binary], variant.buildEnv, `${label}-${name}-build.log`);
       const text = built.stdout + built.stderr;
       // Record the archives actually used in the verbose linker invocation,
       // including abort/auto-optimized variants, rather than guessing by version.
-      const link = text.split('\n').find(line => line.includes('[link] invoking:'));
+      const tiny = text.includes('using proven tiny program:');
+      runtimeProfile = tiny ? 'tiny' : text.includes('using prebuilt core runtime:') ? 'core' : 'normal';
+      const link = text.split('\n').find(line => line.includes(tiny ? 'tiny link:' : '[link] invoking:'));
       if (!link) throw new Error(`Missing linker receipt: ${label}/${name}`);
       const libraries = [...new Set([...link.matchAll(/(\/[^\s"']*libperry_[^\s"']+\.a)(?=\s|$)/g)].map(match => match[1]))];
-      if (!libraries.some(file => /libperry_runtime(?:_abort|_core)?\.a$/.test(file))) {
+      if (tiny && libraries.length) throw new Error(`Tiny program linked runtime archives: ${label}/${name}`);
+      if (!tiny && !libraries.some(file => /libperry_runtime(?:_abort|_core)?\.a$/.test(file))) {
         throw new Error(`Cannot identify runtime archive in linker receipt: ${label}/${name}`);
       }
       for (const file of libraries) if (!variant.runtimeLibraries.some(record => record.file === file)) variant.runtimeLibraries.push(binaryRecord(file));
     }
-    fixture.commands[label] = { argv: [binary], binary: binaryRecord(binary), env: variant.runtimeEnv };
+    fixture.commands[label] = { argv: [binary], binary: binaryRecord(binary), env: variant.runtimeEnv, runtimeProfile };
   }
   if (config.scriptc !== false) {
     const binary = path.join(out, `scriptc-${name}`);

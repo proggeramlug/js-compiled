@@ -20,13 +20,14 @@ for (const fixture of manifest.cases) {
   if (candidate >= baseline) result.passed = false;
 }
 const candidateLibraries = manifest.variants.candidate.runtimeLibraries;
-if (!candidateLibraries.some(record => /libperry_runtime_core\.a$/.test(record.file))) throw new Error('No tiny program selected the core archive');
+const allTiny = manifest.cases.every(fixture => fixture.commands.candidate.runtimeProfile === 'tiny');
+if (!allTiny && !candidateLibraries.some(record => /libperry_runtime_core\.a$/.test(record.file))) throw new Error('No program selected core or tiny');
 
 // Inspect separate unstripped witnesses. Never substitute these larger,
 // instrumentable binaries for the ordinary binaries measured above.
 result.symbolInspection = {};
 const symbolSource = path.join(install, 'symbol-witness.ts');
-writeFileSync(symbolSource, 'console.log("symbols");\n');
+writeFileSync(symbolSource, 'try { throw new Error("symbols"); } catch (e) { console.log(e.message); }\n');
 for (const label of ['baseline', 'candidate']) {
   const binary = symbolSource + `.${label}`;
   const variant = manifest.variants[label];
@@ -38,7 +39,9 @@ for (const label of ['baseline', 'candidate']) {
   if (symbols.status !== 0 || symbols.error) throw new Error(`Symbol inspection failed: ${symbols.error ?? symbols.stderr}`);
   const log = path.join(path.dirname(outputFile), `symbols-${label}.log`);
   writeFileSync(log, symbols.stdout + symbols.stderr);
-  result.symbolInspection[label] = { binary: binaryRecord(binary), build, log: binaryRecord(log),
+  const coreSelected = (build.stdout + build.stderr).includes('using prebuilt core runtime:');
+  if (coreSelected !== (label === 'candidate')) throw new Error(`Wrong symbol witness archive for ${label}`);
+  result.symbolInspection[label] = { coreSelected, binary: binaryRecord(binary), build, log: binaryRecord(log),
     symbolLines: symbols.stdout.split('\n').filter(Boolean).length,
     regexEngineSymbols: (symbols.stdout.match(/regex_automata|regex_syntax/g) ?? []).length,
     temporalEngineSymbols: (symbols.stdout.match(/temporal_rs/g) ?? []).length };
@@ -91,7 +94,7 @@ const held = core + '.held';
 renameSync(core, held);
 try {
   const source = path.join(install, 'missing-core.ts');
-  writeFileSync(source, 'console.log("fallback");\n');
+  writeFileSync(source, 'try { throw new Error("fallback"); } catch (e) { console.log(e.message); }\n');
   const binary = source + '.bin';
   const build = await timeRun([compiler, 'compile', source, '--no-cache', '-v', '-o', binary], { env: experimentEnvironment(), timeoutMs: 120000 });
   result.missingCore = { build };

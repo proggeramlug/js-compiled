@@ -8,7 +8,7 @@ if (!manifestFile || !outputFile) throw new Error('Usage: node verify-fixtures.m
 const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'));
 const labels = ['baseline', 'candidate'];
 validateManifest(manifest, { labels });
-const results = { manifest, cases: {}, knownBaselineDefects: [], passed: true };
+const results = { manifest, cases: {}, knownBaselineDefects: [], complete: false, passed: true };
 mkdirSync(path.dirname(outputFile), { recursive: true });
 for (const fixture of manifest.cases) {
   const row = results.cases[fixture.name] = {};
@@ -87,4 +87,6 @@ for (const fixture of [
   console.log(fixture.name, Object.fromEntries(labels.map(label => [label, row[label].passed === true ? 'passed' : 'failed'])));
 }
 validateManifest(manifest, { labels });
+results.complete = true;
+writeFileSync(outputFile, JSON.stringify(results, null, 2) + '\n');
 if (!results.passed) process.exitCode = 1;

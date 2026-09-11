@@ -11,7 +11,7 @@ const receipt = JSON.parse(readFileSync(packageFile));
 validateManifest(manifest);
 const compiler = manifest.variants.candidate.compiler.file;
 const install = path.join(receipt.work, 'install');
-const result = { manifest, receipt, sizes: {}, fixtures: {}, passed: true };
+const result = { manifest, receipt, sizes: {}, fixtures: {}, complete: false, passed: true };
 const save = () => writeFileSync(outputFile, JSON.stringify(result, null, 2) + '\n');
 for (const fixture of manifest.cases) {
   const baseline = fixture.commands.baseline.binary.bytes;
@@ -106,6 +106,7 @@ try {
 } finally {
   renameSync(held, core);
 }
-save();
 validateManifest(manifest);
+result.complete = true;
+save();
 if (!result.passed) process.exitCode = 1;

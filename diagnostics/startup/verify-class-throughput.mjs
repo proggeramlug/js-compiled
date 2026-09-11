@@ -8,7 +8,7 @@ import { binaryRecord, checkedRun, distribution, pairedDifference, validateManif
 const [manifestFile, outputFile] = process.argv.slice(2);
 if (!outputFile) throw new Error('Usage: verify-class-throughput.mjs MANIFEST OUTPUT');
 const manifest = JSON.parse(readFileSync(manifestFile));
-validateManifest(manifest);
+validateManifest(manifest, { labels: ['baseline', 'candidate'] });
 if (manifest.cases.length !== 1 || manifest.cases[0].name !== 'class-parent-throughput') {
   throw new Error('Expected the inherited-class throughput witness');
 }
@@ -39,7 +39,7 @@ result.assessment = result.medianRatio > 1.03
 result.passed = result.medianRatio <= 1.03;
 result.host.loadAfter = loadavg();
 result.finishedAt = new Date().toISOString();
-validateManifest(manifest);
+validateManifest(manifest, { labels: ['baseline', 'candidate'] });
 writeFileSync(outputFile, JSON.stringify(result, null, 2) + '\n');
 console.log(result.assessment, result.medianRatio);
 if (!result.passed) process.exitCode = 1;

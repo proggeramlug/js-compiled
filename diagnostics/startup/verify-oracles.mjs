@@ -8,7 +8,7 @@ const manifest = JSON.parse(readFileSync(manifestFile));
 const labels = ['baseline', 'candidate'];
 validateManifest(manifest, { labels });
 if (manifest.cases.length !== 22) throw new Error('All 22 benchmarks are required');
-const result = { manifest, cases: {}, passed: true };
+const result = { manifest, cases: {}, complete: false, passed: true };
 for (const fixture of manifest.cases) {
   const row = result.cases[fixture.name] = {};
   for (const label of labels) {
@@ -25,4 +25,6 @@ for (const fixture of manifest.cases) {
   console.log(fixture.name, Object.values(row).every(v => v.matchesNode) ? 'passed' : 'FAILED');
 }
 validateManifest(manifest, { labels });
+result.complete = true;
+writeFileSync(outputFile, JSON.stringify(result, null, 2) + '\n');
 if (!result.passed) process.exitCode = 1;

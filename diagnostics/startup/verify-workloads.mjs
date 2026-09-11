@@ -6,9 +6,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { binaryRecord, checkedRun, distribution, pairedDifference, validateManifest } from './compare.mjs';
 
-const [manifestFile, outputFile] = process.argv.slice(2);
+const [manifestFile, outputFile, policy] = process.argv.slice(2);
 if (!manifestFile || !outputFile) throw new Error('Usage: node verify-workloads.mjs MANIFEST.json OUTPUT.json');
 const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'));
+if (policy && policy !== '--record-profile-tradeoffs') throw new Error(`Unknown policy: ${policy}`);
+const recordTradeoffs = policy === '--record-profile-tradeoffs';
+if (recordTradeoffs && (manifest.variants.candidate.runtimeEnv?.PERRY_MEMORY_PROFILE !== 'small'
+    || Object.keys(manifest.variants.baseline.runtimeEnv ?? {}).length !== 0)) {
+  throw new Error('Tradeoff recording requires the explicit small profile versus an ordinary-profile baseline');
+}
 const labels = ['baseline', 'candidate'];
 validateManifest(manifest, { labels });
 const sentinels = ['11-loop-sum', '23-binary-trees', '24-map-set', '31-json', '42-async'];
@@ -18,7 +24,8 @@ const result = {
   startedAt: new Date().toISOString(), manifest,
   code: binaryRecord(fileURLToPath(import.meta.url)),
   host: { platform: process.platform, arch: process.arch, cpu: cpus()[0]?.model, kernel: release(), loadBefore: loadavg() },
-  settings: { initialPairedSamples: 5, confirmationPairedSamples: 10, slowdownThreshold: 0.03, timeoutMs: 300000 },
+  settings: { initialPairedSamples: 5, confirmationPairedSamples: 10, slowdownThreshold: 0.03, timeoutMs: 300000, recordTradeoffs },
+  profileTradeoffs: [],
   cases: {},
 };
 mkdirSync(path.dirname(outputFile), { recursive: true });
@@ -53,7 +60,10 @@ for (const fixture of manifest.cases) {
       row.throughput.assessment = row.throughput.medianRatio > 1.03
         ? (row.throughput.pairedDifference.ci95Ms[0] > 0 ? 'regression-needs-explanation' : 'inconclusive-needs-rerun')
         : 'no-slowdown-over-3pct-observed';
-      if (row.throughput.medianRatio > 1.03) failed = true;
+      if (row.throughput.medianRatio > 1.03) {
+        if (recordTradeoffs) result.profileTradeoffs.push({ name: fixture.name, ...row.throughput });
+        else failed = true;
+      }
     }
   } catch (error) {
     row.error = error.message;

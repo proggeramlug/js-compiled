@@ -1,0 +1,1992 @@
+{
+  "compiler": {
+    "file": "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+    "bytes": 136533720,
+    "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee"
+  },
+  "verifier": {
+    "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/scripts/verify_tiny_program.py",
+    "bytes": 13287,
+    "sha256": "f44aa0a3fecf71802605116630800443b4019de4c127eb89bf11023a90d5da11"
+  },
+  "work": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb",
+  "buildEnv": {},
+  "node": "v26.5.1",
+  "complete": true,
+  "passed": true,
+  "scope": "tiny-and-fallback",
+  "fixtures": {
+    "empty": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty.ts",
+        "bytes": 11,
+        "sha256": "fb8d069ebb6693855ae9ec6f145106f012a13235617c1d63b51ee8308384bc99"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/empty-build.log",
+          "bytes": 2584,
+          "sha256": "d19c23bcd19d7013550e82b7b103738a6c8d2a1b2b90dfad714d0bc9311cfe88"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty.bin",
+        "bytes": 16840,
+        "sha256": "c1e84a4667cac13439538371974f968ca8683696efabe3b4b2ef44e44df9a5fb"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty.tiny.ll",
+        "bytes": 121,
+        "sha256": "d49af7b70c6d776c55d19e9a3f85bcde50b6670dd42d48787a700ed9cfe9cd53"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/empty-symbols.log",
+        "bytes": 64,
+        "sha256": "baaed181e44128e62da48bb5d02da8a6f0b7e0966e8ab644ada88722fb54da86"
+      },
+      "passed": true
+    },
+    "literal": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.ts",
+        "bytes": 22,
+        "sha256": "f9444510dc7403e41049deb133f6892aa6a63c05591b2b59e4ee5b234d7bbd99"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/literal-build.log",
+          "bytes": 2710,
+          "sha256": "260905eb04b114ce917425e905094acb07d0918fc6bd560cf3aeec20c6b2e832"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.bin",
+        "bytes": 33912,
+        "sha256": "8a86ce23ebb1bec9fbf78dd4076a47973e4fc3334c02b281cc875eb431c8b0f5"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03",
+          "text": "hello\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03",
+          "text": "hello\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.tiny.ll",
+        "bytes": 499,
+        "sha256": "57b4c5a2f340c30fded582a3c03e07b150c7cd4f5858bf54d1d2ce8f3d9d3dcb"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/literal-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "hello": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/hello.ts",
+        "bytes": 84,
+        "sha256": "737ad0b75c98aba8e39fe305089b4e5c153d34fe590e34119b4f60b8dec51785"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/hello.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/hello.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/hello-build.log",
+          "bytes": 2660,
+          "sha256": "9028941e597add36d560ee1f3e29c5d0947dd4c7451fea05845bc98684c60e9f"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/hello.bin",
+        "bytes": 33912,
+        "sha256": "61cd54cf4c7833e44eb564b7c7f2673dc568f528104c9f02b5d0352c55f39175"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 22,
+          "sha256": "ec67289653a4873ff7e073c51fbc7cd7c351fa1d7c7904abcdccdcb505402cf7",
+          "text": "hello, world\nRESULT 1\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 22,
+          "sha256": "ec67289653a4873ff7e073c51fbc7cd7c351fa1d7c7904abcdccdcb505402cf7",
+          "text": "hello, world\nRESULT 1\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/hello.tiny.ll",
+        "bytes": 685,
+        "sha256": "0ce556c5791284e542e552c58c55fc01adf7c56c4e795ddd830f1b6b26b05659"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/hello-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "stderr": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr.ts",
+        "bytes": 24,
+        "sha256": "e11b5a59f0587ce4921769801ac52df58264ae497e93936f472acdf0413fce47"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stderr-build.log",
+          "bytes": 2685,
+          "sha256": "cc3aa95f88867ebf2057ee7cf5f52bb1cca692ef285b00454fd3524614d6015a"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr.bin",
+        "bytes": 33912,
+        "sha256": "0048cc955af1acb488c714977ec31cc2214218760050660ea89bc148f8e39eb9"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+          "text": "error\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+          "text": "error\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr.tiny.ll",
+        "bytes": 499,
+        "sha256": "dd4dff9832f300e2a203c5986e207f1e3b090cfa537b4aa45ef4e61a1198c80f"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stderr-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "ordering": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/ordering.ts",
+        "bytes": 87,
+        "sha256": "52e7b38ec36554cb6ab7f678922a15fafa0acfbe031dd278d4c5c4a59a605929"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/ordering.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/ordering.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/ordering-build.log",
+          "bytes": 2735,
+          "sha256": "744816566077e4840c24c02ddbf14f81681c5971e2caaa05ca266dd187f1ab4c"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/ordering.bin",
+        "bytes": 33920,
+        "sha256": "4a55310868d0b823f43b7b797e7e0e6b843f00cb61c734a936d0ee655977fd7a"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c9b0fb1fa00b3a5ce714c876c35bb18f21eed970d33d9093a3cbd7cf0c9db3dc",
+          "text": "one\nthree\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "544920d0a807f2063cab7e188f05ccdc21192d69a40efd42e0b05c9c49efcd37",
+          "text": "two\nfour\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c9b0fb1fa00b3a5ce714c876c35bb18f21eed970d33d9093a3cbd7cf0c9db3dc",
+          "text": "one\nthree\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "544920d0a807f2063cab7e188f05ccdc21192d69a40efd42e0b05c9c49efcd37",
+          "text": "two\nfour\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/ordering.tiny.ll",
+        "bytes": 946,
+        "sha256": "f9a8a0f4dd2cd9d0cf93cb4367cb89aba9c328d76264e789023a470343010126"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/ordering-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "nul-unicode": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/nul-unicode.ts",
+        "bytes": 63,
+        "sha256": "5070523130d83b956533ea67ee44f2bc8579fe0271c03b414902d512276dc2c8"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/nul-unicode.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/nul-unicode.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/nul-unicode-build.log",
+          "bytes": 2810,
+          "sha256": "0de2af5db37416c92af57097fac9ada76b1de99b42c2b4794ec989f40598a988"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/nul-unicode.bin",
+        "bytes": 33920,
+        "sha256": "401a9c8ac5d6f86a8cf37cd535a6c5ec85ac7eb7dcec175c442636ff0af1cc17"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "d492bc6a012245d9fe74807ed1067d976c66d97e6616d939646e1d752458487d",
+          "text": "a\u0000b\n\ud83e\udd80\ufffd\n"
+        },
+        "stderr": {
+          "bytes": 12,
+          "sha256": "24d499238e0b2f6627d68632a55e833e7278b238241cfc06c91db68de37fff4a",
+          "text": "%s %d %% \u00e9\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "d492bc6a012245d9fe74807ed1067d976c66d97e6616d939646e1d752458487d",
+          "text": "a\u0000b\n\ud83e\udd80\ufffd\n"
+        },
+        "stderr": {
+          "bytes": 12,
+          "sha256": "24d499238e0b2f6627d68632a55e833e7278b238241cfc06c91db68de37fff4a",
+          "text": "%s %d %% \u00e9\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/nul-unicode.tiny.ll",
+        "bytes": 693,
+        "sha256": "f14211c4edecf9ae4395bda308582d7d243ebbb6928a66cee782defba99a11cb"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/nul-unicode-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "surrogate-join": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/surrogate-join.ts",
+        "bytes": 51,
+        "sha256": "f69386f711f0856256ddf4a228f814a58bf5dd4c4118bd6deb7e4178b615fd9b"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/surrogate-join.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/surrogate-join.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/surrogate-join-build.log",
+          "bytes": 2885,
+          "sha256": "a52ad1d814b511d76d60cb5dcf68dc0eb8f340598a07e75742d4d855f5600999"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/surrogate-join.bin",
+        "bytes": 33920,
+        "sha256": "63416f64a6f82dbc1228c6ac8d6b08945ee48facb94300bb5475cb4560d5f883"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "9ae931c0b56b698588eb03ef5468bbf64940a7b95e2190cc36ce05625bb6a2c6",
+          "text": "\ud800\udc00\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "9ae931c0b56b698588eb03ef5468bbf64940a7b95e2190cc36ce05625bb6a2c6",
+          "text": "\ud800\udc00\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/surrogate-join.tiny.ll",
+        "bytes": 496,
+        "sha256": "19c70d8f948e72427697b3027e3392c38bdf912a60098da1fb07948a9431f367"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/surrogate-join-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "empty-string": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty-string.ts",
+        "bytes": 36,
+        "sha256": "742c6afe312fb092977fc696499b9f54ceef6b4e5b5bfc3d404ba9022223f053"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty-string.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty-string.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/empty-string-build.log",
+          "bytes": 2835,
+          "sha256": "714b71020b6bfe65c8bdc9ea90ff73d81d922693cd4c397ab26ef60bd2bc780b"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty-string.bin",
+        "bytes": 33920,
+        "sha256": "65572dc082154bf8a2575cf659a3479d7130d5b67dfde038fcbee01f4d743572"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        "stderr": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        "stderr": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/empty-string.tiny.ll",
+        "bytes": 623,
+        "sha256": "f9d663bc261162977b9dcf9769bafa3c10412796085a49f0d4810ba73a167e31"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/empty-string-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "constant-chain": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/constant-chain.ts",
+        "bytes": 60,
+        "sha256": "b54ac913ad950ae7a10058e2d12b5da6777c38254213425e955d0e18c9c28c47"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/constant-chain.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/constant-chain.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/constant-chain-build.log",
+          "bytes": 2885,
+          "sha256": "5b9d24daa8d958f696e305f1e09a1d7300203a764ba2c12e1d5e359d9925fc5d"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/constant-chain.bin",
+        "bytes": 33920,
+        "sha256": "7366b83f3b77d77f96125cfb10b032c37aa9cbdf36c3e0cf956d68142d7237e7"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "3c31169062d772c4b37a5ac639c6c6d5c5632c66a1b7256a3470e8a313348d38",
+          "text": "aba\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "3c31169062d772c4b37a5ac639c6c6d5c5632c66a1b7256a3470e8a313348d38",
+          "text": "aba\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/constant-chain.tiny.ll",
+        "bytes": 493,
+        "sha256": "2a0065a21293bd83a6c78fe0d3d696638f2faa3546bf2b57d3cb00087964e846"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/constant-chain-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "assertions": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/assertions.ts",
+        "bytes": 48,
+        "sha256": "db62244a22f4d9e16a635e90ff152b2dc4cfac239c58d411181538c7ee98c79f"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/assertions.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/assertions.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/assertions-build.log",
+          "bytes": 2785,
+          "sha256": "3ae6b299a6c9958125c1f261d51861e86c5c91bce7ad670d4cb71abd92ae55df"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/assertions.bin",
+        "bytes": 33920,
+        "sha256": "5c74e687a3311438116e3569965d5d2caf37d5a5c0e4ddab323ae548523f4906"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "1e1f2c881ae0608ec77ebf88a75c66d3099113a7343238f2f7a0ebb91a4ed335",
+          "text": "value\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "1e1f2c881ae0608ec77ebf88a75c66d3099113a7343238f2f7a0ebb91a4ed335",
+          "text": "value\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/assertions.tiny.ll",
+        "bytes": 499,
+        "sha256": "fecedd1aaf72fee1140ae0e7518e4152e1af34bcc7076d1bc5536d02fdf861a4"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/assertions-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "escaped-builtin": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/escaped-builtin.ts",
+        "bytes": 34,
+        "sha256": "e4cd48b2d1fb70602772de12ae75f1e32f9cf10ac0136a4352aab04c5c2517e3"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/escaped-builtin.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/escaped-builtin.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/escaped-builtin-build.log",
+          "bytes": 2910,
+          "sha256": "ee85bbd520c95e0ee182655aefbec51c1c6151c9266c223a264135e1302ba483"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/escaped-builtin.bin",
+        "bytes": 33920,
+        "sha256": "699e6334c9d7fc7d6c2bc7cc732e4ce7fee13d0b567c858fcacae7d99694e9d0"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 8,
+          "sha256": "e3d7a28a2d9eacd388106bb38690a17b50380681d7e41922898aed6b4b782ae7",
+          "text": "escaped\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 8,
+          "sha256": "e3d7a28a2d9eacd388106bb38690a17b50380681d7e41922898aed6b4b782ae7",
+          "text": "escaped\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/escaped-builtin.tiny.ll",
+        "bytes": 505,
+        "sha256": "6ddd1e53c10453351931a13b663f12e345b0e0122fb4bb7b9326a4a1363eb7d8"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/escaped-builtin-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "pipe-survival": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/pipe-survival.ts",
+        "bytes": 72,
+        "sha256": "1df720ee4665be807837332f1e2921c9f8eddb87336790b1518c46459a92c19d"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/pipe-survival.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/pipe-survival.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/pipe-survival-build.log",
+          "bytes": 2860,
+          "sha256": "056dd07b807a757c361dc3b73bc29b4b212bed9c28ed33d37ff208fd111d85a4"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/pipe-survival.bin",
+        "bytes": 33920,
+        "sha256": "4d7c19ef94590fc781e7defc9db59b9aa2256cb0ef307c9c214a971aa4c570b8"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 13,
+          "sha256": "dbea9325179efe46ea2add94f7b6b745ca983fabb208dc6d34aa064623d7ee23",
+          "text": "first\nsecond\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+          "text": "survived\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 13,
+          "sha256": "dbea9325179efe46ea2add94f7b6b745ca983fabb208dc6d34aa064623d7ee23",
+          "text": "first\nsecond\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+          "text": "survived\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/pipe-survival.tiny.ll",
+        "bytes": 819,
+        "sha256": "0ef0582b78c583aa168478f6ba05d34d934b8701e054fbe2225f9f58ff8936e3"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/pipe-survival-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "stdout-handshake": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stdout-handshake.ts",
+        "bytes": 131124,
+        "sha256": "fccea09f97670c123750f5904f6660772031263fbe549c775661eedbe3953434"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stdout-handshake.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stdout-handshake.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stdout-handshake-build.log",
+          "bytes": 2935,
+          "sha256": "88587f3a9c6ad4c7c160bb1f983e958e1ee0dcf9956228ede80a112d39c15f58"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stdout-handshake.bin",
+        "bytes": 166024,
+        "sha256": "d6c711badb834f1c824a4bd3e299ff80ef48acf47256d0e338a3c5e60d11c844"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stdout-handshake.tiny.ll",
+        "bytes": 393864,
+        "sha256": "ceef6386e554099f6dfa6544a3867f6669032b0a6197eaf2a5ff5df81809795a"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stdout-handshake-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "stderr-handshake": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr-handshake.ts",
+        "bytes": 131124,
+        "sha256": "349703c0bde38059f237b590d8f35df66092f643177523c8868a2948446409df"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr-handshake.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr-handshake.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stderr-handshake-build.log",
+          "bytes": 2935,
+          "sha256": "99e0f450ef3d372d0df367694fbf510f118983dd16d87dbc7e390d572c343ea5"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr-handshake.bin",
+        "bytes": 166024,
+        "sha256": "bf27b5caf147d9c33269b51e9962b7d5cdcec6bea83ffd77b3f17a32c01ed416"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/stderr-handshake.tiny.ll",
+        "bytes": 393864,
+        "sha256": "3fcf2361bab1aa03f7a3e81ddb39dac945238bb4bbc793272ed612bc0651e4cb"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/stderr-handshake-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "backpressure": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/backpressure.ts",
+        "bytes": 8719,
+        "sha256": "73086f71c159ea5f80d584e4fd5f8edfc529cebace46f49a40d1c9c0078e6487"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/backpressure.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/backpressure.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/backpressure-build.log",
+          "bytes": 2837,
+          "sha256": "7218f8c311e167e2482084806f432fbf65ca31a63071bfb1f2d8966dde4536d3"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/backpressure.bin",
+        "bytes": 33920,
+        "sha256": "9d882aca0da21b24831707d1f6e0ea6eed525f62930b4d310e51fe652b4ddd9e"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 262656,
+          "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 262656,
+          "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/backpressure.tiny.ll",
+        "bytes": 861825,
+        "sha256": "96a787d7467140c4fd4f08f4520b2bfb758e31c952f2de29eb39131de5fe0e0c"
+      },
+      "symbols": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/backpressure-symbols.log",
+        "bytes": 400,
+        "sha256": "1672cfcc342e8347761fd05f83e90ceda762285b1994f2c86c87958938161675"
+      },
+      "passed": true
+    },
+    "sync-allocation-loop": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/sync-allocation-loop.ts",
+        "bytes": 78,
+        "sha256": "40a2a06c738c111fedb6b9a36a206f8fd19759650d36fa88feff10d2f0ed7267"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/sync-allocation-loop.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/sync-allocation-loop.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/sync-allocation-loop-build.log",
+          "bytes": 4276,
+          "sha256": "40f0752e6086923c8b0ea3ed3cec21ba5e02ecd2a0cf646fc6dbd0cee97aab39"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/sync-allocation-loop.bin",
+        "bytes": 10897048,
+        "sha256": "a148cc570984a27b575fe52959879ebad68aea4959dcf0a8f2899567fb0fcf73"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "eea8254c7500ba3de996aa8ad6af399183f04e17d4a8102fde539dbc93a90012",
+          "text": "100\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "eea8254c7500ba3de996aa8ad6af399183f04e17d4a8102fde539dbc93a90012",
+          "text": "100\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "numeric": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/numeric.ts",
+        "bytes": 17,
+        "sha256": "7df141f2f2a2a4700c0ecbb0e6ca3ddcfbc56ae7c8d4eabcce03fc47be491ab1"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/numeric.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/numeric.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/numeric-build.log",
+          "bytes": 3904,
+          "sha256": "251a9e896240928e061f9ad55001679d1c464012eda6075b46ad52792eee2ee3"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/numeric.bin",
+        "bytes": 10876952,
+        "sha256": "43afc4f035b697ff8b02bdd9675637a179eefb8b833f371dda8832af7e25db4d"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 3,
+          "sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0",
+          "text": "42\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 3,
+          "sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0",
+          "text": "42\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "arguments": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/arguments.ts",
+        "bytes": 23,
+        "sha256": "ca477fdbb69cba106e9539f7412b33aaaa1fa0da065ee06e072c16cd15a880a1"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/arguments.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/arguments.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/arguments-build.log",
+          "bytes": 3964,
+          "sha256": "a8a22ae1a1c35bfdbe5b137220b421a134dc43c58388937c390d06efcc5b3c5a"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/arguments.bin",
+        "bytes": 10877184,
+        "sha256": "4f97440e0c04f40e0a912952a497d0065f4baa8e70d0abf9dc96d615b19ab893"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "01186fcf04b4b447f393e552964c08c7b419c1ad7a25c342a0b631b1967d3a27",
+          "text": "a b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "01186fcf04b4b447f393e552964c08c7b419c1ad7a25c342a0b631b1967d3a27",
+          "text": "a b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "promise": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/promise.ts",
+        "bytes": 74,
+        "sha256": "95806787a7a5cea680954d72d26af73bd18736f7a886460a228fc98487c0a17c"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/promise.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/promise.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/promise-build.log",
+          "bytes": 3905,
+          "sha256": "3b5ad856e273b4c4424a03e0c50188e4adb98e0d0075d935fe2ea247654765d1"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/promise.bin",
+        "bytes": 10894104,
+        "sha256": "1b7eacf93587705592428780fbf773919f7ae0bf1926fb1ea813949b772f51c2"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "e3f4d795d365afcd7f5b7099b1a6a6d7fc228edf0cf10960d0e6fda46e9e9133",
+          "text": "first\nlater\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "e3f4d795d365afcd7f5b7099b1a6a6d7fc228edf0cf10960d0e6fda46e9e9133",
+          "text": "first\nlater\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "timer": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/timer.ts",
+        "bytes": 43,
+        "sha256": "43fdb43f92113b550d20cdf94bf3297406742cda0b87c8d3fb892a7498b99284"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/timer.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/timer.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/timer-build.log",
+          "bytes": 3817,
+          "sha256": "577d8f5f973daa49b6002b8347022a3a689b59f4bbc6c222549c590f6f2463bd"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/timer.bin",
+        "bytes": 10893752,
+        "sha256": "74a7558b5392c9ceffe464ddbac05e71a00ee73550a55567a5bde33f33b15e02"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "99ba9a278bb85a1dfc450c6ae4f1694cebba87511c4878f02366ea7436024402",
+          "text": "timer\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "99ba9a278bb85a1dfc450c6ae4f1694cebba87511c4878f02366ea7436024402",
+          "text": "timer\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "lifecycle": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/lifecycle.ts",
+        "bytes": 68,
+        "sha256": "f748d6747e28d21315db934064dbd540add21379dd66f0c5d3360c68f61ccf8a"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/lifecycle.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/lifecycle.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/lifecycle-build.log",
+          "bytes": 3963,
+          "sha256": "20767da1899a1a5e49841ab73282d35980b29163804b2674238555f435cd5b8e"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/lifecycle.bin",
+        "bytes": 10893968,
+        "sha256": "4854709233b2d344a03f6f2671227631bde5e43e6ee60432a1a29a148a374526"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "083cfa3522b85e8b9cac82010b07381da35d49d24fe23c177469be5605ce7e18",
+          "text": "body\nexit\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "083cfa3522b85e8b9cac82010b07381da35d49d24fe23c177469be5605ce7e18",
+          "text": "body\nexit\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "computed-console": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/computed-console.ts",
+        "bytes": 28,
+        "sha256": "2c9bd9404cf2252c7f729b629ea9e3ef243652ebdc791ba7855d848bda4095fc"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/computed-console.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/computed-console.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/computed-console-build.log",
+          "bytes": 4159,
+          "sha256": "4948112f7593ff30b00e9bcc0c0545894041e0412586ae459679e67aa8a737e5"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/computed-console.bin",
+        "bytes": 10877176,
+        "sha256": "4d0c400d7cab1fe2634129a0384514db75028a823865397d2c5d887de9de70b9"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 9,
+          "sha256": "cc3de5853cb2460e54179227bde9b5e96473419b490da47b4c6ed3830de953d8",
+          "text": "computed\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 9,
+          "sha256": "cc3de5853cb2460e54179227bde9b5e96473419b490da47b4c6ed3830de953d8",
+          "text": "computed\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "global-alias": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/global-alias.ts",
+        "bytes": 34,
+        "sha256": "34cb8e32afc1d0ea401834df7cb8a74d27da61489b00390108542485cf56c048"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/global-alias.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/global-alias.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/global-alias-build.log",
+          "bytes": 7318,
+          "sha256": "359cb827ab6168be63b46ff93883faed7785fc7505e0d578c0a8b160adb6cbc8"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/global-alias.bin",
+        "bytes": 19052240,
+        "sha256": "ce42f9a618cf21a65d0a4e1d0bbcbb24ba42171d2f865591eb2f4fbcc05698bd"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "bde69edbbd1e37f29a7d5abb737590d929362f186c935f5fa9384ce2074acec4",
+          "text": "global\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "bde69edbbd1e37f29a7d5abb737590d929362f186c935f5fa9384ce2074acec4",
+          "text": "global\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "dead-code": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/dead-code.ts",
+        "bytes": 59,
+        "sha256": "8bf3f3ff8e88ba2b0f2b9ea9129f7c5e08e55c2027f1688616836f3b5537a51a"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/dead-code.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/dead-code.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/dead-code-build.log",
+          "bytes": 3957,
+          "sha256": "983cf3f10b701a8b60977fecfa18f98078fcc782a12e397d9f6e316d19f7a3d5"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/dead-code.bin",
+        "bytes": 10893824,
+        "sha256": "b2e63de220a9ba7b1c4a040406081d5e930a345e66e195598a35520069bf4ef5"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "unused-function": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/unused-function.ts",
+        "bytes": 42,
+        "sha256": "c594ea5bb9c97cb534a6e6e3fa7455ff714522de51524b3fc338cc1bcbc3d536"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/unused-function.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/unused-function.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/unused-function-build.log",
+          "bytes": 4131,
+          "sha256": "72ccde32551b0f114f772fe74a62946c99106aedca849ec23b360be9ebc10af6"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/unused-function.bin",
+        "bytes": 10893904,
+        "sha256": "0565fe82ca1e983654a64409a947fc680fbf0b1a744efd87c13afccf937f6f2e"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "exceptions": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/exceptions.ts",
+        "bytes": 72,
+        "sha256": "8a35eeb1812eb4d6482e836c8606283a272661f3e5c4d3bee6ebc533658ad688"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/exceptions.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/exceptions.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/exceptions-build.log",
+          "bytes": 3986,
+          "sha256": "738a9e2a36744feb1189411778fb816b4984e7e49970c4ccc0511b16e9aecead"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/exceptions.bin",
+        "bytes": 10917328,
+        "sha256": "ca8c03a21479d214e0bf5004ff9348a9bd80ea7d77337ab8af21ff39c4a824b9"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065",
+          "text": "caught\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065",
+          "text": "caught\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "import": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/import.ts",
+        "bytes": 69,
+        "sha256": "8460c59e6cbe967daca49d7a280f5cea5f056d957573f2245a8e3ba5daa8a575"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/import.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/import.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/import-build.log",
+          "bytes": 7329,
+          "sha256": "dd12a18c7b95dc5af0eeba31f93950cba18678bdfcdc93c26575b10c00e19318"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/import.bin",
+        "bytes": 19029864,
+        "sha256": "dc9a780279ced83141dab7f5ef8a9df582229d40b81277b92f505959938695a4"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 2,
+          "sha256": "0263829989b6fd954f72baaf2fc64bc2e2f01d692d4de72986ea808f6e99813f",
+          "text": "b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 2,
+          "sha256": "0263829989b6fd954f72baaf2fc64bc2e2f01d692d4de72986ea808f6e99813f",
+          "text": "b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "getters": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/getters.ts",
+        "bytes": 81,
+        "sha256": "d6b0520826d53735a34bbc85d45210ca65d98b247249d3bb9af9500d6f952d3f"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "compile",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/getters.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/getters.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny/getters-build.log",
+          "bytes": 3904,
+          "sha256": "e75e9a2950b1d54e2935fa4f4f316d69142c207b0e13bef8da973a7153a5beb5"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/getters.bin",
+        "bytes": 10916760,
+        "sha256": "5a823078bf089d00cd0a024694042b718fac6b1f5fef252d208d4e0b77b1c91d"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c474650f60aded7db719c968d1eec04f9b9096b8ff9c0c886d4d8758a1afe388",
+          "text": "get\nvalue\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c474650f60aded7db719c968d1eec04f9b9096b8ff9c0c886d4d8758a1afe388",
+          "text": "get\nvalue\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    }
+  },
+  "jsonCli": {
+    "tiny": {
+      "argv": [
+        "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+        "--format",
+        "json",
+        "compile",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.ts",
+        "--no-cache",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-tiny.bin"
+      ],
+      "response": {
+        "build_cache": {
+          "hit": false,
+          "miss_reason": "tiny program specialization"
+        },
+        "codegen_cache": null,
+        "js_modules": 0,
+        "link_cache": {
+          "external_inputs_hashed": 0,
+          "linked": 1,
+          "object_files_hashed": 0,
+          "object_fingerprints_used": 0,
+          "skipped": 0
+        },
+        "native_modules": 1,
+        "output": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-tiny.bin",
+        "outputCalls": 1,
+        "runtimeProfile": "tiny",
+        "success": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-tiny.bin",
+        "bytes": 33920,
+        "sha256": "373ed6ac3a4bfbd5bdb8d360a01c43c3410d8002e52585024347bf4467161f90"
+      },
+      "stderr": {
+        "bytes": 52,
+        "sha256": "deae305dfcb4184534b8d2c087cb83c40efa0c9d259dbcfee442d97ec6cc9d4b",
+        "text": "perry: in-process LLVM backend active (LLVM 22.1.4)\n"
+      }
+    },
+    "normal": {
+      "argv": [
+        "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+        "--format",
+        "json",
+        "compile",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/literal.ts",
+        "--no-cache",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-normal.bin",
+        "--no-auto-optimize"
+      ],
+      "response": {
+        "build_cache": {
+          "hit": false,
+          "miss_reason": "no-cache"
+        },
+        "codegen_cache": null,
+        "js_modules": 0,
+        "link_cache": {
+          "external_inputs_hashed": 1,
+          "linked": true,
+          "object_files_hashed": 0,
+          "object_fingerprints_used": 1,
+          "skipped": false
+        },
+        "native_modules": 1,
+        "output": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-normal.bin",
+        "success": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-oracles-xwqt5nwb/json-normal.bin",
+        "bytes": 19029440,
+        "sha256": "29a5eaa15a8f6019f1f7700e83024926ccedcfddd98e480d51f7f835ce3f8e98"
+      },
+      "stderr": {
+        "bytes": 52,
+        "sha256": "deae305dfcb4184534b8d2c087cb83c40efa0c9d259dbcfee442d97ec6cc9d4b",
+        "text": "perry: in-process LLVM backend active (LLVM 22.1.4)\n"
+      }
+    }
+  },
+  "pipeCases": {
+    "merged-order": {
+      "bytes": 19,
+      "sha256": "c45d3a272228cc542168164ba961fa622e95260bfd107eb1276940cb5209433e",
+      "text": "one\ntwo\nthree\nfour\n"
+    },
+    "broken-stdout": {
+      "exitCode": 0,
+      "stderr": {
+        "bytes": 9,
+        "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+        "text": "survived\n"
+      }
+    },
+    "nonblocking-backpressure": {
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 262656,
+        "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      }
+    },
+    "stdout-handshake": {
+      "node": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "tiny": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      }
+    },
+    "stderr-handshake": {
+      "node": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "tiny": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      }
+    },
+    "closed-stdout": {
+      "exitCode": 0,
+      "stderr": {
+        "bytes": 9,
+        "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+        "text": "survived\n"
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "sourceCommit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+  "work": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a",
+  "platformPackage": "@perryts/perry-linux-x64",
+  "artifacts": [
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+      "bytes": 125058040,
+      "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054"
+    },
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime.a",
+      "bytes": 53318960,
+      "sha256": "d42e677bfcabd9409e297f557efe445bf2ce7d3e1cc2ce7626928895acf846c2"
+    },
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_stdlib.a",
+      "bytes": 113203578,
+      "sha256": "8f28861eaa374579126792347f8f8b9945a1a67bf150583517a6013cec410f76"
+    },
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime_core.a",
+      "bytes": 35715048,
+      "sha256": "a16ade6fea17902f2ea375511f3c636d401d659a5d669fba561efa125c1c61f4"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "bash",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/scripts/stage-npm.sh",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/artifacts"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage",
+      "env": {
+        "SKIP_MISSING": "1"
+      },
+      "log": "stage.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--pack-destination",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/npm/perry",
+      "env": {},
+      "log": "perry-pack.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--pack-destination",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/npm/perry-linux-x64",
+      "env": {},
+      "log": "perry-linux-x64-pack.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "init",
+        "-y"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+      "env": {},
+      "log": "npm-init.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pkg",
+        "set",
+        "type=module"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+      "env": {},
+      "log": "npm-module-type.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-0.5.1532.tgz",
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-linux-x64-0.5.1532.tgz"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+      "env": {},
+      "log": "npm-install.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.bin/perry",
+        "--version"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+      "env": {},
+      "log": "installed-wrapper-version.log",
+      "exitCode": 0
+    }
+  ],
+  "tarballs": [
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-0.5.1532.tgz",
+      "bytes": 7209,
+      "sha256": "b763d5f75196f3b150b6c260ef4ef5b97bc7cbfa25ef4ce7fbc8008c340cc6e0"
+    },
+    {
+      "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-linux-x64-0.5.1532.tgz",
+      "bytes": 75536711,
+      "sha256": "aa77ed05391761311f2c6e2153194a1f83af526432c034535b22c511e839f315"
+    }
+  ],
+  "installedCompiler": {
+    "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+    "bytes": 125058040,
+    "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054"
+  },
+  "ready": true
+}

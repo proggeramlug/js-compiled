@@ -1,0 +1,880 @@
+{
+  "beforeManifest": {
+    "file": "../results/final/package-workloads/manifest.json",
+    "bytes": 35612,
+    "sha256": "5759afa43f22c9da6d66ef6789af129adab90eb1bf1da718e75071642816ac8c"
+  },
+  "afterManifest": {
+    "file": "../results/json-verification/package-workloads/manifest.json",
+    "bytes": 36668,
+    "sha256": "d754d402b1008e447e8fd8d359a00c6eaf21827ac8f488eedcf9c17b7349fbaa"
+  },
+  "verifier": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "00-noop": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/00-noop",
+        "bytes": 14472,
+        "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/00-noop",
+        "bytes": 14472,
+        "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "bc521f40168e4909ba7240ec8c3a0d4ed6a4a6ede138a26439970958f762c029",
+      "normalizedAfterSha256": "bc521f40168e4909ba7240ec8c3a0d4ed6a4a6ede138a26439970958f762c029"
+    },
+    "01-hello": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/01-hello",
+        "bytes": 14472,
+        "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/01-hello",
+        "bytes": 14472,
+        "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "99a9b45cd206793b813c3e7a4892fb3798a810b302c93dc5f41e02cd0b118002",
+      "normalizedAfterSha256": "99a9b45cd206793b813c3e7a4892fb3798a810b302c93dc5f41e02cd0b118002"
+    },
+    "10-fib": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/10-fib",
+        "bytes": 10123072,
+        "sha256": "a68419ae1b4b0e573e59fb933e01583d3450ee057e8203acf09bdd327f1b94e5"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/10-fib",
+        "bytes": 10123072,
+        "sha256": "6204c305a0af26915153f57cb4945a78b4500052c2f3b27261f1c6994029658d"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883388,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883388,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "5377c12c48d47d344a19d32e99670eb980510c9dc4f35a624e768881f775ad18",
+      "normalizedAfterSha256": "5377c12c48d47d344a19d32e99670eb980510c9dc4f35a624e768881f775ad18"
+    },
+    "11-loop-sum": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/11-loop-sum",
+        "bytes": 10114816,
+        "sha256": "d428fba63ad85377e0caf21244c8236e55d578ce0cf8715ca6f0f134005ca277"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/11-loop-sum",
+        "bytes": 10114816,
+        "sha256": "d08ab570dffbfb47ba452da12409ed822f479645b2b87e4ddb1367fc0c8af984"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8870987,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8870987,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "16e58b4629fa783e64cb14b669815e55f04606b9926cb231306e5397c4bf0090",
+      "normalizedAfterSha256": "16e58b4629fa783e64cb14b669815e55f04606b9926cb231306e5397c4bf0090"
+    },
+    "12-mandelbrot": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/12-mandelbrot",
+        "bytes": 10114816,
+        "sha256": "fb5d19e9fcb159c264ae66e868fb590d995cdfd2afb61d30d903895036758ef3"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/12-mandelbrot",
+        "bytes": 10114816,
+        "sha256": "25eb7f2f502ba930b1982271232752858da5b5828dbb5713cac362dde3ec9961"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8875069,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8875069,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "17e00caa1bc40902a6b7fd62bbce091a4a7533bfaa0cb26e834e9079a1be781d",
+      "normalizedAfterSha256": "17e00caa1bc40902a6b7fd62bbce091a4a7533bfaa0cb26e834e9079a1be781d"
+    },
+    "13-nbody": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/13-nbody",
+        "bytes": 10148520,
+        "sha256": "c244c46e9d696fb0dc02dceec4b1c63ec114202e4203bf6177399dd7b87a8a59"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/13-nbody",
+        "bytes": 10148520,
+        "sha256": "99d93dbca68794eecb269fa5d764832eb76f79bb474c2124bfbfb0e99077326f"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8910637,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8910637,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "97516eaa35c32928907f4335a6454f53a48d44c39d6d0cb0c2286622362027d5",
+      "normalizedAfterSha256": "97516eaa35c32928907f4335a6454f53a48d44c39d6d0cb0c2286622362027d5"
+    },
+    "14-spectral-norm": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/14-spectral-norm",
+        "bytes": 10139888,
+        "sha256": "ca1b9c5c46b7dcb2318a3453e5f71a0244c5708e2c99ba2b3f4fb17bcdccc2d2"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/14-spectral-norm",
+        "bytes": 10139888,
+        "sha256": "90e62c7163799b2273df7ef59714e12561dafd8c2998aaeb6782f06705cbd667"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8900198,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8900198,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "3de509436ae3e11f546f59fe609848ec3872d8c54d33f756e6d1df40b3cb5b9f",
+      "normalizedAfterSha256": "3de509436ae3e11f546f59fe609848ec3872d8c54d33f756e6d1df40b3cb5b9f"
+    },
+    "15-crc32": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/15-crc32",
+        "bytes": 10123152,
+        "sha256": "5133460688533ed10b31080c69bd0660516e1c8c2217345684d7b7732eb78184"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/15-crc32",
+        "bytes": 10123152,
+        "sha256": "4bcc65ffd964d3de4cac58d594052584a811daef601cb7e45c0de0bf38fb8e58"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883492,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883492,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "4dc9b5d475642a45be9fabfbda000277582d757acb9552db092d7d7863fa77e0",
+      "normalizedAfterSha256": "4dc9b5d475642a45be9fabfbda000277582d757acb9552db092d7d7863fa77e0"
+    },
+    "20-sieve": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/20-sieve",
+        "bytes": 10118920,
+        "sha256": "ddcab3107d6896a074332c5d3fe73e5d81e379636bffe346d9286bbdf56e82f0"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/20-sieve",
+        "bytes": 10118920,
+        "sha256": "4f715b02cf297f1b211e13180f7250ac5283c9974c82affc6c405c2344f8bc39"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8879160,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8879160,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "8da63f775056c49d37ae78da989a936817646f7bdcf87387360a7fe88421cfc1",
+      "normalizedAfterSha256": "8da63f775056c49d37ae78da989a936817646f7bdcf87387360a7fe88421cfc1"
+    },
+    "21-matmul": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/21-matmul",
+        "bytes": 10135640,
+        "sha256": "4e6d72db2cc66ed71b4ae318a8414178e14bfa4761adbc93b7aa3466949d7bcf"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/21-matmul",
+        "bytes": 10135640,
+        "sha256": "936af721ec18ef5f4222a0aa89c50bf14dec2dd88645128786ee9affbbd3dc68"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8895856,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8895856,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "f7d8146bc03da81f94c5d274d3e1dba805967c64e4d3e12b3b8aae2d70c31b50",
+      "normalizedAfterSha256": "f7d8146bc03da81f94c5d274d3e1dba805967c64e4d3e12b3b8aae2d70c31b50"
+    },
+    "22-array-sort": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/22-array-sort",
+        "bytes": 10123160,
+        "sha256": "aba4d5357bf60be4fcae1da4ade81d398736a91c561a084ac40dac51698a3a05"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/22-array-sort",
+        "bytes": 10123160,
+        "sha256": "c90f69e7d3bfac00416133f6f1b14c37f9c908cc9316e892412355080d1e3f00"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883365,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883365,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "162392329b51c16d1af5aa1119ab7e16085a09dd649accda41b19ee902335d4a",
+      "normalizedAfterSha256": "162392329b51c16d1af5aa1119ab7e16085a09dd649accda41b19ee902335d4a"
+    },
+    "23-binary-trees": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/23-binary-trees",
+        "bytes": 10143968,
+        "sha256": "f638b9fa8bed291b6b2d233c04a8a37574adc7d8fe8efba719ea3cd703fa17cf"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/23-binary-trees",
+        "bytes": 10143968,
+        "sha256": "f91276e7d7e78672e61889b754c12317877efd447633453be7996e0f098ba2ef"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8904321,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8904321,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "7932870841ca3273a9e862820529f275d731e3f6b7a1d71828add705312e6c13",
+      "normalizedAfterSha256": "7932870841ca3273a9e862820529f275d731e3f6b7a1d71828add705312e6c13"
+    },
+    "24-map-set": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/24-map-set",
+        "bytes": 10123208,
+        "sha256": "8d26547368b1f55a9f9ebf001c65513138095b64fe89fc7b135e4f8e0c289cdd"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/24-map-set",
+        "bytes": 10123208,
+        "sha256": "56834a41ce733e9e6fd5b7bbe7a61a3e7188dc4d8b06f4ae258db4d69b3a7b9c"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883274,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8883274,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "8b877937bf6d3532ef85065ea4c44924445afc200d800fbd048d59488f514fbb",
+      "normalizedAfterSha256": "8b877937bf6d3532ef85065ea4c44924445afc200d800fbd048d59488f514fbb"
+    },
+    "30-string-build": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/30-string-build",
+        "bytes": 10173200,
+        "sha256": "25d5468f1aa0b9b93f471a9a1057787b1f22813782cb90a5fb2e2b1789293112"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/30-string-build",
+        "bytes": 10173200,
+        "sha256": "5397a96e37d3ed74a7134fe269d8eae65157177053430e2f9f76c41dfb9d3f22"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8928361,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8928361,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "a3222c234d47ce4f4686540ecac722184e13db3f2268d7df1ccf64c03a28400f",
+      "normalizedAfterSha256": "a3222c234d47ce4f4686540ecac722184e13db3f2268d7df1ccf64c03a28400f"
+    },
+    "31-json": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/31-json",
+        "bytes": 10233992,
+        "sha256": "c758775445c4ccca24a869b34aa17c481376aac5be919a6af06d052040cdc920"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/31-json",
+        "bytes": 10233992,
+        "sha256": "7212bb2220a66e5cb5bcea53ca893f0cb942c8a7767fe562317c23fc1feb3d80"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8985773,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8985773,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "25fe9ea81455deb71403bb8d6ffda42d974a44b89dab11d4d1f1ca3e10b88df6",
+      "normalizedAfterSha256": "25fe9ea81455deb71403bb8d6ffda42d974a44b89dab11d4d1f1ca3e10b88df6"
+    },
+    "32-regex": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/32-regex",
+        "bytes": 19009112,
+        "sha256": "583d0ee3765ceffbb76bc72902a0b30456419dabfe7f3ccf3cf6d86cf5fddd63"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/32-regex",
+        "bytes": 19009112,
+        "sha256": "dd2cc4a3f03899e3752791bf1011154d65aaed9f143637d8bf1f64f8f9d5a048"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14798492,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14798492,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "bd5a58486db9b298319e974f410bfa7e8eacab9aa4dbcce8de3f4e4b61832d08",
+      "normalizedAfterSha256": "bd5a58486db9b298319e974f410bfa7e8eacab9aa4dbcce8de3f4e4b61832d08"
+    },
+    "40-classes": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/40-classes",
+        "bytes": 10156480,
+        "sha256": "46869e4d785fb936baa8ab757a9be07675a4db1b9221b8d4c76fe71530c0d26e"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/40-classes",
+        "bytes": 10156480,
+        "sha256": "3b4f4db4b327e6103c5a388fb23da8b88c7beaf1183b51d4f56fe66006ccf2bb"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8915010,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8915010,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "76d0284681571683189eccce2a3ad3a2ed2a21e1b015326eef5fdf53de3cb143",
+      "normalizedAfterSha256": "76d0284681571683189eccce2a3ad3a2ed2a21e1b015326eef5fdf53de3cb143"
+    },
+    "41-closures": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/41-closures",
+        "bytes": 10131664,
+        "sha256": "97c5f15a02efbf3e20892c66a2ca3d9d20ba2f480a03cf2133fc3470994ca9df"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/41-closures",
+        "bytes": 10131664,
+        "sha256": "f5d47fbf465223b1ead86751cee5c18246f1a35ed992df144438363a797e85d6"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8892118,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8892118,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "8889b987512bc5f5fbf0bc0f7e66ff3322d7712dcd88e80e65581625a3dd9a35",
+      "normalizedAfterSha256": "8889b987512bc5f5fbf0bc0f7e66ff3322d7712dcd88e80e65581625a3dd9a35"
+    },
+    "42-async": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/42-async",
+        "bytes": 10202016,
+        "sha256": "4dcf98d5d250769962e8eba2e342e1124161a94fd6e35ec89a059c3a753021f1"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/42-async",
+        "bytes": 10202016,
+        "sha256": "cb3a5198f8fd18e0451e310a089b205495295d2bf40266631b20f91b28b47fc7"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8953518,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8953518,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "e9356ed3bea2e0dc42c4165d31dd40c3ba2589528a25dbde22a5d43d63d23f16",
+      "normalizedAfterSha256": "e9356ed3bea2e0dc42c4165d31dd40c3ba2589528a25dbde22a5d43d63d23f16"
+    },
+    "43-generators": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/43-generators",
+        "bytes": 10191120,
+        "sha256": "a4a42fce177a68324bc6c9f9d7efc295b30ca974a1bd4427c7fdd7de6363e857"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/43-generators",
+        "bytes": 10191120,
+        "sha256": "e1baacfa607a63b5d32fd40441b8a1a3301cd4e1588b7013a4d942b08d48b1ea"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8941032,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8941032,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "55d2cd70012b2f0ae5af1bbc1921be877f74551e0c029cae2517624457cb16e9",
+      "normalizedAfterSha256": "55d2cd70012b2f0ae5af1bbc1921be877f74551e0c029cae2517624457cb16e9"
+    },
+    "50-fs-io": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/50-fs-io",
+        "bytes": 19045968,
+        "sha256": "4a16bc270a00c9406a3e8c64a9d5e164d339121b6856c26b2b49900f316155ff"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/50-fs-io",
+        "bytes": 19045968,
+        "sha256": "39ac961dbe40ffee4abf2ccf47c8ba20805da7c3a18c38d61f4b774d88e000c2"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14826985,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14826985,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "7e1fc0f8947b372c784cadd0c3b5c0ee64fc768689b2506dfcf6fbe1f670a061",
+      "normalizedAfterSha256": "7e1fc0f8947b372c784cadd0c3b5c0ee64fc768689b2506dfcf6fbe1f670a061"
+    },
+    "51-pipeline": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-workloads/candidate/51-pipeline",
+        "bytes": 10194032,
+        "sha256": "6cbaae3ba8edc9058d7d6e4f659907952e8988044b7faa589ce5bcd944040265"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads/candidate/51-pipeline",
+        "bytes": 10194032,
+        "sha256": "19b80bc3ace9764221656a7a390e25b2df41eb19b2b4832cfbdc28759b8f00b4"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8951454,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 8951454,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "86286a05fcbdef97e1db0480de8dd8f4dc63f16f3d8d937b31575cbadcd31ce6",
+      "normalizedAfterSha256": "86286a05fcbdef97e1db0480de8dd8f4dc63f16f3d8d937b31575cbadcd31ce6"
+    }
+  },
+  "equivalent": true
+}

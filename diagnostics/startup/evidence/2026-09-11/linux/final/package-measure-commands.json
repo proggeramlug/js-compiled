@@ -1,0 +1,22 @@
+[
+  {
+    "name": "package-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/compare.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/package-startup/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/package-startup/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-workloads.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/package-workloads/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/package-workloads/measurements.json"
+    ],
+    "exitCode": 0
+  }
+]

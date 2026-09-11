@@ -1,0 +1,268 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:43:46.944Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "3aa8c5406cde64d998a6a45c56d826169ccba2cb",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-baseline",
+            "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+            "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate"
+          },
+          "runtimeEnv": {}
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/class-parent-throughput.ts"
+      ]
+    },
+    "node": {
+      "file": "/Users/amlug/.local/opt/node-v26.5.1-darwin-arm64/bin/node",
+      "bytes": 145265936,
+      "sha256": "87e9b1fed820a2683ea90f5871596edf605b7162519156856dacbfbad36d1d29",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "bytes": 136493176,
+          "sha256": "8e5bc22d6015c33764de08e65534f0e7042c82b0422d523381c41b1a8029cc2a",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-baseline",
+          "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a",
+            "bytes": 36815752,
+            "sha256": "6d5596249d398c40bb5cfa3ba77b38f059de84307e9e8f734d02b48278f887c3"
+          }
+        ],
+        "source": {
+          "root": "/Users/amlug/projects/perry/perry-startup-baseline",
+          "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "bytes": 136533720,
+          "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+          "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a",
+            "bytes": 36830248,
+            "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb"
+          }
+        ],
+        "source": {
+          "root": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": "diff --git a/scripts/verify_tiny_output.py b/scripts/verify_tiny_output.py\nindex 7289ceef1..c208ec921 100644\n--- a/scripts/verify_tiny_output.py\n+++ b/scripts/verify_tiny_output.py\n@@ -53,7 +53,19 @@ int perry_test_poll(struct pollfd *fds, nfds_t count, int timeout) {\n }\n int perry_test_verdict(void) { return mask == 15 ? 0 : 91; }\n ''')\n+# Include system headers before renaming the calls. glibc's fortified poll\n+# declaration can otherwise retain an asm(\"poll\") alias and bypass injection.\n+injected_helper = work / 'injected.c'\n+injected_helper.write_text('''#define _POSIX_C_SOURCE 200809L\n+#include <poll.h>\n+#include <unistd.h>\n+ssize_t perry_test_write(int, const void *, size_t);\n+int perry_test_poll(struct pollfd *, nfds_t, int);\n+#define write perry_test_write\n+#define poll perry_test_poll\n+#include ''' + json.dumps(str(helper)) + '\\n')\n receipt = {'source': str(helper), 'sourceSha256': hashlib.sha256(helper.read_bytes()).hexdigest(),\n+           'verifierSha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),\n            'work': str(work), 'commands': [], 'cases': {}, 'complete': False, 'passed': False}\n \n def run(argv):\n@@ -66,9 +78,8 @@ def run(argv):\n try:\n     for label, injected in [('normal', False), ('partial-eintr-eagain-poll-eintr', True)]:\n         obj = work / (label + '.o')\n-        argv = ['cc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-c', helper, '-o', obj]\n-        if injected:\n-            argv += ['-Dwrite=perry_test_write', '-Dpoll=perry_test_poll']\n+        argv = ['cc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-c',\n+                injected_helper if injected else helper, '-o', obj]\n         run(argv)\n         binary = work / label\n         argv = ['cc', '-std=c11', '-O2', main, obj, '-o', binary]\n"
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "class-parent-throughput",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/class-parent-throughput.ts",
+          "bytes": 629,
+          "sha256": "6d03398f53bc3ce278ff937a78219943b5bef316be0e11e0dc0299b7928460db"
+        },
+        "expected": {
+          "stdout": "RESULT 15000000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/baseline/class-parent-throughput"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/baseline/class-parent-throughput",
+              "bytes": 16489256,
+              "sha256": "4eb2a88fb615e39fb0710afd184e9f0b21d4435e998824e2d6c61ac688f943fa"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/candidate/class-parent-throughput"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/candidate/class-parent-throughput",
+              "bytes": 16505800,
+              "sha256": "5eb9f6b8f6052fbfc07bf57938bf1271b49fb933f477f72f1ef04e391d58980b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "code": {
+    "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/verify-class-throughput.mjs",
+    "bytes": 2514,
+    "sha256": "9440a2dfa38af39eeae2e63572a0c1098543f1bdb4c7937ce0e32363244d6953"
+  },
+  "startedAt": "2026-09-11T09:55:54.919Z",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M1 Max",
+    "kernel": "25.5.0",
+    "loadBefore": [
+      10.8994140625,
+      12.81396484375,
+      14.52294921875
+    ],
+    "loadAfter": [
+      10.89501953125,
+      12.7529296875,
+      14.48095703125
+    ]
+  },
+  "settings": {
+    "warmups": 5,
+    "pairedSamples": 10,
+    "slowdownThreshold": 0.03
+  },
+  "raw": {
+    "baseline": [
+      261.418625,
+      298.986166,
+      299.689667,
+      264.975625,
+      264.992416,
+      261.163458,
+      285.299792,
+      272.068583,
+      269.120625,
+      270.679709
+    ],
+    "candidate": [
+      274.116708,
+      283.592916,
+      281.375167,
+      272.654416,
+      267.743875,
+      266.229125,
+      269.475584,
+      268.093,
+      271.776,
+      274.749375
+    ]
+  },
+  "baseline": {
+    "min": 261.163458,
+    "max": 299.689667,
+    "mean": 274.83946660000004,
+    "median": 269.900167,
+    "stddev": 14.640554273348698,
+    "runs": 10,
+    "p90": 298.986166,
+    "samples": [
+      261.418625,
+      298.986166,
+      299.689667,
+      264.975625,
+      264.992416,
+      261.163458,
+      285.299792,
+      272.068583,
+      269.120625,
+      270.679709
+    ]
+  },
+  "candidate": {
+    "min": 266.229125,
+    "max": 283.592916,
+    "mean": 272.9806166,
+    "median": 272.215208,
+    "stddev": 5.756602430352275,
+    "runs": 10,
+    "p90": 281.375167,
+    "samples": [
+      274.116708,
+      283.592916,
+      281.375167,
+      272.654416,
+      267.743875,
+      266.229125,
+      269.475584,
+      268.093,
+      271.776,
+      274.749375
+    ]
+  },
+  "pairedDifference": {
+    "medianMs": 2.7034170000000017,
+    "ci95Ms": [
+      -15.393250000000023,
+      5.874228500000015
+    ]
+  },
+  "medianRatio": 1.0085773974345114,
+  "assessment": "no-slowdown-over-3pct-observed",
+  "passed": true,
+  "finishedAt": "2026-09-11T09:56:03.914Z"
+}

@@ -1,0 +1,139 @@
+{
+  "archive": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+  "sha256": "f60d52b43ad0bb497bc7e5d83c2a3dde83a66a720984991a2b32accc5a032d99",
+  "argv": [
+    "cc",
+    "-O3",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-I",
+    "/dev/shm/perry-startup-27c598181/results/memory-policy/mimalloc/include",
+    "/dev/shm/perry-startup-27c598181/perry/crates/perry-runtime/tests/fixtures/memory_profile_probe.c",
+    "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+    "-Wl,--gc-sections",
+    "-pthread",
+    "-ldl",
+    "-lrt",
+    "-lm",
+    "-o",
+    "/dev/shm/perry-startup-27c598181/results/production-memory-policy/probe"
+  ],
+  "build": {
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "cases": [
+    {
+      "name": "normal",
+      "env": {},
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "small",
+      "env": {
+        "PERRY_MEMORY_PROFILE": "small"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=0 early_thp_disabled=1\n",
+      "stderr": ""
+    },
+    {
+      "name": "default-name",
+      "env": {
+        "PERRY_MEMORY_PROFILE": "default"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "unknown-name",
+      "env": {
+        "PERRY_MEMORY_PROFILE": "unknown"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "normal-MIMALLOC_ALLOW_THP-0",
+      "env": {
+        "MIMALLOC_ALLOW_THP": "0"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=0 early_thp_disabled=1\n",
+      "stderr": ""
+    },
+    {
+      "name": "normal-MIMALLOC_ALLOW_THP-1",
+      "env": {
+        "MIMALLOC_ALLOW_THP": "1"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "normal-mimalloc_allow_thp-0",
+      "env": {
+        "mimalloc_allow_thp": "0"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=0 early_thp_disabled=1\n",
+      "stderr": ""
+    },
+    {
+      "name": "normal-mimalloc_allow_thp-1",
+      "env": {
+        "mimalloc_allow_thp": "1"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "small-MIMALLOC_ALLOW_THP-0",
+      "env": {
+        "MIMALLOC_ALLOW_THP": "0",
+        "PERRY_MEMORY_PROFILE": "small"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=0 early_thp_disabled=1\n",
+      "stderr": ""
+    },
+    {
+      "name": "small-MIMALLOC_ALLOW_THP-1",
+      "env": {
+        "MIMALLOC_ALLOW_THP": "1",
+        "PERRY_MEMORY_PROFILE": "small"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    },
+    {
+      "name": "small-mimalloc_allow_thp-0",
+      "env": {
+        "mimalloc_allow_thp": "0",
+        "PERRY_MEMORY_PROFILE": "small"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=0 early_thp_disabled=1\n",
+      "stderr": ""
+    },
+    {
+      "name": "small-mimalloc_allow_thp-1",
+      "env": {
+        "mimalloc_allow_thp": "1",
+        "PERRY_MEMORY_PROFILE": "small"
+      },
+      "exitCode": 0,
+      "stdout": "allow_thp=1 early_thp_disabled=0\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true
+}

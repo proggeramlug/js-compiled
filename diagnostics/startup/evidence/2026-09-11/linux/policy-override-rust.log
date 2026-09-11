@@ -1,0 +1,8 @@
+    Finished `perry-dev` profile [optimized] target(s) in 0.14s
+     Running unittests src/lib.rs (/dev/shm/perry-startup-27c598181/results/candidate-build/cargo-target/baseline/perry-dev/build/perry-runtime/9a4786527fafd976/out/perry_runtime-9a4786527fafd976)
+
+running 1 test
+test startup_memory_profile::linux::tests::allocator_policy_is_selected_before_gc_init ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 3526 filtered out; finished in 0.00s
+

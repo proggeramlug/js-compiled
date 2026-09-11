@@ -1,19 +1,19 @@
-# Automatic tiny-program specialization — proposal
+# Automatic tiny-program specialization — implemented design
 
-Requirements: automatic compiler selection with no user flag; strict, conservative eligibility; limited coverage is acceptable. This is a follow-up proposal, not implemented or included in the combined candidate `055281f08f1598fbe9c8071a4efd013ac591856d`.
+Implemented in [Perry PR #10066](https://github.com/PerryTS/perry/pull/10066). Requirements: automatic compiler selection with no user flag; strict, conservative eligibility; limited coverage is acceptable. The compiler/runtime implementation is pinned by the [campaign evidence](evidence/2026-09-11/REPORT.md).
 
-Ordinary `perry compile app.ts` runs an eligibility check. A proof selects the tiny implementation; an unsupported or unproven construct selects the normal compiler/runtime path. Ineligibility is not a compilation error. Verbose diagnostics should explain which path was selected and why, without requiring a user flag to enable specialization.
+Ordinary `perry compile app.ts` runs an eligibility check. A proof selects the tiny implementation; an unsupported or unproven construct selects the normal compiler/runtime path. Ineligibility is not a compilation error. Verbose diagnostics explain which path was selected and why, without requiring a user flag to enable specialization.
 
 ## Two independent requirements
 
 1. No asynchronous or lifecycle work: no tasks/microtasks, promises, timers, workers, native callbacks, dynamic loading, process listeners, finalizers, or host/plugin entry points.
 2. No managed heap requirement: the generated body and every reachable helper allocate no managed objects. Merely being synchronous or short is insufficient. A synchronous allocation loop still requires normal memory management.
 
-Version one should require **no managed allocations**, avoiding a speculative allocation budget. Static string bytes are emitted in read-only storage and printed by a minimal native helper. That helper must not pull in the ordinary console formatter, GC arena, class tables, mimalloc, root registration, or promise/event-loop machinery. OS/libc buffering is separate from the JS managed heap; its allocation must be measured rather than described as literally allocation-free.
+Version one requires **no managed allocations**, avoiding a speculative allocation budget. Static string bytes are emitted in read-only storage and printed by a minimal native helper. That helper must not pull in the ordinary console formatter, GC arena, class tables, mimalloc, root registration, or promise/event-loop machinery. OS/libc buffering is separate from the JS managed heap; its allocation must be measured rather than described as literally allocation-free.
 
 ## Initial accepted language subset
 
-Start with standalone executables containing an empty body or direct `console.log` / `console.error` calls with one statically known string argument. Allow immutable string bindings and constant templates only when a small evaluator proves every original expression is side-effect-free and the console receiver is the unshadowed builtin. This covers the benchmark’s ``const who = "world"; console.log(`hello, ${who}`)`` without runtime string allocation. Primitive arithmetic, numeric formatting and loops are later expansions, not implicitly permitted in the first version.
+The accepted subset is standalone executables containing an empty body or direct `console.log` / `console.error` calls with one statically known string argument. Allow immutable string bindings and constant templates only when a small evaluator proves every original expression is side-effect-free and the console receiver is the unshadowed builtin. This covers the benchmark’s ``const who = "world"; console.log(`hello, ${who}`)`` without runtime string allocation. Primitive arithmetic, numeric formatting and loops are later expansions, not implicitly permitted in the first version.
 
 Treat every other AST/HIR construct as ineligible by default. In particular, retain the normal runtime for imports (until transitive effect summaries exist), unknown calls, aliases, shadowing or writes to console, dynamic property access, getters/setters, objects/arrays/classes/closures, dynamic evaluation, async constructs, process lifecycle/trace APIs, exceptions requiring the ordinary runtime, and embedding/library targets. Eligibility analysis must inspect the entire program before unreachable-code elimination or constant folding can conceal an unsupported semantic effect.
 
@@ -32,9 +32,11 @@ Receiver provenance must be preserved before the current lowering collapses buil
 
 | Done | Step | Verification before closing |
 |---|---|---|
-| [ ] | T1: strict eligibility and automatic fallback | Positive fixtures qualify; every excluded construct uses normal runtime with an inspectable reason. No enabling flag. |
-| [ ] | T2: minimal entry and printing helper | Generated IR and linked symbols contain none of the excluded runtime facilities. |
-| [ ] | T3: output and fallback semantics | Node output/error cases pass; all 22 benchmarks still execute correctly under automatic selection. |
-| [ ] | T4: installed-package measurements | Clean npm install, Linux/macOS A/A and repeated A/B, exact hashes and raw timing/RSS/size evidence. |
+| [x] | T1: strict eligibility and automatic fallback | Positive fixtures qualify; every excluded construct uses normal runtime with an inspectable reason. No enabling flag. |
+| [x] | T2: minimal entry and printing helper | Generated IR and linked symbols contain none of the excluded runtime facilities. |
+| [x] | T3: output and fallback semantics | Node output/error cases pass; all 22 benchmarks still execute correctly under automatic selection. |
+| [x] | T4: installed-package measurements | Clean npm install, Linux/macOS A/A and repeated A/B, exact hashes and raw timing/RSS/size evidence. |
 
-Each step has a separate reviewable commit and evidence. CI verification belongs to the designated CI worker; do not wait for it in the implementation task.
+All four steps have local evidence on AMD Linux and macOS ARM64. T1–T3 cover 15 accepted and 13 fallback executable fixtures, 11 tiny-specific Rust tests, 22 Node benchmark oracles, generated IR/symbol inspection, and fault-injected native output. T4 uses a clean compressed npm pack/install, A/A calibration, two 100-pair A/B batches, and five RSS samples. See the linked campaign report for exact source identities and raw results. Intel is deferred at the user’s request; CI belongs to another worker.
+
+The helper uses two stack cursors and bounded native polling only when pipe/socket backpressure requires it; it does not introduce a JS event loop. It handles stdout and stderr independently to avoid a reader/writer handshake deadlock. UTF-16 is preserved until final UTF-8 conversion, including surrogate pairs across template substitutions. Analysis has explicit depth and aggregate-data bounds; exceeding them selects the normal pipeline.

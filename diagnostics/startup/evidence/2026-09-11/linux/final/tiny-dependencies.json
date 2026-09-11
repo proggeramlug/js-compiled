@@ -1,0 +1,29 @@
+{
+  "empty": {
+    "binary": {
+      "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/empty",
+      "bytes": 14256,
+      "sha256": "8a4f74c25644b8fd44640745273536eb31aee6765a764d9ae6f292179e07480e"
+    },
+    "segments": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n   1151\t    536\t      8\t   1695\t    69f\t/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/empty\n",
+    "dependencies": "\nDynamic section at offset 0x2e00 contains 24 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x000000000000000c (INIT)               0x1000\n 0x000000000000000d (FINI)               0x1134\n 0x0000000000000019 (INIT_ARRAY)         0x3df0\n 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x3df8\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x3a0\n 0x0000000000000005 (STRTAB)             0x458\n 0x0000000000000006 (SYMTAB)             0x3c8\n 0x000000000000000a (STRSZ)              136 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x3fc0\n 0x0000000000000007 (RELA)               0x520\n 0x0000000000000008 (RELASZ)             192 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              BIND_NOW\n 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE\n 0x000000006ffffffe (VERNEED)            0x4f0\n 0x000000006fffffff (VERNEEDNUM)         1\n 0x000000006ffffff0 (VERSYM)             0x4e0\n 0x000000006ffffff9 (RELACOUNT)          3\n 0x0000000000000000 (NULL)               0x0\n"
+  },
+  "noop": {
+    "binary": {
+      "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/noop",
+      "bytes": 14472,
+      "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+    },
+    "segments": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n   3054\t    672\t      8\t   3734\t    e96\t/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/noop\n",
+    "dependencies": "\nDynamic section at offset 0x2d88 contains 27 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x000000000000000c (INIT)               0x1000\n 0x000000000000000d (FINI)               0x15b8\n 0x0000000000000019 (INIT_ARRAY)         0x3d60\n 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x3d68\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x3a0\n 0x0000000000000005 (STRTAB)             0x518\n 0x0000000000000006 (SYMTAB)             0x3c8\n 0x000000000000000a (STRSZ)              235 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x3f78\n 0x0000000000000002 (PLTRELSZ)           192 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x748\n 0x0000000000000007 (RELA)               0x670\n 0x0000000000000008 (RELASZ)             216 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              BIND_NOW\n 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE\n 0x000000006ffffffe (VERNEED)            0x620\n 0x000000006fffffff (VERNEEDNUM)         1\n 0x000000006ffffff0 (VERSYM)             0x604\n 0x000000006ffffff9 (RELACOUNT)          4\n 0x0000000000000000 (NULL)               0x0\n"
+  },
+  "hello": {
+    "binary": {
+      "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/hello",
+      "bytes": 14472,
+      "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+    },
+    "segments": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n   3091\t    696\t      8\t   3795\t    ed3\t/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/hello\n",
+    "dependencies": "\nDynamic section at offset 0x2d90 contains 27 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x000000000000000c (INIT)               0x1000\n 0x000000000000000d (FINI)               0x15b8\n 0x0000000000000019 (INIT_ARRAY)         0x3d50\n 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x3d58\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x3a0\n 0x0000000000000005 (STRTAB)             0x518\n 0x0000000000000006 (SYMTAB)             0x3c8\n 0x000000000000000a (STRSZ)              235 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x3f80\n 0x0000000000000002 (PLTRELSZ)           192 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x760\n 0x0000000000000007 (RELA)               0x670\n 0x0000000000000008 (RELASZ)             240 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              BIND_NOW\n 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE\n 0x000000006ffffffe (VERNEED)            0x620\n 0x000000006fffffff (VERNEEDNUM)         1\n 0x000000006ffffff0 (VERSYM)             0x604\n 0x000000006ffffff9 (RELACOUNT)          5\n 0x0000000000000000 (NULL)               0x0\n"
+  }
+}

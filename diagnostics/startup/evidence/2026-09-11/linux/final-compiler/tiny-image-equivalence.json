@@ -1,0 +1,110 @@
+{
+  "beforeManifest": {
+    "file": "../results/final/package-startup/manifest.json",
+    "bytes": 8584,
+    "sha256": "7db4dea3a5b6c9113d390055bb15a5d01edc07fdd42a4bfb0a3cf8a319065c81"
+  },
+  "afterManifest": {
+    "file": "../results/json-verification/package-startup/manifest.json",
+    "bytes": 8812,
+    "sha256": "123a7192c13c15946cc35a3673f9372e46fe0bb4fea112f53b3ac28f678c6894"
+  },
+  "verifier": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "empty": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/empty",
+        "bytes": 14256,
+        "sha256": "8a4f74c25644b8fd44640745273536eb31aee6765a764d9ae6f292179e07480e"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/empty",
+        "bytes": 14256,
+        "sha256": "8a4f74c25644b8fd44640745273536eb31aee6765a764d9ae6f292179e07480e"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "f70bab24b4c7015dc212f302ff081578e1d4cbe75856ba12eaecf072cd45a9eb",
+      "normalizedAfterSha256": "f70bab24b4c7015dc212f302ff081578e1d4cbe75856ba12eaecf072cd45a9eb"
+    },
+    "noop": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/noop",
+        "bytes": 14472,
+        "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/noop",
+        "bytes": 14472,
+        "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "bc521f40168e4909ba7240ec8c3a0d4ed6a4a6ede138a26439970958f762c029",
+      "normalizedAfterSha256": "bc521f40168e4909ba7240ec8c3a0d4ed6a4a6ede138a26439970958f762c029"
+    },
+    "hello": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/package-startup/candidate/hello",
+        "bytes": 14472,
+        "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/hello",
+        "bytes": 14472,
+        "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "ELF build ID",
+          "offset": 856,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "99a9b45cd206793b813c3e7a4892fb3798a810b302c93dc5f41e02cd0b118002",
+      "normalizedAfterSha256": "99a9b45cd206793b813c3e7a4892fb3798a810b302c93dc5f41e02cd0b118002"
+    }
+  },
+  "equivalent": true
+}

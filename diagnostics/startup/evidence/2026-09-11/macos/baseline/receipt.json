@@ -1,0 +1,22 @@
+{
+  "source": "/Users/amlug/projects/perry/perry-startup-baseline",
+  "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+  "cargoTargetDir": "/Users/amlug/projects/perry/perry-startup-baseline/target/startup-baseline",
+  "artifacts": [
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+      "sha256": "8e5bc22d6015c33764de08e65534f0e7042c82b0422d523381c41b1a8029cc2a",
+      "bytes": 136493176
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a",
+      "sha256": "6d5596249d398c40bb5cfa3ba77b38f059de84307e9e8f734d02b48278f887c3",
+      "bytes": 36815752
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_stdlib.a",
+      "sha256": "082bfcd6b78a432c9d07b39f38118a716f2097ae4842db979fcd4dfa7c1cb3ea",
+      "bytes": 76655752
+    }
+  ]
+}

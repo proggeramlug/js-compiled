@@ -1,0 +1,134 @@
+{
+  "sourceCommit": "27c598181dfb331d72a798754641082584028df0",
+  "work": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax",
+  "platformPackage": "@perryts/perry-darwin-arm64",
+  "artifacts": [
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+      "bytes": 136533720,
+      "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a",
+      "bytes": 36830248,
+      "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_stdlib.a",
+      "bytes": 76668856,
+      "sha256": "3823b0c61503b79d5c331f94286dea3861262c44807f36fde2d9e3065f2113cc"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime_core.a",
+      "bytes": 24625880,
+      "sha256": "386a4e037d57a3676f71be857caf75daf18246eb4aa32148d8726683d5b2c31d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "bash",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/stage/scripts/stage-npm.sh",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/artifacts"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/stage",
+      "env": {
+        "SKIP_MISSING": "1"
+      },
+      "log": "stage.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--pack-destination",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/stage/npm/perry",
+      "env": {},
+      "log": "perry-pack.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pack",
+        "--json",
+        "--pack-destination",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/stage/npm/perry-darwin-arm64",
+      "env": {},
+      "log": "perry-darwin-arm64-pack.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "init",
+        "-y"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install",
+      "env": {},
+      "log": "npm-init.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "pkg",
+        "set",
+        "type=module"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install",
+      "env": {},
+      "log": "npm-module-type.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "npm",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/perryts-perry-0.5.1532.tgz",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/perryts-perry-darwin-arm64-0.5.1532.tgz"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install",
+      "env": {},
+      "log": "npm-install.log",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/.bin/perry",
+        "--version"
+      ],
+      "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install",
+      "env": {},
+      "log": "installed-wrapper-version.log",
+      "exitCode": 0
+    }
+  ],
+  "tarballs": [
+    {
+      "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/perryts-perry-0.5.1532.tgz",
+      "bytes": 7209,
+      "sha256": "b763d5f75196f3b150b6c260ef4ef5b97bc7cbfa25ef4ce7fbc8008c340cc6e0"
+    },
+    {
+      "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/perryts-perry-darwin-arm64-0.5.1532.tgz",
+      "bytes": 79064684,
+      "sha256": "21f0ebced2eac9ae233b5080f522da9c24b368f371e686e0361206aafbb1d7b4"
+    }
+  ],
+  "installedCompiler": {
+    "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+    "bytes": 136533720,
+    "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074"
+  },
+  "ready": true
+}

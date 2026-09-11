@@ -1,0 +1,102 @@
+{
+  "source": "/Users/amlug/projects/perry/perry-startup-release-candidate/crates/perry/src/commands/compile/tiny_program/output.c",
+  "sourceSha256": "b83c0d7cb38a0a92d280cb892f6eb033a3291bdf78987a680289c0dae4124409",
+  "verifierSha256": "7d6a3991d5af2a9153c707a51c57b207c6635de60ff6f79cccf89a1511cf6a9f",
+  "work": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5",
+  "commands": [
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/crates/perry/src/commands/compile/tiny_program/output.c",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/normal.o"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/main.c",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/normal.o",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/normal"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/normal"
+      ],
+      "exitCode": 0,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/injected.c",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/partial-eintr-eagain-poll-eintr.o"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/main.c",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/partial-eintr-eagain-poll-eintr.o",
+        "-o",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/partial-eintr-eagain-poll-eintr",
+        "-DINJECT=1",
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/faults.c"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-tiny-output-faults-nkyo8ha5/partial-eintr-eagain-poll-eintr"
+      ],
+      "exitCode": 0,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    }
+  ],
+  "cases": {
+    "normal": {
+      "passed": true,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    },
+    "partial-eintr-eagain-poll-eintr": {
+      "passed": true,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    }
+  },
+  "complete": true,
+  "passed": true
+}

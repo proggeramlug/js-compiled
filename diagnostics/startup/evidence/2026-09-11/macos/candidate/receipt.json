@@ -1,0 +1,28 @@
+{
+  "source": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+  "commit": "27c598181dfb331d72a798754641082584028df0",
+  "cargoTargetDir": "/Users/amlug/projects/perry/perry-startup-release-candidate/target/startup-isolated",
+  "coreTargetDir": "/Users/amlug/projects/perry/perry-startup-release-candidate/target/startup-final-core-core",
+  "artifacts": [
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+      "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074",
+      "bytes": 136533720
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a",
+      "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb",
+      "bytes": 36830248
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_stdlib.a",
+      "sha256": "3823b0c61503b79d5c331f94286dea3861262c44807f36fde2d9e3065f2113cc",
+      "bytes": 76668856
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime_core.a",
+      "sha256": "386a4e037d57a3676f71be857caf75daf18246eb4aa32148d8726683d5b2c31d",
+      "bytes": 24625880
+    }
+  ]
+}

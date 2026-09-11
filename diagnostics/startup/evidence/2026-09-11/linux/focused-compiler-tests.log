@@ -1,0 +1,277 @@
+   Compiling zeroize v1.8.2
+   Compiling portable-atomic v1.13.1
+   Compiling stable_deref_trait v1.2.1
+   Compiling typenum v1.20.1
+   Compiling zerofrom v0.1.8
+   Compiling yoke v0.8.3
+   Compiling serde v1.0.229
+   Compiling zerovec v0.11.8
+   Compiling once_cell v1.21.4
+   Compiling writeable v0.6.4
+   Compiling tinystr v0.8.4
+   Compiling litemap v0.8.2
+   Compiling potential_utf v0.1.5
+   Compiling getrandom v0.3.4
+   Compiling icu_locale_core v2.3.0
+   Compiling zerotrie v0.2.5
+   Compiling memchr v2.8.1
+   Compiling subtle v2.6.1
+   Compiling icu_collections v2.2.0
+   Compiling percent-encoding v2.3.2
+   Compiling getrandom v0.2.17
+   Compiling num-traits v0.2.19
+   Compiling icu_provider v2.3.1
+   Compiling const-oid v0.9.6
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling generic-array v0.14.7
+   Compiling form_urlencoded v1.2.2
+   Compiling tracing-core v0.1.36
+   Compiling bitflags v2.12.1
+   Compiling num-integer v0.1.46
+   Compiling idna_adapter v1.2.2
+   Compiling idna v1.1.0
+   Compiling tracing v0.1.44
+   Compiling url v2.5.8
+   Compiling ahash v0.8.12
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling hashbrown v0.14.5
+   Compiling digest v0.10.7
+   Compiling num-bigint v0.4.6
+   Compiling triomphe v0.1.15
+   Compiling hstr v3.0.6
+   Compiling swc_atoms v9.0.3
+   Compiling rand_core v0.6.4
+   Compiling bytes-str v0.2.7
+   Compiling base64ct v1.8.3
+   Compiling serde_json v1.0.151
+   Compiling swc_common v18.0.1
+   Compiling pem-rfc7468 v0.7.0
+   Compiling der v0.7.10
+   Compiling hybrid-array v0.4.12
+   Compiling swc_ecma_ast v19.0.0
+   Compiling spki v0.7.3
+   Compiling pkcs8 v0.10.2
+   Compiling log v0.4.34
+   Compiling futures-core v0.3.34
+   Compiling scopeguard v1.2.0
+   Compiling parking_lot_core v0.9.12
+   Compiling lock_api v0.4.14
+   Compiling crypto-common v0.2.2
+   Compiling perry-diagnostics v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-diagnostics)
+   Compiling errno v0.3.14
+   Compiling cpufeatures v0.2.17
+   Compiling signal-hook-registry v1.4.8
+   Compiling parking_lot v0.12.5
+   Compiling http v1.4.1
+   Compiling perry-api-manifest v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-api-manifest)
+   Compiling swc_ecma_visit v19.0.0
+   Compiling swc_ecma_parser v32.0.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling rustls-pki-types v1.14.1
+   Compiling mio v1.2.1
+   Compiling futures-sink v0.3.34
+   Compiling cmov v0.5.4
+   Compiling ctutils v0.4.2
+   Compiling tokio v1.53.1
+   Compiling crossbeam-utils v0.8.21
+   Compiling block-buffer v0.12.0
+   Compiling signature v2.2.0
+   Compiling hmac v0.12.1
+   Compiling untrusted v0.9.0
+   Compiling ring v0.17.14
+   Compiling perry-parser v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-parser)
+   Compiling perry-hir v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-hir)
+   Compiling digest v0.11.3
+   Compiling ff v0.13.1
+   Compiling base16ct v0.2.0
+   Compiling futures-task v0.3.34
+   Compiling futures-io v0.3.34
+   Compiling slab v0.4.12
+   Compiling futures-util v0.3.34
+   Compiling sec1 v0.7.3
+   Compiling group v0.13.0
+   Compiling httparse v1.10.1
+   Compiling rustls-webpki v0.103.13
+   Compiling hkdf v0.12.4
+   Compiling http-body v1.0.1
+   Compiling crypto-bigint v0.5.5
+   Compiling ipnet v2.12.0
+   Compiling spin v0.9.8
+   Compiling lazy_static v1.5.0
+   Compiling elliptic-curve v0.13.8
+   Compiling rustls v0.23.43
+   Compiling sha2 v0.10.9
+   Compiling data-encoding v2.11.0
+   Compiling linux-raw-sys v0.12.1
+   Compiling tower-service v0.3.3
+   Compiling try-lock v0.2.5
+   Compiling want v0.3.1
+   Compiling rustix v1.1.4
+   Compiling rfc6979 v0.4.0
+   Compiling futures-channel v0.3.32
+   Compiling webpki-roots v1.0.9
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling atomic-waker v1.1.2
+   Compiling hashbrown v0.17.1
+   Compiling time-core v0.1.9
+   Compiling simd-adler32 v0.3.9
+   Compiling deranged v0.5.8
+   Compiling powerfmt v0.2.0
+   Compiling utf8parse v0.2.2
+   Compiling num-conv v0.2.2
+   Compiling anstyle-parse v1.0.0
+   Compiling indexmap v2.14.1
+   Compiling time v0.3.55
+   Compiling hyper v1.11.1
+   Compiling tokio-rustls v0.26.4
+   Compiling curve25519-dalek v4.1.3
+   Compiling rand_chacha v0.9.0
+   Compiling rand v0.8.7
+   Compiling ecdsa v0.16.9
+   Compiling crc32fast v1.5.0
+   Compiling crossbeam-epoch v0.9.20
+   Compiling primeorder v0.13.6
+   Compiling sha2 v0.11.0
+   Compiling ed25519 v2.2.3
+   Compiling crossbeam-channel v0.5.15
+   Compiling sync_wrapper v1.0.2
+   Compiling mio v0.8.11
+   Compiling inout v0.2.2
+   Compiling num-iter v0.1.45
+   Compiling aho-corasick v1.1.4
+   Compiling anstyle-query v1.1.5
+   Compiling tower-layer v0.3.3
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle v1.0.14
+   Compiling adler2 v2.0.1
+   Compiling colorchoice v1.0.5
+   Compiling anstream v1.0.0
+   Compiling miniz_oxide v0.9.1
+   Compiling regex-automata v0.4.18
+   Compiling tower v0.5.3
+   Compiling num-bigint-dig v0.8.6
+   Compiling cipher v0.5.2
+   Compiling notify v6.1.1
+   Compiling ed25519-dalek v2.2.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling hickory-proto v0.26.1
+   Compiling rand v0.9.4
+   Compiling hyper-util v0.1.20
+   Compiling hmac v0.13.0
+   Compiling sha1 v0.10.6
+   Compiling pkcs1 v0.7.5
+   Compiling console v0.16.4
+   Compiling par-core v2.0.0
+   Compiling num_cpus v1.17.0
+   Compiling mime v0.3.17
+   Compiling strsim v0.11.1
+   Compiling fastrand v2.4.1
+   Compiling leb128fmt v0.1.0
+   Compiling clap_lex v1.1.0
+   Compiling bumpalo v3.20.3
+   Compiling cpubits v0.1.1
+   Compiling libbz2-rs-sys v0.2.5
+   Compiling zlib-rs v0.6.4
+   Compiling unicase v2.9.0
+   Compiling mime_guess v2.0.5
+   Compiling bzip2 v0.6.1
+   Compiling perry-runtime v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-runtime)
+   Compiling aes v0.9.1
+   Compiling zopfli v0.8.3
+   Compiling flate2 v1.1.10
+   Compiling clap_builder v4.6.6
+   Compiling wasm-encoder v0.258.0
+   Compiling tempfile v3.27.0
+   Compiling swc_ecma_utils v25.0.0
+   Compiling inkwell v0.9.0
+   Compiling rsa v0.9.10
+   Compiling tungstenite v0.29.0
+   Compiling pbkdf2 v0.13.0
+   Compiling hyper-rustls v0.27.9
+   Compiling rayon-core v1.13.0
+   Compiling regex v1.13.1
+   Compiling tower-http v0.6.11
+   Compiling lzma-rust2 v0.16.4
+   Compiling p256 v0.13.2
+   Compiling p384 v0.13.1
+   Compiling simple_asn1 v0.6.4
+   Compiling serde_urlencoded v0.7.1
+   Compiling perry-codegen-js v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-js)
+   Compiling xattr v1.6.1
+   Compiling webpki-roots v0.26.11
+   Compiling http-body-util v0.1.5
+   Compiling sha1 v0.11.0
+   Compiling pem v3.0.6
+   Compiling swc_ecma_parser v29.0.2
+   Compiling is-terminal v0.4.17
+   Compiling termcolor v1.4.1
+   Compiling deflate64 v0.1.12
+   Compiling ppmd-rust v1.4.0
+   Compiling constant_time_eq v0.4.2
+   Compiling unit-prefix v0.5.2
+   Compiling shell-words v1.1.1
+   Compiling hex v0.4.3
+   Compiling typed-path v0.12.3
+   Compiling humantime v2.3.0
+   Compiling semver v1.0.28
+   Compiling iana-time-zone v0.1.65
+warning: function `relevant_box_roots` is never used
+    --> crates/perry-runtime/src/box.rs:1020:4
+     |
+1020 | fn relevant_box_roots() -> Vec<usize> {
+     |    ^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling chrono v0.4.45
+   Compiling swc_ecma_transforms_base v32.0.0
+   Compiling env_logger v0.10.2
+   Compiling zip v8.6.0
+   Compiling dialoguer v0.12.0
+   Compiling indicatif v0.18.6
+   Compiling object v0.37.3
+   Compiling clap v4.6.6
+   Compiling jsonwebtoken v11.0.0
+   Compiling reqwest v0.12.28
+   Compiling tokio-tungstenite v0.29.0
+   Compiling tar v0.4.46
+   Compiling perry-codegen-wasm v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-wasm)
+   Compiling rayon v1.12.0
+   Compiling perry-codegen v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen)
+   Compiling perry-codegen-wear-tiles v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-wear-tiles)
+   Compiling perry-transform v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-transform)
+   Compiling perry-codegen-swiftui v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-swiftui)
+   Compiling perry-codegen-glance v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-glance)
+   Compiling perry-codegen-arkts v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-codegen-arkts)
+   Compiling fslock v0.2.1
+   Compiling dotenvy v0.15.7
+warning: `perry-runtime` (lib) generated 1 warning
+   Compiling perry-updater v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry-updater)
+   Compiling perry v0.5.1532 (/dev/shm/perry-startup-27c598181/perry/crates/perry)
+    Finished `perry-dev` profile [optimized] target(s) in 2m 41s
+     Running unittests src/main.rs (/dev/shm/perry-startup-27c598181/results/candidate-build/cargo-target/baseline/perry-dev/build/perry/6801126570f338b7/out/perry-6801126570f338b7)
+
+running 17 tests
+test commands::compile::build_cache::tests::codegen_env_vars_are_build_cache_inputs ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::core_profile_uses_the_same_feature_contract_as_packaging ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::global_object_values_keep_optional_engines_available ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::native_modules_callbacks_and_custom_features_keep_existing_archives ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::optional_engines_and_dynamic_code_keep_the_full_fallback ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::runtime_owned_native_imports_keep_full_without_a_stdlib_marker ... ok
+test commands::compile::tiny_program::analysis::tests::escaped_identifiers_do_not_hide_receiver_shadowing ... ok
+test commands::compile::tiny_program::analysis::tests::every_unproven_construct_falls_back ... ok
+test commands::compile::tiny_program::analysis::tests::expansion_is_bounded ... ok
+test commands::compile::tiny_program::analysis::tests::preserves_bytes_and_erased_string_assertions ... ok
+test commands::compile::tiny_program::analysis::tests::proves_empty_and_constant_template_output ... ok
+test commands::compile::tiny_program::analysis::tests::template_substitution_preserves_surrogate_pairs ... ok
+test commands::compile::tiny_program::emit::tests::empty_entry_has_no_external_dependencies ... ok
+test commands::compile::tiny_program::emit::tests::output_has_only_the_audited_native_helper_dependency ... ok
+test commands::compile::tiny_program::tests::host_callbacks_plugins_and_graph_extensions_cannot_bypass_the_proof ... ok
+test commands::compile::tiny_program::tests::ordinary_native_build_needs_no_enabling_switch ... ok
+test commands::compile::tiny_program::tests::unsupported_build_requests_keep_the_normal_pipeline ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 1086 filtered out; finished in 0.01s
+

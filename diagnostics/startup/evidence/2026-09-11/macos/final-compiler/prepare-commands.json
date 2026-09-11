@@ -1,0 +1,42 @@
+[
+  {
+    "name": "prepare-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/startup",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/startup-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/workloads",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/workloads-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-fixtures",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/fixtures",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/fixtures-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-class-throughput",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/class-throughput",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/class-throughput-config.json"
+    ],
+    "exitCode": 0
+  }
+]

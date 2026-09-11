@@ -1,0 +1,55 @@
+[
+  {
+    "name": "package",
+    "argv": [
+      "python3",
+      "diagnostics/startup/prepare-core-package.py",
+      "/dev/shm/perry-startup-27c598181/perry",
+      "/dev/shm/perry-startup-27c598181/results/json-final",
+      "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime_core.a",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-prepare-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package/core-startup-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-prepare-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package-workloads",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package/core-workloads-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-selection",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-core-package.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package/package-receipt.json",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package/verification.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-tiny",
+    "argv": [
+      "python3",
+      "/dev/shm/perry-startup-27c598181/perry/scripts/verify_tiny_program.py",
+      "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny"
+    ],
+    "exitCode": 0
+  }
+]

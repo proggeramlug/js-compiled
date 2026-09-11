@@ -1,0 +1,967 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T10:25:36.108Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "172a9144e072101ee4d3197677d456e3cd075a92",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [],
+      "variants": {
+        "baseline": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "buildEnv": {
+            "PERRY_NO_AUTO_OPTIMIZE": "1"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "buildEnv": {},
+          "runtimeEnv": {}
+        }
+      }
+    },
+    "node": {
+      "file": "/root/perry-toolchains/node-v26.5.1-linux-x64/bin/node",
+      "bytes": 148011296,
+      "sha256": "fb48e77df2f8e92fedfec39afa60a5f41563441f6b61316ada5fb295a431c2c6",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "bytes": 125058040,
+          "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {
+          "PERRY_NO_AUTO_OPTIMIZE": "1"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "d42e677bfcabd9409e297f557efe445bf2ce7d3e1cc2ce7626928895acf846c2"
+          }
+        ],
+        "source": null
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "bytes": 125058040,
+          "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {},
+        "runtimeEnv": {},
+        "runtimeLibraries": [],
+        "source": null
+      }
+    },
+    "cases": [
+      {
+        "name": "empty",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/empty.ts",
+          "bytes": 17,
+          "sha256": "3dda1da422ab7dc2c55391cddc57156447c4ea8911cf6f3bb2e2111c82d1c5a7"
+        },
+        "expected": {
+          "stdout": "",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/empty"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/empty",
+              "bytes": 18996352,
+              "sha256": "4f1bcdf803fc292a1b8dd453f660ec1d0fb40739dccb7c964b8dcc217d65b238"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/empty"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/empty",
+              "bytes": 14256,
+              "sha256": "8a4f74c25644b8fd44640745273536eb31aee6765a764d9ae6f292179e07480e"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-empty"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-empty",
+              "bytes": 23896,
+              "sha256": "99290c757e8c2b0ac464995b5764e6f7a620c147d76f5ba259921684c194f199"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "noop",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/00-noop.ts",
+          "bytes": 59,
+          "sha256": "d8659d84d989e811ba79d9e48c3d58f43928ea03c60cb3671a3c634346f36719"
+        },
+        "expected": {
+          "stdout": "RESULT 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/noop",
+              "bytes": 19000784,
+              "sha256": "9ea8add6159d16dbef69100fc007e7ddd885047d135e15c2769d2c81a0ebd21f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/noop",
+              "bytes": 14472,
+              "sha256": "6fc506046402b1dd8f8b7e8ba57d56770c7bbc4762178f258f5f3ed5f745528a"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-noop",
+              "bytes": 40944,
+              "sha256": "2617f433ce27634be69f6c796334eafe73d6cce7c8e18c2b53a22b5b2b8f310b"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "hello",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/01-hello.ts",
+          "bytes": 126,
+          "sha256": "62132ab54e719137430bea7f7e944ff33a47b8c49bf0acbbc15e6a134c12a57c"
+        },
+        "expected": {
+          "stdout": "hello, world\nRESULT 1\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/baseline/hello",
+              "bytes": 19013096,
+              "sha256": "94b0852860e1219b178d944247ec3eda415f130e51e583143fd30d9ae10e131e"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/candidate/hello",
+              "bytes": 14472,
+              "sha256": "6ba113b8dff267440fc10b552158a4428ff03fdf93e41b5ca8ee139d418a71ac"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package-startup/scriptc-hello",
+              "bytes": 41192,
+              "sha256": "769847c9a9ae2eb7c97679c12f073b5f3dd4fab56a60a76984cacddf4834d8a4"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "receipt": {
+    "sourceCommit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+    "work": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a",
+    "platformPackage": "@perryts/perry-linux-x64",
+    "artifacts": [
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+        "bytes": 125058040,
+        "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054"
+      },
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime.a",
+        "bytes": 53318960,
+        "sha256": "d42e677bfcabd9409e297f557efe445bf2ce7d3e1cc2ce7626928895acf846c2"
+      },
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_stdlib.a",
+        "bytes": 113203578,
+        "sha256": "8f28861eaa374579126792347f8f8b9945a1a67bf150583517a6013cec410f76"
+      },
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime_core.a",
+        "bytes": 35715048,
+        "sha256": "a16ade6fea17902f2ea375511f3c636d401d659a5d669fba561efa125c1c61f4"
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "bash",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/scripts/stage-npm.sh",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/artifacts"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage",
+        "env": {
+          "SKIP_MISSING": "1"
+        },
+        "log": "stage.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pack",
+          "--json",
+          "--pack-destination",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/npm/perry",
+        "env": {},
+        "log": "perry-pack.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pack",
+          "--json",
+          "--pack-destination",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/stage/npm/perry-linux-x64",
+        "env": {},
+        "log": "perry-linux-x64-pack.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "init",
+          "-y"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+        "env": {},
+        "log": "npm-init.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pkg",
+          "set",
+          "type=module"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+        "env": {},
+        "log": "npm-module-type.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-0.5.1532.tgz",
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-linux-x64-0.5.1532.tgz"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+        "env": {},
+        "log": "npm-install.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.bin/perry",
+          "--version"
+        ],
+        "cwd": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install",
+        "env": {},
+        "log": "installed-wrapper-version.log",
+        "exitCode": 0
+      }
+    ],
+    "tarballs": [
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-0.5.1532.tgz",
+        "bytes": 7209,
+        "sha256": "b763d5f75196f3b150b6c260ef4ef5b97bc7cbfa25ef4ce7fbc8008c340cc6e0"
+      },
+      {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/perryts-perry-linux-x64-0.5.1532.tgz",
+        "bytes": 75536711,
+        "sha256": "aa77ed05391761311f2c6e2153194a1f83af526432c034535b22c511e839f315"
+      }
+    ],
+    "installedCompiler": {
+      "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+      "bytes": 125058040,
+      "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054"
+    },
+    "ready": true
+  },
+  "sizes": {
+    "empty": {
+      "baseline": 18996352,
+      "candidate": 14256,
+      "savedBytes": 18982096,
+      "smaller": true
+    },
+    "noop": {
+      "baseline": 19000784,
+      "candidate": 14472,
+      "savedBytes": 18986312,
+      "smaller": true
+    },
+    "hello": {
+      "baseline": 19013096,
+      "candidate": 14472,
+      "savedBytes": 18998624,
+      "smaller": true
+    }
+  },
+  "fixtures": {
+    "core-exceptions": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts",
+        "bytes": 73,
+        "sha256": "a1e3687c2874508f6712db10088a8e90af1e0bd775b2ac51f66e72647a48e113"
+      },
+      "oracle": {
+        "wallMs": 37.801527,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "caught\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 548.683702,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: statement is outside the proven subset\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3624818-1789122391844772125/core_exceptions_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts.bin\nBinary size: 9.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts name=core-exceptions.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: using prebuilt core runtime: /root/.cache/perry/libs/5c3622-6aa3d71f/libperry_runtime_core.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3624818-1789122391844772125/core_exceptions_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/5c3622-6aa3d71f/libperry_runtime_core.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 182892,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/core-exceptions.ts.bin",
+        "bytes": 10147760,
+        "sha256": "362ca9fa980b0431355e4691b06b7bcfc2083e49ddd883854f89da9e3d58cb8c"
+      },
+      "run": {
+        "wallMs": 3.305,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "caught\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "regex": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts",
+        "bytes": 31,
+        "sha256": "953f2fbfb56f15c3ed75ce1e5f1cc36d4409eccccded303de6bba0196a5db692"
+      },
+      "oracle": {
+        "wallMs": 35.656172,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 769.871079,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3624881-1789122392440760153/regex_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts name=regex.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3624881-1789122392440760153/regex_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 235952,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/regex.ts.bin",
+        "bytes": 19008992,
+        "sha256": "48ffe4c7924134513fe841200aab91b8a16a40940976bd0e9f92edad228e0d8d"
+      },
+      "run": {
+        "wallMs": 8.081857,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "intl": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts",
+        "bytes": 60,
+        "sha256": "1a88ae8f2015ef7bc1ae1f7cd97af4f596fcd7694722c69cd606a4dbb9ba651c"
+      },
+      "oracle": {
+        "wallMs": 44.864001,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "1,234.5\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 770.438068,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3624956-1789122393275361399/intl_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts name=intl.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3624956-1789122393275361399/intl_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 232440,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/intl.ts.bin",
+        "bytes": 19029496,
+        "sha256": "814360989ef91cfe3bf41c6adac5a07a363031c6aa18ae716f2412f58759fb07"
+      },
+      "run": {
+        "wallMs": 8.575388,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "1,234.5\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "temporal": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts",
+        "bytes": 63,
+        "sha256": "e25964125f68ac220b5ad81e699817b27689ccc4c29ad8d3288056e2c611ce29"
+      },
+      "oracle": {
+        "wallMs": 41.312772,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "2020-01-02\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 770.622462,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625022-1789122394112799651/temporal_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts name=temporal.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625022-1789122394112799651/temporal_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 238456,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/temporal.ts.bin",
+        "bytes": 19029496,
+        "sha256": "f4ca87d5520d2e5ed06e962231ca6ced73a653113c8e114d3c88c268c12bba6b"
+      },
+      "run": {
+        "wallMs": 9.071124,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "2020-01-02\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "dynamic-eval": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts",
+        "bytes": 90,
+        "sha256": "1f9d52c7f7bef7bfaa02562d744b14ac82ec75e52a5cb0e1382f16218f8754c6"
+      },
+      "oracle": {
+        "wallMs": 38.269981,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "42\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 777.913462,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625105-1789122394946863795/dynamic_eval_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts name=dynamic-eval.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625105-1789122394946863795/dynamic_eval_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n\nnotice: 1 ahead-of-time-unsupported site handled at runtime:\n  - new Function(...)      /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts:1   → runtime interpreter (#6559)\n  Pass --strict-eval/--strict-dynamic-import (or set perry.strict = true) to make these a compile-time error instead.\n\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 233108,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/dynamic-eval.ts.bin",
+        "bytes": 19000808,
+        "sha256": "c5b2a992ee42ee80f568bf4fb68cc6b834fe47344f0548652df2db8266a5bad2"
+      },
+      "run": {
+        "wallMs": 10.326217,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "42\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-0": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts",
+        "bytes": 109,
+        "sha256": "783389f09443ad32b0789f25a818e7a2a9b27413fdcd93e47ed66d626e4fbb19"
+      },
+      "oracle": {
+        "wallMs": 41.959739,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 775.125588,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625171-1789122395793862815/computed_global_0_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts name=computed-global-0.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625171-1789122395793862815/computed_global_0_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 232160,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-0.ts.bin",
+        "bytes": 19000824,
+        "sha256": "db8ce362ff83a44d60d483f1d44398cad40dd4217ecbf8316766ec5c12f76471"
+      },
+      "run": {
+        "wallMs": 10.242961,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-1": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts",
+        "bytes": 105,
+        "sha256": "b6930163e1d09f06fdcd189b7e0a6173d7e4f896c77262f39e9fabd31ff283d7"
+      },
+      "oracle": {
+        "wallMs": 39.229823,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 777.491935,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625253-1789122396631992998/computed_global_1_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts name=computed-global-1.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625253-1789122396631992998/computed_global_1_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 233276,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-1.ts.bin",
+        "bytes": 19000824,
+        "sha256": "2924e5a55a5eb0e9b2ae1785a43ba58b5f443bd4eb713e5758707ea45e985f59"
+      },
+      "run": {
+        "wallMs": 10.376331,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-2": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts",
+        "bytes": 124,
+        "sha256": "84603e306e23978f47513907c8ab6ac95d4d09368aa6c85f7ad800b50ce75a48"
+      },
+      "oracle": {
+        "wallMs": 41.308052,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 775.904712,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625343-1789122397472175984/computed_global_2_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts name=computed-global-2.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625343-1789122397472175984/computed_global_2_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 231676,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/computed-global-2.ts.bin",
+        "bytes": 19000824,
+        "sha256": "e5a729fd3701139bddcb3836e3b5e453647b343a197643a305ab1270821b0435"
+      },
+      "run": {
+        "wallMs": 9.295422,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "worker-module": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts",
+        "bytes": 79,
+        "sha256": "e8afd47e89f243b5b295eef8f1285b2ee084f2fd8e75be28653f483ab499e656"
+      },
+      "oracle": {
+        "wallMs": 38.887143,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1852.148961,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: program is not a standalone effect-free source graph\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625418-1789122398309334854/worker_module_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (with stdlib)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts.bin\nBinary size: 21.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=resolve-import module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts import=worker_threads visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts name=worker-module.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[strip-dedup] libperry_runtime.a: localized 31 stdlib-stub symbol(s) so perry-stdlib wins the link (#5000, macOS/Linux)\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625418-1789122398309334854/worker_module_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/1268e3a-6aa3d71f/libperry_stdlib.a /dev/shm/perry-startup-27c598181/results/perry_strip_3625418/_libperry_runtime.a_stub_localized.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl -lssl -lcrypto\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 381076,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/worker-module.ts.bin",
+        "bytes": 22122096,
+        "sha256": "a9a1c71ccc593d766648a2c6ee70f6be8e1edef4bf6f4abf197bf7850a364245"
+      },
+      "run": {
+        "wallMs": 8.105972,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "ffi-module": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts",
+        "bytes": 62,
+        "sha256": "13f56b39fcefbaeabebf4056da806d035f91c9710543451f5d9528a4267600f1"
+      },
+      "oracle": {
+        "stdout": "function\n",
+        "stderr": "",
+        "kind": "known-export-surface"
+      },
+      "build": {
+        "wallMs": 784.541095,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: imports and exports require normal compilation\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625658-1789122400183169619/ffi_module_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts.bin\nBinary size: 18.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=resolve-import module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts import=bun:ffi visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts name=ffi-module.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625658-1789122400183169619/ffi_module_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 229068,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/ffi-module.ts.bin",
+        "bytes": 19000800,
+        "sha256": "fbf8eb0bbecdb1f62acb4f1190862140b42be74561c814096e9775033f401cb0"
+      },
+      "run": {
+        "wallMs": 10.212144,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "function\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true
+      }
+    }
+  },
+  "complete": true,
+  "passed": true,
+  "symbolInspection": {
+    "baseline": {
+      "coreSelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.baseline",
+        "bytes": 24602344,
+        "sha256": "3c79f28cb4c9da9ce763e6aaabdcd67d13a5ef15f166008e6ea3af62cf926d67"
+      },
+      "build": {
+        "wallMs": 744.677709,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3624694-1789122390440619422/symbol_witness_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.baseline\nBinary size: 23.5MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3624694-1789122390440619422/symbol_witness_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.baseline -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 242080,
+        "spawnError": null,
+        "ok": true
+      },
+      "log": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/symbols-baseline.log",
+        "bytes": 2579634,
+        "sha256": "4f85ca8b4192b1fc7c15cae2d394ff636b430459fcc087ed24c4b4e503ac7abd"
+      },
+      "symbolLines": 21185,
+      "regexEngineSymbols": 962,
+      "temporalEngineSymbols": 219
+    },
+    "candidate": {
+      "coreSelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.candidate",
+        "bytes": 14792088,
+        "sha256": "59231834f9b98f851a24f02ad50fecf3fa4d0d4658fdb8420a98009a0abb2c8a"
+      },
+      "build": {
+        "wallMs": 535.459825,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: requested build diagnostics require the normal pipeline\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3624763-1789122391232003732/symbol_witness_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.candidate\nBinary size: 14.1MB\n",
+        "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts name=symbol-witness.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: using prebuilt core runtime: /root/.cache/perry/libs/5c3622-6aa3d71f/libperry_runtime_core.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3624763-1789122391232003732/symbol_witness_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/5c3622-6aa3d71f/libperry_runtime_core.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/symbol-witness.ts.candidate -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 181908,
+        "spawnError": null,
+        "ok": true
+      },
+      "log": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/symbols-candidate.log",
+        "bytes": 1741752,
+        "sha256": "c4c73fc7718c9e9e88188fc56182da6e5173d569e587d76e1c0fb4379eede189"
+      },
+      "symbolLines": 14912,
+      "regexEngineSymbols": 0,
+      "temporalEngineSymbols": 0
+    }
+  },
+  "missingCore": {
+    "build": {
+      "wallMs": 783.185194,
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: statement is outside the proven subset\nGenerating code...\nWrote object file: /dev/shm/perry-startup-27c598181/results/perry-objs-3625700-1789122400991548984/missing_core_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts.bin\nBinary size: 18.1MB\n",
+      "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts name=missing-core.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /dev/shm/perry-startup-27c598181/results/perry-objs-3625700-1789122400991548984/missing_core_ts.o -Wl,--gc-sections -Wl,--start-group /root/.cache/perry/libs/8de6d7-6aa3d71f/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/missing-core.ts.bin -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+      "timedOut": false,
+      "memExceeded": false,
+      "peakKb": 230616,
+      "spawnError": null,
+      "ok": true
+    },
+    "run": {
+      "wallMs": 5.30876,
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "fallback\n",
+      "stderr": "",
+      "timedOut": false,
+      "memExceeded": false,
+      "peakKb": 0,
+      "spawnError": null,
+      "ok": true
+    }
+  }
+}

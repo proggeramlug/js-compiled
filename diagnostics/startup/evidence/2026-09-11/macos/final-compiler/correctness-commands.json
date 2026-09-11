@@ -1,0 +1,22 @@
+[
+  {
+    "name": "fixtures",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-fixtures.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/fixtures/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/fixtures/verification.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "oracles",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-oracles.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/workloads/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/workloads/oracles.json"
+    ],
+    "exitCode": 0
+  }
+]

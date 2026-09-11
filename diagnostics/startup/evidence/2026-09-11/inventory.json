@@ -1,0 +1,442 @@
+[
+  {
+    "file": "REPORT.md",
+    "bytes": 11804,
+    "sha256": "87fc2e42f9540b6d0bf275c89ed3978253703d2fc11055f12711c1ef84233e6c"
+  },
+  {
+    "file": "baseline-public-freshness.log",
+    "bytes": 120,
+    "sha256": "6067c219ae7819b7e3b5071bfd1ebbbf87f6610fbda2a7d1f18305c3341fa6f4"
+  },
+  {
+    "file": "final-changeset-gate.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "final-source-receipt.json",
+    "bytes": 915,
+    "sha256": "2eefe89426652e6ed3fe83b0fe0d493ccc0d279a9e6a204ceeac845bf696f3ef"
+  },
+  {
+    "file": "image-comparison-selfcheck.json",
+    "bytes": 171,
+    "sha256": "cfb1f266695a63e5a584c157a48e8ce1a5fe350db85572fbc207fb0068385be9"
+  },
+  {
+    "file": "lint-script-gates.log",
+    "bytes": 8144,
+    "sha256": "6d6dc5b80033e4e1e2e05bee0a4d32395dbb4cfa9fc784316d673ef5df7a4991"
+  },
+  {
+    "file": "linux/baseline-build/build-receipt.json",
+    "bytes": 3451,
+    "sha256": "601950cc9ed2abe7723340a09816d1adf0cbf875b0fc02ff3fe289130ebfb169"
+  },
+  {
+    "file": "linux/candidate-build/build-receipt.json",
+    "bytes": 3447,
+    "sha256": "6147ffea66998e24b9de7dd778a9c7e0fae4670f456ecdfb97887429934946bf"
+  },
+  {
+    "file": "linux/clippy-product.log",
+    "bytes": 714511,
+    "sha256": "8a5865e01bf334fe312d4a964ff6324cabc07ac2f9621ab38899cddb54f03060"
+  },
+  {
+    "file": "linux/clippy-runtime-codegen.log",
+    "bytes": 607539,
+    "sha256": "4a884cd92c5e9ce5312c4973c467d85988fc24a740450e4c562fd8f4bd036ce2"
+  },
+  {
+    "file": "linux/final/class-throughput/measurements.json",
+    "bytes": 8460,
+    "sha256": "b8f6155c34bbde02b93c803503f8337fc415f8607487498aae9509d9d3b55184"
+  },
+  {
+    "file": "linux/final/final-startup/measurements.json",
+    "bytes": 110314,
+    "sha256": "970b1169347665f0e33500bd50471405b3f241a854d8c212e01548915860ae8b"
+  },
+  {
+    "file": "linux/final/fixtures/verification.json",
+    "bytes": 83144,
+    "sha256": "c433549610cb5bbc58f1dd25e30d209f7df008799139c510cf3ffef0aa84f7a6"
+  },
+  {
+    "file": "linux/final/measure-commands.json",
+    "bytes": 1613,
+    "sha256": "2770243689a95a9355942e439a03e8382ddd5b4ed12dc71d9cde7ed6407c2c1b"
+  },
+  {
+    "file": "linux/final/package/package-receipt.json",
+    "bytes": 4519,
+    "sha256": "9d03c32991fb039644523f7c9a6c83d8a90bf76f946c7071f1fccb0ae05e6533"
+  },
+  {
+    "file": "linux/final/package/tiny/verification.json",
+    "bytes": 69835,
+    "sha256": "71cd5795666a463a052e3c38e6606f698047c1b80fa747eafe2e2a7c939f8cab"
+  },
+  {
+    "file": "linux/final/package/verification.json",
+    "bytes": 79081,
+    "sha256": "ac83f350ac600cc2600e62f633b65db845fc5e81e6b75eaafeeb168622d5b316"
+  },
+  {
+    "file": "linux/final/package-measure-commands.json",
+    "bytes": 636,
+    "sha256": "0dbab6ca5a9381225032524e3d477850ca76aec742467e68ca37a06ebd4094ad"
+  },
+  {
+    "file": "linux/final/package-startup/measurements.json",
+    "bytes": 109598,
+    "sha256": "30b25c35338b2e5a13c8f5d1405d6319ec982fc2a704c227ea185bb13c62a012"
+  },
+  {
+    "file": "linux/final/package-workloads/measurements.json",
+    "bytes": 50128,
+    "sha256": "4de52447404d7fe53e1bf0a7db1b96d0ec6b851077ab23df34843f3d46d65211"
+  },
+  {
+    "file": "linux/final/small-startup/measurements.json",
+    "bytes": 111007,
+    "sha256": "854eaeefa2fa65be063cc87e486845368c848ce4303dfbe8b5dbd3e41168002c"
+  },
+  {
+    "file": "linux/final/small-workloads/measurements.json",
+    "bytes": 56316,
+    "sha256": "c55afa9a2b897657e3b9fc01385560fce1e844a4d0aa2c8a5dae426bf8bc131c"
+  },
+  {
+    "file": "linux/final/startup/measurements.json",
+    "bytes": 110745,
+    "sha256": "f8dd5f38dcf0818d91347d7edf139a3d34b8b53025fe46c8cbcfc88c388ab966"
+  },
+  {
+    "file": "linux/final/startup/microtask-profile.json",
+    "bytes": 4819,
+    "sha256": "d9f13b4543e0b86ff795602dcef202be2a0fd9dac6354969d3037c4562f396c8"
+  },
+  {
+    "file": "linux/final/tiny-dependencies.json",
+    "bytes": 5653,
+    "sha256": "0d23fdda702cb62e1be1a61b0398cfe9626980bb877f00886fde9e3ea7e71dc8"
+  },
+  {
+    "file": "linux/final/workloads/measurements.json",
+    "bytes": 50114,
+    "sha256": "65ca03950808d1f69f0bf9076d60befb77d085620ee1fc69b279523bb85f224b"
+  },
+  {
+    "file": "linux/final-compiler/build-receipt.json",
+    "bytes": 2167,
+    "sha256": "6baa4c137f788db04582cb232e780ab66d716bba5b2a3f35a1af6dac555cd737"
+  },
+  {
+    "file": "linux/final-compiler/class-image-equivalence.json",
+    "bytes": 1963,
+    "sha256": "532501d6a7c6ef0c74e3cac28f56d9ccb9309c141eca73c760d555b96045328e"
+  },
+  {
+    "file": "linux/final-compiler/correctness-commands.json",
+    "bytes": 638,
+    "sha256": "d214ef997db9adae0eac871ccd3dcce45e54f35b91e7c863e4d9958eba199729"
+  },
+  {
+    "file": "linux/final-compiler/fixtures/verification.json",
+    "bytes": 84932,
+    "sha256": "4b3e2d76b945648979f55941eef175cb1314ae9dbeb0b347794354c46061f087"
+  },
+  {
+    "file": "linux/final-compiler/focused-compiler-tests.log",
+    "bytes": 2846,
+    "sha256": "9ca346c9952d5d31b97d6b815edc4848a0c592a65fbb32e2d1e6b8529a824803"
+  },
+  {
+    "file": "linux/final-compiler/package/package-receipt.json",
+    "bytes": 4463,
+    "sha256": "15627cf3bb78ad5ebbd55febd30386d9e7eaee87e793043da5aebab10fc836bb"
+  },
+  {
+    "file": "linux/final-compiler/package/tiny/verification.json",
+    "bytes": 73371,
+    "sha256": "3037e23a5497acfdc3ac67e378a59a4ad3b38cf77daf691354917d0ec5c066e7"
+  },
+  {
+    "file": "linux/final-compiler/package/verification.json",
+    "bytes": 79299,
+    "sha256": "99513224300b3dcd3e72a8a739b46e7969c36c202a1bf0feb0d824a50156846a"
+  },
+  {
+    "file": "linux/final-compiler/package-commands.json",
+    "bytes": 1917,
+    "sha256": "cf5f647fa2550653960f393dd44c02977a020be67f1603edb5ad8df8b6385512"
+  },
+  {
+    "file": "linux/final-compiler/package-workload-image-equivalence.json",
+    "bytes": 28164,
+    "sha256": "da5e9ea5975edc0f00623968388022ccefb13906451b3cca5a2c2638b740fa84"
+  },
+  {
+    "file": "linux/final-compiler/prepare-commands.json",
+    "bytes": 1489,
+    "sha256": "8f870184400e539767944dee43a4bf8a6e987b1d94637690bffa55000a5f3f72"
+  },
+  {
+    "file": "linux/final-compiler/tiny-image-equivalence.json",
+    "bytes": 3761,
+    "sha256": "93bae635ff66ef43366ad123a5fc3e5662088598b11f981031aaa7ad02838d70"
+  },
+  {
+    "file": "linux/final-compiler/workload-image-equivalence.json",
+    "bytes": 28262,
+    "sha256": "126f691d37ea63144a742c1f7fdfe70b2224814ace7fee4fea38132fd720bfe8"
+  },
+  {
+    "file": "linux/final-compiler/workloads/oracles.json",
+    "bytes": 43079,
+    "sha256": "0541a909a4058e5f5bac1a107e3cccb26752adcbc388d4c231d2551587349437"
+  },
+  {
+    "file": "linux/focused-compiler-tests.log",
+    "bytes": 11127,
+    "sha256": "49f592df18b9d860eb0919141e1b6056174f77db0482bfe9eb77c6e6b25c2e52"
+  },
+  {
+    "file": "linux/focused-runtime-tests.log",
+    "bytes": 12679,
+    "sha256": "a044694d5f51a21879a3d455b7cf63e02c6e5aa636f4fb37769b98db5dba0db4"
+  },
+  {
+    "file": "linux/host.json",
+    "bytes": 5999,
+    "sha256": "162ef625d8703b7761774129f26d421dbf7ee021951f43b93d1d30b04562a3a1"
+  },
+  {
+    "file": "linux/memory-policy/policy-verification.json",
+    "bytes": 6873,
+    "sha256": "015f5ed177682bfda7cb1e7b35ab24368d6e5aba6f26435c250d73d74f851ebf"
+  },
+  {
+    "file": "linux/policy-normal-rust.log",
+    "bytes": 636,
+    "sha256": "24c62540f569f00c8552ea1ca078413a691f9f977c728fcb377cadcf2ef2653a"
+  },
+  {
+    "file": "linux/policy-override-rust.log",
+    "bytes": 470,
+    "sha256": "0b67dcf88285722f8ea3fda2e3fa88efc3efe5e7feca658272eb29186e2efc66"
+  },
+  {
+    "file": "linux/policy-small-rust.log",
+    "bytes": 470,
+    "sha256": "25a7bdd396412fef3047c12a48e2731dafc63fc8a7ce63aa424378801fbf1bda"
+  },
+  {
+    "file": "linux/production-memory-policy/verification.json",
+    "bytes": 3417,
+    "sha256": "6775950a2bcb989d2da0d4ed04d5e9e4e262eb0183d619b893ad6aed36a85955"
+  },
+  {
+    "file": "linux/tiny-output-faults-final/verification.json",
+    "bytes": 2585,
+    "sha256": "46b0ef935040be0f9998d0e5194cf95cd03de7bd4f99a0211bb5fe9ac1280902"
+  },
+  {
+    "file": "macos/baseline/receipt.json",
+    "bytes": 957,
+    "sha256": "33709d3a71009a28793224541f9a44881798d4c238c2c19591fe4ff2ed830023"
+  },
+  {
+    "file": "macos/candidate/receipt.json",
+    "bytes": 1339,
+    "sha256": "78ff5e311ff08da590484ce4b21f4180f9a31b12f3561396f146b09d834d34b8"
+  },
+  {
+    "file": "macos/clippy-product.log",
+    "bytes": 716381,
+    "sha256": "56fd982d8f9dc81c9aa494d89ad526b889890edc78e7125009deeded1954882a"
+  },
+  {
+    "file": "macos/clippy-runtime-codegen.log",
+    "bytes": 609093,
+    "sha256": "e5a10a1e5b3a8d98a955b26a86cfcefc2e6a8d59989b05f8d7dafba25d90180c"
+  },
+  {
+    "file": "macos/final/class-throughput/measurements.json",
+    "bytes": 10704,
+    "sha256": "3194db0b4e7fd5437bbab72e573acbdb447657dca3c98db93e97d7a42ac83e8b"
+  },
+  {
+    "file": "macos/final/final-startup/measurements.json",
+    "bytes": 110224,
+    "sha256": "7ee252aafa3f0109f749f662f23cbd3c16ea04748b74eda326d95acbef948246"
+  },
+  {
+    "file": "macos/final/fixtures/verification.json",
+    "bytes": 109593,
+    "sha256": "986c09302e7c763d8afc6ea67a7bffa3b62f5b224d0aef42a251a15cb352a70b"
+  },
+  {
+    "file": "macos/final/measure-commands.json",
+    "bytes": 1150,
+    "sha256": "c9c5b6f1f1fbce0caf516eebe78e1744c2225997525f1ada0b5fd0507dbda1e7"
+  },
+  {
+    "file": "macos/final/package/package-receipt.json",
+    "bytes": 4760,
+    "sha256": "816ede863703e0c894fa61bf06f5823e12b99bfcb78e2871c202c0d673f7f126"
+  },
+  {
+    "file": "macos/final/package/tiny/verification.json",
+    "bytes": 72711,
+    "sha256": "a956868447c42581e3ef2fcb549493899c3e1ac41dcbb2db74dafad0b6bd2924"
+  },
+  {
+    "file": "macos/final/package/verification.json",
+    "bytes": 165676,
+    "sha256": "f3ee96825bf3b3e89ed191ed7815f2a91444c8160cc9294d712b9e5296da90ff"
+  },
+  {
+    "file": "macos/final/package-measure-commands.json",
+    "bytes": 776,
+    "sha256": "e40128830abd156b297463b0038c978190ec3c5841be00b57af15cce5fb9bf8c"
+  },
+  {
+    "file": "macos/final/package-startup/measurements.json",
+    "bytes": 109476,
+    "sha256": "dab16fa0aae586b1a58df2011af56c504e14f9c16f06281dada9a8aff5a71abd"
+  },
+  {
+    "file": "macos/final/package-workloads/measurements.json",
+    "bytes": 54103,
+    "sha256": "3094dde80c68cdf293c21e68680495ccbfa34946f640db298ccb8bdb44d05916"
+  },
+  {
+    "file": "macos/final/startup/measurements.json",
+    "bytes": 112623,
+    "sha256": "c1dbeb9d0feb3b81915b580ec3d0cfdd68b5213a28920014ce43ec11c9fa6039"
+  },
+  {
+    "file": "macos/final/startup/microtask-profile.json",
+    "bytes": 4819,
+    "sha256": "d9f13b4543e0b86ff795602dcef202be2a0fd9dac6354969d3037c4562f396c8"
+  },
+  {
+    "file": "macos/final/tiny-dependencies.json",
+    "bytes": 1506,
+    "sha256": "6733568e3b0273a6faeae7167c2a8ee3f89ff4faf430983a27488833a6957321"
+  },
+  {
+    "file": "macos/final/workloads/confirmation.json",
+    "bytes": 4935,
+    "sha256": "17db84ede7f9ed650240af4df13e76431471f3d2e38730d08811cbe14d0c4c8a"
+  },
+  {
+    "file": "macos/final/workloads/measurements.json",
+    "bytes": 55864,
+    "sha256": "0c8c377e76a5ba8f2a3c423c9820b7f6fdcb36f4bc75e04a0185c8b5135dc6dd"
+  },
+  {
+    "file": "macos/final-compiler/build-receipt.json",
+    "bytes": 2384,
+    "sha256": "49e407d83878165cccfccdd10e6efbdeb74caaa36f205f6768fe0a4f50c3e726"
+  },
+  {
+    "file": "macos/final-compiler/class-image-equivalence.json",
+    "bytes": 2314,
+    "sha256": "a9ef745d5dcfa7baac7dd96f89ee76ba951aae02b0937f6c09c731aeca101531"
+  },
+  {
+    "file": "macos/final-compiler/correctness-commands.json",
+    "bytes": 778,
+    "sha256": "c1cb84f9443df9c7e703bcb0a6c6e34c8d2572926b89f6e046d684a1b9f1b372"
+  },
+  {
+    "file": "macos/final-compiler/fixtures/verification.json",
+    "bytes": 109404,
+    "sha256": "ed2cac0d77337de3a473bdf176bd0f2a98eeb61a40c8a6597be58ad7f00e9c97"
+  },
+  {
+    "file": "macos/final-compiler/focused-compiler-tests.log",
+    "bytes": 2855,
+    "sha256": "55d3800fcf41defffa7c5b95d9cf98a726188574788e8e492c5a57bd2bbd061b"
+  },
+  {
+    "file": "macos/final-compiler/package/package-receipt.json",
+    "bytes": 4740,
+    "sha256": "ab97ed36c824f63c9dc3ca9668186ccdd280575717b71eb236c6d0a3ad215b8b"
+  },
+  {
+    "file": "macos/final-compiler/package/tiny/verification.json",
+    "bytes": 76349,
+    "sha256": "28cd35dd6298623eb4acbbe2658969428f06e6836cd516c733d96938ddd4b8c0"
+  },
+  {
+    "file": "macos/final-compiler/package/verification.json",
+    "bytes": 165904,
+    "sha256": "b66d0534f65307355d98931ce4f6c398fd1b28a1ce1c3496fb877b69ff8d780e"
+  },
+  {
+    "file": "macos/final-compiler/package-commands.json",
+    "bytes": 2343,
+    "sha256": "658bb945b3f9de57d78c3f76b5eac91b645a20122c58f5ad36d2dbeaabb5ec59"
+  },
+  {
+    "file": "macos/final-compiler/package-workload-image-equivalence.json",
+    "bytes": 34893,
+    "sha256": "1c886b9c5bba97d226566e4bd1a3fe16ff20d932eabc50928a08a7640795b2d1"
+  },
+  {
+    "file": "macos/final-compiler/prepare-commands.json",
+    "bytes": 1551,
+    "sha256": "cff8c6d9ba395d742aa668eb09b8529773e33e9ee50b77546cbeff321da6d799"
+  },
+  {
+    "file": "macos/final-compiler/tiny-image-equivalence.json",
+    "bytes": 4694,
+    "sha256": "3c67b4c041a6de90864da36c234252b644308bcc196bd5d47d24d02c02d45717"
+  },
+  {
+    "file": "macos/final-compiler/workload-image-equivalence.json",
+    "bytes": 35123,
+    "sha256": "fcfab1eada035c2b557575e5eded3fb1f3c04de25406601a9a168f44dd0dad98"
+  },
+  {
+    "file": "macos/final-compiler/workloads/measurements.json",
+    "bytes": 56454,
+    "sha256": "9207978f6427ef9ed8325218f19e953be71a3899975ab654fb0a987f4037e05d"
+  },
+  {
+    "file": "macos/final-compiler/workloads/oracles.json",
+    "bytes": 46799,
+    "sha256": "f2da310a4ecbf771f2594c8963ee3184bed9c34562a4dc1c3c262e26249c7ffe"
+  },
+  {
+    "file": "macos/focused-compiler-tests.log",
+    "bytes": 2509,
+    "sha256": "645637eb23829416a0e89e36c1fd5899a2f2156dd05ab15183bd6e7404901793"
+  },
+  {
+    "file": "macos/focused-runtime-tests.log",
+    "bytes": 9938,
+    "sha256": "e908a3aa91ad23f627484f9ee6532db3adb88a044e4cf48f2227a78c5cca477f"
+  },
+  {
+    "file": "macos/tiny-output-faults/verification.json",
+    "bytes": 3199,
+    "sha256": "329beaa658dd6f6c8b4f55103f1e92b1bb603ac167bfbe81e7a497d00e0c666b"
+  },
+  {
+    "file": "oracle-reuse-guards.json",
+    "bytes": 368,
+    "sha256": "292a698bd5ddedfe995f905380d117610f7fd9921be144732d81de7ebb9777d5"
+  },
+  {
+    "file": "summary.json",
+    "bytes": 8870,
+    "sha256": "765291b25948507809c9d5194eb485ce2d0662f1ed05aba4ab98453297399528"
+  }
+]

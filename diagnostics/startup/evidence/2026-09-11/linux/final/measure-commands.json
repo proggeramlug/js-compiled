@@ -1,0 +1,53 @@
+[
+  {
+    "name": "measure-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/compare.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/startup/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/startup/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "measure-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-workloads.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/workloads/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/workloads/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "measure-class-throughput",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-class-throughput.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/class-throughput/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/class-throughput/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "measure-small-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/compare.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/small-startup/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/small-startup/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "measure-small-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-workloads.mjs",
+      "/dev/shm/perry-startup-27c598181/results/final/small-workloads/manifest.json",
+      "/dev/shm/perry-startup-27c598181/results/final/small-workloads/measurements.json",
+      "--record-profile-tradeoffs"
+    ],
+    "exitCode": 0
+  }
+]

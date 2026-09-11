@@ -1,0 +1,102 @@
+{
+  "source": "/dev/shm/perry-startup-27c598181/perry/crates/perry/src/commands/compile/tiny_program/output.c",
+  "sourceSha256": "b83c0d7cb38a0a92d280cb892f6eb033a3291bdf78987a680289c0dae4124409",
+  "verifierSha256": "7d6a3991d5af2a9153c707a51c57b207c6635de60ff6f79cccf89a1511cf6a9f",
+  "work": "/tmp/perry-tiny-output-faults-yo2le2tc",
+  "commands": [
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/dev/shm/perry-startup-27c598181/perry/crates/perry/src/commands/compile/tiny_program/output.c",
+        "-o",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/normal.o"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/main.c",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/normal.o",
+        "-o",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/normal"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/tmp/perry-tiny-output-faults-yo2le2tc/normal"
+      ],
+      "exitCode": 0,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/injected.c",
+        "-o",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/partial-eintr-eagain-poll-eintr.o"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=c11",
+        "-O2",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/main.c",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/partial-eintr-eagain-poll-eintr.o",
+        "-o",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/partial-eintr-eagain-poll-eintr",
+        "-DINJECT=1",
+        "/tmp/perry-tiny-output-faults-yo2le2tc/faults.c"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/tmp/perry-tiny-output-faults-yo2le2tc/partial-eintr-eagain-poll-eintr"
+      ],
+      "exitCode": 0,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    }
+  ],
+  "cases": {
+    "normal": {
+      "passed": true,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    },
+    "partial-eintr-eagain-poll-eintr": {
+      "passed": true,
+      "stdout": "alpha\ngamma\n",
+      "stderr": "beta\n"
+    }
+  },
+  "complete": true,
+  "passed": true
+}

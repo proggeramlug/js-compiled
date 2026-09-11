@@ -1,0 +1,140 @@
+{
+  "beforeManifest": {
+    "file": "results/startup-final-macos/final/package-startup/manifest.json",
+    "bytes": 9305,
+    "sha256": "fc14e780d49bb4e895a1238b08a5f6ed43bdcc72c80a06befbb1f6ae461bc166"
+  },
+  "afterManifest": {
+    "file": "results/startup-json-final-macos/verification/package-startup/manifest.json",
+    "bytes": 9533,
+    "sha256": "b18e53193b227e2ff0c6400451d9fa90b58eabd0da43b4a6f15a77a65cdac656"
+  },
+  "verifier": {
+    "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "empty": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/empty",
+        "bytes": 16824,
+        "sha256": "c393be274822fb6c2a3b74816435fd01309781a6e32fef0410762bdc7bb7435c"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/empty",
+        "bytes": 16824,
+        "sha256": "c393be274822fb6c2a3b74816435fd01309781a6e32fef0410762bdc7bb7435c"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 504,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16544,
+          "bytes": 280
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 504,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16544,
+          "bytes": 280
+        }
+      ],
+      "normalizedBeforeSha256": "26f0916e88bef894f798d447fa713b6844f4d06f2984910e22ee80457a279b43",
+      "normalizedAfterSha256": "26f0916e88bef894f798d447fa713b6844f4d06f2984910e22ee80457a279b43"
+    },
+    "noop": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/noop",
+        "bytes": 33848,
+        "sha256": "73f61bd7e47d943d28d61c814aff1ab10635477efa46fdf5d99c0737e097993d"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/noop",
+        "bytes": 33848,
+        "sha256": "73f61bd7e47d943d28d61c814aff1ab10635477efa46fdf5d99c0737e097993d"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "normalizedBeforeSha256": "8a4e3aebc17885139df5bb4a5d306a833c26e0f41283619154013585a99127a4",
+      "normalizedAfterSha256": "8a4e3aebc17885139df5bb4a5d306a833c26e0f41283619154013585a99127a4"
+    },
+    "hello": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/hello",
+        "bytes": 33848,
+        "sha256": "942951607df7073e90745e8674536517538b66ee1ee7281627bc42ec0a93d2ff"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/hello",
+        "bytes": 33848,
+        "sha256": "942951607df7073e90745e8674536517538b66ee1ee7281627bc42ec0a93d2ff"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "normalizedBeforeSha256": "ee92590f89a1a5ba9ca93833b9b5a29fb116d8e8555246726bf6ed72da44118e",
+      "normalizedAfterSha256": "ee92590f89a1a5ba9ca93833b9b5a29fb116d8e8555246726bf6ed72da44118e"
+    }
+  },
+  "equivalent": true
+}

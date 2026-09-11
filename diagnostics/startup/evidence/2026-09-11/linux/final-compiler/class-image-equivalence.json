@@ -1,0 +1,60 @@
+{
+  "beforeManifest": {
+    "file": "../results/final/class-throughput/manifest.json",
+    "bytes": 5983,
+    "sha256": "714eef6138512b919ba18104a3564493be6623264defd4c03edfb3208a16c0a0"
+  },
+  "afterManifest": {
+    "file": "../results/json-verification/class-throughput/manifest.json",
+    "bytes": 5961,
+    "sha256": "bebbf838fb66f36d482fb76ab8c18d57e61b0221b9357ad597e210ef477e0af4"
+  },
+  "verifier": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "class-parent-throughput": {
+      "before": {
+        "file": "/dev/shm/perry-startup-27c598181/results/final/class-throughput/candidate/class-parent-throughput",
+        "bytes": 19062624,
+        "sha256": "08cc977d642deacff3d91ad19980eb7ea9b0474c461289b64334d759df3d2188"
+      },
+      "after": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/class-throughput/candidate/class-parent-throughput",
+        "bytes": 19062624,
+        "sha256": "e2524a5f24c335b99d9ad974d3d6436a28d175430df80e0d4ff80fd86d62a30a"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14847850,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14847850,
+          "bytes": 40
+        },
+        {
+          "kind": "ELF build ID",
+          "offset": 912,
+          "bytes": 36
+        }
+      ],
+      "normalizedBeforeSha256": "721e78987bc793500080f5499b6a8e9fa1afd37072bf92de492e918eb4ef91df",
+      "normalizedAfterSha256": "721e78987bc793500080f5499b6a8e9fa1afd37072bf92de492e918eb4ef91df"
+    }
+  },
+  "equivalent": true
+}

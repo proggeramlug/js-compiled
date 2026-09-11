@@ -1,0 +1,51 @@
+[
+  {
+    "name": "prepare-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/startup",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/startup-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/workloads",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/workloads-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-fixtures",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "prepare-class-throughput",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/class-throughput",
+      "/dev/shm/perry-startup-27c598181/results/json-verification/class-throughput-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "configure-small",
+    "argv": [
+      "python3",
+      "diagnostics/startup/prepare-memory-profile.py",
+      "/dev/shm/perry-startup-27c598181/results/json-verification"
+    ],
+    "exitCode": 0
+  }
+]

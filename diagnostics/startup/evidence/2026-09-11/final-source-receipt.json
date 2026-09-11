@@ -1,0 +1,14 @@
+{
+  "measuredCommit": "27c598181dfb331d72a798754641082584028df0",
+  "compiledCommit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+  "reviewHead": "ef9e56e4ef17a9669bd78b96b4ef2cf0c0ac3057",
+  "allFilesOutsideChangelogIdentical": true,
+  "changesAfterFinalCompilation": [
+    "R100\tchangelog.d/startup-empty-checkpoint.md\tchangelog.d/10066-startup-empty-checkpoint.md",
+    "R100\tchangelog.d/startup-lazy-class-parents.md\tchangelog.d/10066-startup-lazy-class-parents.md",
+    "R100\tchangelog.d/startup-memory-profile.md\tchangelog.d/10066-startup-memory-profile.md",
+    "R100\tchangelog.d/startup-prebuilt-core.md\tchangelog.d/10066-startup-prebuilt-core.md",
+    "R053\tchangelog.d/startup-tiny-program.md\tchangelog.d/10066-startup-tiny-program.md"
+  ],
+  "nativeEquivalence": "Per-platform complete image comparisons link measured commit to compiled commit; review head changes only changelog fragments."
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "package",
+    "argv": [
+      "python3",
+      "diagnostics/startup/prepare-core-package.py",
+      "/Users/amlug/projects/perry/perry-startup-release-candidate",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_runtime_core.a",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-prepare-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/core-startup-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-prepare-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/prepare-comparison.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/core-workloads-config.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-selection",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-core-package.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/package-receipt.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/verification.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "package-tiny",
+    "argv": [
+      "python3",
+      "/Users/amlug/projects/perry/perry-startup-release-candidate/scripts/verify_tiny_program.py",
+      "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/tiny"
+    ],
+    "exitCode": 0
+  }
+]

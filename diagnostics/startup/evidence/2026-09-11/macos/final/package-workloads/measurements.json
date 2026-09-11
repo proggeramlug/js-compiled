@@ -1,0 +1,1542 @@
+{
+  "startedAt": "2026-09-11T09:56:21.206Z",
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:42:20.597Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "3aa8c5406cde64d998a6a45c56d826169ccba2cb",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [],
+      "variants": {
+        "baseline": {
+          "compiler": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "buildEnv": {
+            "PERRY_NO_AUTO_OPTIMIZE": "1"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "buildEnv": {},
+          "runtimeEnv": {}
+        }
+      },
+      "cases": [
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/00-noop.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/01-hello.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/10-fib.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/11-loop-sum.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/12-mandelbrot.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/13-nbody.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/14-spectral-norm.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/15-crc32.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/20-sieve.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/21-matmul.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/22-array-sort.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/23-binary-trees.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/24-map-set.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/30-string-build.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/31-json.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/32-regex.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/40-classes.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/41-closures.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/42-async.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/43-generators.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/50-fs-io.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/benches/51-pipeline.ts"
+      ],
+      "scriptc": false
+    },
+    "node": {
+      "file": "/Users/amlug/.local/opt/node-v26.5.1-darwin-arm64/bin/node",
+      "bytes": 145265936,
+      "sha256": "87e9b1fed820a2683ea90f5871596edf605b7162519156856dacbfbad36d1d29",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "bytes": 136533720,
+          "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {
+          "PERRY_NO_AUTO_OPTIMIZE": "1"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/Library/Caches/perry/libs/805f79-6aa3ccef/libperry_runtime.a",
+            "bytes": 36830248,
+            "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb"
+          }
+        ],
+        "source": null
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-e97bc1ax/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "bytes": 136533720,
+          "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {},
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/Library/Caches/perry/libs/549785-6aa3ccef/libperry_runtime_core.a",
+            "bytes": 24625880,
+            "sha256": "386a4e037d57a3676f71be857caf75daf18246eb4aa32148d8726683d5b2c31d"
+          },
+          {
+            "file": "/Users/amlug/Library/Caches/perry/libs/805f79-6aa3ccef/libperry_runtime.a",
+            "bytes": 36830248,
+            "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb"
+          }
+        ],
+        "source": null
+      }
+    },
+    "cases": [
+      {
+        "name": "00-noop",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/00-noop.ts",
+          "bytes": 59,
+          "sha256": "d8659d84d989e811ba79d9e48c3d58f43928ea03c60cb3671a3c634346f36719"
+        },
+        "expected": {
+          "stdout": "RESULT 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/00-noop"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/00-noop",
+              "bytes": 16439624,
+              "sha256": "339b111df9640f539f9304c1f6c41fd2e898d7d58ad488fb3e81b9dfac75504f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/00-noop"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/00-noop",
+              "bytes": 33848,
+              "sha256": "e7d0bfd015a8afbc7daa33590bd679e0d845d75041a037beca1e13b5f743ec1e"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "01-hello",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/01-hello.ts",
+          "bytes": 126,
+          "sha256": "62132ab54e719137430bea7f7e944ff33a47b8c49bf0acbbc15e6a134c12a57c"
+        },
+        "expected": {
+          "stdout": "hello, world\nRESULT 1\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/01-hello"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/01-hello",
+              "bytes": 16456152,
+              "sha256": "c4394ad51ec3fcc0c71118e90b90cefae8fd6d6ac4022453686e17792d3f3261"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/01-hello"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/01-hello",
+              "bytes": 33848,
+              "sha256": "9895d8a5b89a71697b11df81fae313571bee319cbda8b8b343e0fdcc2345936a"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "10-fib",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/10-fib.ts",
+          "bytes": 382,
+          "sha256": "cc1b796b2d9f8ddc97be1e46456082c80d7e0edf27832786d631584b82705ed9"
+        },
+        "expected": {
+          "stdout": "RESULT 96631268\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/10-fib"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/10-fib",
+              "bytes": 16456152,
+              "sha256": "c4f8b16134f666e43df10af2c1ead52d3ab1d2fe181a355bc284c0d2e85e74ea"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/10-fib"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/10-fib",
+              "bytes": 9114904,
+              "sha256": "c0e514a22864217eebe3bfbffaf9fa8c5586bb0b199a4ed27ff665d75c6895ba"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "11-loop-sum",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/11-loop-sum.ts",
+          "bytes": 142,
+          "sha256": "d99b82b07ed9221361ca9ce8a137e50cfe68331335a9866843580e6d63be8420"
+        },
+        "expected": {
+          "stdout": "RESULT 2999999997\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/11-loop-sum",
+              "bytes": 16439624,
+              "sha256": "4bed35a0362ebaf9428cb63c1845d3cb0c79ef8bd94e341c92a9621344cfbbcb"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/11-loop-sum",
+              "bytes": 9114872,
+              "sha256": "1b77518ebedc706b0ce07ab905402f8468352ba13a5b85b7aa304fde214c46f9"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "12-mandelbrot",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/12-mandelbrot.ts",
+          "bytes": 605,
+          "sha256": "914d8d4ca12d6e61855620c5e83329bfe5fa6a0644d090e64a18227fbf559279"
+        },
+        "expected": {
+          "stdout": "RESULT 1226150\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/12-mandelbrot",
+              "bytes": 16439632,
+              "sha256": "841adc12b3494f4b42f40acff0a4b863ffe8103dac6443c44ecd6c0ef5b67ce2"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/12-mandelbrot",
+              "bytes": 9114896,
+              "sha256": "e23a975d5e9141d528be5661ffc22a321d31035832e08404a093a180409a033a"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "13-nbody",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/13-nbody.ts",
+          "bytes": 2914,
+          "sha256": "e678e02bbba698c93176ddc928eea86cbf53ee1d7b977170b911770d096a7861"
+        },
+        "expected": {
+          "stdout": "RESULT -0.169048121\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/13-nbody"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/13-nbody",
+              "bytes": 16472680,
+              "sha256": "756b75c0b3ae66241e0cc23d28ac9d4a33864039dd8ec0076c690329771d0525"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/13-nbody"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/13-nbody",
+              "bytes": 9147944,
+              "sha256": "7b77d72f048b924c9ae3dc218110facf9947990f69b6eb47b2be8c60098bd238"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "14-spectral-norm",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/14-spectral-norm.ts",
+          "bytes": 1035,
+          "sha256": "fb18aa28e0f273495e337f9f2c89443b1838a3e83e84a6c7872ba384fd436682"
+        },
+        "expected": {
+          "stdout": "RESULT 1.274224153\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/14-spectral-norm",
+              "bytes": 16472688,
+              "sha256": "914b8f797b8823630f4f89e61f573ee043f7d5211de707404b2f9faef53e9715"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/14-spectral-norm",
+              "bytes": 9131440,
+              "sha256": "226bd7c86d42bb29a1f1b2971ce258d84f886e2387f86ae9bbcabf656b661e5b"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "15-crc32",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/15-crc32.ts",
+          "bytes": 960,
+          "sha256": "3e8aa4b2cd91ac4d1ad4b098ec3b89f0c110a98cda5b136189554108d7fe0a12"
+        },
+        "expected": {
+          "stdout": "RESULT 62051195\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/15-crc32"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/15-crc32",
+              "bytes": 16456168,
+              "sha256": "01e79051193955504cecf09ece47a1abfe2adf718dc21f8982a71fe2baee67d3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/15-crc32"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/15-crc32",
+              "bytes": 9114904,
+              "sha256": "f6d38b3d6404ab4f4c2c1bd290606e4f46736c1c29398c6a9f9178299fa283bb"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "20-sieve",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/20-sieve.ts",
+          "bytes": 354,
+          "sha256": "9c9e8e8948b543fa227e5afe3042e73d8b7a7e709f764487aa977e74f8536376"
+        },
+        "expected": {
+          "stdout": "RESULT 5761455\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/20-sieve"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/20-sieve",
+              "bytes": 16456152,
+              "sha256": "668d75ded209ce1d8281db20311deb7e2a30cc2c4c29ce38962800cb499fd13f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/20-sieve"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/20-sieve",
+              "bytes": 9114888,
+              "sha256": "e571ab47c2e9615b180152a75f30953bc890e26d3e37340e30c9cc61982109ec"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "21-matmul",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/21-matmul.ts",
+          "bytes": 898,
+          "sha256": "b0f49212c4bec02d6a23209206394e8f2cf191936d990882f25f7583037ea1af"
+        },
+        "expected": {
+          "stdout": "RESULT 260042689.061880\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/21-matmul"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/21-matmul",
+              "bytes": 16472664,
+              "sha256": "f1b84c92edc487d1cb444751cb50ea920e3d20418346fdea3d558d961c48e085"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/21-matmul"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/21-matmul",
+              "bytes": 9131432,
+              "sha256": "dacbeea4ba89a782f2c5114ef4826428b20ba2239d882eb4303cb4d37b71110b"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "22-array-sort",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/22-array-sort.ts",
+          "bytes": 434,
+          "sha256": "da170a96641556267ae4cfbe28719880dc37f9d238f7e0c06e28c89998e17dd9"
+        },
+        "expected": {
+          "stdout": "RESULT 14490944\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/22-array-sort"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/22-array-sort",
+              "bytes": 16456160,
+              "sha256": "6e3b16b96f523d142eaeffbdb0b72bfc2cd640449ba1bbf0ac229eb7e45ead47"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/22-array-sort"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/22-array-sort",
+              "bytes": 9114912,
+              "sha256": "05db44f212361f1d7531a6e48a47c66f8402f323d7f3aeae17828ac9bfe982f9"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "23-binary-trees",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/23-binary-trees.ts",
+          "bytes": 967,
+          "sha256": "30832fa254cf0f95843ca02872566d26305105fecf4c2cf3408f8f2a44cac69e"
+        },
+        "expected": {
+          "stdout": "RESULT 136664414\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/23-binary-trees",
+              "bytes": 16472704,
+              "sha256": "d49a954ad382796da60a55d28696b0229200749db9dfe7023585956b45876d1d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/23-binary-trees",
+              "bytes": 9131456,
+              "sha256": "df7ec7a543bb3923162cc881cdfa0dd37e1f35995b7c8ed15ed334b9c6e6e65c"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "24-map-set",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/24-map-set.ts",
+          "bytes": 509,
+          "sha256": "13194b6514154c335b47f1b43ccc9f544eab75d626f754a69841ef96b90cdaeb"
+        },
+        "expected": {
+          "stdout": "RESULT 125350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/24-map-set"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/24-map-set",
+              "bytes": 16439624,
+              "sha256": "022aa2366fcad6b4d8d1e4906a59ddb7642b6351deb7ec3c6b71b38c19987855"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/24-map-set"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/24-map-set",
+              "bytes": 9114888,
+              "sha256": "78b6c0e37a54c0a12065be477f59e6e093804dba5558e15899510eafa51c9d66"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "30-string-build",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/30-string-build.ts",
+          "bytes": 831,
+          "sha256": "7411345cc6acaa2de75f803cd89a210bab35bf49db59c8ebbe5a40b83fd224f4"
+        },
+        "expected": {
+          "stdout": "RESULT 60444505\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/30-string-build"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/30-string-build",
+              "bytes": 16489232,
+              "sha256": "c7ae0e508e791d9e27c7726f7fff7f907a5734d3c73ca9aeec4b173bcb1d6492"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/30-string-build"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/30-string-build",
+              "bytes": 9147984,
+              "sha256": "883b172b0db5caf46ad6dc94e07ed69db60e815f4c529806aa2c81d024ec148a"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "31-json",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/31-json.ts",
+          "bytes": 690,
+          "sha256": "6a7a2d495cff9004089ed69913541e316b45d672bf5583010baf1f2badae07ac"
+        },
+        "expected": {
+          "stdout": "RESULT 2204940400\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/31-json"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/31-json",
+              "bytes": 16472712,
+              "sha256": "264a491d62c58be23aee711b7c26910d1278e2e5ddef819438af600d0190ffbe"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/31-json"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/31-json",
+              "bytes": 9214088,
+              "sha256": "c6b783ee06b9d7768c1f0160c666b3f2486528b2e523f4323622d4ea185b23d8"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "32-regex",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/32-regex.ts",
+          "bytes": 654,
+          "sha256": "dba9a37012ce0eca796acd170b043d5ae5bca37e5abf49d374b800c41ca52574"
+        },
+        "expected": {
+          "stdout": "RESULT 2986647000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/32-regex"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/32-regex",
+              "bytes": 16456152,
+              "sha256": "f6e8f1d21a95f3bcde9d1adc96df43b3499f7018a33d91b8d21fefd42149a33d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/32-regex"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/32-regex",
+              "bytes": 16456152,
+              "sha256": "f6e8f1d21a95f3bcde9d1adc96df43b3499f7018a33d91b8d21fefd42149a33d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "40-classes",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/40-classes.ts",
+          "bytes": 1169,
+          "sha256": "64e0537488ff00995e59b282011729051a00a5e4b18dc232958b7f5ef24568b3"
+        },
+        "expected": {
+          "stdout": "RESULT 3077873159.745\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/40-classes"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/40-classes",
+              "bytes": 16489224,
+              "sha256": "650814c60c57b880dad772d7cd62784236965705a3bdedcc9efbea4df3e7e145"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/40-classes"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/40-classes",
+              "bytes": 9147976,
+              "sha256": "b0664057687dbe42390c96fe105d7939f6b13a8823264907a93807ac8910d358"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "41-closures",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/41-closures.ts",
+          "bytes": 977,
+          "sha256": "d15f087c7be4a547c069a3c3d1c645e538bff343f3fa3db7dd187e74f80ce088"
+        },
+        "expected": {
+          "stdout": "RESULT 334583780076\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/41-closures"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/41-closures",
+              "bytes": 16456168,
+              "sha256": "780d5fba6598d9e62120409ebe32669c63ae957f10900e8831609f115414613a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/41-closures"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/41-closures",
+              "bytes": 9131432,
+              "sha256": "1a8ef16dfec7d0fdef9a37dcdb24ce49b2476251fc80d7300480cfdb1232e666"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "42-async",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/42-async.ts",
+          "bytes": 655,
+          "sha256": "6f1b7007c57bd82919125bee1e0c509a546785a404f53bc86be284737982aa15"
+        },
+        "expected": {
+          "stdout": "RESULT 36249993500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/42-async"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/42-async",
+              "bytes": 16505800,
+              "sha256": "fc760cea354145b4279ca9eac39a2b74d5ff2370e9853852b58a0e7abd9009b4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/42-async"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/42-async",
+              "bytes": 9181048,
+              "sha256": "a016ceb4a57da310df4fc23fa97da2189938bca0da09b9d6096c7991e6e19d05"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "43-generators",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/43-generators.ts",
+          "bytes": 517,
+          "sha256": "8bc8a997be3b713a1dfce5926a02bef04569607f9b52a0b10fcb3588e549b341"
+        },
+        "expected": {
+          "stdout": "RESULT 179997000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/43-generators"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/43-generators",
+              "bytes": 16505792,
+              "sha256": "957227e579cfc0433e793a62b42c5e02783eb51d76aa00531d18e2c254b5d2f4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/43-generators"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/43-generators",
+              "bytes": 9164528,
+              "sha256": "6e0c3fcfa9d178d1ced80dee7b4944f806e15d3561a8f325733aca7b40fe7cdb"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "50-fs-io",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/50-fs-io.ts",
+          "bytes": 605,
+          "sha256": "f8c4d9db5a34d640148e1519b6fe3358745b212734de085850e772a10838ed05"
+        },
+        "expected": {
+          "stdout": "RESULT 904500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/50-fs-io"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/50-fs-io",
+              "bytes": 16489240,
+              "sha256": "485ce986c15d474e7447c005bacbf2bc22381f247871ecf491d214d693c56fe1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/50-fs-io"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/50-fs-io",
+              "bytes": 16489240,
+              "sha256": "485ce986c15d474e7447c005bacbf2bc22381f247871ecf491d214d693c56fe1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "51-pipeline",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/51-pipeline.ts",
+          "bytes": 1056,
+          "sha256": "4d4882812ded9985f8287b43ef18dab3111976ad2b6c98459072ac844a9e42e9"
+        },
+        "expected": {
+          "stdout": "RESULT 99180339350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/51-pipeline"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/baseline/51-pipeline",
+              "bytes": 16505768,
+              "sha256": "50eba89a617d3a23f8c2edf4c6229cc5f08e4dc5623b75108835d3548fbd7b2f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/51-pipeline"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/51-pipeline",
+              "bytes": 9164520,
+              "sha256": "0f6400d5e9bcffb0bd702d2d92d6f1201f5725f400a4e8e1147c0220a2b368ab"
+            },
+            "env": {},
+            "runtimeProfile": "core"
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "code": {
+    "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/verify-workloads.mjs",
+    "bytes": 4473,
+    "sha256": "8927210a3898d7fec5d4c8791a891a94db8209a3425c9ab32bb4c9c2d44e4d13"
+  },
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M1 Max",
+    "kernel": "25.5.0",
+    "loadBefore": [
+      10.806640625,
+      12.60693359375,
+      14.3876953125
+    ],
+    "loadAfter": [
+      14.6865234375,
+      18.37744140625,
+      17.4501953125
+    ]
+  },
+  "settings": {
+    "initialPairedSamples": 5,
+    "confirmationPairedSamples": 10,
+    "slowdownThreshold": 0.03,
+    "timeoutMs": 300000,
+    "recordTradeoffs": false
+  },
+  "profileTradeoffs": [],
+  "cases": {
+    "00-noop": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 853.960917
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 259.5805
+        }
+      },
+      "throughput": null
+    },
+    "01-hello": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 444.157292
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 269.809708
+        }
+      },
+      "throughput": null
+    },
+    "10-fib": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 950.323041
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 968.364833
+        }
+      },
+      "throughput": null
+    },
+    "11-loop-sum": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1711.713292
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1468.549125
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 1046.616667,
+          "max": 1365.876958,
+          "mean": 1092.0395668,
+          "median": 1063.0222705,
+          "stddev": 97.19031772242576,
+          "runs": 10,
+          "p90": 1087.238334,
+          "samples": [
+            1365.876958,
+            1087.238334,
+            1075.19175,
+            1058.589083,
+            1046.616667,
+            1072.118042,
+            1067.455458,
+            1050.825917,
+            1049.053167,
+            1047.430292
+          ]
+        },
+        "candidate": {
+          "min": 1041.282792,
+          "max": 1373.515083,
+          "mean": 1109.11955,
+          "median": 1068.4384584999998,
+          "stddev": 99.18872754086496,
+          "runs": 10,
+          "p90": 1158.285541,
+          "samples": [
+            1373.515083,
+            1098.525959,
+            1111.252875,
+            1158.285541,
+            1069.438708,
+            1051.257875,
+            1055.690208,
+            1067.438209,
+            1064.50825,
+            1041.282792
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 13.37135400000011,
+          "ci95Ms": [
+            -6.147500000000036,
+            26.336708499999986
+          ]
+        },
+        "initialMedianRatio": 1.033539250091902,
+        "medianRatio": 1.0050950842238255,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "12-mandelbrot": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1896.285125
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1762.879042
+        }
+      },
+      "throughput": null
+    },
+    "13-nbody": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 13947.378458
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 13293.73875
+        }
+      },
+      "throughput": null
+    },
+    "14-spectral-norm": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3654.551
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3632.845292
+        }
+      },
+      "throughput": null
+    },
+    "15-crc32": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 8245.71325
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 7823.35525
+        }
+      },
+      "throughput": null
+    },
+    "20-sieve": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1265.440333
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1154.586125
+        }
+      },
+      "throughput": null
+    },
+    "21-matmul": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 42962.363125
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 40442.096833
+        }
+      },
+      "throughput": null
+    },
+    "22-array-sort": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 6555.880167
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 5934.941708
+        }
+      },
+      "throughput": null
+    },
+    "23-binary-trees": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3091.67875
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3849.591209
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2473.3445,
+          "max": 5282.794166,
+          "mean": 3136.7037666000006,
+          "median": 2665.851875,
+          "stddev": 1204.7956496566483,
+          "runs": 5,
+          "p90": 5282.794166,
+          "samples": [
+            5282.794166,
+            2473.3445,
+            2515.158334,
+            2746.369958,
+            2665.851875
+          ]
+        },
+        "candidate": {
+          "min": 2525.802708,
+          "max": 5077.47525,
+          "mean": 3252.1320666,
+          "median": 2678.826292,
+          "stddev": 1070.3510668440683,
+          "runs": 5,
+          "p90": 5077.47525,
+          "samples": [
+            5077.47525,
+            2525.802708,
+            2631.290917,
+            3347.265166,
+            2678.826292
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 52.45820800000001,
+          "ci95Ms": [
+            -205.31891599999926,
+            600.8952079999999
+          ]
+        },
+        "initialMedianRatio": 1.0048668934390814,
+        "medianRatio": 1.0048668934390814,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "24-map-set": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1414.971583
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1220.820833
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 739.930292,
+          "max": 780.820542,
+          "mean": 757.4827251999999,
+          "median": 745.919,
+          "stddev": 20.84382793401186,
+          "runs": 5,
+          "p90": 780.820542,
+          "samples": [
+            779.538334,
+            741.205458,
+            745.919,
+            739.930292,
+            780.820542
+          ]
+        },
+        "candidate": {
+          "min": 737.842291,
+          "max": 779.7345,
+          "mean": 751.2947916,
+          "median": 744.673916,
+          "stddev": 17.1271745849179,
+          "runs": 5,
+          "p90": 779.7345,
+          "samples": [
+            754.348334,
+            739.874917,
+            744.673916,
+            737.842291,
+            779.7345
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -1.3305410000000393,
+          "ci95Ms": [
+            -25.18999999999994,
+            -1.0860420000000204
+          ]
+        },
+        "initialMedianRatio": 0.9983308053555413,
+        "medianRatio": 0.9983308053555413,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "30-string-build": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1685.334875
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1412.264584
+        }
+      },
+      "throughput": null
+    },
+    "31-json": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3533.894875
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3389.690916
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2914.298166,
+          "max": 3179.261166,
+          "mean": 3019.7177375,
+          "median": 2990.178625,
+          "stddev": 89.99420548713469,
+          "runs": 10,
+          "p90": 3174.983417,
+          "samples": [
+            2991.3755,
+            3174.983417,
+            3179.261166,
+            2985.763084,
+            2988.98175,
+            2970.42275,
+            3003.211,
+            2942.79475,
+            3046.085792,
+            2914.298166
+          ]
+        },
+        "candidate": {
+          "min": 2897.007959,
+          "max": 3185.614667,
+          "mean": 3034.878421,
+          "median": 3014.2913755,
+          "stddev": 98.66217968168365,
+          "runs": 10,
+          "p90": 3179.172375,
+          "samples": [
+            3096.243083,
+            3185.614667,
+            3179.172375,
+            3026.097209,
+            3002.485542,
+            3079.103417,
+            2979.573583,
+            2977.513,
+            2925.973375,
+            2897.007959
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 12.067520999999942,
+          "ci95Ms": [
+            -17.29020700000001,
+            59.18568749999986
+          ]
+        },
+        "initialMedianRatio": 1.0350566430058679,
+        "medianRatio": 1.008063983301332,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "32-regex": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 9223.909166
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 8818.799709
+        }
+      },
+      "throughput": null
+    },
+    "40-classes": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3821.604042
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3635.882
+        }
+      },
+      "throughput": null
+    },
+    "41-closures": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 10006.085292
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 9708.861458
+        }
+      },
+      "throughput": null
+    },
+    "42-async": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2852.963
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2552.289792
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2089.74925,
+          "max": 2112.255,
+          "mean": 2100.2685250000004,
+          "median": 2096.021208,
+          "stddev": 10.971852134092137,
+          "runs": 5,
+          "p90": 2112.255,
+          "samples": [
+            2111.79,
+            2112.255,
+            2091.527167,
+            2089.74925,
+            2096.021208
+          ]
+        },
+        "candidate": {
+          "min": 2055.366375,
+          "max": 2091.536833,
+          "mean": 2069.0121664,
+          "median": 2065.50125,
+          "stddev": 15.194605347025265,
+          "runs": 5,
+          "p90": 2091.536833,
+          "samples": [
+            2091.536833,
+            2065.50125,
+            2055.366375,
+            2056.248458,
+            2076.407916
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -33.50079199999982,
+          "ci95Ms": [
+            -46.75375000000031,
+            -19.613292
+          ]
+        },
+        "initialMedianRatio": 0.9854390986677458,
+        "medianRatio": 0.9854390986677458,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "43-generators": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 27308.55425
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 25147.173709
+        }
+      },
+      "throughput": null
+    },
+    "50-fs-io": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1383.310042
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2710.265958
+        }
+      },
+      "throughput": null
+    },
+    "51-pipeline": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2754.37275
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 4587.001208
+        }
+      },
+      "throughput": null
+    }
+  },
+  "finishedAt": "2026-09-11T10:03:38.399Z",
+  "passed": true
+}

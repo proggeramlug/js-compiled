@@ -1,0 +1,351 @@
+{
+  "artifactSourceCommit": "27c598181dfb331d72a798754641082584028df0",
+  "reviewHead": "ef9e56e4ef17a9669bd78b96b4ef2cf0c0ac3057",
+  "finalCompiledCommit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+  "availableHostChecksComplete": true,
+  "releaseMatrixComplete": false,
+  "agreedLocalMatrix": [
+    "AMD Linux x64",
+    "macOS ARM64"
+  ],
+  "deferredByUser": [
+    "Intel Linux allocator measurements: no host available"
+  ],
+  "ciOwnership": "Separate worker; not awaited or claimed",
+  "platforms": {
+    "linux": {
+      "host": {
+        "platform": "linux",
+        "arch": "x64",
+        "kernel": "6.17.0-23-generic",
+        "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+        "logicalCpus": 16,
+        "memoryBytes": 66468130816,
+        "loadBefore": [
+          1.32,
+          2.23,
+          2.52
+        ],
+        "node": "v26.5.1",
+        "loadAfter": [
+          1.42,
+          2.22,
+          2.52
+        ]
+      },
+      "startup": {
+        "empty": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            2.4579025000000003,
+            2.4771590000000003
+          ],
+          "candidateMs": [
+            0.9504090000000001,
+            1.009755
+          ],
+          "scriptcMs": [
+            0.9169864999999999,
+            0.9390525
+          ],
+          "peakRssKiB": {
+            "baseline": 18696,
+            "candidate": 1308,
+            "scriptc": 1728
+          },
+          "bytes": {
+            "baseline": 18988160,
+            "candidate": 14256,
+            "scriptc": 23896
+          }
+        },
+        "noop": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            2.608404,
+            2.632043
+          ],
+          "candidateMs": [
+            1.023656,
+            1.007811
+          ],
+          "scriptcMs": [
+            0.942024,
+            0.9415825
+          ],
+          "peakRssKiB": {
+            "baseline": 21636,
+            "candidate": 1308,
+            "scriptc": 1692
+          },
+          "bytes": {
+            "baseline": 18988464,
+            "candidate": 14472,
+            "scriptc": 40944
+          }
+        },
+        "hello": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            2.657776,
+            2.6605365
+          ],
+          "candidateMs": [
+            1.013662,
+            1.0098105
+          ],
+          "scriptcMs": [
+            0.9828995,
+            0.9588099999999999
+          ],
+          "peakRssKiB": {
+            "baseline": 21572,
+            "candidate": 1308,
+            "scriptc": 1760
+          },
+          "bytes": {
+            "baseline": 19000784,
+            "candidate": 14472,
+            "scriptc": 41192
+          }
+        }
+      },
+      "workloads": {
+        "11-loop-sum": 1.0023516170859126,
+        "23-binary-trees": 1.0068185563734589,
+        "24-map-set": 0.9968630933192814,
+        "31-json": 0.9883365445959927,
+        "42-async": 0.9884384125294994
+      },
+      "package-workloads": {
+        "11-loop-sum": 1.0079372693045325,
+        "23-binary-trees": 0.9866007214355774,
+        "24-map-set": 1.001917730808988,
+        "31-json": 1.006169846662071,
+        "42-async": 1.0086764952753402
+      },
+      "classThroughputRatio": 1.0049275221615692,
+      "movingGc": {
+        "test_gap_startup_empty_checkpoint_before_exit": [
+          25
+        ],
+        "test_gap_startup_empty_checkpoint_timing": [
+          12664
+        ],
+        "class-parents-first-use": [
+          12515
+        ]
+      },
+      "tiny": {
+        "positive": 15,
+        "fallback": 13,
+        "pipeCases": [
+          "merged-order",
+          "broken-stdout",
+          "full-device",
+          "nonblocking-backpressure",
+          "stdout-handshake",
+          "stderr-handshake",
+          "closed-stdout"
+        ]
+      },
+      "coreWitnessBytes": {
+        "baseline": 24602344,
+        "candidate": 14792088
+      },
+      "focusedTests": {
+        "runtime": 57,
+        "compiler": 17
+      },
+      "smallProfileThroughputRatios": {
+        "11-loop-sum": 0.9957164527517196,
+        "23-binary-trees": 1.0816315120999418,
+        "24-map-set": 1.0228475307709977,
+        "31-json": 1.1066342570011911,
+        "42-async": 1.062583974162532
+      },
+      "smallProfileRssKiB": {
+        "empty": {
+          "baseline": 14628,
+          "candidate": 8908
+        },
+        "noop": {
+          "baseline": 17348,
+          "candidate": 9776
+        },
+        "hello": {
+          "baseline": 17484,
+          "candidate": 9824
+        }
+      },
+      "imageEquivalence": {
+        "tiny": 3,
+        "workload": 22,
+        "package-workload": 22,
+        "class": 1
+      },
+      "finalCompilerTests": 17,
+      "finalPackageJsonContract": true
+    },
+    "macos": {
+      "host": {
+        "platform": "darwin",
+        "arch": "arm64",
+        "kernel": "25.5.0",
+        "cpu": "Apple M1 Max",
+        "logicalCpus": 10,
+        "memoryBytes": 68719476736,
+        "loadBefore": [
+          11.41796875,
+          13.37109375,
+          15.529296875
+        ],
+        "node": "v26.5.1",
+        "loadAfter": [
+          11.67333984375,
+          13.35888671875,
+          15.4990234375
+        ]
+      },
+      "startup": {
+        "empty": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            3.907,
+            3.8564585
+          ],
+          "candidateMs": [
+            2.2458335,
+            2.0964165
+          ],
+          "scriptcMs": [
+            2.287979,
+            2.221021
+          ],
+          "peakRssKiB": {
+            "baseline": 5200,
+            "candidate": 1360,
+            "scriptc": 1408
+          },
+          "bytes": {
+            "baseline": 16423048,
+            "candidate": 16824,
+            "scriptc": 52992
+          }
+        },
+        "noop": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            3.9498335,
+            3.8973335000000002
+          ],
+          "candidateMs": [
+            2.2101875,
+            2.1891875
+          ],
+          "scriptcMs": [
+            2.238,
+            2.182938
+          ],
+          "peakRssKiB": {
+            "baseline": 5872,
+            "candidate": 1344,
+            "scriptc": 1408
+          },
+          "bytes": {
+            "baseline": 16439608,
+            "candidate": 33848,
+            "scriptc": 70368
+          }
+        },
+        "hello": {
+          "assessment": "repeatable-win",
+          "baselineMs": [
+            4.021479,
+            3.9726875
+          ],
+          "candidateMs": [
+            2.2692705,
+            2.2423954999999998
+          ],
+          "scriptcMs": [
+            2.268708,
+            2.2539375
+          ],
+          "peakRssKiB": {
+            "baseline": 5872,
+            "candidate": 1360,
+            "scriptc": 1408
+          },
+          "bytes": {
+            "baseline": 16456120,
+            "candidate": 33848,
+            "scriptc": 70544
+          }
+        }
+      },
+      "workloads": {
+        "11-loop-sum": 0.9667054147296743,
+        "23-binary-trees": 0.9290116824504313,
+        "24-map-set": 0.9927734996976413,
+        "31-json": 0.9925844382977171,
+        "42-async": 0.9980922648393746
+      },
+      "historicalNoisyWorkloadRatios": {
+        "11-loop-sum": 1.0007113662036031,
+        "23-binary-trees": 1.0175276484928557,
+        "24-map-set": 1.070830027382378,
+        "31-json": 0.9959306313107561,
+        "42-async": 1.0007283245831329
+      },
+      "resolution": "Fresh final-source rerun; historical initial and pooled confirmation retained, not relabeled as passes.",
+      "package-workloads": {
+        "11-loop-sum": 1.0050950842238255,
+        "23-binary-trees": 1.0048668934390814,
+        "24-map-set": 0.9983308053555413,
+        "31-json": 1.008063983301332,
+        "42-async": 0.9854390986677458
+      },
+      "classThroughputRatio": 1.0085773974345114,
+      "movingGc": {
+        "test_gap_startup_empty_checkpoint_before_exit": [
+          25
+        ],
+        "test_gap_startup_empty_checkpoint_timing": [
+          12664
+        ],
+        "class-parents-first-use": [
+          12515
+        ]
+      },
+      "tiny": {
+        "positive": 15,
+        "fallback": 13,
+        "pipeCases": [
+          "merged-order",
+          "broken-stdout",
+          "nonblocking-backpressure",
+          "stdout-handshake",
+          "stderr-handshake",
+          "closed-stdout"
+        ]
+      },
+      "coreWitnessBytes": {
+        "baseline": 19069656,
+        "candidate": 10917352
+      },
+      "focusedTests": {
+        "runtime": 57,
+        "compiler": 17
+      },
+      "imageEquivalence": {
+        "tiny": 3,
+        "workload": 22,
+        "package-workload": 22,
+        "class": 1
+      },
+      "finalCompilerTests": 17,
+      "finalPackageJsonContract": true
+    }
+  }
+}

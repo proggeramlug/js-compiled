@@ -1,0 +1,1100 @@
+{
+  "beforeManifest": {
+    "file": "results/startup-final-macos/final/package-workloads/manifest.json",
+    "bytes": 39054,
+    "sha256": "2c41ca9429fd1cb54b54d96befcab240f9581455acc452b58d18d8a4f8e78b61"
+  },
+  "afterManifest": {
+    "file": "results/startup-json-final-macos/verification/package-workloads/manifest.json",
+    "bytes": 40110,
+    "sha256": "3f4b4db58f9080511ca21b5232845edf10cbdc7197305604eafa6dced615d969"
+  },
+  "verifier": {
+    "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "00-noop": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/00-noop",
+        "bytes": 33848,
+        "sha256": "e7d0bfd015a8afbc7daa33590bd679e0d845d75041a037beca1e13b5f743ec1e"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/00-noop",
+        "bytes": 33848,
+        "sha256": "e7d0bfd015a8afbc7daa33590bd679e0d845d75041a037beca1e13b5f743ec1e"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "normalizedBeforeSha256": "8a4e3aebc17885139df5bb4a5d306a833c26e0f41283619154013585a99127a4",
+      "normalizedAfterSha256": "8a4e3aebc17885139df5bb4a5d306a833c26e0f41283619154013585a99127a4"
+    },
+    "01-hello": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/01-hello",
+        "bytes": 33848,
+        "sha256": "9895d8a5b89a71697b11df81fae313571bee319cbda8b8b343e0fdcc2345936a"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/01-hello",
+        "bytes": 33848,
+        "sha256": "9895d8a5b89a71697b11df81fae313571bee319cbda8b8b343e0fdcc2345936a"
+      },
+      "byteIdentical": true,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "Mach-O UUID",
+          "offset": 1056,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 33440,
+          "bytes": 408
+        }
+      ],
+      "normalizedBeforeSha256": "ee92590f89a1a5ba9ca93833b9b5a29fb116d8e8555246726bf6ed72da44118e",
+      "normalizedAfterSha256": "ee92590f89a1a5ba9ca93833b9b5a29fb116d8e8555246726bf6ed72da44118e"
+    },
+    "10-fib": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/10-fib",
+        "bytes": 9114904,
+        "sha256": "c0e514a22864217eebe3bfbffaf9fa8c5586bb0b199a4ed27ff665d75c6895ba"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/10-fib",
+        "bytes": 9114904,
+        "sha256": "ead76744c11d1a9b8b2c3301499c2862b7280ce16f03c87c15248e869c6c9a40"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7863053,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70808
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7863053,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70808
+        }
+      ],
+      "normalizedBeforeSha256": "afaf60f3d661e5141ae8fcb8023b0b1e8f6578bc816beafc5f09126056a76f08",
+      "normalizedAfterSha256": "afaf60f3d661e5141ae8fcb8023b0b1e8f6578bc816beafc5f09126056a76f08"
+    },
+    "11-loop-sum": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/11-loop-sum",
+        "bytes": 9114872,
+        "sha256": "1b77518ebedc706b0ce07ab905402f8468352ba13a5b85b7aa304fde214c46f9"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/11-loop-sum",
+        "bytes": 9114872,
+        "sha256": "2508fc601a66970fba91c6159df552c1b6b799b9bd5d2591b07a49dae12c2667"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7594208,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044064,
+          "bytes": 70808
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7594208,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044064,
+          "bytes": 70808
+        }
+      ],
+      "normalizedBeforeSha256": "17b5e27de4d644165a3ee2ad4c19bac869b3f8ea393dabf75b6ebdf6602fdbc9",
+      "normalizedAfterSha256": "17b5e27de4d644165a3ee2ad4c19bac869b3f8ea393dabf75b6ebdf6602fdbc9"
+    },
+    "12-mandelbrot": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/12-mandelbrot",
+        "bytes": 9114896,
+        "sha256": "e23a975d5e9141d528be5661ffc22a321d31035832e08404a093a180409a033a"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/12-mandelbrot",
+        "bytes": 9114896,
+        "sha256": "0ff2e2ba27a62d9de3871729baec87fdf6763891d57a277bdc93ae340f6c41eb"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7855474,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70816
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7855474,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70816
+        }
+      ],
+      "normalizedBeforeSha256": "b1ac6b69d0f0af6d3d589e038369e308b390b4110d45c91c129f36525ccb5455",
+      "normalizedAfterSha256": "b1ac6b69d0f0af6d3d589e038369e308b390b4110d45c91c129f36525ccb5455"
+    },
+    "13-nbody": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/13-nbody",
+        "bytes": 9147944,
+        "sha256": "7b77d72f048b924c9ae3dc218110facf9947990f69b6eb47b2be8c60098bd238"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/13-nbody",
+        "bytes": 9147944,
+        "sha256": "e012a554276e1bd34f883bd9833aab7a0131b4ddf100785e986d0f435b69952d"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7889563,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076880,
+          "bytes": 71064
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7889563,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076880,
+          "bytes": 71064
+        }
+      ],
+      "normalizedBeforeSha256": "ac8d41806c81df7d073a3defe81cc70e09cc76a9f08ecaee1125a74b0f1ea992",
+      "normalizedAfterSha256": "ac8d41806c81df7d073a3defe81cc70e09cc76a9f08ecaee1125a74b0f1ea992"
+    },
+    "14-spectral-norm": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/14-spectral-norm",
+        "bytes": 9131440,
+        "sha256": "226bd7c86d42bb29a1f1b2971ce258d84f886e2387f86ae9bbcabf656b661e5b"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/14-spectral-norm",
+        "bytes": 9131440,
+        "sha256": "53cc316fe6200090aa52a49996776ebebe4f96d6d5ca5c6d21508cb0ae540e1a"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7882206,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70944
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7882206,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70944
+        }
+      ],
+      "normalizedBeforeSha256": "4da70a1d408fd38aebce5e89ad7ee0d31dd7dd146c6a70aa8f1226d73961fc06",
+      "normalizedAfterSha256": "4da70a1d408fd38aebce5e89ad7ee0d31dd7dd146c6a70aa8f1226d73961fc06"
+    },
+    "15-crc32": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/15-crc32",
+        "bytes": 9114904,
+        "sha256": "f6d38b3d6404ab4f4c2c1bd290606e4f46736c1c29398c6a9f9178299fa283bb"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/15-crc32",
+        "bytes": 9114904,
+        "sha256": "e05d3aea1422303c5ace112d29a88fb1fd2a2bdffd6c4a4c0e0e271593cf8d20"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7862787,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70808
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7862787,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70808
+        }
+      ],
+      "normalizedBeforeSha256": "5179592014361bb7557a5411117b47d4cae2055547fbb7c3131293b45ed88d16",
+      "normalizedAfterSha256": "5179592014361bb7557a5411117b47d4cae2055547fbb7c3131293b45ed88d16"
+    },
+    "20-sieve": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/20-sieve",
+        "bytes": 9114888,
+        "sha256": "e571ab47c2e9615b180152a75f30953bc890e26d3e37340e30c9cc61982109ec"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/20-sieve",
+        "bytes": 9114888,
+        "sha256": "07b651c39d4a4a865959c6972d6b2b1adb9f2f1932ffe97f12ccff5198185ccd"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7856941,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70808
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7856941,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70808
+        }
+      ],
+      "normalizedBeforeSha256": "f84498485a6daefe6f9f5a1f7a4732c76825c4eaf51abd75ce7f8d8c3b06c7a1",
+      "normalizedAfterSha256": "f84498485a6daefe6f9f5a1f7a4732c76825c4eaf51abd75ce7f8d8c3b06c7a1"
+    },
+    "21-matmul": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/21-matmul",
+        "bytes": 9131432,
+        "sha256": "dacbeea4ba89a782f2c5114ef4826428b20ba2239d882eb4303cb4d37b71110b"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/21-matmul",
+        "bytes": 9131432,
+        "sha256": "cbc4dc15e9acedcaabe96739e92644f623e158e42ac928512f916bcf539c4585"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7880218,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70936
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7880218,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70936
+        }
+      ],
+      "normalizedBeforeSha256": "cdbb07020199e354ad4217e3302a1bd959befffcab39534929e644034e51d089",
+      "normalizedAfterSha256": "cdbb07020199e354ad4217e3302a1bd959befffcab39534929e644034e51d089"
+    },
+    "22-array-sort": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/22-array-sort",
+        "bytes": 9114912,
+        "sha256": "05db44f212361f1d7531a6e48a47c66f8402f323d7f3aeae17828ac9bfe982f9"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/22-array-sort",
+        "bytes": 9114912,
+        "sha256": "ae38b4442796856a1be05beeec8a74c8c552ae29c44e30df48ca098de6cf514b"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7863034,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70816
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7863034,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044096,
+          "bytes": 70816
+        }
+      ],
+      "normalizedBeforeSha256": "b1b69962b4dd743f2e8384cffbe46a1c6b914d358407da77fafc84b91443e5d0",
+      "normalizedAfterSha256": "b1b69962b4dd743f2e8384cffbe46a1c6b914d358407da77fafc84b91443e5d0"
+    },
+    "23-binary-trees": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/23-binary-trees",
+        "bytes": 9131456,
+        "sha256": "df7ec7a543bb3923162cc881cdfa0dd37e1f35995b7c8ed15ed334b9c6e6e65c"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/23-binary-trees",
+        "bytes": 9131456,
+        "sha256": "d1534e78fd421be29f3237472e078d5ac9a57c7478780e7603d6297228e27dc7"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7881123,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060512,
+          "bytes": 70944
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7881123,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060512,
+          "bytes": 70944
+        }
+      ],
+      "normalizedBeforeSha256": "6bd2294538779440e2d32149a4c79892f175d0eff5d77ccdf7f619c6ebcd408a",
+      "normalizedAfterSha256": "6bd2294538779440e2d32149a4c79892f175d0eff5d77ccdf7f619c6ebcd408a"
+    },
+    "24-map-set": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/24-map-set",
+        "bytes": 9114888,
+        "sha256": "78b6c0e37a54c0a12065be477f59e6e093804dba5558e15899510eafa51c9d66"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/24-map-set",
+        "bytes": 9114888,
+        "sha256": "ce377539ffab3b1f433cb4dd5ee194d91288c2191b7237184b7b6d79847e9933"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7861233,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70808
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7861233,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9044080,
+          "bytes": 70808
+        }
+      ],
+      "normalizedBeforeSha256": "63cf2859765fd64be332ad2ae33caf72da5b24dbf36171faf4483046cb439792",
+      "normalizedAfterSha256": "63cf2859765fd64be332ad2ae33caf72da5b24dbf36171faf4483046cb439792"
+    },
+    "30-string-build": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/30-string-build",
+        "bytes": 9147984,
+        "sha256": "883b172b0db5caf46ad6dc94e07ed69db60e815f4c529806aa2c81d024ec148a"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/30-string-build",
+        "bytes": 9147984,
+        "sha256": "ff43aa2cee0a1769570d5fc76045844517b2c8d14c6a5ba17be9f67b16d608b8"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7897191,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076912,
+          "bytes": 71072
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7897191,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076912,
+          "bytes": 71072
+        }
+      ],
+      "normalizedBeforeSha256": "ac06d2d622c2d93529eb8d3c209520d4a869c7161e489c852c87a445a93af5c0",
+      "normalizedAfterSha256": "ac06d2d622c2d93529eb8d3c209520d4a869c7161e489c852c87a445a93af5c0"
+    },
+    "31-json": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/31-json",
+        "bytes": 9214088,
+        "sha256": "c6b783ee06b9d7768c1f0160c666b3f2486528b2e523f4323622d4ea185b23d8"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/31-json",
+        "bytes": 9214088,
+        "sha256": "b5b29718a59677102e1c6f5cff81139e1e4faf3fe360a57af2faccbb10b6b583"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7950042,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9142512,
+          "bytes": 71576
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7950042,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9142512,
+          "bytes": 71576
+        }
+      ],
+      "normalizedBeforeSha256": "05f2a1461137576173850aa4f29275f0cbf95b4e5df0f57dc0cfa96973a88d70",
+      "normalizedAfterSha256": "05f2a1461137576173850aa4f29275f0cbf95b4e5df0f57dc0cfa96973a88d70"
+    },
+    "32-regex": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/32-regex",
+        "bytes": 16456152,
+        "sha256": "f6e8f1d21a95f3bcde9d1adc96df43b3499f7018a33d91b8d21fefd42149a33d"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/32-regex",
+        "bytes": 16456152,
+        "sha256": "7a2ccbdcbb649415b1c4447b4f4c9d204046e3aad73f21eadcdc77cccb0f652f"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14008119,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16328448,
+          "bytes": 127704
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14008119,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16328448,
+          "bytes": 127704
+        }
+      ],
+      "normalizedBeforeSha256": "9a2de6a8870b6291cfed7a750bde59b411559e5d6679567557db12ed20288b8c",
+      "normalizedAfterSha256": "9a2de6a8870b6291cfed7a750bde59b411559e5d6679567557db12ed20288b8c"
+    },
+    "40-classes": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/40-classes",
+        "bytes": 9147976,
+        "sha256": "b0664057687dbe42390c96fe105d7939f6b13a8823264907a93807ac8910d358"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/40-classes",
+        "bytes": 9147976,
+        "sha256": "15897d25e15637448ee2a26bae87a38bd6694533cb739856e0edd3ee96581a23"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7894919,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076912,
+          "bytes": 71064
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7894919,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9076912,
+          "bytes": 71064
+        }
+      ],
+      "normalizedBeforeSha256": "c4cc9f3200299f2df14da8fdb6f4b20a46aa081145be6999e85f897e4ab9476a",
+      "normalizedAfterSha256": "c4cc9f3200299f2df14da8fdb6f4b20a46aa081145be6999e85f897e4ab9476a"
+    },
+    "41-closures": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/41-closures",
+        "bytes": 9131432,
+        "sha256": "1a8ef16dfec7d0fdef9a37dcdb24ce49b2476251fc80d7300480cfdb1232e666"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/41-closures",
+        "bytes": 9131432,
+        "sha256": "18ea6500f0cdb49ec0f79c5a5f6efda81da1b6863eaeab1c6358957f3fa2304c"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7871738,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70936
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7871738,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9060496,
+          "bytes": 70936
+        }
+      ],
+      "normalizedBeforeSha256": "75e9b3bb6db881b0f69b1294c7201f4066f8f4349adf1fa7943921181695bcd3",
+      "normalizedAfterSha256": "75e9b3bb6db881b0f69b1294c7201f4066f8f4349adf1fa7943921181695bcd3"
+    },
+    "42-async": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/42-async",
+        "bytes": 9181048,
+        "sha256": "a016ceb4a57da310df4fc23fa97da2189938bca0da09b9d6096c7991e6e19d05"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/42-async",
+        "bytes": 9181048,
+        "sha256": "1a458245391bbcae60039d577491c2e47f5e000305da9a65c25f0f35e513ec43"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7922435,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9109728,
+          "bytes": 71320
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7922435,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9109728,
+          "bytes": 71320
+        }
+      ],
+      "normalizedBeforeSha256": "f0e9d0ff4e03248fbf2fdde858a292491837e64b1f694d6d8c4353cf70d0f0d2",
+      "normalizedAfterSha256": "f0e9d0ff4e03248fbf2fdde858a292491837e64b1f694d6d8c4353cf70d0f0d2"
+    },
+    "43-generators": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/43-generators",
+        "bytes": 9164528,
+        "sha256": "6e0c3fcfa9d178d1ced80dee7b4944f806e15d3561a8f325733aca7b40fe7cdb"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/43-generators",
+        "bytes": 9164528,
+        "sha256": "62cfbae7c49554b782137c0ba850bdc533c03d8cc186d6f4a1f0a0fe6055b32e"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7917895,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9093328,
+          "bytes": 71200
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7917895,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9093328,
+          "bytes": 71200
+        }
+      ],
+      "normalizedBeforeSha256": "cc251df6b3073fa213bb4d76542ae2b6cd92bd986b297a917619e893215c98c6",
+      "normalizedAfterSha256": "cc251df6b3073fa213bb4d76542ae2b6cd92bd986b297a917619e893215c98c6"
+    },
+    "50-fs-io": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/50-fs-io",
+        "bytes": 16489240,
+        "sha256": "485ce986c15d474e7447c005bacbf2bc22381f247871ecf491d214d693c56fe1"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/50-fs-io",
+        "bytes": 16489240,
+        "sha256": "0afd3c8732c595f201af702944069e18dd6ef87f2fc39a9837c6a54356f74086"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 11956085,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16361280,
+          "bytes": 127960
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 11956085,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16361280,
+          "bytes": 127960
+        }
+      ],
+      "normalizedBeforeSha256": "dfd379e92abdf338e8918324b5516e5ae3335daaf278bc47776a4f52998dba53",
+      "normalizedAfterSha256": "dfd379e92abdf338e8918324b5516e5ae3335daaf278bc47776a4f52998dba53"
+    },
+    "51-pipeline": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-workloads/candidate/51-pipeline",
+        "bytes": 9164520,
+        "sha256": "0f6400d5e9bcffb0bd702d2d92d6f1201f5725f400a4e8e1147c0220a2b368ab"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-workloads/candidate/51-pipeline",
+        "bytes": 9164520,
+        "sha256": "302b73c2c589f4e47ad9a1ee57122d60cb7b217958c77cf35810296fe9a5d6fe"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7915195,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9093328,
+          "bytes": 71192
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 7915195,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 9093328,
+          "bytes": 71192
+        }
+      ],
+      "normalizedBeforeSha256": "febb4e390c3d7bfee4dacdecb908c7cce5a54d86c4657314945ef3507a77bfad",
+      "normalizedAfterSha256": "febb4e390c3d7bfee4dacdecb908c7cce5a54d86c4657314945ef3507a77bfad"
+    }
+  },
+  "equivalent": true
+}

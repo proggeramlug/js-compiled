@@ -1,0 +1,84 @@
+{
+  "commit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+  "source": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+  "cargoTargetDir": "/Users/amlug/projects/perry/perry-startup-release-candidate/target/startup-isolated",
+  "coreTargetDir": "/Users/amlug/projects/perry/perry-startup-release-candidate/target/startup-final-core",
+  "commands": [
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--profile",
+        "perry-dev",
+        "-p",
+        "perry"
+      ],
+      "env": {},
+      "exitCode": 0,
+      "log": "compiler.log"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release",
+        "-p",
+        "perry-runtime-static"
+      ],
+      "env": {},
+      "exitCode": 0,
+      "log": "perry-runtime-static.log"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release",
+        "-p",
+        "perry-stdlib-static"
+      ],
+      "env": {},
+      "exitCode": 0,
+      "log": "perry-stdlib-static.log"
+    },
+    {
+      "argv": [
+        "bash",
+        "scripts/build_core_runtime.sh",
+        "aarch64-apple-darwin",
+        "release"
+      ],
+      "env": {
+        "CARGO_TARGET_DIR": "/Users/amlug/projects/perry/perry-startup-release-candidate/target/startup-final-core"
+      },
+      "exitCode": 0,
+      "log": "core.log"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/perry",
+      "bytes": 136533720,
+      "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_runtime.a",
+      "bytes": 36830248,
+      "sha256": "860c2f2e3d3613749753f82dd9454037aa808b9c99deee5bbc44ce5eaca423aa"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_stdlib.a",
+      "bytes": 76670136,
+      "sha256": "60e4acd690f0582c2dd9a0e8c611c9e7a3725172737dae456973226ce055d953"
+    },
+    {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_runtime_core.a",
+      "bytes": 24625880,
+      "sha256": "aea5677700b9226dc64808f2c8e90e6952c426236752188db6ec780f2a127dc1"
+    }
+  ],
+  "complete": true
+}

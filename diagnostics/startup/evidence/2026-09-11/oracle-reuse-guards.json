@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "incomplete",
+      "rejected": true
+    },
+    {
+      "case": "failed",
+      "rejected": true
+    },
+    {
+      "case": "different-manifest",
+      "rejected": true
+    },
+    {
+      "case": "missing-case",
+      "rejected": true
+    },
+    {
+      "case": "missing-oracle",
+      "rejected": true
+    }
+  ]
+}

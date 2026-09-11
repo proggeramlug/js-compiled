@@ -1,0 +1,26 @@
+{
+  "empty": {
+    "binary": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/empty",
+      "bytes": 16824,
+      "sha256": "c393be274822fb6c2a3b74816435fd01309781a6e32fef0410762bdc7bb7435c"
+    },
+    "dependencies": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/empty:\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n"
+  },
+  "noop": {
+    "binary": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/noop",
+      "bytes": 33848,
+      "sha256": "73f61bd7e47d943d28d61c814aff1ab10635477efa46fdf5d99c0737e097993d"
+    },
+    "dependencies": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/noop:\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n"
+  },
+  "hello": {
+    "binary": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/hello",
+      "bytes": 33848,
+      "sha256": "942951607df7073e90745e8674536517538b66ee1ee7281627bc42ec0a93d2ff"
+    },
+    "dependencies": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/package-startup/candidate/hello:\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n"
+  }
+}

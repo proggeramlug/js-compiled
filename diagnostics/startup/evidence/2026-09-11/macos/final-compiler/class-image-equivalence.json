@@ -1,0 +1,70 @@
+{
+  "beforeManifest": {
+    "file": "results/startup-final-macos/final/class-throughput/manifest.json",
+    "bytes": 8216,
+    "sha256": "29d099c4a1f90ed3ca1484482c034255e913ac49420cb6face0f487cac70932c"
+  },
+  "afterManifest": {
+    "file": "results/startup-json-final-macos/verification/class-throughput/manifest.json",
+    "bytes": 6417,
+    "sha256": "e86fa4266ef50296dde9a6b74b280f6e3944243533e9f87f9aa0f5c50cdcf302"
+  },
+  "verifier": {
+    "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/compare-native-images.py",
+    "bytes": 4501,
+    "sha256": "104611d6085e66123280097bcbef79369329dc8e6f97536212bd46d96ce07721"
+  },
+  "cases": {
+    "class-parent-throughput": {
+      "before": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/candidate/class-parent-throughput",
+        "bytes": 16505800,
+        "sha256": "5eb9f6b8f6052fbfc07bf57938bf1271b49fb933f477f72f1ef04e391d58980b"
+      },
+      "after": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/class-throughput/candidate/class-parent-throughput",
+        "bytes": 16505800,
+        "sha256": "24da9358871dbc178d4fe0dcc8419fcbcd16ac4b1aff46cc3e0af63306bc553a"
+      },
+      "byteIdentical": false,
+      "equivalent": true,
+      "beforeNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14052319,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16377696,
+          "bytes": 128104
+        }
+      ],
+      "afterNormalizations": [
+        {
+          "kind": "source-id",
+          "offset": 14052319,
+          "bytes": 40
+        },
+        {
+          "kind": "Mach-O UUID",
+          "offset": 2000,
+          "bytes": 16
+        },
+        {
+          "kind": "Mach-O code signature",
+          "offset": 16377696,
+          "bytes": 128104
+        }
+      ],
+      "normalizedBeforeSha256": "7735cd52b1c6a78fc43d961f565b6f06014076637bf52acbc7312032b356f5d4",
+      "normalizedAfterSha256": "7735cd52b1c6a78fc43d961f565b6f06014076637bf52acbc7312032b356f5d4"
+    }
+  },
+  "equivalent": true
+}

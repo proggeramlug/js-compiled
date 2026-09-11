@@ -1,0 +1,95 @@
+{
+  "variants": {
+    "baseline": {
+      "source": "/dev/shm/perry-startup-27c598181/baseline",
+      "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+      "libraries": [
+        {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a",
+          "bytes": 53293628,
+          "sha256": "c6e6ec72d98ef4ba859c53a4d7be9e4a553f7636e4ca6732a59732bcf73c1fef"
+        },
+        {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_stdlib.a",
+          "bytes": 113183714,
+          "sha256": "081f3dfa41d0042ac12cbe10aa563614f546f19b5a3b60ed266e6594a3c42f19"
+        }
+      ],
+      "cargoTargetDir": "/dev/shm/perry-startup-27c598181/results/baseline-build/cargo-target/baseline",
+      "compiler": {
+        "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+        "bytes": 125009552,
+        "sha256": "29d76ee459ac838a2dabcafdfaee9360dcab7901a6b254bf2646f6bfc9ea00e6"
+      }
+    },
+    "candidate": {
+      "source": "/dev/shm/perry-startup-27c598181/baseline",
+      "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+      "libraries": [
+        {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/candidate/libperry_runtime.a",
+          "bytes": 53293628,
+          "sha256": "c6e6ec72d98ef4ba859c53a4d7be9e4a553f7636e4ca6732a59732bcf73c1fef"
+        },
+        {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/candidate/libperry_stdlib.a",
+          "bytes": 113183714,
+          "sha256": "081f3dfa41d0042ac12cbe10aa563614f546f19b5a3b60ed266e6594a3c42f19"
+        }
+      ],
+      "cargoTargetDir": "/dev/shm/perry-startup-27c598181/results/baseline-build/cargo-target/candidate",
+      "compiler": {
+        "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/candidate/perry",
+        "bytes": 125009552,
+        "sha256": "29d76ee459ac838a2dabcafdfaee9360dcab7901a6b254bf2646f6bfc9ea00e6"
+      }
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--profile",
+        "perry-dev",
+        "-p",
+        "perry"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/baseline",
+      "cargoTargetDir": "/dev/shm/perry-startup-27c598181/results/baseline-build/cargo-target/baseline",
+      "log": "baseline-compiler.log"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release",
+        "-p",
+        "perry-runtime-static"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/baseline",
+      "cargoTargetDir": "/dev/shm/perry-startup-27c598181/results/baseline-build/cargo-target/baseline",
+      "log": "baseline-perry-runtime-static.log"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--locked",
+        "--release",
+        "-p",
+        "perry-stdlib-static"
+      ],
+      "cwd": "/dev/shm/perry-startup-27c598181/baseline",
+      "cargoTargetDir": "/dev/shm/perry-startup-27c598181/results/baseline-build/cargo-target/baseline",
+      "log": "baseline-perry-stdlib-static.log"
+    }
+  ],
+  "rustc": "rustc 1.100.0-nightly (f7d782a3b 2026-08-19)\nbinary: rustc\ncommit-hash: f7d782a3be46d6bb4b9792fe69a61db389ba1769\ncommit-date: 2026-08-19\nhost: x86_64-unknown-linux-gnu\nrelease: 1.100.0-nightly\nLLVM version: 23.1.0\n",
+  "llvm": {
+    "prefix": "/usr/lib/llvm-22",
+    "version": "22.1.8"
+  }
+}

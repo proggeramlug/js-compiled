@@ -1,0 +1,32 @@
+[
+  {
+    "name": "measure-startup",
+    "argv": [
+      "node",
+      "diagnostics/startup/compare.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/startup/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/startup/measurements.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "measure-workloads",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-workloads.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/workloads/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/workloads/measurements.json"
+    ],
+    "exitCode": 1
+  },
+  {
+    "name": "measure-class-throughput",
+    "argv": [
+      "node",
+      "diagnostics/startup/verify-class-throughput.mjs",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/manifest.json",
+      "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/class-throughput/measurements.json"
+    ],
+    "exitCode": 0
+  }
+]

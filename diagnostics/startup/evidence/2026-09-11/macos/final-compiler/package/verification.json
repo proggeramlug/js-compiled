@@ -1,0 +1,967 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T10:45:01.137Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "27f6d863725a2ba4c5ea1e15bf46499ce6ba9f0b",
+    "harnessDiffSha256": "ed224e7babb1f62d9a53e88da59e783dc0de937bd0ba9b1605c584ce405c0667",
+    "configuration": {
+      "compileArgs": [],
+      "variants": {
+        "baseline": {
+          "compiler": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "buildEnv": {
+            "PERRY_NO_AUTO_OPTIMIZE": "1"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "buildEnv": {},
+          "runtimeEnv": {}
+        }
+      }
+    },
+    "node": {
+      "file": "/Users/amlug/.local/opt/node-v26.5.1-darwin-arm64/bin/node",
+      "bytes": 145265936,
+      "sha256": "87e9b1fed820a2683ea90f5871596edf605b7162519156856dacbfbad36d1d29",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "bytes": 136533720,
+          "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {
+          "PERRY_NO_AUTO_OPTIMIZE": "1"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a",
+            "bytes": 36830248,
+            "sha256": "860c2f2e3d3613749753f82dd9454037aa808b9c99deee5bbc44ce5eaca423aa"
+          }
+        ],
+        "source": null
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+          "bytes": 136533720,
+          "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v"
+        ],
+        "buildEnv": {},
+        "runtimeEnv": {},
+        "runtimeLibraries": [],
+        "source": null
+      }
+    },
+    "cases": [
+      {
+        "name": "empty",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/empty.ts",
+          "bytes": 17,
+          "sha256": "3dda1da422ab7dc2c55391cddc57156447c4ea8911cf6f3bb2e2111c82d1c5a7"
+        },
+        "expected": {
+          "stdout": "",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/empty"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/empty",
+              "bytes": 16423080,
+              "sha256": "be23fdefa5a0146e0b6c1c057fb7448d60b0aab73cd1cca3a2b5e5e7fa616681"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/empty"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/empty",
+              "bytes": 16824,
+              "sha256": "c393be274822fb6c2a3b74816435fd01309781a6e32fef0410762bdc7bb7435c"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-empty"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-empty",
+              "bytes": 52992,
+              "sha256": "b28e9e4e8575c38b3c3a92e6f549fe4c3027b37053c05a4ccc20dace7dbdbf0c"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "noop",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/00-noop.ts",
+          "bytes": 59,
+          "sha256": "d8659d84d989e811ba79d9e48c3d58f43928ea03c60cb3671a3c634346f36719"
+        },
+        "expected": {
+          "stdout": "RESULT 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/noop"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/noop",
+              "bytes": 16439624,
+              "sha256": "4270f1dcdd34a3cf1df89145108811e95941ef5873395657adaca08fa854e1de"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/noop"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/noop",
+              "bytes": 33848,
+              "sha256": "73f61bd7e47d943d28d61c814aff1ab10635477efa46fdf5d99c0737e097993d"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-noop"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-noop",
+              "bytes": 70368,
+              "sha256": "21f1d5c48b057190afce16b157095b9e7e9636381a02c4176a264b43f83fcf1f"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "hello",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/benches/01-hello.ts",
+          "bytes": 126,
+          "sha256": "62132ab54e719137430bea7f7e944ff33a47b8c49bf0acbbc15e6a134c12a57c"
+        },
+        "expected": {
+          "stdout": "hello, world\nRESULT 1\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/hello"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/baseline/hello",
+              "bytes": 16456152,
+              "sha256": "c8d1853f26ca921a0beb7b7e7191ce0b8c17eab432e4c66050a3b18a775d8cb2"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/hello"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/candidate/hello",
+              "bytes": 33848,
+              "sha256": "942951607df7073e90745e8674536517538b66ee1ee7281627bc42ec0a93d2ff"
+            },
+            "env": {},
+            "runtimeProfile": "tiny"
+          },
+          "scriptc": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-hello"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package-startup/scriptc-hello",
+              "bytes": 70544,
+              "sha256": "8360dd65469cfc928a1223f3a3e82901f9a110ca8a9e0acf3c4c0f7c31e606b6"
+            },
+            "env": {}
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "receipt": {
+    "sourceCommit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+    "work": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q",
+    "platformPackage": "@perryts/perry-darwin-arm64",
+    "artifacts": [
+      {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/perry",
+        "bytes": 136533720,
+        "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee"
+      },
+      {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_runtime.a",
+        "bytes": 36830248,
+        "sha256": "860c2f2e3d3613749753f82dd9454037aa808b9c99deee5bbc44ce5eaca423aa"
+      },
+      {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_stdlib.a",
+        "bytes": 76670136,
+        "sha256": "60e4acd690f0582c2dd9a0e8c611c9e7a3725172737dae456973226ce055d953"
+      },
+      {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/libperry_runtime_core.a",
+        "bytes": 24625880,
+        "sha256": "aea5677700b9226dc64808f2c8e90e6952c426236752188db6ec780f2a127dc1"
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "bash",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/stage/scripts/stage-npm.sh",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/artifacts"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/stage",
+        "env": {
+          "SKIP_MISSING": "1"
+        },
+        "log": "stage.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pack",
+          "--json",
+          "--pack-destination",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/stage/npm/perry",
+        "env": {},
+        "log": "perry-pack.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pack",
+          "--json",
+          "--pack-destination",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/stage/npm/perry-darwin-arm64",
+        "env": {},
+        "log": "perry-darwin-arm64-pack.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "init",
+          "-y"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install",
+        "env": {},
+        "log": "npm-init.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "pkg",
+          "set",
+          "type=module"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install",
+        "env": {},
+        "log": "npm-module-type.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "npm",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/perryts-perry-0.5.1532.tgz",
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/perryts-perry-darwin-arm64-0.5.1532.tgz"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install",
+        "env": {},
+        "log": "npm-install.log",
+        "exitCode": 0
+      },
+      {
+        "argv": [
+          "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.bin/perry",
+          "--version"
+        ],
+        "cwd": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install",
+        "env": {},
+        "log": "installed-wrapper-version.log",
+        "exitCode": 0
+      }
+    ],
+    "tarballs": [
+      {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/perryts-perry-0.5.1532.tgz",
+        "bytes": 7209,
+        "sha256": "b763d5f75196f3b150b6c260ef4ef5b97bc7cbfa25ef4ce7fbc8008c340cc6e0"
+      },
+      {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/perryts-perry-darwin-arm64-0.5.1532.tgz",
+        "bytes": 79072668,
+        "sha256": "bf4311f8e3cc7db948b55a04dd93e984b9c4f7fde2ad054e873b07e0c32f0a00"
+      }
+    ],
+    "installedCompiler": {
+      "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/@perryts/perry-darwin-arm64/bin/perry",
+      "bytes": 136533720,
+      "sha256": "db2b0435ad9895e3397a96fc6b803a0c411b7f5ff8305c25cbf08a923043a3ee"
+    },
+    "ready": true
+  },
+  "sizes": {
+    "empty": {
+      "baseline": 16423080,
+      "candidate": 16824,
+      "savedBytes": 16406256,
+      "smaller": true
+    },
+    "noop": {
+      "baseline": 16439624,
+      "candidate": 33848,
+      "savedBytes": 16405776,
+      "smaller": true
+    },
+    "hello": {
+      "baseline": 16456152,
+      "candidate": 33848,
+      "savedBytes": 16422304,
+      "smaller": true
+    }
+  },
+  "fixtures": {
+    "core-exceptions": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts",
+        "bytes": 73,
+        "sha256": "a1e3687c2874508f6712db10088a8e90af1e0bd775b2ac51f66e72647a48e113"
+      },
+      "oracle": {
+        "wallMs": 91.013917,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "caught\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1362.247792,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: statement is outside the proven subset\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40167-1789123656327636000/core_exceptions_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts.bin\nBinary size: 8.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts name=core-exceptions.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: using prebuilt core runtime: /Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40167-1789123656327636000/core_exceptions_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a[95](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a[96](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 169584,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/core-exceptions.ts.bin",
+        "bytes": 9131464,
+        "sha256": "bb1534179791ab089c2659f91841a674a517990d8f94612a7bd6bb66ac7490e7"
+      },
+      "run": {
+        "wallMs": 378.618666,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "caught\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "regex": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts",
+        "bytes": 31,
+        "sha256": "953f2fbfb56f15c3ed75ce1e5f1cc36d4409eccccded303de6bba0196a5db692"
+      },
+      "oracle": {
+        "wallMs": 82.764625,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1550.906667,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40235-1789123658146606000/regex_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts name=regex.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40235-1789123658146606000/regex_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 180784,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/regex.ts.bin",
+        "bytes": 16456176,
+        "sha256": "385bfa1367b82d5ac39eef45908c66d63b9731bbd1654697e462ad42f6979e71"
+      },
+      "run": {
+        "wallMs": 460.428167,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "intl": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts",
+        "bytes": 60,
+        "sha256": "1a88ae8f2015ef7bc1ae1f7cd97af4f596fcd7694722c69cd606a4dbb9ba651c"
+      },
+      "oracle": {
+        "wallMs": 91.79725,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "1,234.5\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1452.698,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40319-1789123660262367000/intl_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts name=intl.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40319-1789123660262367000/intl_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 185760,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/intl.ts.bin",
+        "bytes": 16472696,
+        "sha256": "9e28c71388b55a6cf9c7179d6efa7e58920c93f98e807db75cced5e158000b98"
+      },
+      "run": {
+        "wallMs": 468.179459,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "1,234.5\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "temporal": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts",
+        "bytes": 63,
+        "sha256": "e25964125f68ac220b5ad81e699817b27689ccc4c29ad8d3288056e2c611ce29"
+      },
+      "oracle": {
+        "wallMs": 91.353625,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "2020-01-02\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1404.11025,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40422-1789123662286405000/temporal_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts name=temporal.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40422-1789123662286405000/temporal_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 150160,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/temporal.ts.bin",
+        "bytes": 16472704,
+        "sha256": "0720a6578cadfab5f70b8462f67ed7c510b4f58aa5f4ade5473fbbfdfabebaab"
+      },
+      "run": {
+        "wallMs": 494.10475,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "2020-01-02\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "dynamic-eval": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts",
+        "bytes": 90,
+        "sha256": "1f9d52c7f7bef7bfaa02562d744b14ac82ec75e52a5cb0e1382f16218f8754c6"
+      },
+      "oracle": {
+        "wallMs": 84.801833,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "42\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1404.910833,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40491-1789123664288160000/dynamic_eval_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts name=dynamic-eval.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40491-1789123664288160000/dynamic_eval_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n\nnotice: 1 ahead-of-time-unsupported site handled at runtime:\n  - new Function(...)      /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts:1   → runtime interpreter (#6559)\n  Pass --strict-eval/--strict-dynamic-import (or set perry.strict = true) to make these a compile-time error instead.\n\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 220624,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/dynamic-eval.ts.bin",
+        "bytes": 16439632,
+        "sha256": "22b99c53b7674685f988e9f865ee8d7b7f39b54a7d3887c6a655fc863a7aefd7"
+      },
+      "run": {
+        "wallMs": 465.485542,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "42\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-0": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts",
+        "bytes": 109,
+        "sha256": "783389f09443ad32b0789f25a818e7a2a9b27413fdcd93e47ed66d626e4fbb19"
+      },
+      "oracle": {
+        "wallMs": 103.092292,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1458.369834,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40561-1789123666274726000/computed_global_0_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts name=computed-global-0.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40561-1789123666274726000/computed_global_0_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 190912,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-0.ts.bin",
+        "bytes": 16439640,
+        "sha256": "59b455e8456d023a71a83b65562562fd1d9a76326929adf1bf82f5391ffdb671"
+      },
+      "run": {
+        "wallMs": 448.140083,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-1": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts",
+        "bytes": 105,
+        "sha256": "b6930163e1d09f06fdcd189b7e0a6173d7e4f896c77262f39e9fabd31ff283d7"
+      },
+      "oracle": {
+        "wallMs": 87.453541,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1418.079334,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40631-1789123668275389000/computed_global_1_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts name=computed-global-1.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40631-1789123668275389000/computed_global_1_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 193264,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-1.ts.bin",
+        "bytes": 16439640,
+        "sha256": "91ee457b97585a3522fdcf8aec1da77e98963d7593b940823eb751ef41fde7cb"
+      },
+      "run": {
+        "wallMs": 448.445208,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "computed-global-2": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts",
+        "bytes": 124,
+        "sha256": "84603e306e23978f47513907c8ab6ac95d4d09368aa6c85f7ad800b50ce75a48"
+      },
+      "oracle": {
+        "wallMs": 131.258708,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 1408.047542,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: argument is not a proven effect-free string\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40701-1789123670289261000/computed_global_2_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts name=computed-global-2.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40701-1789123670289261000/computed_global_2_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 191088,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/computed-global-2.ts.bin",
+        "bytes": 16439640,
+        "sha256": "043052fc3be850ffac13b2f8dd851b7cccf01347552012e4b3c24fa5799d08e5"
+      },
+      "run": {
+        "wallMs": 652.652458,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "worker-module": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts",
+        "bytes": 79,
+        "sha256": "e8afd47e89f243b5b295eef8f1285b2ee084f2fd8e75be28653f483ab499e656"
+      },
+      "oracle": {
+        "wallMs": 86.100542,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": true,
+        "kind": "Node"
+      },
+      "build": {
+        "wallMs": 3268.078333,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: program is not a standalone effect-free source graph\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40786-1789123672451959000/worker_module_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (with stdlib)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts.bin\nBinary size: 17.8MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=resolve-import module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts import=worker_threads visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts name=worker-module.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40786-1789123672451959000/worker_module_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts.bin -lc -framework Security -framework CoreFoundation -framework SystemConfiguration -liconv -lresolv -lobjc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[456](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[457](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[458](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[461](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[462](fb80479a5fb81f6a-fse_compress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[463](fb80479a5fb81f6a-hist.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[464](fb80479a5fb81f6a-huf_compress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[465](fb80479a5fb81f6a-zstd_compress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[466](fb80479a5fb81f6a-zstd_compress_literals.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[467](fb80479a5fb81f6a-zstd_compress_sequences.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[468](fb80479a5fb81f6a-zstd_compress_superblock.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[469](fb80479a5fb81f6a-zstd_double_fast.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[470](fb80479a5fb81f6a-zstd_fast.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[471](fb80479a5fb81f6a-zstd_lazy.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[472](fb80479a5fb81f6a-zstd_ldm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[473](fb80479a5fb81f6a-zstd_opt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[474](fb80479a5fb81f6a-zstd_preSplit.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[476](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[477](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[478](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[479](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[484](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[485](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[486](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[487](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[488](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[489](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[490](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[492](c877a2978823c39d-sqlite3.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[504](bc1b343226bc6a17-a_object.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[514](bc1b343226bc6a17-posix_time.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[522](76322f89f5cc2d96-bio.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[529](76322f89f5cc2d96-file.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[533](76322f89f5cc2d96-printf.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[536](62e235b24f99f4ff-blake2.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[537](7a596fe31a02c0e2-bn_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[538](7a596fe31a02c0e2-convert.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[540](c4fcddba145918af-asn1_compat.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[542](c4fcddba145918af-cbb.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[543](c4fcddba145918af-cbs.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[545](a6455f51a2435c3f-chacha.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[552](89981633f66afe17-e_chacha20poly1305.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[560](763c374fde874a6d-console.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[561](30a9a10d3f98970e-crypto.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[570](199386740f3660f1-ripemd.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[574](c1300545a7d60e2b-dh_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[575](c1300545a7d60e2b-params.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[576](e71c6558e17b1ce7-digest_extra.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[577](fb1f39df2ea6f08f-dsa.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[578](fb1f39df2ea6f08f-dsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[580](0c919c82d61b4518-ecdsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[581](dfe446faf29f8012-ec_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[584](dcb7d53a9be33b0c-engine.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[585](a3e95cd5f24d649a-err.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[586](7510312e0f5aa0be-evp_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[587](7510312e0f5aa0be-print.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[588](7510312e0f5aa0be-p_dh.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[589](7510312e0f5aa0be-p_dh_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[590](7510312e0f5aa0be-p_dsa.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[591](7510312e0f5aa0be-p_dsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[592](7510312e0f5aa0be-p_ec_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[593](7510312e0f5aa0be-p_ed25519_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[594](7510312e0f5aa0be-p_hmac_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[595](7510312e0f5aa0be-p_kem_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[596](7510312e0f5aa0be-p_methods.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[597](7510312e0f5aa0be-p_pqdsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[598](7510312e0f5aa0be-p_rsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[599](7510312e0f5aa0be-p_x25519.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[600](7510312e0f5aa0be-p_x25519_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[603](30a9a10d3f98970e-ex_data.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[604](f8e4fd781484bd36-bcm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[605](001247bc65c2f5e5-cpucap.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[608](ea2b51a0b6630529-lhash.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[609](6e985d8b17b56a49-md4.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[610](30a9a10d3f98970e-mem.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[611](7ac4c9359514b807-obj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[612](7ac4c9359514b807-obj_xref.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[636](5d4700fda13603f0-poly1305.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[642](7bf3e571b6558a6b-getentropy.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[645](7bf3e571b6558a6b-vm_ube_fallback.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[648](30a9a10d3f98970e-refcount_c11.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[651](b0fd2550ab09b04e-rsassa_pss_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[652](b0fd2550ab09b04e-rsa_asn1.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[653](b0fd2550ab09b04e-rsa_crypt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[657](60df219e9fcbc210-stack.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[660](30a9a10d3f98970e-thread_pthread.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[665](45070f5a112d041b-fork_ube_detect.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[666](45070f5a112d041b-ube.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[667](45070f5a112d041b-vm_ube_detect.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[739](c2f744a0f6403e0c-err_data.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[740](7a51880ffa82f69b-intt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[741](7a51880ffa82f69b-ntt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[742](7a51880ffa82f69b-polyvec_basemul_acc_montgomery_cached_asm_k2.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[743](7a51880ffa82f69b-polyvec_basemul_acc_montgomery_cached_asm_k3.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[744](7a51880ffa82f69b-polyvec_basemul_acc_montgomery_cached_asm_k4.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[745](7a51880ffa82f69b-poly_mulcache_compute_asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[746](7a51880ffa82f69b-poly_reduce_asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[747](7a51880ffa82f69b-poly_tobytes_asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[748](7a51880ffa82f69b-poly_tomont_asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[749](7a51880ffa82f69b-rej_uniform_asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[750](6cb977b152c40450-chacha-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[751](c53e8c40df789e0d-chacha20_poly1305_armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[752](c4391ac3c46825d6-aesv8-armx.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[753](c4391ac3c46825d6-aesv8-gcm-armv8-unroll8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[754](c4391ac3c46825d6-aesv8-gcm-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[755](c4391ac3c46825d6-armv8-mont.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[756](c4391ac3c46825d6-bn-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[757](c4391ac3c46825d6-ghash-neon-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[758](c4391ac3c46825d6-ghashv8-armx.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[759](c4391ac3c46825d6-keccak1600-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[760](c4391ac3c46825d6-md5-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[761](c4391ac3c46825d6-p256-armv8-asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[762](c4391ac3c46825d6-p256_beeu-armv8-asm.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[763](c4391ac3c46825d6-rndr-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[764](c4391ac3c46825d6-sha1-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[765](c4391ac3c46825d6-sha256-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[766](c4391ac3c46825d6-sha512-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[767](c4391ac3c46825d6-vpaes-armv8.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[769](2a065450252c12f3-bignum_madd_n25519.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[770](2a065450252c12f3-bignum_madd_n25519_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[771](2a065450252c12f3-bignum_mod_n25519.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[772](2a065450252c12f3-bignum_neg_p25519.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[773](2a065450252c12f3-curve25519_x25519base_byte.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[774](2a065450252c12f3-curve25519_x25519base_byte_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[775](2a065450252c12f3-curve25519_x25519_byte.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[776](2a065450252c12f3-curve25519_x25519_byte_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[777](2a065450252c12f3-edwards25519_decode.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[778](2a065450252c12f3-edwards25519_decode_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[779](2a065450252c12f3-edwards25519_encode.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[780](2a065450252c12f3-edwards25519_scalarmulbase.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[781](2a065450252c12f3-edwards25519_scalarmulbase_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[782](2a065450252c12f3-edwards25519_scalarmuldouble.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[783](2a065450252c12f3-edwards25519_scalarmuldouble_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[784](2ee72d5a85c036ff-bignum_emontredc_8n.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[785](2ee72d5a85c036ff-bignum_kmul_16_32.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[786](2ee72d5a85c036ff-bignum_kmul_32_64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[787](2ee72d5a85c036ff-bignum_ksqr_16_32.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[788](2ee72d5a85c036ff-bignum_ksqr_32_64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[789](2eb9bba22ef5252d-bignum_copy_row_from_table.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[790](2eb9bba22ef5252d-bignum_copy_row_from_table_16.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[791](2eb9bba22ef5252d-bignum_copy_row_from_table_32.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[792](2eb9bba22ef5252d-bignum_copy_row_from_table_8n.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[793](2eb9bba22ef5252d-bignum_ge.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[794](2eb9bba22ef5252d-bignum_mul.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[795](2eb9bba22ef5252d-bignum_optsub.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[796](2eb9bba22ef5252d-bignum_sqr.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[797](46b3cee15136b9e3-bignum_montinv_p256.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[798](46b3cee15136b9e3-p256_montjscalarmul.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[799](46b3cee15136b9e3-p256_montjscalarmul_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[800](33b0e8a9ff3ac954-bignum_add_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[801](33b0e8a9ff3ac954-bignum_deamont_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[802](33b0e8a9ff3ac954-bignum_littleendian_6.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[803](33b0e8a9ff3ac954-bignum_montinv_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[804](33b0e8a9ff3ac954-bignum_montmul_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[805](33b0e8a9ff3ac954-bignum_montmul_p384_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[806](33b0e8a9ff3ac954-bignum_montsqr_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[807](33b0e8a9ff3ac954-bignum_montsqr_p384_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[808](33b0e8a9ff3ac954-bignum_neg_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[809](33b0e8a9ff3ac954-bignum_nonzero_6.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[810](33b0e8a9ff3ac954-bignum_sub_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[811](33b0e8a9ff3ac954-bignum_tomont_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[812](33b0e8a9ff3ac954-p384_montjdouble.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[813](33b0e8a9ff3ac954-p384_montjdouble_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[814](33b0e8a9ff3ac954-p384_montjscalarmul.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[815](33b0e8a9ff3ac954-p384_montjscalarmul_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[816](ccbabe9886131d80-bignum_add_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[817](ccbabe9886131d80-bignum_fromlebytes_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[818](ccbabe9886131d80-bignum_inv_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[819](ccbabe9886131d80-bignum_mul_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[820](ccbabe9886131d80-bignum_mul_p521_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[821](ccbabe9886131d80-bignum_neg_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[822](ccbabe9886131d80-bignum_sqr_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[823](ccbabe9886131d80-bignum_sqr_p521_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[824](ccbabe9886131d80-bignum_sub_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[825](ccbabe9886131d80-bignum_tolebytes_p521.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[826](ccbabe9886131d80-p521_jdouble.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[827](ccbabe9886131d80-p521_jdouble_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[828](ccbabe9886131d80-p521_jscalarmul.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[829](ccbabe9886131d80-p521_jscalarmul_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[830](ac9a06e0f1f9cd7d-sha3_keccak2_f1600.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[831](ac9a06e0f1f9cd7d-sha3_keccak4_f1600_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[832](ac9a06e0f1f9cd7d-sha3_keccak4_f1600_alt2.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[833](ac9a06e0f1f9cd7d-sha3_keccak_f1600.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[834](ac9a06e0f1f9cd7d-sha3_keccak_f1600_alt.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[836](e9338ebcd69164a9-aes-xts-dec.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[837](e9338ebcd69164a9-aes-xts-enc.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[838](2d40dbbd793ef942-jitterentropy-base.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[839](2d40dbbd793ef942-jitterentropy-gcd.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[840](2d40dbbd793ef942-jitterentropy-health.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[841](2d40dbbd793ef942-jitterentropy-noise.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[842](2d40dbbd793ef942-jitterentropy-sha3.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[844](25ac62e5b3c53843-curve25519.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[845](0bbbd18bda93c05b-aes_nohw.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[846](00c879ee3285a50d-montgomery.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[847](00c879ee3285a50d-montgomery_inv.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[848](a0330e891e733f4e-ecp_nistz.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[850](a0330e891e733f4e-gfp_p384.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[852](aaa1ba3e455ee2e1-limbs.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[853](a4019cc0736b0423-mem.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[855](a0330e891e733f4e-p256-nistz.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[856](c322a0bcc369f531-chacha-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[857](c322a0bcc369f531-chacha20_poly1305_armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[858](c322a0bcc369f531-aesv8-armx-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[859](c322a0bcc369f531-aesv8-gcm-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[860](c322a0bcc369f531-ghash-neon-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[861](c322a0bcc369f531-ghashv8-armx-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[862](c322a0bcc369f531-vpaes-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[863](c322a0bcc369f531-armv8-mont-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[864](c322a0bcc369f531-p256-armv8-asm-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[865](c322a0bcc369f531-sha512-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[866](c322a0bcc369f531-sha256-armv8-ios64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/104cef0-6aa3dbaa/libperry_stdlib.a[868](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 375840,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/worker-module.ts.bin",
+        "bytes": 18682952,
+        "sha256": "d80793f9bc9c43928b4f62b166ee14b8d34d8841712411a771a1b029fd7e059e"
+      },
+      "run": {
+        "wallMs": 496.470458,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "true\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    },
+    "ffi-module": {
+      "source": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts",
+        "bytes": 62,
+        "sha256": "13f56b39fcefbaeabebf4056da806d035f91c9710543451f5d9528a4267600f1"
+      },
+      "oracle": {
+        "stdout": "function\n",
+        "stderr": "",
+        "kind": "known-export-surface"
+      },
+      "build": {
+        "wallMs": 1475.750958,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: imports and exports require normal compilation\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-41018-1789123676226555000/ffi_module_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts.bin\nBinary size: 15.7MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=resolve-import module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts import=bun:ffi visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts name=ffi-module.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-41018-1789123676226555000/ffi_module_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 160608,
+        "spawnError": null,
+        "ok": true
+      },
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/ffi-module.ts.bin",
+        "bytes": 16439648,
+        "sha256": "a20cd5e090a1aa1251d9a01f21c3146abbb9e5cfa5acd956ce8dc55873e51cdc"
+      },
+      "run": {
+        "wallMs": 451.623416,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "function\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 32,
+        "spawnError": null,
+        "ok": true
+      }
+    }
+  },
+  "complete": true,
+  "passed": true,
+  "symbolInspection": {
+    "baseline": {
+      "coreSelected": false,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.baseline",
+        "bytes": 19069656,
+        "sha256": "682d5db40035983acd0e90804789b0d2f48b21575c31582c4afb326c8c6b71b2"
+      },
+      "build": {
+        "wallMs": 1425.85625,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40027-1789123652255010000/symbol_witness_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.baseline\nBinary size: 18.2MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40027-1789123652255010000/symbol_witness_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.baseline -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 191680,
+        "spawnError": null,
+        "ok": true
+      },
+      "log": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/symbols-baseline.log",
+        "bytes": 2587008,
+        "sha256": "300f1012ead6968ae5dc72ccf8ef42fac8a299c3bcbcc6d804ea5f8c80ccd5b0"
+      },
+      "symbolLines": 20869,
+      "regexEngineSymbols": 966,
+      "temporalEngineSymbols": 222
+    },
+    "candidate": {
+      "coreSelected": true,
+      "binary": {
+        "file": "/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.candidate",
+        "bytes": 10917352,
+        "sha256": "885dbf335190c8c56bc387e5cb1840876036dd5c5dbf1d2a9ed2afee93d09fb3"
+      },
+      "build": {
+        "wallMs": 1261.890917,
+        "exitCode": 0,
+        "signal": null,
+        "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: requested build diagnostics require the normal pipeline\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40099-1789123654448718000/symbol_witness_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.candidate\nBinary size: 10.4MB\n",
+        "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts name=symbol-witness.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: using prebuilt core runtime: /Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-40099-1789123654448718000/symbol_witness_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/symbol-witness.ts.candidate -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a[95](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/5497f6-6aa3dbaa/libperry_runtime_core.a[96](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 163168,
+        "spawnError": null,
+        "ok": true
+      },
+      "log": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-json-final-macos/verification/package/symbols-candidate.log",
+        "bytes": 1767127,
+        "sha256": "12cb540168e045a0b4fe5d57c255402ca22c864f53d3ec1e7b1005a62a80b862"
+      },
+      "symbolLines": 14719,
+      "regexEngineSymbols": 0,
+      "temporalEngineSymbols": 0
+    }
+  },
+  "missingCore": {
+    "build": {
+      "wallMs": 1553.28325,
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 2 installed package(s)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: statement is outside the proven subset\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-41089-1789123678169169000/missing_core_ts.o\nAsset manifest: /private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts.bin\nBinary size: 15.7MB\n",
+      "stderr": "[progress] stage=collect-module module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts visited=1 collected=0\n[progress] stage=parse module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=lower module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=transform-generators module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=0\n[progress] stage=collected module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/private/var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts name=missing-core.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: Perry workspace source not found, using prebuilt libperry_runtime.a + libperry_stdlib.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-41089-1789123678169169000/missing_core_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a -o /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-core-npm-proof-ptf_pq2q/install/missing-core.ts.bin -lc\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/Library/Caches/perry/libs/805f7c-6aa3dbaa/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+      "timedOut": false,
+      "memExceeded": false,
+      "peakKb": 189232,
+      "spawnError": null,
+      "ok": true
+    },
+    "run": {
+      "wallMs": 456.969209,
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "fallback\n",
+      "stderr": "",
+      "timedOut": false,
+      "memExceeded": false,
+      "peakKb": 32,
+      "spawnError": null,
+      "ok": true
+    }
+  }
+}

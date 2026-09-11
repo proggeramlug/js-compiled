@@ -1,0 +1,1889 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:42:57.765Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "3aa8c5406cde64d998a6a45c56d826169ccba2cb",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-baseline",
+            "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+            "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate"
+          },
+          "runtimeEnv": {}
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_empty_checkpoint_before_exit.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_empty_checkpoint_timing.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_before_exit_microtasks_only.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_before_exit_unref.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_exit_job_boundary.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_6077_unhandled_rejection_event.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_6077_unhandled_rejection_sources.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_issue_9305_throw_in_microtask.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_9416_stdin_only_loop_liveness.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_class_expr_inherited_static_method.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_class_static_in_function.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_class_expr_new_instanceof.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_01_two_fn_interleave.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_02_then_vs_await_fifo.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_03_chained_then_interleave.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_04_await_caller_callee.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_05_nested_promise_unwrap.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_06_finally_after_await.ts",
+        "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_07_promise_all_mixed.ts",
+        "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/class-parents-first-use.ts"
+      ],
+      "gcStressCases": [
+        "class-parents-first-use"
+      ]
+    },
+    "node": {
+      "file": "/Users/amlug/.local/opt/node-v26.5.1-darwin-arm64/bin/node",
+      "bytes": 145265936,
+      "sha256": "87e9b1fed820a2683ea90f5871596edf605b7162519156856dacbfbad36d1d29",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/Users/amlug/projects/perry/js-compiled-startup/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/Users/amlug/projects/perry/js-compiled/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "bytes": 136493176,
+          "sha256": "8e5bc22d6015c33764de08e65534f0e7042c82b0422d523381c41b1a8029cc2a",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-baseline",
+          "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a",
+            "bytes": 36815752,
+            "sha256": "6d5596249d398c40bb5cfa3ba77b38f059de84307e9e8f734d02b48278f887c3"
+          }
+        ],
+        "source": {
+          "root": "/Users/amlug/projects/perry/perry-startup-baseline",
+          "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "bytes": 136533720,
+          "sha256": "79a378e5c26244defbbcbf9537dd11fae5e4ef19ff40cadb48c69ae880e57074",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+          "PERRY_LIB_DIR": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a",
+            "bytes": 36830248,
+            "sha256": "d402d24b414655d1282135a4ca60f0b7a8e6abb7178842342dec5c7b16dd78cb"
+          }
+        ],
+        "source": {
+          "root": "/Users/amlug/projects/perry/perry-startup-release-candidate",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": "diff --git a/scripts/verify_tiny_output.py b/scripts/verify_tiny_output.py\nindex 7289ceef1..c208ec921 100644\n--- a/scripts/verify_tiny_output.py\n+++ b/scripts/verify_tiny_output.py\n@@ -53,7 +53,19 @@ int perry_test_poll(struct pollfd *fds, nfds_t count, int timeout) {\n }\n int perry_test_verdict(void) { return mask == 15 ? 0 : 91; }\n ''')\n+# Include system headers before renaming the calls. glibc's fortified poll\n+# declaration can otherwise retain an asm(\"poll\") alias and bypass injection.\n+injected_helper = work / 'injected.c'\n+injected_helper.write_text('''#define _POSIX_C_SOURCE 200809L\n+#include <poll.h>\n+#include <unistd.h>\n+ssize_t perry_test_write(int, const void *, size_t);\n+int perry_test_poll(struct pollfd *, nfds_t, int);\n+#define write perry_test_write\n+#define poll perry_test_poll\n+#include ''' + json.dumps(str(helper)) + '\\n')\n receipt = {'source': str(helper), 'sourceSha256': hashlib.sha256(helper.read_bytes()).hexdigest(),\n+           'verifierSha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),\n            'work': str(work), 'commands': [], 'cases': {}, 'complete': False, 'passed': False}\n \n def run(argv):\n@@ -66,9 +78,8 @@ def run(argv):\n try:\n     for label, injected in [('normal', False), ('partial-eintr-eagain-poll-eintr', True)]:\n         obj = work / (label + '.o')\n-        argv = ['cc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-c', helper, '-o', obj]\n-        if injected:\n-            argv += ['-Dwrite=perry_test_write', '-Dpoll=perry_test_poll']\n+        argv = ['cc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-c',\n+                injected_helper if injected else helper, '-o', obj]\n         run(argv)\n         binary = work / label\n         argv = ['cc', '-std=c11', '-O2', main, obj, '-o', binary]\n"
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "test_gap_startup_empty_checkpoint_before_exit",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_empty_checkpoint_before_exit.ts",
+          "bytes": 447,
+          "sha256": "0af018a421ee157b3023b1379eb593b421fbd356a03874c50c78c8b1d4d4920c"
+        },
+        "expected": {
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_empty_checkpoint_before_exit"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_empty_checkpoint_before_exit",
+              "bytes": 16439664,
+              "sha256": "46b6eb578078f9e1ec6dfe25c3fcf5569e78b0e4ae49cd791b307fead354d81f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_empty_checkpoint_before_exit"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_empty_checkpoint_before_exit",
+              "bytes": 16456192,
+              "sha256": "9640ebf09fb6add0ad7fb1577d5a80746d75d8fbc85bd086fec879f46c6f5e15"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_empty_checkpoint_timing",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_empty_checkpoint_timing.ts",
+          "bytes": 304,
+          "sha256": "da726074680b4947c95c2c09a32d0a84cc7d996431302d2c4668b04a005ed981"
+        },
+        "expected": {
+          "stdout": "loop started true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_empty_checkpoint_timing"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_empty_checkpoint_timing",
+              "bytes": 16472712,
+              "sha256": "5ef0d5e1b64d2929a540dd69301a03fa8b5d055bb2a820f01d5ac3c629592f31"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_empty_checkpoint_timing"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_empty_checkpoint_timing",
+              "bytes": 16472744,
+              "sha256": "4904bd1eb31fc182fc827e940fc8368e1759b4d4ef78eef4efd9b4be5a70831e"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_before_exit_microtasks_only",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_before_exit_microtasks_only.ts",
+          "bytes": 292,
+          "sha256": "be2350a497c6c90b766535693f2bae86abed22d44b26ef3c840434bc506e4345"
+        },
+        "expected": {
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_before_exit_microtasks_only"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_before_exit_microtasks_only",
+              "bytes": 16439664,
+              "sha256": "786cc93416a493e4bd02ca65d4b6d026dab1b28c2d57df389ec42304f75e694c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_before_exit_microtasks_only"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_before_exit_microtasks_only",
+              "bytes": 16456192,
+              "sha256": "6093e6d6e267cda700c43fde6e9d06768b4e1ecf290e96ea19eefc7f49e463a5"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_before_exit_unref",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_before_exit_unref.ts",
+          "bytes": 246,
+          "sha256": "d079caed66f9007cbaba77d4a2b76932a3a0778f83ebbdecae58037669a3838c"
+        },
+        "expected": {
+          "stdout": "beforeExit\nexit\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_before_exit_unref"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_before_exit_unref",
+              "bytes": 16439632,
+              "sha256": "d79cd9ea68141452a5007c55ceb0f2d1e3e2642100aced0f7b942a83f833d770"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_before_exit_unref"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_before_exit_unref",
+              "bytes": 16456176,
+              "sha256": "cba32bd0a9b74b5c243a650b086a06bf6cbff310f83ac52df9d48ac5ae46953a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_exit_job_boundary",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_startup_exit_job_boundary.ts",
+          "bytes": 232,
+          "sha256": "53fe252099c7b2d3b97275a95f574b2e22444d342d5ea785338c84eb3dc54aca"
+        },
+        "expected": {
+          "stdout": "exit\nexit promise\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_exit_job_boundary"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_startup_exit_job_boundary",
+              "bytes": 16439648,
+              "sha256": "d02fc85081961266b9fd01cbccc9acd2afafbb90a77271c7323e9623607f3ecb"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_exit_job_boundary"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_startup_exit_job_boundary",
+              "bytes": 16456176,
+              "sha256": "b71581f5a8ad969ae0ad4b81eaa0bec59b76a16ccf9673331614c75c81f0a53c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_6077_unhandled_rejection_event",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_6077_unhandled_rejection_event.ts",
+          "bytes": 1397,
+          "sha256": "ab078cbe6e8569c34b1e80272dcb31423345b587ca2e0a6c2f8400b685c8f2bf"
+        },
+        "expected": {
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_6077_unhandled_rejection_event"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_6077_unhandled_rejection_event",
+              "bytes": 16472728,
+              "sha256": "d8c6f56e94442e232cd7c14faec068e594b3d2505ef54df93f578f898f4a7ab3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_6077_unhandled_rejection_event"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_6077_unhandled_rejection_event",
+              "bytes": 16489272,
+              "sha256": "446e7aab9c5dbbfc2c4c9fcd91c9309d588275b95d812947c3d335c835010c40"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_6077_unhandled_rejection_sources",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_6077_unhandled_rejection_sources.ts",
+          "bytes": 982,
+          "sha256": "b07ca73e5188297d141f98374e2cfb3ce743b8ea11a9f4176eccb923d49de0a6"
+        },
+        "expected": {
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_6077_unhandled_rejection_sources"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_6077_unhandled_rejection_sources",
+              "bytes": 16472728,
+              "sha256": "f9d80ca5f7de27ef45aaaf26822109af4b572673bde7504a711917db86d1a6fc"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_6077_unhandled_rejection_sources"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_6077_unhandled_rejection_sources",
+              "bytes": 16472760,
+              "sha256": "7343bd343b4f5c507286bc4df89b7ead42a0a3037c465cf0a8cd4fd4f5793655"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_issue_9305_throw_in_microtask",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_issue_9305_throw_in_microtask.ts",
+          "bytes": 2158,
+          "sha256": "f76d647a8151dd0929bf2b983d862b1cc424a862ff26fcf306817b559e28081f"
+        },
+        "expected": {
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_issue_9305_throw_in_microtask"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_issue_9305_throw_in_microtask",
+              "bytes": 16472736,
+              "sha256": "4fadccce72b9c8611f0e4f52c8133cc8f7fd6333589553cf8f065377dfd19c59"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_issue_9305_throw_in_microtask"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_issue_9305_throw_in_microtask",
+              "bytes": 16489280,
+              "sha256": "08ace6ea35ffce4cb1669b0871b60985722c93661ced2dcc6d462c7284020396"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_9416_stdin_only_loop_liveness",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_9416_stdin_only_loop_liveness.ts",
+          "bytes": 7021,
+          "sha256": "e03819846cfc8115ea0e1f1e9f857dfaf264b4215dec83b36d6618ee85653f39"
+        },
+        "expected": {
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_9416_stdin_only_loop_liveness"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_9416_stdin_only_loop_liveness",
+              "bytes": 16555448,
+              "sha256": "8b2e52728dca81f699fc674b63715c121d5df19926f2e3f14b194c6b44b30cfb"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_9416_stdin_only_loop_liveness"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_9416_stdin_only_loop_liveness",
+              "bytes": 16555464,
+              "sha256": "67ea1feb2227b6257143e64b688f55bc4729a9c574822fa900442fd68657c00b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_class_expr_inherited_static_method",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_class_expr_inherited_static_method.ts",
+          "bytes": 1431,
+          "sha256": "19e9145a8c7aff7566dc8ad498a3ca4c26653667077f94c8ad81992e19414e75"
+        },
+        "expected": {
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_class_expr_inherited_static_method"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_class_expr_inherited_static_method",
+              "bytes": 16489272,
+              "sha256": "e733619af27fd9c2f65d948648d8c328a89e6f9266692609c9f097f03b2d7c53"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_class_expr_inherited_static_method"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_class_expr_inherited_static_method",
+              "bytes": 16489304,
+              "sha256": "e1885ed072b69906cb8b8414a6ac7f0ed81cdd3b92ca27e9a79876aad1ad6afa"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_class_static_in_function",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_class_static_in_function.ts",
+          "bytes": 994,
+          "sha256": "a2f00aa78b2cff1bd71636a2e2bee489f5ecffd1222d2b1d7755fb622ab1f8dd"
+        },
+        "expected": {
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_class_static_in_function"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_class_static_in_function",
+              "bytes": 16456176,
+              "sha256": "5f64060c35e71e8c31d2387ece95e8ddd01b08de77f402996fac28c208d5b616"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_class_static_in_function"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_class_static_in_function",
+              "bytes": 16456208,
+              "sha256": "4385fd2695999ce634da34d89d9cd84995e4ed018876bec1f7131dcb166e7f08"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_class_expr_new_instanceof",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_gap_class_expr_new_instanceof.ts",
+          "bytes": 1171,
+          "sha256": "fd2ef9de61fe7d916ceeaec632a094b83765b748ed907e86551aec374dac20af"
+        },
+        "expected": {
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_class_expr_new_instanceof"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_gap_class_expr_new_instanceof",
+              "bytes": 16472720,
+              "sha256": "48d277cb72657c9af4d7c62cb849ec66c8200a9e09fc54e7e13e61e3dcea8b2f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_class_expr_new_instanceof"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_gap_class_expr_new_instanceof",
+              "bytes": 16489280,
+              "sha256": "1635f546b6792da84708b970be4c6161cfe70d67ed9c5e5335e8eac5ee93b407"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_01_two_fn_interleave",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_01_two_fn_interleave.ts",
+          "bytes": 636,
+          "sha256": "6af4f972642d0c93e557e8e6ab23cc0ed1e4fc1ee8fdd14bf7c330dcf8a58ff8"
+        },
+        "expected": {
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_01_two_fn_interleave"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_01_two_fn_interleave",
+              "bytes": 16472712,
+              "sha256": "c261bc4c1801740b149aaa6a8bbb098133275195b38b2eb78c34377e18cb4a8c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_01_two_fn_interleave"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_01_two_fn_interleave",
+              "bytes": 16472728,
+              "sha256": "82abf50b6ef48274733e296e3a0f8a4c5b9e8525a6cfcc34e02e46cc55145f1d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_02_then_vs_await_fifo",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_02_then_vs_await_fifo.ts",
+          "bytes": 439,
+          "sha256": "d72b25530c7511fef41f3cf4d41d8570820e11207bf8579fbf741af5133296bb"
+        },
+        "expected": {
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_02_then_vs_await_fifo"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_02_then_vs_await_fifo",
+              "bytes": 16472712,
+              "sha256": "310b5512323fab681809a805a3d3ad51288cfb8b4bc37e8b2df8d0841c455800"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_02_then_vs_await_fifo"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_02_then_vs_await_fifo",
+              "bytes": 16472744,
+              "sha256": "01cf94f36d1f305f6ae82275fe1417b865fd1fc785188165075bad364394a5d2"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_03_chained_then_interleave",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_03_chained_then_interleave.ts",
+          "bytes": 554,
+          "sha256": "0c375501fb47435974cc08d4cddf007fd55974e54b057e8a2f7433a29497df3b"
+        },
+        "expected": {
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_03_chained_then_interleave"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_03_chained_then_interleave",
+              "bytes": 16439664,
+              "sha256": "590dc2a9710b4b3fc745409897f33976efaabe9f74d2686c059704b667c08e57"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_03_chained_then_interleave"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_03_chained_then_interleave",
+              "bytes": 16456192,
+              "sha256": "58d0a9edc844b5cbbc85de0cad8864b2c8db81dff70cab76ffaa9ef9e4543f19"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_04_await_caller_callee",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_04_await_caller_callee.ts",
+          "bytes": 790,
+          "sha256": "525500b98e4186bbefbfbebc7e6a8491eb90d3ade9ef477293b3ecf39a7f5d8c"
+        },
+        "expected": {
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_04_await_caller_callee"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_04_await_caller_callee",
+              "bytes": 16472712,
+              "sha256": "44ea3a8ef5aa935e47fade894fcc2509990d45687a4880d36b0f12aaa4b46dfe"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_04_await_caller_callee"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_04_await_caller_callee",
+              "bytes": 16472744,
+              "sha256": "aca833f9873cb57bbe430a9f24bba30d32265e22b314802198bfae5117e87668"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_05_nested_promise_unwrap",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_05_nested_promise_unwrap.ts",
+          "bytes": 584,
+          "sha256": "ffd051fd57aa4f8ab286b701a174f51b3698def3ac2a627586e49c543f0a61a7"
+        },
+        "expected": {
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_05_nested_promise_unwrap"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_05_nested_promise_unwrap",
+              "bytes": 16472712,
+              "sha256": "b92de9e93797c6a4ea19234847a693eee60f28cf08a2eb900010df970e07fb80"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_05_nested_promise_unwrap"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_05_nested_promise_unwrap",
+              "bytes": 16472744,
+              "sha256": "b32f7d64446867753a23450b57d6f1714d6689b59908bd4bc09c1e49d1e14940"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_06_finally_after_await",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_06_finally_after_await.ts",
+          "bytes": 553,
+          "sha256": "821bce01913762204572ab9e467762c4b833d92ac0ef8a508481d7755882b044"
+        },
+        "expected": {
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_06_finally_after_await"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_06_finally_after_await",
+              "bytes": 16472712,
+              "sha256": "669fc8ec71d79a457290497b217003d82e679cd8768a81c94623c0419b446ce9"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_06_finally_after_await"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_06_finally_after_await",
+              "bytes": 16472744,
+              "sha256": "9b8eecf5d7bff3c5c0f74748bf07b01ea5fe0ca7e4d9df3f0fa5ea90fd858dc0"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_07_promise_all_mixed",
+        "source": {
+          "file": "/Users/amlug/projects/perry/perry-startup-release-candidate/test-files/test_microtask_inv_07_promise_all_mixed.ts",
+          "bytes": 653,
+          "sha256": "2c79aa27edff0ae5c9def9236a0215d6c5f23770e5a83dd225e578c3d1d44043"
+        },
+        "expected": {
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_07_promise_all_mixed"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/test_microtask_inv_07_promise_all_mixed",
+              "bytes": 16472728,
+              "sha256": "15fa6dfdf71810b96c6fdd216f8a67c1bc4ae58c0a86d616e4dcec8481b8ddd0"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_07_promise_all_mixed"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/test_microtask_inv_07_promise_all_mixed",
+              "bytes": 16472760,
+              "sha256": "cbd5b045fdc1cb2af08ac5433bf93463d3d7c9bfb7da1adf3ed8de3aead8043f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "class-parents-first-use",
+        "source": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/diagnostics/startup/class-parents-first-use.ts",
+          "bytes": 641,
+          "sha256": "f12d6f8cef5f6069355e7badf0388b338ed94fa24ed05080352942b47ae0bfab"
+        },
+        "expected": {
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/class-parents-first-use"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline/class-parents-first-use",
+              "bytes": 16472712,
+              "sha256": "71ae7972d507b5d52c6f4c3287d3218cf7f4690acd3ee8e14a51d60cb81992f4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/class-parents-first-use"
+            ],
+            "binary": {
+              "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate/class-parents-first-use",
+              "bytes": 16472728,
+              "sha256": "aafa1872e16936fd6b4302ebed1b0fd1f9460a8a0d0ba538b6fcc03e6cd03e32"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": true
+      }
+    ]
+  },
+  "cases": {
+    "test_gap_startup_empty_checkpoint_before_exit": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 409.047834,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nexit 0\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": false,
+        "knownDefect": "omits the second beforeExit after the immediate",
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 6.891542,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nexit 0\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=24 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=24 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 809.668208,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 7.409666,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=8 scheduled_collections=8 polls_paced=0 copying_minors=8 moved_objects=25 loop_polls=0\n[gc-schedule] forced_collections=8 copying_minors=8 moved_objects=25 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    },
+    "test_gap_startup_empty_checkpoint_timing": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 401.05775,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 16.411833,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12664 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12664 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 405.388833,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 17.3635,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12664 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12664 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    },
+    "test_gap_startup_before_exit_microtasks_only": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 402.106417,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 785.814041,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_startup_before_exit_unref": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 404.748625,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 406.836667,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_startup_exit_job_boundary": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 399.558292,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "exit\nexit promise\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 782.563958,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "exit\nexit promise\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_6077_unhandled_rejection_event": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 431.421875,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 8304,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 430.712208,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_6077_unhandled_rejection_sources": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 405.423292,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 777.503042,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_issue_9305_throw_in_microtask": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 431.864709,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 10656,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 432.168208,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_9416_stdin_only_loop_liveness": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 976.389625,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 30384,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 1013.86825,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 29856,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_class_expr_inherited_static_method": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 434.472375,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 3760,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 404.723,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_class_static_in_function": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 395.632667,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 810.481459,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_class_expr_new_instanceof": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 402.425375,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 434.305416,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 12480,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_01_two_fn_interleave": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 406.5105,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 784.493959,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_02_then_vs_await_fifo": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 404.651292,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 394.703333,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_03_chained_then_interleave": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 395.141958,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 778.178,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_04_await_caller_callee": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 393.088583,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 391.051041,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_05_nested_promise_unwrap": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 485.969584,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 634.086167,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_06_finally_after_await": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 395.053292,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 636.451083,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_07_promise_all_mixed": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 399.315375,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 638.022583,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 160,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "class-parents-first-use": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 397.53275,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 16.569709,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12515 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12515 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 636.076459,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 16.27625,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12515 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12515 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    }
+  },
+  "knownBaselineDefects": [
+    "test_gap_startup_empty_checkpoint_before_exit"
+  ],
+  "complete": true,
+  "passed": true,
+  "exits": {
+    "unhandled-exit": {
+      "source": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts",
+        "bytes": 46,
+        "sha256": "9e8240218877049918a8571a31d5b9187a9dc0bd024f7c22a7d41cc55791cf28"
+      },
+      "oracle": {
+        "wallMs": 63.842167,
+        "exitCode": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "node:internal/process/promises:322\n      new UnhandledPromiseRejection(reason);\n      ^\n\nUnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason \"startup rejection sentinel\".\n    at throwUnhandledRejectionsMode (node:internal/process/promises:322:7)\n    at processPromiseRejections (node:internal/process/promises:405:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:106:37) {\n  code: 'ERR_UNHANDLED_REJECTION'\n}\n\nNode.js v26.5.1\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": false
+      },
+      "baseline": {
+        "argv": [
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "compile",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-unhandled-exit"
+        ],
+        "build": {
+          "wallMs": 958.568,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 9 installed package(s)\n  Compile package wildcard: kept 1 package(s) on Perry's native shim (list explicitly to compile the real source)\nFound 1 module(s): 1 native, 0 JavaScript\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-25981-1789119851956701000/unhandled_exit_ts.o\nAsset manifest: /Users/amlug/projects/perry/js-compiled-startup/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-unhandled-exit\nBinary size: 15.7MB\n",
+          "stderr": "[progress] stage=collect-module module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts visited=1 collected=0\n[progress] stage=parse module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=lower module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-generators module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=collected module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-25981-1789119851956701000/unhandled_exit_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a -o /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-unhandled-exit -lc\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 89200,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-unhandled-exit",
+          "bytes": 16423080,
+          "sha256": "4ef5e5366679d44e79893335be5c2cef52f99f780c4601456ad60bc1e2f47c6a"
+        },
+        "run": {
+          "wallMs": 432.432458,
+          "exitCode": 1,
+          "signal": null,
+          "stdout": "",
+          "stderr": "Uncaught (in promise) startup rejection sentinel\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      },
+      "candidate": {
+        "argv": [
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "compile",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-unhandled-exit"
+        ],
+        "build": {
+          "wallMs": 1563.108459,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 9 installed package(s)\n  Compile package wildcard: kept 1 package(s) on Perry's native shim (list explicitly to compile the real source)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26044-1789119853354477000/unhandled_exit_ts.o\nAsset manifest: /Users/amlug/projects/perry/js-compiled-startup/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-unhandled-exit\nBinary size: 15.7MB\n",
+          "stderr": "[progress] stage=collect-module module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts visited=1 collected=0\n[progress] stage=parse module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=lower module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-generators module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=collected module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26044-1789119853354477000/unhandled_exit_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a -o /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-unhandled-exit -lc\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 215600,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-unhandled-exit",
+          "bytes": 16423096,
+          "sha256": "aae8a519610d2400b1ca6acb442de37c66ae5d80fb3547e10bbaadc8e6bb4aed"
+        },
+        "run": {
+          "wallMs": 394.476584,
+          "exitCode": 1,
+          "signal": null,
+          "stdout": "",
+          "stderr": "Uncaught (in promise) startup rejection sentinel\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      }
+    },
+    "before-exit-code": {
+      "source": {
+        "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts",
+        "bytes": 137,
+        "sha256": "0958b7224b90a1fbf305f07a8459e31f89dfff0080ffaf3df244f1a42db9b0bd"
+      },
+      "oracle": {
+        "wallMs": 64.743333,
+        "exitCode": 7,
+        "signal": null,
+        "stdout": "before exit\nexit 7\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": false
+      },
+      "baseline": {
+        "argv": [
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/perry",
+          "compile",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-before-exit-code"
+        ],
+        "build": {
+          "wallMs": 1558.646167,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 9 installed package(s)\n  Compile package wildcard: kept 1 package(s) on Perry's native shim (list explicitly to compile the real source)\nFound 1 module(s): 1 native, 0 JavaScript\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26132-1789119855387585000/before_exit_code_ts.o\nAsset manifest: /Users/amlug/projects/perry/js-compiled-startup/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-before-exit-code\nBinary size: 15.7MB\n",
+          "stderr": "[progress] stage=collect-module module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts visited=1 collected=0\n[progress] stage=parse module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=lower module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-generators module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=collected module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26132-1789119855387585000/before_exit_code_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a -o /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-before-exit-code -lc\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/baseline/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 216976,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/baseline-before-exit-code",
+          "bytes": 16439624,
+          "sha256": "b860613bde87b145fd55c459e3046960ecf1cd91ee99cb6400aa07f06dcac814"
+        },
+        "run": {
+          "wallMs": 433.482,
+          "exitCode": 7,
+          "signal": null,
+          "stdout": "before exit\nexit 7\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      },
+      "candidate": {
+        "argv": [
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/perry",
+          "compile",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-before-exit-code"
+        ],
+        "build": {
+          "wallMs": 1550.614667,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\n  Compile package wildcard: expanded to 9 installed package(s)\n  Compile package wildcard: kept 1 package(s) on Perry's native shim (list explicitly to compile the real source)\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26222-1789119857389204000/before_exit_code_ts.o\nAsset manifest: /Users/amlug/projects/perry/js-compiled-startup/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-before-exit-code\nBinary size: 15.7MB\n",
+          "stderr": "[progress] stage=collect-module module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts visited=1 collected=0\n[progress] stage=parse module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=lower module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-generators module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=collected module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.4)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /var/folders/8v/09vl257j2_v70v2k77gh01n00000gn/T/perry-objs-26222-1789119857389204000/before_exit_code_ts.o -Wl,-dead_strip -Wl,-no_exported_symbols /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a -o /Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-before-exit-code -lc\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[182](f17b5a9852f781a4-perry_sjlj.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[184](44ff4c55aa9e5133-entropy_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[185](44ff4c55aa9e5133-error_private.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[186](44ff4c55aa9e5133-fse_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[189](44ff4c55aa9e5133-zstd_common.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[204](88f362f13b0528ed-huf_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[205](88f362f13b0528ed-zstd_ddict.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[206](88f362f13b0528ed-zstd_decompress.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[207](88f362f13b0528ed-zstd_decompress_block.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[212](3f451b2306bc13c8-zstd_v01.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[213](3f451b2306bc13c8-zstd_v02.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[214](3f451b2306bc13c8-zstd_v03.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[215](3f451b2306bc13c8-zstd_v04.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[216](3f451b2306bc13c8-zstd_v05.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[217](3f451b2306bc13c8-zstd_v06.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[218](3f451b2306bc13c8-zstd_v07.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[220](b85de32113adef8e-static.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\nld: warning: object file (/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/candidate/libperry_runtime.a[221](4f9a91766097c4c5-aarch_aapcs64.o)) was built for newer 'macOS' version (26.5) than being linked (26.0)\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 220656,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/Users/amlug/projects/perry/js-compiled-startup/results/startup-final-macos/final/fixtures/candidate-before-exit-code",
+          "bytes": 16456168,
+          "sha256": "daeec06a7d25d5bba160a2bb31ecdbd2a21e10d66136f667d5eb5ac824823d71"
+        },
+        "run": {
+          "wallMs": 434.170042,
+          "exitCode": 7,
+          "signal": null,
+          "stdout": "before exit\nexit 7\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 32,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      }
+    }
+  }
+}

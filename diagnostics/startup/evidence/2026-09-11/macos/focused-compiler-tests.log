@@ -1,0 +1,33 @@
+warning: function `relevant_box_roots` is never used
+    --> crates/perry-runtime/src/box.rs:1020:4
+     |
+1020 | fn relevant_box_roots() -> Vec<usize> {
+     |    ^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `perry-runtime` (lib) generated 1 warning
+    Finished `perry-dev` profile [optimized] target(s) in 1.05s
+     Running unittests src/main.rs (target/startup-isolated/perry-dev/build/perry/8ca4b2b387f2d58f/out/perry-8ca4b2b387f2d58f)
+
+running 17 tests
+test commands::compile::build_cache::tests::codegen_env_vars_are_build_cache_inputs ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::core_profile_uses_the_same_feature_contract_as_packaging ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::global_object_values_keep_optional_engines_available ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::native_modules_callbacks_and_custom_features_keep_existing_archives ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::optional_engines_and_dynamic_code_keep_the_full_fallback ... ok
+test commands::compile::optimized_libs::prebuilt_core::tests::runtime_owned_native_imports_keep_full_without_a_stdlib_marker ... ok
+test commands::compile::tiny_program::analysis::tests::escaped_identifiers_do_not_hide_receiver_shadowing ... ok
+test commands::compile::tiny_program::analysis::tests::every_unproven_construct_falls_back ... ok
+test commands::compile::tiny_program::analysis::tests::expansion_is_bounded ... ok
+test commands::compile::tiny_program::analysis::tests::preserves_bytes_and_erased_string_assertions ... ok
+test commands::compile::tiny_program::analysis::tests::proves_empty_and_constant_template_output ... ok
+test commands::compile::tiny_program::analysis::tests::template_substitution_preserves_surrogate_pairs ... ok
+test commands::compile::tiny_program::emit::tests::empty_entry_has_no_external_dependencies ... ok
+test commands::compile::tiny_program::emit::tests::output_has_only_the_audited_native_helper_dependency ... ok
+test commands::compile::tiny_program::tests::host_callbacks_plugins_and_graph_extensions_cannot_bypass_the_proof ... ok
+test commands::compile::tiny_program::tests::ordinary_native_build_needs_no_enabling_switch ... ok
+test commands::compile::tiny_program::tests::unsupported_build_requests_keep_the_normal_pipeline ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 1094 filtered out; finished in 0.10s
+

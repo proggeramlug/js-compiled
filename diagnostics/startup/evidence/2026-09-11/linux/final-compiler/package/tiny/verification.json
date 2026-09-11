@@ -1,0 +1,2000 @@
+{
+  "compiler": {
+    "file": "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+    "bytes": 125058040,
+    "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054"
+  },
+  "verifier": {
+    "file": "/dev/shm/perry-startup-27c598181/perry/scripts/verify_tiny_program.py",
+    "bytes": 13287,
+    "sha256": "f44aa0a3fecf71802605116630800443b4019de4c127eb89bf11023a90d5da11"
+  },
+  "work": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd",
+  "buildEnv": {},
+  "node": "v26.5.1",
+  "complete": true,
+  "passed": true,
+  "scope": "tiny-and-fallback",
+  "fixtures": {
+    "empty": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty.ts",
+        "bytes": 11,
+        "sha256": "fb8d069ebb6693855ae9ec6f145106f012a13235617c1d63b51ee8308384bc99"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/empty-build.log",
+          "bytes": 2354,
+          "sha256": "f8e559eb8fe294cc072b4be9da7bd5a22772310ea80de879a841ac547e5dfafe"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty.bin",
+        "bytes": 15624,
+        "sha256": "d43cd3a1d499461afd775decec8e96c4e5f5995d9621d40030888d9f99ba30dc"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty.tiny.ll",
+        "bytes": 121,
+        "sha256": "d49af7b70c6d776c55d19e9a3f85bcde50b6670dd42d48787a700ed9cfe9cd53"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/empty-symbols.log",
+        "bytes": 922,
+        "sha256": "08add0618b4c85fe254c59abae8d4fccb5e13b3d597544058864b9f77a53cd5a"
+      },
+      "passed": true
+    },
+    "literal": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.ts",
+        "bytes": 22,
+        "sha256": "f9444510dc7403e41049deb133f6892aa6a63c05591b2b59e4ee5b234d7bbd99"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/literal-build.log",
+          "bytes": 2472,
+          "sha256": "09b575db0254c1f877e0c2e14b5a8f7d61fb26aef46b94cfd4f24b973c11efec"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.bin",
+        "bytes": 16320,
+        "sha256": "2510cf1b61e9d0657d92b744dabe439e95127f6a41c9d3a7d9c656a701d3f2b8"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03",
+          "text": "hello\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03",
+          "text": "hello\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.tiny.ll",
+        "bytes": 499,
+        "sha256": "57b4c5a2f340c30fded582a3c03e07b150c7cd4f5858bf54d1d2ce8f3d9d3dcb"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/literal-symbols.log",
+        "bytes": 1319,
+        "sha256": "cf1fec90ef7f764f504cd9c57dc7cc627f345c797614dbf5e7cbb1fea0985677"
+      },
+      "passed": true
+    },
+    "hello": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/hello.ts",
+        "bytes": 84,
+        "sha256": "737ad0b75c98aba8e39fe305089b4e5c153d34fe590e34119b4f60b8dec51785"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/hello.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/hello.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/hello-build.log",
+          "bytes": 2422,
+          "sha256": "ecf914f1fd828f8c7b79a2caf51d966a69483e76165c3413fc7fe4ad2d19dca4"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/hello.bin",
+        "bytes": 16320,
+        "sha256": "6cbb96258cb2c721be29d47e74731eda88ab4bc613e9ee9fceacbda3fa07430a"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 22,
+          "sha256": "ec67289653a4873ff7e073c51fbc7cd7c351fa1d7c7904abcdccdcb505402cf7",
+          "text": "hello, world\nRESULT 1\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 22,
+          "sha256": "ec67289653a4873ff7e073c51fbc7cd7c351fa1d7c7904abcdccdcb505402cf7",
+          "text": "hello, world\nRESULT 1\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/hello.tiny.ll",
+        "bytes": 685,
+        "sha256": "0ce556c5791284e542e552c58c55fc01adf7c56c4e795ddd830f1b6b26b05659"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/hello-symbols.log",
+        "bytes": 1319,
+        "sha256": "b2e8c9c686f0b83d7b597279c0b8a9348355bfd2d60fa77751280286b1b8b863"
+      },
+      "passed": true
+    },
+    "stderr": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr.ts",
+        "bytes": 24,
+        "sha256": "e11b5a59f0587ce4921769801ac52df58264ae497e93936f472acdf0413fce47"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stderr-build.log",
+          "bytes": 2447,
+          "sha256": "0c37df11edf70fbcc23c9d790e85fb681a103b6ebfecd41b5bc312dc9f161df4"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr.bin",
+        "bytes": 16320,
+        "sha256": "11ebaf37048a206de9eb253b1e753c1b3e9da2cb267fa2425fbaebd032c2f2b8"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+          "text": "error\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "f097b5f4f46cda2da21b954c9ff4097e1e14ae7064ecdee2c2cec2d3c1f08e6b",
+          "text": "error\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr.tiny.ll",
+        "bytes": 499,
+        "sha256": "dd4dff9832f300e2a203c5986e207f1e3b090cfa537b4aa45ef4e61a1198c80f"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stderr-symbols.log",
+        "bytes": 1319,
+        "sha256": "cf1fec90ef7f764f504cd9c57dc7cc627f345c797614dbf5e7cbb1fea0985677"
+      },
+      "passed": true
+    },
+    "ordering": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/ordering.ts",
+        "bytes": 87,
+        "sha256": "52e7b38ec36554cb6ab7f678922a15fafa0acfbe031dd278d4c5c4a59a605929"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/ordering.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/ordering.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/ordering-build.log",
+          "bytes": 2497,
+          "sha256": "aa71b097ec2a23eaf6550e340ee03308d0611be0c03d0880bf8216b58215a900"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/ordering.bin",
+        "bytes": 16320,
+        "sha256": "dd5e776d4c258e074460a4184dd67e99f08f2df95770c1f13a432316d543f50d"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c9b0fb1fa00b3a5ce714c876c35bb18f21eed970d33d9093a3cbd7cf0c9db3dc",
+          "text": "one\nthree\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "544920d0a807f2063cab7e188f05ccdc21192d69a40efd42e0b05c9c49efcd37",
+          "text": "two\nfour\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c9b0fb1fa00b3a5ce714c876c35bb18f21eed970d33d9093a3cbd7cf0c9db3dc",
+          "text": "one\nthree\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "544920d0a807f2063cab7e188f05ccdc21192d69a40efd42e0b05c9c49efcd37",
+          "text": "two\nfour\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/ordering.tiny.ll",
+        "bytes": 946,
+        "sha256": "f9a8a0f4dd2cd9d0cf93cb4367cb89aba9c328d76264e789023a470343010126"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/ordering-symbols.log",
+        "bytes": 1319,
+        "sha256": "f72632efb6e0840909166ebf35e7a44eef5d1214e039ba72f63f0f55f008ec58"
+      },
+      "passed": true
+    },
+    "nul-unicode": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/nul-unicode.ts",
+        "bytes": 63,
+        "sha256": "5070523130d83b956533ea67ee44f2bc8579fe0271c03b414902d512276dc2c8"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/nul-unicode.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/nul-unicode.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/nul-unicode-build.log",
+          "bytes": 2572,
+          "sha256": "92cc95b8b3e0765d0582a2114665f8ebb6ab06749efe3ee260b5d1eb7b82c629"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/nul-unicode.bin",
+        "bytes": 16320,
+        "sha256": "3abe3998fd8c66e17d802a588e9c091731921dbdda1394e9f0946444d07f8db1"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "d492bc6a012245d9fe74807ed1067d976c66d97e6616d939646e1d752458487d",
+          "text": "a\u0000b\n\ud83e\udd80\ufffd\n"
+        },
+        "stderr": {
+          "bytes": 12,
+          "sha256": "24d499238e0b2f6627d68632a55e833e7278b238241cfc06c91db68de37fff4a",
+          "text": "%s %d %% \u00e9\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "d492bc6a012245d9fe74807ed1067d976c66d97e6616d939646e1d752458487d",
+          "text": "a\u0000b\n\ud83e\udd80\ufffd\n"
+        },
+        "stderr": {
+          "bytes": 12,
+          "sha256": "24d499238e0b2f6627d68632a55e833e7278b238241cfc06c91db68de37fff4a",
+          "text": "%s %d %% \u00e9\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/nul-unicode.tiny.ll",
+        "bytes": 693,
+        "sha256": "f14211c4edecf9ae4395bda308582d7d243ebbb6928a66cee782defba99a11cb"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/nul-unicode-symbols.log",
+        "bytes": 1319,
+        "sha256": "b2e8c9c686f0b83d7b597279c0b8a9348355bfd2d60fa77751280286b1b8b863"
+      },
+      "passed": true
+    },
+    "surrogate-join": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/surrogate-join.ts",
+        "bytes": 51,
+        "sha256": "f69386f711f0856256ddf4a228f814a58bf5dd4c4118bd6deb7e4178b615fd9b"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/surrogate-join.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/surrogate-join.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/surrogate-join-build.log",
+          "bytes": 2647,
+          "sha256": "6ccf21ee1a6c11f87d829b8abbe5ac1412065839a8751625a5f8434155af6cf7"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/surrogate-join.bin",
+        "bytes": 16320,
+        "sha256": "749754b0212e5841569fca9a7b24d8985a688e3bda803c14557f28262146eb7d"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "9ae931c0b56b698588eb03ef5468bbf64940a7b95e2190cc36ce05625bb6a2c6",
+          "text": "\ud800\udc00\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "9ae931c0b56b698588eb03ef5468bbf64940a7b95e2190cc36ce05625bb6a2c6",
+          "text": "\ud800\udc00\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/surrogate-join.tiny.ll",
+        "bytes": 496,
+        "sha256": "19c70d8f948e72427697b3027e3392c38bdf912a60098da1fb07948a9431f367"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/surrogate-join-symbols.log",
+        "bytes": 1319,
+        "sha256": "cf1fec90ef7f764f504cd9c57dc7cc627f345c797614dbf5e7cbb1fea0985677"
+      },
+      "passed": true
+    },
+    "empty-string": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty-string.ts",
+        "bytes": 36,
+        "sha256": "742c6afe312fb092977fc696499b9f54ceef6b4e5b5bfc3d404ba9022223f053"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty-string.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty-string.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/empty-string-build.log",
+          "bytes": 2597,
+          "sha256": "83170ba3e9836e3f79ab13c004584146d20ba26da637a569167376e614e36f70"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty-string.bin",
+        "bytes": 16320,
+        "sha256": "e43e9a003a9e21c1af1092e6875d22fc8dd4b0a336419ec8f56fe89cfaa2c22c"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        "stderr": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        },
+        "stderr": {
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "text": "\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/empty-string.tiny.ll",
+        "bytes": 623,
+        "sha256": "f9d663bc261162977b9dcf9769bafa3c10412796085a49f0d4810ba73a167e31"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/empty-string-symbols.log",
+        "bytes": 1319,
+        "sha256": "6c4357e573c4901690dd5e76b0fa895c80fe040090018d76671776267774b0b6"
+      },
+      "passed": true
+    },
+    "constant-chain": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/constant-chain.ts",
+        "bytes": 60,
+        "sha256": "b54ac913ad950ae7a10058e2d12b5da6777c38254213425e955d0e18c9c28c47"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/constant-chain.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/constant-chain.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/constant-chain-build.log",
+          "bytes": 2647,
+          "sha256": "5322831bed73ce67bd9670b94db5b39ce5564746c37edd2f783564ffdf0f1c84"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/constant-chain.bin",
+        "bytes": 16320,
+        "sha256": "296724428f52149df1c18b29884e7abc56115d6a9a9e0ff78b306f3b32fe2103"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "3c31169062d772c4b37a5ac639c6c6d5c5632c66a1b7256a3470e8a313348d38",
+          "text": "aba\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "3c31169062d772c4b37a5ac639c6c6d5c5632c66a1b7256a3470e8a313348d38",
+          "text": "aba\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/constant-chain.tiny.ll",
+        "bytes": 493,
+        "sha256": "2a0065a21293bd83a6c78fe0d3d696638f2faa3546bf2b57d3cb00087964e846"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/constant-chain-symbols.log",
+        "bytes": 1319,
+        "sha256": "0501cdf06e62bb2b30b4e59b29229aa2616a629faa487843205e10e899aa3b6a"
+      },
+      "passed": true
+    },
+    "assertions": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/assertions.ts",
+        "bytes": 48,
+        "sha256": "db62244a22f4d9e16a635e90ff152b2dc4cfac239c58d411181538c7ee98c79f"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/assertions.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/assertions.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/assertions-build.log",
+          "bytes": 2547,
+          "sha256": "30ad79b74af28b61a91f8f0c861681945fb29ac5da8850d062955ff2a853555d"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/assertions.bin",
+        "bytes": 16320,
+        "sha256": "d76d5461c3a039e92146c7b51739d217c05b75bfe1ebd5cfe492b777c012e8e0"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "1e1f2c881ae0608ec77ebf88a75c66d3099113a7343238f2f7a0ebb91a4ed335",
+          "text": "value\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "1e1f2c881ae0608ec77ebf88a75c66d3099113a7343238f2f7a0ebb91a4ed335",
+          "text": "value\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/assertions.tiny.ll",
+        "bytes": 499,
+        "sha256": "fecedd1aaf72fee1140ae0e7518e4152e1af34bcc7076d1bc5536d02fdf861a4"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/assertions-symbols.log",
+        "bytes": 1319,
+        "sha256": "cf1fec90ef7f764f504cd9c57dc7cc627f345c797614dbf5e7cbb1fea0985677"
+      },
+      "passed": true
+    },
+    "escaped-builtin": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/escaped-builtin.ts",
+        "bytes": 34,
+        "sha256": "e4cd48b2d1fb70602772de12ae75f1e32f9cf10ac0136a4352aab04c5c2517e3"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/escaped-builtin.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/escaped-builtin.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/escaped-builtin-build.log",
+          "bytes": 2672,
+          "sha256": "708b348570d8a9cd579188ab29369d8b494a95e46132b7f056d2787d66b9e528"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/escaped-builtin.bin",
+        "bytes": 16320,
+        "sha256": "02c9c6c2034e0992d7e0f5befdaec5a4921b31b0045a0fc886d61715760997a4"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 8,
+          "sha256": "e3d7a28a2d9eacd388106bb38690a17b50380681d7e41922898aed6b4b782ae7",
+          "text": "escaped\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 8,
+          "sha256": "e3d7a28a2d9eacd388106bb38690a17b50380681d7e41922898aed6b4b782ae7",
+          "text": "escaped\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/escaped-builtin.tiny.ll",
+        "bytes": 505,
+        "sha256": "6ddd1e53c10453351931a13b663f12e345b0e0122fb4bb7b9326a4a1363eb7d8"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/escaped-builtin-symbols.log",
+        "bytes": 1319,
+        "sha256": "cf1fec90ef7f764f504cd9c57dc7cc627f345c797614dbf5e7cbb1fea0985677"
+      },
+      "passed": true
+    },
+    "pipe-survival": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/pipe-survival.ts",
+        "bytes": 72,
+        "sha256": "1df720ee4665be807837332f1e2921c9f8eddb87336790b1518c46459a92c19d"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/pipe-survival.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/pipe-survival.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/pipe-survival-build.log",
+          "bytes": 2622,
+          "sha256": "5c0542c6a524cc2496b9e01c579750f7df2bd884c571f2657510298c75b6e782"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/pipe-survival.bin",
+        "bytes": 16320,
+        "sha256": "107e004211cbf89fa450b9337e06302b8afe453b17ed8a50edc744f136a8081a"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 13,
+          "sha256": "dbea9325179efe46ea2add94f7b6b745ca983fabb208dc6d34aa064623d7ee23",
+          "text": "first\nsecond\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+          "text": "survived\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 13,
+          "sha256": "dbea9325179efe46ea2add94f7b6b745ca983fabb208dc6d34aa064623d7ee23",
+          "text": "first\nsecond\n"
+        },
+        "stderr": {
+          "bytes": 9,
+          "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+          "text": "survived\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/pipe-survival.tiny.ll",
+        "bytes": 819,
+        "sha256": "0ef0582b78c583aa168478f6ba05d34d934b8701e054fbe2225f9f58ff8936e3"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/pipe-survival-symbols.log",
+        "bytes": 1319,
+        "sha256": "b13c0b70c564205478d5f09f2fb1d0e1f5880f9d3250480ebd22083170f396b3"
+      },
+      "passed": true
+    },
+    "stdout-handshake": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stdout-handshake.ts",
+        "bytes": 131124,
+        "sha256": "fccea09f97670c123750f5904f6660772031263fbe549c775661eedbe3953434"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stdout-handshake.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stdout-handshake.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stdout-handshake-build.log",
+          "bytes": 2697,
+          "sha256": "250bafab942524022951eb612ef63159745c66606ebdf8ff74c279491705f969"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stdout-handshake.bin",
+        "bytes": 147392,
+        "sha256": "0e6bb68d1073b2b1df6168c2194a573ff068bec614ae076e26964b0bdc4a9d31"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stdout-handshake.tiny.ll",
+        "bytes": 393864,
+        "sha256": "ceef6386e554099f6dfa6544a3867f6669032b0a6197eaf2a5ff5df81809795a"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stdout-handshake-symbols.log",
+        "bytes": 1319,
+        "sha256": "a28f8c844b37d8b23633ad293cc2f4f9fc44675ee8227c35b0794b8a06234bea"
+      },
+      "passed": true
+    },
+    "stderr-handshake": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr-handshake.ts",
+        "bytes": 131124,
+        "sha256": "349703c0bde38059f237b590d8f35df66092f643177523c8868a2948446409df"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr-handshake.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr-handshake.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stderr-handshake-build.log",
+          "bytes": 2697,
+          "sha256": "afc4a3575d2b45b02926757ec499355c70a82964025fd624c5836b9a06e9818a"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr-handshake.bin",
+        "bytes": 147392,
+        "sha256": "0307d2f80cd465f1df80c601ee3cfc2da44fdee0960e26fe69e31abb9a6ab02c"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/stderr-handshake.tiny.ll",
+        "bytes": 393864,
+        "sha256": "3fcf2361bab1aa03f7a3e81ddb39dac945238bb4bbc793272ed612bc0651e4cb"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/stderr-handshake-symbols.log",
+        "bytes": 1319,
+        "sha256": "a28f8c844b37d8b23633ad293cc2f4f9fc44675ee8227c35b0794b8a06234bea"
+      },
+      "passed": true
+    },
+    "backpressure": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/backpressure.ts",
+        "bytes": 8719,
+        "sha256": "73086f71c159ea5f80d584e4fd5f8edfc529cebace46f49a40d1c9c0078e6487"
+      },
+      "expectedProfile": "tiny",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/backpressure.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/backpressure.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/backpressure-build.log",
+          "bytes": 2599,
+          "sha256": "12c1288bd800ba256e47a87597f4ea77493a64a4f3b38334f27646e2b9641958"
+        }
+      },
+      "tinySelected": true,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/backpressure.bin",
+        "bytes": 40896,
+        "sha256": "65f745159a719208b447d5166413390a46cc15d2c74e6398135672934b5de764"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 262656,
+          "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 262656,
+          "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "ir": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/backpressure.tiny.ll",
+        "bytes": 861825,
+        "sha256": "96a787d7467140c4fd4f08f4520b2bfb758e31c952f2de29eb39131de5fe0e0c"
+      },
+      "symbols": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/backpressure-symbols.log",
+        "bytes": 1319,
+        "sha256": "09a8950d468fc5baafd9475bada0dc416acb62b1d604cb7a9b3e0f13095bcf37"
+      },
+      "passed": true
+    },
+    "sync-allocation-loop": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/sync-allocation-loop.ts",
+        "bytes": 78,
+        "sha256": "40a2a06c738c111fedb6b9a36a206f8fd19759650d36fa88feff10d2f0ed7267"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/sync-allocation-loop.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/sync-allocation-loop.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/sync-allocation-loop-build.log",
+          "bytes": 3642,
+          "sha256": "26ba58b140a1a5269b728f0f198bd5ee8b81b70443e81b4932930dc4ce30842d"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/sync-allocation-loop.bin",
+        "bytes": 14767336,
+        "sha256": "d61e5b450eea820e244f8d53ac56802088aebff18ddba34c6117c5010c2a1ce5"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "eea8254c7500ba3de996aa8ad6af399183f04e17d4a8102fde539dbc93a90012",
+          "text": "100\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "eea8254c7500ba3de996aa8ad6af399183f04e17d4a8102fde539dbc93a90012",
+          "text": "100\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "numeric": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/numeric.ts",
+        "bytes": 17,
+        "sha256": "7df141f2f2a2a4700c0ecbb0e6ca3ddcfbc56ae7c8d4eabcce03fc47be491ab1"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/numeric.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/numeric.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/numeric-build.log",
+          "bytes": 3270,
+          "sha256": "fe15ba8d7c01ac882f6c53404e7193363a67aaeb6bb35d7af634fef4a6359755"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/numeric.bin",
+        "bytes": 14751696,
+        "sha256": "5d2f8ee4efa7cec3ee6888f846f547e23c1b261fd348dcb5471c188d3b30db61"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 3,
+          "sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0",
+          "text": "42\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 3,
+          "sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0",
+          "text": "42\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "arguments": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/arguments.ts",
+        "bytes": 23,
+        "sha256": "ca477fdbb69cba106e9539f7412b33aaaa1fa0da065ee06e072c16cd15a880a1"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/arguments.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/arguments.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/arguments-build.log",
+          "bytes": 3330,
+          "sha256": "dd5a79772911c2d74efbc219df6c642e353f7e752d4bc428b761c0cee3a271b5"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/arguments.bin",
+        "bytes": 14751912,
+        "sha256": "0603f12fcec764fee1b5b580df5099da031365af3abe01f02987bf0e0593cdd1"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "01186fcf04b4b447f393e552964c08c7b419c1ad7a25c342a0b631b1967d3a27",
+          "text": "a b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 4,
+          "sha256": "01186fcf04b4b447f393e552964c08c7b419c1ad7a25c342a0b631b1967d3a27",
+          "text": "a b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "promise": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/promise.ts",
+        "bytes": 74,
+        "sha256": "95806787a7a5cea680954d72d26af73bd18736f7a886460a228fc98487c0a17c"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/promise.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/promise.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/promise-build.log",
+          "bytes": 3271,
+          "sha256": "5ff8f743c904046611e7843b64aeee212831bc5af4980e471741c691b9e87e95"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/promise.bin",
+        "bytes": 14756472,
+        "sha256": "5e45c1abe39c0619991cb55cb41c37b51bf096ce425d2717a4a03ccd7d9bcb70"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "e3f4d795d365afcd7f5b7099b1a6a6d7fc228edf0cf10960d0e6fda46e9e9133",
+          "text": "first\nlater\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 12,
+          "sha256": "e3f4d795d365afcd7f5b7099b1a6a6d7fc228edf0cf10960d0e6fda46e9e9133",
+          "text": "first\nlater\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "timer": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/timer.ts",
+        "bytes": 43,
+        "sha256": "43fdb43f92113b550d20cdf94bf3297406742cda0b87c8d3fb892a7498b99284"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/timer.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/timer.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/timer-build.log",
+          "bytes": 3183,
+          "sha256": "f54731eae4469ccf632c2f4a8487b4713254e1007a83e096cd650254545abd8a"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/timer.bin",
+        "bytes": 14751808,
+        "sha256": "c8ff9491865004790f459778489cf49525ec3e8ade93250583e27270037c0cce"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "99ba9a278bb85a1dfc450c6ae4f1694cebba87511c4878f02366ea7436024402",
+          "text": "timer\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "99ba9a278bb85a1dfc450c6ae4f1694cebba87511c4878f02366ea7436024402",
+          "text": "timer\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "lifecycle": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/lifecycle.ts",
+        "bytes": 68,
+        "sha256": "f748d6747e28d21315db934064dbd540add21379dd66f0c5d3360c68f61ccf8a"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/lifecycle.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/lifecycle.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/lifecycle-build.log",
+          "bytes": 3329,
+          "sha256": "051b242f4ff0e0f20d8a6fb159ddfc39b067edb5fc3b90ac2cc3aa76bb08460f"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/lifecycle.bin",
+        "bytes": 14752216,
+        "sha256": "23c885e87c351d2873bdfd666f560f6d0c1029ee613d2839b170b283f2c2bd23"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "083cfa3522b85e8b9cac82010b07381da35d49d24fe23c177469be5605ce7e18",
+          "text": "body\nexit\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "083cfa3522b85e8b9cac82010b07381da35d49d24fe23c177469be5605ce7e18",
+          "text": "body\nexit\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "computed-console": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/computed-console.ts",
+        "bytes": 28,
+        "sha256": "2c9bd9404cf2252c7f729b629ea9e3ef243652ebdc791ba7855d848bda4095fc"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/computed-console.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/computed-console.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/computed-console-build.log",
+          "bytes": 3525,
+          "sha256": "385e4825c53410f589fb0b8a071d1c5aad59f840589e39cf3c0152c4bbfd4e91"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/computed-console.bin",
+        "bytes": 14751888,
+        "sha256": "41fc1ab9688eb191e217db2ff47862803a14a55686040571e21670001d6b345b"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 9,
+          "sha256": "cc3de5853cb2460e54179227bde9b5e96473419b490da47b4c6ed3830de953d8",
+          "text": "computed\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 9,
+          "sha256": "cc3de5853cb2460e54179227bde9b5e96473419b490da47b4c6ed3830de953d8",
+          "text": "computed\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "global-alias": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/global-alias.ts",
+        "bytes": 34,
+        "sha256": "34cb8e32afc1d0ea401834df7cb8a74d27da61489b00390108542485cf56c048"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/global-alias.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/global-alias.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/global-alias-build.log",
+          "bytes": 3406,
+          "sha256": "147302192df0e9499db60f8bcd86db1fe171f12a1ee0818bfc016287fd21f845"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/global-alias.bin",
+        "bytes": 24601000,
+        "sha256": "230fc253fc3afca7c3ee6bcbdad37791f9ae48756961f9f433db7bbacce1a06f"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "bde69edbbd1e37f29a7d5abb737590d929362f186c935f5fa9384ce2074acec4",
+          "text": "global\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "bde69edbbd1e37f29a7d5abb737590d929362f186c935f5fa9384ce2074acec4",
+          "text": "global\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "dead-code": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/dead-code.ts",
+        "bytes": 59,
+        "sha256": "8bf3f3ff8e88ba2b0f2b9ea9129f7c5e08e55c2027f1688616836f3b5537a51a"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/dead-code.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/dead-code.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/dead-code-build.log",
+          "bytes": 3323,
+          "sha256": "179c6f86167ff9ab9a604078ddba46ca6fa605533df6a127def0aeeecc0e803b"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/dead-code.bin",
+        "bytes": 14752032,
+        "sha256": "dee6df2cf936b97e081dc45c7ebc1109e5dbadb011328df7681fed94d0a376bc"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "unused-function": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/unused-function.ts",
+        "bytes": 42,
+        "sha256": "c594ea5bb9c97cb534a6e6e3fa7455ff714522de51524b3fc338cc1bcbc3d536"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/unused-function.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/unused-function.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/unused-function-build.log",
+          "bytes": 3497,
+          "sha256": "dbbf9da0d8e48325bc2617216e917ec0f6f062488b750a0b57a1a0e47dfff822"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/unused-function.bin",
+        "bytes": 14752104,
+        "sha256": "1a7b4084e9d8103743ba19a00705e02b4c99fc643fc582efc205660dff5c7b68"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 5,
+          "sha256": "78051faade059d70866df6a3fb83ef348721fd74a87e93ef95c493f87d0d236b",
+          "text": "kept\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "exceptions": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/exceptions.ts",
+        "bytes": 72,
+        "sha256": "8a35eeb1812eb4d6482e836c8606283a272661f3e5c4d3bee6ebc533658ad688"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/exceptions.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/exceptions.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/exceptions-build.log",
+          "bytes": 3352,
+          "sha256": "5e60422fae60bd7eea10013e80148a050dd6cfd60da404b0aa61d6c900c6caea"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/exceptions.bin",
+        "bytes": 14792056,
+        "sha256": "ba83a773cd85bff4fc2c0a985698f4bbbd82249f13b4bb28fa4e88107cfed386"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065",
+          "text": "caught\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 7,
+          "sha256": "b0d97684b0dc50256a1e920238fa474bf9ff19c4c282f74e97e1f715d6d97065",
+          "text": "caught\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "import": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/import.ts",
+        "bytes": 69,
+        "sha256": "8460c59e6cbe967daca49d7a280f5cea5f056d957573f2245a8e3ba5daa8a575"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/import.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/import.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/import-build.log",
+          "bytes": 3401,
+          "sha256": "83069793957a3f379d2be14ef464ffbebf0d38f1b92198df72a765b994a098f5"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/import.bin",
+        "bytes": 24566768,
+        "sha256": "84acb6a094ad5de5569ce9317cb72df9a8d8efb302aec8fb9db2d27da96fe6d7"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 2,
+          "sha256": "0263829989b6fd954f72baaf2fc64bc2e2f01d692d4de72986ea808f6e99813f",
+          "text": "b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 2,
+          "sha256": "0263829989b6fd954f72baaf2fc64bc2e2f01d692d4de72986ea808f6e99813f",
+          "text": "b\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    },
+    "getters": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/getters.ts",
+        "bytes": 81,
+        "sha256": "d6b0520826d53735a34bbc85d45210ca65d98b247249d3bb9af9500d6f952d3f"
+      },
+      "expectedProfile": "normal",
+      "build": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/getters.ts",
+          "--no-cache",
+          "--keep-intermediates",
+          "-v",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/getters.bin"
+        ],
+        "exitCode": 0,
+        "log": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/package/tiny/getters-build.log",
+          "bytes": 3270,
+          "sha256": "5af79d2fb33fd0a46362e10eeaa8f80c0b8798bdfdcf85c4ebaaaf8d101d76c4"
+        }
+      },
+      "tinySelected": false,
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/getters.bin",
+        "bytes": 14791448,
+        "sha256": "c553a79d51ff43cd61d602960d1d26997cc7f7ebe0cc3e71d9f5649809ad0add"
+      },
+      "node": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c474650f60aded7db719c968d1eec04f9b9096b8ff9c0c886d4d8758a1afe388",
+          "text": "get\nvalue\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "native": {
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 10,
+          "sha256": "c474650f60aded7db719c968d1eec04f9b9096b8ff9c0c886d4d8758a1afe388",
+          "text": "get\nvalue\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "text": ""
+        }
+      },
+      "passed": true
+    }
+  },
+  "jsonCli": {
+    "tiny": {
+      "argv": [
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+        "--format",
+        "json",
+        "compile",
+        "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.ts",
+        "--no-cache",
+        "-o",
+        "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-tiny.bin"
+      ],
+      "response": {
+        "build_cache": {
+          "hit": false,
+          "miss_reason": "tiny program specialization"
+        },
+        "codegen_cache": null,
+        "js_modules": 0,
+        "link_cache": {
+          "external_inputs_hashed": 0,
+          "linked": 1,
+          "object_files_hashed": 0,
+          "object_fingerprints_used": 0,
+          "skipped": 0
+        },
+        "native_modules": 1,
+        "output": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-tiny.bin",
+        "outputCalls": 1,
+        "runtimeProfile": "tiny",
+        "success": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-tiny.bin",
+        "bytes": 16320,
+        "sha256": "2510cf1b61e9d0657d92b744dabe439e95127f6a41c9d3a7d9c656a701d3f2b8"
+      },
+      "stderr": {
+        "bytes": 52,
+        "sha256": "d9c2229cd208d0a535a6660259f518028b2303b125293076fd41554b40940fad",
+        "text": "perry: in-process LLVM backend active (LLVM 22.1.8)\n"
+      }
+    },
+    "normal": {
+      "argv": [
+        "/dev/shm/perry-startup-27c598181/results/perry-core-npm-proof-xmzyw_8a/install/node_modules/@perryts/perry-linux-x64/bin/perry",
+        "--format",
+        "json",
+        "compile",
+        "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/literal.ts",
+        "--no-cache",
+        "-o",
+        "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-normal.bin",
+        "--no-auto-optimize"
+      ],
+      "response": {
+        "build_cache": {
+          "hit": false,
+          "miss_reason": "no-cache"
+        },
+        "codegen_cache": null,
+        "js_modules": 0,
+        "link_cache": {
+          "external_inputs_hashed": 1,
+          "linked": true,
+          "object_files_hashed": 0,
+          "object_fingerprints_used": 1,
+          "skipped": false
+        },
+        "native_modules": 1,
+        "output": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-normal.bin",
+        "success": true
+      },
+      "binary": {
+        "file": "/dev/shm/perry-startup-27c598181/results/perry-tiny-oracles-jpwammcd/json-normal.bin",
+        "bytes": 24566280,
+        "sha256": "759b18a24edab573a0eb3aef34637ac0d904983a122bc755ae3ec109dddae1eb"
+      },
+      "stderr": {
+        "bytes": 52,
+        "sha256": "d9c2229cd208d0a535a6660259f518028b2303b125293076fd41554b40940fad",
+        "text": "perry: in-process LLVM backend active (LLVM 22.1.8)\n"
+      }
+    }
+  },
+  "pipeCases": {
+    "merged-order": {
+      "bytes": 19,
+      "sha256": "c45d3a272228cc542168164ba961fa622e95260bfd107eb1276940cb5209433e",
+      "text": "one\ntwo\nthree\nfour\n"
+    },
+    "broken-stdout": {
+      "exitCode": 0,
+      "stderr": {
+        "bytes": 9,
+        "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+        "text": "survived\n"
+      }
+    },
+    "full-device": {
+      "exitCode": 0,
+      "stderr": {
+        "bytes": 9,
+        "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+        "text": "survived\n"
+      }
+    },
+    "nonblocking-backpressure": {
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 262656,
+        "sha256": "20896b4fbbf48e8f46ef181dca1c03c9d685542562bdc16e8a09528e08ce2e39"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "text": ""
+      }
+    },
+    "stdout-handshake": {
+      "node": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      },
+      "tiny": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        },
+        "stderr": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        }
+      }
+    },
+    "stderr-handshake": {
+      "node": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      },
+      "tiny": {
+        "readyBeforeDrain": true,
+        "exitCode": 0,
+        "stdout": {
+          "bytes": 6,
+          "sha256": "ed1a545bb85e55816bbf9566b028b2a0bc456b88f49f6f266c0401048824194b",
+          "text": "ready\n"
+        },
+        "stderr": {
+          "bytes": 131073,
+          "sha256": "d8208358468e3b4cd6edc571c86cb89bca470f745d6c905e920d31054abb90f8"
+        }
+      }
+    },
+    "closed-stdout": {
+      "exitCode": 0,
+      "stderr": {
+        "bytes": 9,
+        "sha256": "304b524de1a79904aaf8295a0986f8c03dd0d1d26d25902da057b47277147297",
+        "text": "survived\n"
+      }
+    }
+  }
+}

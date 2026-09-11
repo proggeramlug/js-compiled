@@ -1,0 +1,268 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:35:17.496Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "66e92cd5eabe29eea003e1c7b6640f93957ed197",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+          },
+          "runtimeEnv": {}
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/class-parent-throughput.ts"
+      ]
+    },
+    "node": {
+      "file": "/root/perry-toolchains/node-v26.5.1-linux-x64/bin/node",
+      "bytes": 148011296,
+      "sha256": "fb48e77df2f8e92fedfec39afa60a5f41563441f6b61316ada5fb295a431c2c6",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "bytes": 125009552,
+          "sha256": "29d76ee459ac838a2dabcafdfaee9360dcab7901a6b254bf2646f6bfc9ea00e6",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a",
+            "bytes": 53293628,
+            "sha256": "c6e6ec72d98ef4ba859c53a4d7be9e4a553f7636e4ca6732a59732bcf73c1fef"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/baseline",
+          "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "bytes": 125056504,
+          "sha256": "73a55632d7a86cd44c1d3618ad427abf8883ddbb5234fe2aeb1e588adc619cb0",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "f60d52b43ad0bb497bc7e5d83c2a3dde83a66a720984991a2b32accc5a032d99"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/perry",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": ""
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "class-parent-throughput",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/class-parent-throughput.ts",
+          "bytes": 629,
+          "sha256": "6d03398f53bc3ce278ff937a78219943b5bef316be0e11e0dc0299b7928460db"
+        },
+        "expected": {
+          "stdout": "RESULT 15000000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/class-throughput/baseline/class-parent-throughput"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/class-throughput/baseline/class-parent-throughput",
+              "bytes": 19050368,
+              "sha256": "8c9d60fe0c7371dbfa670b4d373fa7c1d3a546836458d373d4d4b5489e6ad769"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/class-throughput/candidate/class-parent-throughput"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/class-throughput/candidate/class-parent-throughput",
+              "bytes": 19062624,
+              "sha256": "08cc977d642deacff3d91ad19980eb7ea9b0474c461289b64334d759df3d2188"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "code": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/verify-class-throughput.mjs",
+    "bytes": 2514,
+    "sha256": "9440a2dfa38af39eeae2e63572a0c1098543f1bdb4c7937ce0e32363244d6953"
+  },
+  "startedAt": "2026-09-11T09:50:38.480Z",
+  "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+    "kernel": "6.17.0-23-generic",
+    "loadBefore": [
+      2.04,
+      2.08,
+      2.37
+    ],
+    "loadAfter": [
+      2.04,
+      2.08,
+      2.37
+    ]
+  },
+  "settings": {
+    "warmups": 5,
+    "pairedSamples": 10,
+    "slowdownThreshold": 0.03
+  },
+  "raw": {
+    "baseline": [
+      188.127217,
+      187.748921,
+      187.245953,
+      191.016591,
+      191.630657,
+      187.540913,
+      187.273685,
+      189.219256,
+      189.184992,
+      187.507702
+    ],
+    "candidate": [
+      185.879632,
+      185.521354,
+      189.014163,
+      189.475034,
+      189.161338,
+      188.092493,
+      189.818825,
+      190.817078,
+      188.714113,
+      187.341852
+    ]
+  },
+  "baseline": {
+    "min": 187.245953,
+    "max": 191.630657,
+    "mean": 188.6495887,
+    "median": 187.93806899999998,
+    "stddev": 1.5839855265889788,
+    "runs": 10,
+    "p90": 191.016591,
+    "samples": [
+      188.127217,
+      187.748921,
+      187.245953,
+      191.016591,
+      191.630657,
+      187.540913,
+      187.273685,
+      189.219256,
+      189.184992,
+      187.507702
+    ]
+  },
+  "candidate": {
+    "min": 185.521354,
+    "max": 190.817078,
+    "mean": 188.38358820000002,
+    "median": 188.864138,
+    "stddev": 1.6969557441799425,
+    "runs": 10,
+    "p90": 189.818825,
+    "samples": [
+      185.879632,
+      185.521354,
+      189.014163,
+      189.475034,
+      189.161338,
+      188.092493,
+      189.818825,
+      190.817078,
+      188.714113,
+      187.341852
+    ]
+  },
+  "pairedDifference": {
+    "medianMs": -0.31836450000000127,
+    "ci95Ms": [
+      -2.2275669999999934,
+      1.5978220000000078
+    ]
+  },
+  "medianRatio": 1.0049275221615692,
+  "assessment": "no-slowdown-over-3pct-observed",
+  "passed": true,
+  "finishedAt": "2026-09-11T09:50:44.159Z"
+}

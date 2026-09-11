@@ -1,0 +1,38 @@
+{
+  "empty": {
+    "baseline": {
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:5,callback:5,interval:5} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    },
+    "candidate": {
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "[mt-profile] empty_drains=6\n[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:0,callback:0,interval:0} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    }
+  },
+  "noop": {
+    "baseline": {
+      "exitCode": 0,
+      "stdout": "RESULT 0\n",
+      "stderr": "[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:5,callback:5,interval:5} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    },
+    "candidate": {
+      "exitCode": 0,
+      "stdout": "RESULT 0\n",
+      "stderr": "[mt-profile] empty_drains=6\n[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:0,callback:0,interval:0} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    }
+  },
+  "hello": {
+    "baseline": {
+      "exitCode": 0,
+      "stdout": "hello, world\nRESULT 1\n",
+      "stderr": "[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:5,callback:5,interval:5} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    },
+    "candidate": {
+      "exitCode": 0,
+      "stdout": "hello, world\nRESULT 1\n",
+      "stderr": "[mt-profile] empty_drains=6\n[mt-profile] runs=0 resolved=0 then=0 new=0 unwrap=0 thenable_probe=0 thenable_fast=0\n[mt-profile] drains=6 timer_reg={promise:0,callback:0,interval:0} timer_tick={promise:0,callback:0,interval:0} timer_fired={promise:0,callback:0,interval:0}\n[mt-profile] event_notify={sent:0,during_drain:0,drain_suppressed:0} event_wait={total:0,fast:0,zero:0,driver:0,condvar:0}\n[mt-profile] time(ms): queue=0.0 callback=0.0 resolve=0.0\n[mt-profile] fast_path: hit=0 miss=0\n[mt-profile] then_probe: (no probes) verdict_compute=0\n[mt-profile] closure: alloc=0 cap_singleton_hit=0 cap_singleton_miss=0\n[mt-profile] step_chain_reuse: hit=0 miss=0\n[mt-profile] step_done_reuse: hit=0 miss=0\n"
+    }
+  }
+}

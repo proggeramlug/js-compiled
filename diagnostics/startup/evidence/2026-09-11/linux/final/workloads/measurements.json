@@ -1,0 +1,1537 @@
+{
+  "startedAt": "2026-09-11T09:46:06.106Z",
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:33:43.224Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "66e92cd5eabe29eea003e1c7b6640f93957ed197",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+          },
+          "runtimeEnv": {}
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/dev/shm/perry-startup-27c598181/harness/benches/00-noop.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/01-hello.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/10-fib.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/11-loop-sum.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/12-mandelbrot.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/13-nbody.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/14-spectral-norm.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/15-crc32.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/20-sieve.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/21-matmul.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/22-array-sort.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/23-binary-trees.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/24-map-set.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/30-string-build.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/31-json.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/32-regex.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/40-classes.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/41-closures.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/42-async.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/43-generators.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/50-fs-io.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/51-pipeline.ts"
+      ]
+    },
+    "node": {
+      "file": "/root/perry-toolchains/node-v26.5.1-linux-x64/bin/node",
+      "bytes": 148011296,
+      "sha256": "fb48e77df2f8e92fedfec39afa60a5f41563441f6b61316ada5fb295a431c2c6",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "bytes": 125009552,
+          "sha256": "29d76ee459ac838a2dabcafdfaee9360dcab7901a6b254bf2646f6bfc9ea00e6",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a",
+            "bytes": 53293628,
+            "sha256": "c6e6ec72d98ef4ba859c53a4d7be9e4a553f7636e4ca6732a59732bcf73c1fef"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/baseline",
+          "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "bytes": 125056504,
+          "sha256": "73a55632d7a86cd44c1d3618ad427abf8883ddbb5234fe2aeb1e588adc619cb0",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "f60d52b43ad0bb497bc7e5d83c2a3dde83a66a720984991a2b32accc5a032d99"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/perry",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": ""
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "00-noop",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/00-noop.ts",
+          "bytes": 59,
+          "sha256": "d8659d84d989e811ba79d9e48c3d58f43928ea03c60cb3671a3c634346f36719"
+        },
+        "expected": {
+          "stdout": "RESULT 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/00-noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/00-noop",
+              "bytes": 18988464,
+              "sha256": "c289c6d51e2d6e77a3da65a577288d7b8c9758570679049a3728992af951dce6"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop",
+              "bytes": 19000784,
+              "sha256": "40e40c53a00a117f62aace049f8f4134e95d6ee9c86c3375cc31363a361b0066"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "01-hello",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/01-hello.ts",
+          "bytes": 126,
+          "sha256": "62132ab54e719137430bea7f7e944ff33a47b8c49bf0acbbc15e6a134c12a57c"
+        },
+        "expected": {
+          "stdout": "hello, world\nRESULT 1\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/01-hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/01-hello",
+              "bytes": 19000784,
+              "sha256": "857e67e231de3d113b872cf06a1e988d37a55a5fd7092253513cca93d6d46453"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello",
+              "bytes": 19013096,
+              "sha256": "8bf8ab32e416a7cb7530684614f66ba04b4fbade8fd45e856322d7d30877fa0b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "10-fib",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/10-fib.ts",
+          "bytes": 382,
+          "sha256": "cc1b796b2d9f8ddc97be1e46456082c80d7e0edf27832786d631584b82705ed9"
+        },
+        "expected": {
+          "stdout": "RESULT 96631268\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/10-fib"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/10-fib",
+              "bytes": 18992640,
+              "sha256": "a2fd28460efec0fae21072448c065405408a87ae5730347bfc4306ab3548482b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib",
+              "bytes": 19009048,
+              "sha256": "38e9df2b59a1b1502241db1afa2e65366bd1b76dd7195676f5904a886e32b479"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "11-loop-sum",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/11-loop-sum.ts",
+          "bytes": 142,
+          "sha256": "d99b82b07ed9221361ca9ce8a137e50cfe68331335a9866843580e6d63be8420"
+        },
+        "expected": {
+          "stdout": "RESULT 2999999997\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/11-loop-sum",
+              "bytes": 18992568,
+              "sha256": "02d8432c624f69039daa9f39fc40758f5b204d7e5152ae5da8cd6cda5292a8ac"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum",
+              "bytes": 19000792,
+              "sha256": "37060f4f1984e489dbb2d9dccb0ebaf7dbfafa6a0579be51924536d2412e5a3d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "12-mandelbrot",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/12-mandelbrot.ts",
+          "bytes": 605,
+          "sha256": "914d8d4ca12d6e61855620c5e83329bfe5fa6a0644d090e64a18227fbf559279"
+        },
+        "expected": {
+          "stdout": "RESULT 1226150\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/12-mandelbrot",
+              "bytes": 18992568,
+              "sha256": "79fc3c85c2637102a6e61181016ab0aafadd3a5b8203426b3a81358432f1e279"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot",
+              "bytes": 19000792,
+              "sha256": "9b2c1a58858a4f7603ef034ccb4fccf16fd339a4178dcbf2cd36a368fa093bdb"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "13-nbody",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/13-nbody.ts",
+          "bytes": 2914,
+          "sha256": "e678e02bbba698c93176ddc928eea86cbf53ee1d7b977170b911770d096a7861"
+        },
+        "expected": {
+          "stdout": "RESULT -0.169048121\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/13-nbody"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/13-nbody",
+              "bytes": 19013920,
+              "sha256": "8a588b4085ef39159b7c5e1e1d3fc8caea3b91d4a29f238d86ee9d841b94ccf4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody",
+              "bytes": 19030272,
+              "sha256": "168731628dfb487663e32e0ef5efc71cb996986c6a4a83702d6c49bba531b5da"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "14-spectral-norm",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/14-spectral-norm.ts",
+          "bytes": 1035,
+          "sha256": "fb18aa28e0f273495e337f9f2c89443b1838a3e83e84a6c7872ba384fd436682"
+        },
+        "expected": {
+          "stdout": "RESULT 1.274224153\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/14-spectral-norm",
+              "bytes": 19009384,
+              "sha256": "a3812fdac63119eeaa1f99e26b0f8d5e28494776cbee29d988e338fcad2fb94d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm",
+              "bytes": 19021704,
+              "sha256": "997b86a0a3f51fcddfef5dbb0faa1910ebcdc2cc717ff5c0e4cb88dc66300df4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "15-crc32",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/15-crc32.ts",
+          "bytes": 960,
+          "sha256": "3e8aa4b2cd91ac4d1ad4b098ec3b89f0c110a98cda5b136189554108d7fe0a12"
+        },
+        "expected": {
+          "stdout": "RESULT 62051195\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/15-crc32"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/15-crc32",
+              "bytes": 18996744,
+              "sha256": "734beff2eb54336672075b202af1ea55f0f3d67760efe9c119b69cdfee3a9fa7"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32",
+              "bytes": 19013160,
+              "sha256": "8f7b5add82a4164d22a10a8cc50b3f67279082b54615a59e03ff47266875911b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "20-sieve",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/20-sieve.ts",
+          "bytes": 354,
+          "sha256": "9c9e8e8948b543fa227e5afe3042e73d8b7a7e709f764487aa977e74f8536376"
+        },
+        "expected": {
+          "stdout": "RESULT 5761455\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/20-sieve"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/20-sieve",
+              "bytes": 18992576,
+              "sha256": "46dc878bba78658a3c14e1eebdd3e5e7edf4ee2a2a610fad1296e1bbebbaa12a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve",
+              "bytes": 19000800,
+              "sha256": "bc711a1cc9b436161b46bce08b76ec115c81dd247f5534a295d1a4b92bb469cf"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "21-matmul",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/21-matmul.ts",
+          "bytes": 898,
+          "sha256": "b0f49212c4bec02d6a23209206394e8f2cf191936d990882f25f7583037ea1af"
+        },
+        "expected": {
+          "stdout": "RESULT 260042689.061880\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/21-matmul"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/21-matmul",
+              "bytes": 19005136,
+              "sha256": "29901c8e57b3357b81f708fdc8c431cedf83b59b00b383a7770968159670f9c1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul",
+              "bytes": 19021552,
+              "sha256": "9d611d3fa834693dd184b5004fefb517ab9aded33d43c7c727781fd0370a86d5"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "22-array-sort",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/22-array-sort.ts",
+          "bytes": 434,
+          "sha256": "da170a96641556267ae4cfbe28719880dc37f9d238f7e0c06e28c89998e17dd9"
+        },
+        "expected": {
+          "stdout": "RESULT 14490944\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/22-array-sort"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/22-array-sort",
+              "bytes": 18992664,
+              "sha256": "4b4fc27ecda13b8bf06319a103bc64fbcee7ee834b10df1bded067221b139a08"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort",
+              "bytes": 19004976,
+              "sha256": "e5ca12cbe46f8c0778461be54a1131fe388969ff7cb27868c1498e951da97375"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "23-binary-trees",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/23-binary-trees.ts",
+          "bytes": 967,
+          "sha256": "30832fa254cf0f95843ca02872566d26305105fecf4c2cf3408f8f2a44cac69e"
+        },
+        "expected": {
+          "stdout": "RESULT 136664414\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/23-binary-trees",
+              "bytes": 19017560,
+              "sha256": "a3fd98757411be67852f84fc4beac17d8ef3e5ff51d5a685bffa89be574e728b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees",
+              "bytes": 19025784,
+              "sha256": "861b379e3987987b772990d920e44ffc94433647c7d4211b8ffee0ba5566882c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "24-map-set",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/24-map-set.ts",
+          "bytes": 509,
+          "sha256": "13194b6514154c335b47f1b43ccc9f544eab75d626f754a69841ef96b90cdaeb"
+        },
+        "expected": {
+          "stdout": "RESULT 125350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/24-map-set"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/24-map-set",
+              "bytes": 18992704,
+              "sha256": "bbec3ade009e18cf6a29b0891c33c5b47b617dbdcf985bcac7918fc1034077f6"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set",
+              "bytes": 19000928,
+              "sha256": "9f6ec148ffc1ad95f20bf196179effb9b9c15e81bc7d7adab83d28e4589675d6"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "30-string-build",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/30-string-build.ts",
+          "bytes": 831,
+          "sha256": "7411345cc6acaa2de75f803cd89a210bab35bf49db59c8ebbe5a40b83fd224f4"
+        },
+        "expected": {
+          "stdout": "RESULT 60444505\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/30-string-build"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/30-string-build",
+              "bytes": 19042696,
+              "sha256": "4c9a3f4b88c9d8e5b8476ffd68675c973cd875ec6b72e85d5aaf3f9b7eb9987d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build",
+              "bytes": 19050856,
+              "sha256": "b308b848231646c6a3bf16bba4e0a08f9cd31dd7619f9da6269ed07a5d231b12"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "31-json",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/31-json.ts",
+          "bytes": 690,
+          "sha256": "6a7a2d495cff9004089ed69913541e316b45d672bf5583010baf1f2badae07ac"
+        },
+        "expected": {
+          "stdout": "RESULT 2204940400\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/31-json"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/31-json",
+              "bytes": 19029704,
+              "sha256": "d558003175e9b36da9b4ff3bbb19a6656171e7ce9cc25d866fa3507c0050c040"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json",
+              "bytes": 19037856,
+              "sha256": "aa5c8755a52c4a086b130d0f118486c2051e40db70dd00503593e580247bbae3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "32-regex",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/32-regex.ts",
+          "bytes": 654,
+          "sha256": "dba9a37012ce0eca796acd170b043d5ae5bca37e5abf49d374b800c41ca52574"
+        },
+        "expected": {
+          "stdout": "RESULT 2986647000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/32-regex"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/32-regex",
+              "bytes": 18992696,
+              "sha256": "d1ced93ae89752c9bcb5e6f0bede6a59b26db95119e7e1b41e2a91132a6d1e52"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex",
+              "bytes": 19009112,
+              "sha256": "583d0ee3765ceffbb76bc72902a0b30456419dabfe7f3ccf3cf6d86cf5fddd63"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "40-classes",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/40-classes.ts",
+          "bytes": 1169,
+          "sha256": "64e0537488ff00995e59b282011729051a00a5e4b18dc232958b7f5ef24568b3"
+        },
+        "expected": {
+          "stdout": "RESULT 3077873159.745\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/40-classes"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/40-classes",
+              "bytes": 19030072,
+              "sha256": "df2113feece1b2528c678e08ad75a640e8c4ec4c2ba0318961f2eebde4178301"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes",
+              "bytes": 19038296,
+              "sha256": "50723012223b5399d3de655f2f594418e982ae7b48ac60bd25fccdba5c94d12b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "41-closures",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/41-closures.ts",
+          "bytes": 977,
+          "sha256": "d15f087c7be4a547c069a3c3d1c645e538bff343f3fa3db7dd187e74f80ce088"
+        },
+        "expected": {
+          "stdout": "RESULT 334583780076\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/41-closures"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/41-closures",
+              "bytes": 19001160,
+              "sha256": "66aa7f877a94835759c92471b3a6a86a31d6aab9e5259bd0d86b72635acbd155"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures",
+              "bytes": 19017576,
+              "sha256": "741aa686de549ae349e8c92b7cc0962057746702290bee63fa6ccd8490cb9067"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "42-async",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/42-async.ts",
+          "bytes": 655,
+          "sha256": "6f1b7007c57bd82919125bee1e0c509a546785a404f53bc86be284737982aa15"
+        },
+        "expected": {
+          "stdout": "RESULT 36249993500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/42-async"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/42-async",
+              "bytes": 19071544,
+              "sha256": "425fef1869af9ba78a399dbb5fcea7f4a130d982c1db8dfa5b84c4027cf36bbe"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async",
+              "bytes": 19075640,
+              "sha256": "519074a81adb7eb017383f76e57b879690c04ed21f748cc7f6fad2c921442050"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "43-generators",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/43-generators.ts",
+          "bytes": 517,
+          "sha256": "8bc8a997be3b713a1dfce5926a02bef04569607f9b52a0b10fcb3588e549b341"
+        },
+        "expected": {
+          "stdout": "RESULT 179997000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/43-generators"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/43-generators",
+              "bytes": 19060552,
+              "sha256": "2966091145309835c7b024d6b28257774ce5c8c5c8d92910b875d84cefa2cb94"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators",
+              "bytes": 19064680,
+              "sha256": "bab647873bc8b3da2b6031698bd67e2907bcc29ce65368ba32f03b0555a7a2da"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "50-fs-io",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/50-fs-io.ts",
+          "bytes": 605,
+          "sha256": "f8c4d9db5a34d640148e1519b6fe3358745b212734de085850e772a10838ed05"
+        },
+        "expected": {
+          "stdout": "RESULT 904500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/50-fs-io"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/50-fs-io",
+              "bytes": 19041904,
+              "sha256": "d5666c942d551165032bf034c2c987c4e1066f181166f618a4cd3a794d46c608"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io",
+              "bytes": 19045968,
+              "sha256": "4a16bc270a00c9406a3e8c64a9d5e164d339121b6856c26b2b49900f316155ff"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "51-pipeline",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/51-pipeline.ts",
+          "bytes": 1056,
+          "sha256": "4d4882812ded9985f8287b43ef18dab3111976ad2b6c98459072ac844a9e42e9"
+        },
+        "expected": {
+          "stdout": "RESULT 99180339350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/51-pipeline"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/baseline/51-pipeline",
+              "bytes": 19063528,
+              "sha256": "34601db22df7bc75f5bb123258c382594f7d2dadede7906421e011a316648a95"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline",
+              "bytes": 19071688,
+              "sha256": "b3890bce140e72959c5c42d6c17fbd384188455cafdbf4af32f5aba46ae6bfa1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "code": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/verify-workloads.mjs",
+    "bytes": 4473,
+    "sha256": "8927210a3898d7fec5d4c8791a891a94db8209a3425c9ab32bb4c9c2d44e4d13"
+  },
+  "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+    "kernel": "6.17.0-23-generic",
+    "loadBefore": [
+      1.51,
+      2.22,
+      2.51
+    ],
+    "loadAfter": [
+      2.04,
+      2.08,
+      2.37
+    ]
+  },
+  "settings": {
+    "initialPairedSamples": 5,
+    "confirmationPairedSamples": 10,
+    "slowdownThreshold": 0.03,
+    "timeoutMs": 300000,
+    "recordTradeoffs": false
+  },
+  "profileTradeoffs": [],
+  "cases": {
+    "00-noop": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 5.838569
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3.745782
+        }
+      },
+      "throughput": null
+    },
+    "01-hello": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 4.259752
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3.482781
+        }
+      },
+      "throughput": null
+    },
+    "10-fib": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 374.808411
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 348.316461
+        }
+      },
+      "throughput": null
+    },
+    "11-loop-sum": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 714.582126
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 713.935118
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 714.797187,
+          "max": 721.256975,
+          "mean": 718.1394115999999,
+          "median": 717.889409,
+          "stddev": 2.8471349990934387,
+          "runs": 5,
+          "p90": 721.256975,
+          "samples": [
+            714.797187,
+            721.256975,
+            720.760007,
+            717.889409,
+            715.99348
+          ]
+        },
+        "candidate": {
+          "min": 713.526977,
+          "max": 724.426391,
+          "mean": 719.6243236,
+          "median": 719.57761,
+          "stddev": 4.306361183308872,
+          "runs": 5,
+          "p90": 724.426391,
+          "samples": [
+            713.526977,
+            717.742004,
+            719.57761,
+            722.848636,
+            724.426391
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -1.1823969999999235,
+          "ci95Ms": [
+            -3.5149710000000596,
+            8.43291099999999
+          ]
+        },
+        "initialMedianRatio": 1.0023516170859126,
+        "medianRatio": 1.0023516170859126,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "12-mandelbrot": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 731.653491
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 724.102316
+        }
+      },
+      "throughput": null
+    },
+    "13-nbody": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 9839.499073
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 10264.803053
+        }
+      },
+      "throughput": null
+    },
+    "14-spectral-norm": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1276.050756
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1274.935644
+        }
+      },
+      "throughput": null
+    },
+    "15-crc32": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3815.032157
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3823.613264
+        }
+      },
+      "throughput": null
+    },
+    "20-sieve": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 762.842549
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 782.691798
+        }
+      },
+      "throughput": null
+    },
+    "21-matmul": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 30321.831673
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 30326.63648
+        }
+      },
+      "throughput": null
+    },
+    "22-array-sort": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3815.15991
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3830.049303
+        }
+      },
+      "throughput": null
+    },
+    "23-binary-trees": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2261.32151
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2270.685147
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2211.725862,
+          "max": 2240.550687,
+          "mean": 2228.8700442,
+          "median": 2228.64301,
+          "stddev": 11.248442380834023,
+          "runs": 5,
+          "p90": 2240.550687,
+          "samples": [
+            2237.169988,
+            2226.260674,
+            2240.550687,
+            2228.64301,
+            2211.725862
+          ]
+        },
+        "candidate": {
+          "min": 2229.11466,
+          "max": 2267.675589,
+          "mean": 2246.179388,
+          "median": 2243.839138,
+          "stddev": 13.837087147676293,
+          "runs": 5,
+          "p90": 2267.675589,
+          "samples": [
+            2243.839138,
+            2267.675589,
+            2246.699814,
+            2243.567739,
+            2229.11466
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 14.924729000000298,
+          "ci95Ms": [
+            6.149127000000135,
+            41.41491499999984
+          ]
+        },
+        "initialMedianRatio": 1.0068185563734589,
+        "medianRatio": 1.0068185563734589,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "24-map-set": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 517.313718
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 513.882804
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 514.228129,
+          "max": 530.299177,
+          "mean": 521.165438,
+          "median": 520.665154,
+          "stddev": 5.781116725484709,
+          "runs": 5,
+          "p90": 530.299177,
+          "samples": [
+            514.228129,
+            530.299177,
+            520.665154,
+            520.789095,
+            519.845635
+          ]
+        },
+        "candidate": {
+          "min": 515.13406,
+          "max": 732.937583,
+          "mean": 565.7912328,
+          "median": 519.031876,
+          "stddev": 94.14116911824726,
+          "runs": 5,
+          "p90": 732.937583,
+          "samples": [
+            732.937583,
+            515.13406,
+            543.744785,
+            519.031876,
+            518.10786
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -1.737775000000056,
+          "ci95Ms": [
+            -15.16511700000001,
+            218.70945400000005
+          ]
+        },
+        "initialMedianRatio": 0.9968630933192814,
+        "medianRatio": 0.9968630933192814,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "30-string-build": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 984.015064
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 906.24054
+        }
+      },
+      "throughput": null
+    },
+    "31-json": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2382.61872
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2279.017737
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2309.958289,
+          "max": 2335.234862,
+          "mean": 2318.4684888,
+          "median": 2316.085848,
+          "stddev": 9.961595461701522,
+          "runs": 5,
+          "p90": 2335.234862,
+          "samples": [
+            2335.234862,
+            2316.085848,
+            2312.332301,
+            2318.731144,
+            2309.958289
+          ]
+        },
+        "candidate": {
+          "min": 2279.222827,
+          "max": 2298.457613,
+          "mean": 2288.819181,
+          "median": 2289.072284,
+          "stddev": 7.650055327107915,
+          "runs": 5,
+          "p90": 2298.457613,
+          "samples": [
+            2298.457613,
+            2293.621155,
+            2289.072284,
+            2283.722026,
+            2279.222827
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -30.735462000000098,
+          "ci95Ms": [
+            -36.777248999999756,
+            -22.464693000000352
+          ]
+        },
+        "initialMedianRatio": 0.9883365445959927,
+        "medianRatio": 0.9883365445959927,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "32-regex": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 6167.871969
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 6323.308465
+        }
+      },
+      "throughput": null
+    },
+    "40-classes": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2713.259759
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2714.645526
+        }
+      },
+      "throughput": null
+    },
+    "41-closures": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 5582.151459
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 5595.945726
+        }
+      },
+      "throughput": null
+    },
+    "42-async": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1613.938716
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1613.283683
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 1597.503217,
+          "max": 1639.417083,
+          "mean": 1621.4853078,
+          "median": 1625.901205,
+          "stddev": 16.333029855494363,
+          "runs": 5,
+          "p90": 1639.417083,
+          "samples": [
+            1613.655367,
+            1639.417083,
+            1625.901205,
+            1597.503217,
+            1630.949667
+          ]
+        },
+        "candidate": {
+          "min": 1599.119994,
+          "max": 1673.767302,
+          "mean": 1626.072394,
+          "median": 1607.103206,
+          "stddev": 32.09351220592761,
+          "runs": 5,
+          "p90": 1673.767302,
+          "samples": [
+            1673.767302,
+            1605.726346,
+            1644.645122,
+            1607.103206,
+            1599.119994
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 9.59998900000005,
+          "ci95Ms": [
+            -33.69073700000013,
+            60.1119349999999
+          ]
+        },
+        "initialMedianRatio": 0.9884384125294994,
+        "medianRatio": 0.9884384125294994,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "43-generators": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 22893.422936
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 22527.216064
+        }
+      },
+      "throughput": null
+    },
+    "50-fs-io": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 423.073107
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 411.712591
+        }
+      },
+      "throughput": null
+    },
+    "51-pipeline": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1265.45847
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1217.782859
+        }
+      },
+      "throughput": null
+    }
+  },
+  "finishedAt": "2026-09-11T09:50:38.136Z",
+  "passed": true
+}

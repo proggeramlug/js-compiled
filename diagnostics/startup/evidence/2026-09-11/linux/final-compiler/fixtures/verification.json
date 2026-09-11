@@ -1,0 +1,1889 @@
+{
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T10:26:04.168Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "172a9144e072101ee4d3197677d456e3cd075a92",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/json-final"
+          },
+          "runtimeEnv": {}
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_empty_checkpoint_before_exit.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_empty_checkpoint_timing.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_before_exit_microtasks_only.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_before_exit_unref.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_exit_job_boundary.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_6077_unhandled_rejection_event.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_6077_unhandled_rejection_sources.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_issue_9305_throw_in_microtask.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_9416_stdin_only_loop_liveness.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_class_expr_inherited_static_method.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_class_static_in_function.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_class_expr_new_instanceof.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_01_two_fn_interleave.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_02_then_vs_await_fifo.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_03_chained_then_interleave.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_04_await_caller_callee.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_05_nested_promise_unwrap.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_06_finally_after_await.ts",
+        "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_07_promise_all_mixed.ts",
+        "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/class-parents-first-use.ts"
+      ],
+      "gcStressCases": [
+        "class-parents-first-use"
+      ]
+    },
+    "node": {
+      "file": "/root/perry-toolchains/node-v26.5.1-linux-x64/bin/node",
+      "bytes": 148011296,
+      "sha256": "fb48e77df2f8e92fedfec39afa60a5f41563441f6b61316ada5fb295a431c2c6",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "bytes": 125009552,
+          "sha256": "29d76ee459ac838a2dabcafdfaee9360dcab7901a6b254bf2646f6bfc9ea00e6",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/baseline",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a",
+            "bytes": 53293628,
+            "sha256": "c6e6ec72d98ef4ba859c53a4d7be9e4a553f7636e4ca6732a59732bcf73c1fef"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/baseline",
+          "commit": "603b074ace01464bc66fc07cc8d532f26ccf5a0f",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+          "bytes": 125058040,
+          "sha256": "a4d3341a04ccdf1537c0905fb83f2f41ef906653360ae768949669bf9fd9c054",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/json-final"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "d42e677bfcabd9409e297f557efe445bf2ce7d3e1cc2ce7626928895acf846c2"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/perry",
+          "commit": "2c08ccfce1a96bfbd825bdedbd591cf47fd88883",
+          "trackedDiff": ""
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "test_gap_startup_empty_checkpoint_before_exit",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_empty_checkpoint_before_exit.ts",
+          "bytes": 447,
+          "sha256": "0af018a421ee157b3023b1379eb593b421fbd356a03874c50c78c8b1d4d4920c"
+        },
+        "expected": {
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_empty_checkpoint_before_exit"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_empty_checkpoint_before_exit",
+              "bytes": 18996928,
+              "sha256": "60285ec259fec0498be0976f915ebb2929f1cb4eef15d5a3f3cc7f935d7d1886"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_empty_checkpoint_before_exit"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_empty_checkpoint_before_exit",
+              "bytes": 19009240,
+              "sha256": "bb8774270cb291d92492db6e7619f53d99484ead05dcaff4ac0902a88db545fc"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_empty_checkpoint_timing",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_empty_checkpoint_timing.ts",
+          "bytes": 304,
+          "sha256": "da726074680b4947c95c2c09a32d0a84cc7d996431302d2c4668b04a005ed981"
+        },
+        "expected": {
+          "stdout": "loop started true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_empty_checkpoint_timing"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_empty_checkpoint_timing",
+              "bytes": 19029376,
+              "sha256": "09fe2338a168b682ab462d03f9ff93bd5922eaa03d809dbb186c7d7923861147"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_empty_checkpoint_timing"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_empty_checkpoint_timing",
+              "bytes": 19033408,
+              "sha256": "df493480f1db5223eb48bb40a95e043e4e95a2aa46a032f39739bfde07f2df6a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_before_exit_microtasks_only",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_before_exit_microtasks_only.ts",
+          "bytes": 292,
+          "sha256": "be2350a497c6c90b766535693f2bae86abed22d44b26ef3c840434bc506e4345"
+        },
+        "expected": {
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_before_exit_microtasks_only"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_before_exit_microtasks_only",
+              "bytes": 18996624,
+              "sha256": "c2d59cfa75d4a77a53aaac740679e19e866c87151e6d81a4d0b1d584bd7af204"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_before_exit_microtasks_only"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_before_exit_microtasks_only",
+              "bytes": 19008912,
+              "sha256": "2f5592d07efceb70cd340c30a0af55fd2a0118a7dd2d89b8cecf82a761198665"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_before_exit_unref",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_before_exit_unref.ts",
+          "bytes": 246,
+          "sha256": "d079caed66f9007cbaba77d4a2b76932a3a0778f83ebbdecae58037669a3838c"
+        },
+        "expected": {
+          "stdout": "beforeExit\nexit\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_before_exit_unref"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_before_exit_unref",
+              "bytes": 18992528,
+              "sha256": "426cec84f44307948189200b6c82f6969834beb362353670f1ea72b90baffc9c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_before_exit_unref"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_before_exit_unref",
+              "bytes": 19004816,
+              "sha256": "4f949e578a2b4d7b98a1864e828c32616df4957f7277c883c4dc93fcd5cfb2c3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_startup_exit_job_boundary",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_startup_exit_job_boundary.ts",
+          "bytes": 232,
+          "sha256": "53fe252099c7b2d3b97275a95f574b2e22444d342d5ea785338c84eb3dc54aca"
+        },
+        "expected": {
+          "stdout": "exit\nexit promise\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_exit_job_boundary"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_startup_exit_job_boundary",
+              "bytes": 18996640,
+              "sha256": "627f1f9381a21e50944ecb88f01f748c0e733a458aadb09ae652ef51e25cefde"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_exit_job_boundary"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_startup_exit_job_boundary",
+              "bytes": 19008928,
+              "sha256": "1926b9aacc6491ad438f15a7c6a42e1705e46f7b229805563e72338845753871"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_6077_unhandled_rejection_event",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_6077_unhandled_rejection_event.ts",
+          "bytes": 1397,
+          "sha256": "ab078cbe6e8569c34b1e80272dcb31423345b587ca2e0a6c2f8400b685c8f2bf"
+        },
+        "expected": {
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_6077_unhandled_rejection_event"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_6077_unhandled_rejection_event",
+              "bytes": 19034040,
+              "sha256": "9155931fa8d052d3f528facd3263ebbed8cafeba77ca664793a511b7055b39bf"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_6077_unhandled_rejection_event"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_6077_unhandled_rejection_event",
+              "bytes": 19042264,
+              "sha256": "3f19643dc412ac04e38badf83390e265fa05441a058c411c70a7252003c9f315"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_6077_unhandled_rejection_sources",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_6077_unhandled_rejection_sources.ts",
+          "bytes": 982,
+          "sha256": "b07ca73e5188297d141f98374e2cfb3ce743b8ea11a9f4176eccb923d49de0a6"
+        },
+        "expected": {
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_6077_unhandled_rejection_sources"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_6077_unhandled_rejection_sources",
+              "bytes": 19033872,
+              "sha256": "e1e56c126702db104297f5555dc70fd5571d9c606b506090d7c07f98bf44b52b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_6077_unhandled_rejection_sources"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_6077_unhandled_rejection_sources",
+              "bytes": 19042088,
+              "sha256": "9d00bc1c1392db825eabf6f1c769ce0934e6e19020e3883d39ebad45525c12b3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_issue_9305_throw_in_microtask",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_issue_9305_throw_in_microtask.ts",
+          "bytes": 2158,
+          "sha256": "f76d647a8151dd0929bf2b983d862b1cc424a862ff26fcf306817b559e28081f"
+        },
+        "expected": {
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_issue_9305_throw_in_microtask"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_issue_9305_throw_in_microtask",
+              "bytes": 19034168,
+              "sha256": "93edd256601ba65908fdc3796d7a9b16cd179f1d6799b44a91c5f1153ba817ba"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_issue_9305_throw_in_microtask"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_issue_9305_throw_in_microtask",
+              "bytes": 19046488,
+              "sha256": "90c40c0a0b67e27ac7d5470361d6d635337fd0dba09cefa28ad0438b493d11f4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_9416_stdin_only_loop_liveness",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_9416_stdin_only_loop_liveness.ts",
+          "bytes": 7021,
+          "sha256": "e03819846cfc8115ea0e1f1e9f857dfaf264b4215dec83b36d6618ee85653f39"
+        },
+        "expected": {
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_9416_stdin_only_loop_liveness"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_9416_stdin_only_loop_liveness",
+              "bytes": 19126520,
+              "sha256": "698a8e3b7e94ee06315302b4c2c600898ab75dd4f7c09a45dda34221c57ff7e1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_9416_stdin_only_loop_liveness"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_9416_stdin_only_loop_liveness",
+              "bytes": 19130648,
+              "sha256": "b7db2e06e21ffc4c6934409e346968cb71acbac84f151840124af3d1bddb216a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_class_expr_inherited_static_method",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_class_expr_inherited_static_method.ts",
+          "bytes": 1431,
+          "sha256": "19e9145a8c7aff7566dc8ad498a3ca4c26653667077f94c8ad81992e19414e75"
+        },
+        "expected": {
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_class_expr_inherited_static_method"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_class_expr_inherited_static_method",
+              "bytes": 19050432,
+              "sha256": "ba128449c6eb5b609e1c78219df91020cb6a9d198af44c3751b72a76baa9a228"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_class_expr_inherited_static_method"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_class_expr_inherited_static_method",
+              "bytes": 19054496,
+              "sha256": "0d3c37cf099966a78c76d9c8c9f4c745cc1dd3819c01a4ffe6b76d3a033013ef"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_class_static_in_function",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_class_static_in_function.ts",
+          "bytes": 994,
+          "sha256": "a2f00aa78b2cff1bd71636a2e2bee489f5ecffd1222d2b1d7755fb622ab1f8dd"
+        },
+        "expected": {
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_class_static_in_function"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_class_static_in_function",
+              "bytes": 19013432,
+              "sha256": "d7d74ff139d70f1029535a581dd01e3a30f525f3693c30a46c0ee0237d8985ce"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_class_static_in_function"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_class_static_in_function",
+              "bytes": 19021656,
+              "sha256": "0ae2621651ac035a5fae3732391228f46b030c38db3aaa0fd9d4ecd5301a159b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_gap_class_expr_new_instanceof",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_gap_class_expr_new_instanceof.ts",
+          "bytes": 1171,
+          "sha256": "fd2ef9de61fe7d916ceeaec632a094b83765b748ed907e86551aec374dac20af"
+        },
+        "expected": {
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_class_expr_new_instanceof"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_gap_class_expr_new_instanceof",
+              "bytes": 19037936,
+              "sha256": "f2c0d1279df89b1d3250efd71e7aa951b0710fb7ce085d6426d93cdc78be6e1b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_class_expr_new_instanceof"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_gap_class_expr_new_instanceof",
+              "bytes": 19042000,
+              "sha256": "1bb4cd062a3b73a101e0eb84dc282312d02921724a282877708ad27965b4480c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_01_two_fn_interleave",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_01_two_fn_interleave.ts",
+          "bytes": 636,
+          "sha256": "6af4f972642d0c93e557e8e6ab23cc0ed1e4fc1ee8fdd14bf7c330dcf8a58ff8"
+        },
+        "expected": {
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_01_two_fn_interleave"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_01_two_fn_interleave",
+              "bytes": 19030480,
+              "sha256": "ac9b0570378db568003bb57d43a9191bdad11b68bd7fe112103034aee9d92e52"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_01_two_fn_interleave"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_01_two_fn_interleave",
+              "bytes": 19038704,
+              "sha256": "078287f3e9ac13f8edf8cdaed4fae87ac52c16a75eea98bf8259e8d263489b27"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_02_then_vs_await_fifo",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_02_then_vs_await_fifo.ts",
+          "bytes": 439,
+          "sha256": "d72b25530c7511fef41f3cf4d41d8570820e11207bf8579fbf741af5133296bb"
+        },
+        "expected": {
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_02_then_vs_await_fifo"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_02_then_vs_await_fifo",
+              "bytes": 19029944,
+              "sha256": "549b8ec245f01c034543e075864525fab1bdf767d762c4129f32898ee6a1e76e"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_02_then_vs_await_fifo"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_02_then_vs_await_fifo",
+              "bytes": 19038160,
+              "sha256": "285d3cd73bf48990709e4e0995b45e0facdf97fd5804f095f170f5346fddc71f"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_03_chained_then_interleave",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_03_chained_then_interleave.ts",
+          "bytes": 554,
+          "sha256": "0c375501fb47435974cc08d4cddf007fd55974e54b057e8a2f7433a29497df3b"
+        },
+        "expected": {
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_03_chained_then_interleave"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_03_chained_then_interleave",
+              "bytes": 18996944,
+              "sha256": "81f8a020b0ae1c170fb45bc9c4f8e5b294924b62aa919bf7db2cfd70e03ae01d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_03_chained_then_interleave"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_03_chained_then_interleave",
+              "bytes": 19009264,
+              "sha256": "8ba06689b5b0b59e8de38cf2720ec3074d9b931b98fd6ec9fb381baf870815d8"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_04_await_caller_callee",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_04_await_caller_callee.ts",
+          "bytes": 790,
+          "sha256": "525500b98e4186bbefbfbebc7e6a8491eb90d3ade9ef477293b3ecf39a7f5d8c"
+        },
+        "expected": {
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_04_await_caller_callee"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_04_await_caller_callee",
+              "bytes": 19034432,
+              "sha256": "54eb22a386b205eb590e1aacf3209a1d78faf5aae6e25e1a484e30c884f41ead"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_04_await_caller_callee"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_04_await_caller_callee",
+              "bytes": 19038560,
+              "sha256": "e64761d80f4d98f0b757e1eaacd6b77814d57567e71624df9a4dae4b1aea0a8a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_05_nested_promise_unwrap",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_05_nested_promise_unwrap.ts",
+          "bytes": 584,
+          "sha256": "ffd051fd57aa4f8ab286b701a174f51b3698def3ac2a627586e49c543f0a61a7"
+        },
+        "expected": {
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_05_nested_promise_unwrap"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_05_nested_promise_unwrap",
+              "bytes": 19029960,
+              "sha256": "d6f7055c4df636d69376e3bd35e6ebf1e2ff8aabb8dc48d021eb60f4ce1381c9"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_05_nested_promise_unwrap"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_05_nested_promise_unwrap",
+              "bytes": 19038184,
+              "sha256": "0fb779ec7803ec4a6748272bb367fad88058a789d17fa93f2fff9daff8183a2d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_06_finally_after_await",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_06_finally_after_await.ts",
+          "bytes": 553,
+          "sha256": "821bce01913762204572ab9e467762c4b833d92ac0ef8a508481d7755882b044"
+        },
+        "expected": {
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_06_finally_after_await"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_06_finally_after_await",
+              "bytes": 19030184,
+              "sha256": "e3e76b0076005f0bfe995b277da20e5dd0714039b496c23be7ea1b8935098f0a"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_06_finally_after_await"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_06_finally_after_await",
+              "bytes": 19038408,
+              "sha256": "cc1c339f81bf2fa05f78e1134c2de0eb772b0a8182c56bad86274daabf1be12d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "test_microtask_inv_07_promise_all_mixed",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/perry/test-files/test_microtask_inv_07_promise_all_mixed.ts",
+          "bytes": 653,
+          "sha256": "2c79aa27edff0ae5c9def9236a0215d6c5f23770e5a83dd225e578c3d1d44043"
+        },
+        "expected": {
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_07_promise_all_mixed"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/test_microtask_inv_07_promise_all_mixed",
+              "bytes": 19038736,
+              "sha256": "88d9bd611ccff0db13fd3e58449bb6e94249c8f1d7c21305fbe521b72bf88ea1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_07_promise_all_mixed"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/test_microtask_inv_07_promise_all_mixed",
+              "bytes": 19051056,
+              "sha256": "0f2e2c82eca3f702119c1c4a9a62762f619a5186d59f93312481604186efb2aa"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "class-parents-first-use",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/class-parents-first-use.ts",
+          "bytes": 641,
+          "sha256": "f12d6f8cef5f6069355e7badf0388b338ed94fa24ed05080352942b47ae0bfab"
+        },
+        "expected": {
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/class-parents-first-use"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline/class-parents-first-use",
+              "bytes": 19029896,
+              "sha256": "03f84cc0459a6ffa3169e03c858cb4fb27cf213fad10c0a3c544bd9f819b1079"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/class-parents-first-use"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate/class-parents-first-use",
+              "bytes": 19038120,
+              "sha256": "989d70276c93ec94a58e89675dd5e4ec1912eda29832612afe56bb0ef621d3e6"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": true
+      }
+    ]
+  },
+  "cases": {
+    "test_gap_startup_empty_checkpoint_before_exit": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 6.636458,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nexit 0\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": false,
+        "knownDefect": "omits the second beforeExit after the immediate",
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 6.115376,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nexit 0\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=24 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=24 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 5.06198,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 6.522336,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nbeforeExit 0\ntick\npromise\nimmediate\nbeforeExit 1\nexit 0\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=8 scheduled_collections=8 polls_paced=0 copying_minors=8 moved_objects=25 loop_polls=0\n[gc-schedule] forced_collections=8 copying_minors=8 moved_objects=25 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    },
+    "test_gap_startup_empty_checkpoint_timing": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 8.545272,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 14.512231,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12664 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12664 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 8.856824,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 14.483317,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "loop started true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12664 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12664 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    },
+    "test_gap_startup_before_exit_microtasks_only": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 5.524964,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.602992,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\ntick\npromise\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_startup_before_exit_unref": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.551217,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.290399,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "beforeExit\nexit\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_startup_exit_job_boundary": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.078804,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "exit\nexit promise\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.501483,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "exit\nexit promise\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_6077_unhandled_rejection_event": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 14.672591,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 14.664395,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nsync catch: caught sync\nunhandledRejection: late\n  same promise object: true\ntimer0\ncaught late: late\nrejectionHandled: true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_6077_unhandled_rejection_sources": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 14.908861,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 14.668774,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync end\nall caught: all caught\nuncaughtException: async boom | origin: unhandledRejection\nuncaughtException: all boom | origin: unhandledRejection\nstill alive\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_issue_9305_throw_in_microtask": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 5.049927,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.866134,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync-done\ninner-caught:inner\nbenign:2\ncaught:boom-9305\nrecaught:re:first\nsecond:second-landing\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_9416_stdin_only_loop_liveness": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 544.826921,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 85896,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 546.410196,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "aliased-data text: \"alpha\\nbeta\\n\"\naliased-data exit: 0\nparam-data text: \"alpha\\nbeta\\n\"\nparam-data exit: 0\nend-only fired: true\nend-only exit: 0\nin-timeout text: \"alpha\\nbeta\\n\"\nin-timeout exit: 0\nwith-timer text: \"alpha\\nbeta\\n\"\nwith-timer exit: 0\nno-listener done: true\nno-listener exit: 0\npaused done: true\npaused exit: 0\ndone\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 86404,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_class_expr_inherited_static_method": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 8.494747,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 8.098798,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Sub.greet: hi-A\nSub.withArgs: x+y:A\nLeaf.greet (2-level): hi-M\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_class_static_in_function": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.78352,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.029582,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "in-func: 7,12,19\narrow: 99\ntop-level: 7,12,19\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_gap_class_expr_new_instanceof": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 7.942437,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 8.578203,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "typeof: function\nC.kind: K\ninstanceof: true\nmethod: 42\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_01_two_fn_interleave": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 5.452007,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 5.561733,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "a1\nb1\nsync\na2\nb2\na3\nb3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_02_then_vs_await_fifo": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 5.595135,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.882425,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nthen1\nB\nthen2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_03_chained_then_interleave": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.338759,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.150999,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nA1\nB1\nA2\nB2\nA3\nB3\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_04_await_caller_callee": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.460526,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 5.231596,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "o1\ni1\nsync\ni2\nsibling\no2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_05_nested_promise_unwrap": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 5.135046,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.924062,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\ngot 42\nsibling\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_06_finally_after_await": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 4.843592,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 4.828122,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nin try\nin finally\nafter\nsib1\nsib2\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "test_microtask_inv_07_promise_all_mixed": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 9.286777,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 9.798021,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "sync\nsibling\ndone: 1,2,3,4\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true
+      }
+    },
+    "class-parents-first-use": {
+      "baseline": {
+        "ordinary": {
+          "wallMs": 8.890486,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 14.38294,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12515 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12515 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      },
+      "candidate": {
+        "ordinary": {
+          "wallMs": 8.355788,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        },
+        "matchesNode": true,
+        "gcStress": {
+          "env": {
+            "PERRY_GC_SCHEDULE_SEED": "7",
+            "PERRY_GC_SCHEDULE_RATE": "1",
+            "PERRY_GC_PROTECT_FROMSPACE": "1",
+            "PERRY_GC_MOVING_LOOP_POLLS": "0"
+          },
+          "wallMs": 13.897363,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "startup\ncreated true true\nlater retained parent true\n",
+          "stderr": "[gc-schedule] seeded GC-schedule fuzzing ACTIVE: seed=7 rate=1\n[gc-schedule] reproduce with: PERRY_GC_SCHEDULE_SEED=7 PERRY_GC_SCHEDULE_RATE=1\n[gc-schedule] done: seed=7 safepoints=6 scheduled_collections=6 polls_paced=0 copying_minors=6 moved_objects=12515 loop_polls=0\n[gc-schedule] forced_collections=6 copying_minors=6 moved_objects=12515 loop_polls=0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": true
+        }
+      }
+    }
+  },
+  "knownBaselineDefects": [
+    "test_gap_startup_empty_checkpoint_before_exit"
+  ],
+  "complete": true,
+  "passed": true,
+  "exits": {
+    "unhandled-exit": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts",
+        "bytes": 46,
+        "sha256": "9e8240218877049918a8571a31d5b9187a9dc0bd024f7c22a7d41cc55791cf28"
+      },
+      "oracle": {
+        "wallMs": 38.072553,
+        "exitCode": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "node:internal/process/promises:322\n      new UnhandledPromiseRejection(reason);\n      ^\n\nUnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason \"startup rejection sentinel\".\n    at throwUnhandledRejectionsMode (node:internal/process/promises:322:7)\n    at processPromiseRejections (node:internal/process/promises:405:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:106:37) {\n  code: 'ERR_UNHANDLED_REJECTION'\n}\n\nNode.js v26.5.1\n",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": false
+      },
+      "baseline": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-unhandled-exit"
+        ],
+        "build": {
+          "wallMs": 805.031766,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\nFound 1 module(s): 1 native, 0 JavaScript\nGenerating code...\nWrote object file: /tmp/perry-objs-3626178-1789122404248689182/unhandled_exit_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-unhandled-exit\nBinary size: 18.1MB\n",
+          "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /tmp/perry-objs-3626178-1789122404248689182/unhandled_exit_ts.o -Wl,--gc-sections -Wl,--start-group /dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-unhandled-exit -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 228532,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-unhandled-exit",
+          "bytes": 18988160,
+          "sha256": "e922aaf51093480c1fcfeb2d91d2d2ffc05cff7f93cd9f2823229fc1d0371854"
+        },
+        "run": {
+          "wallMs": 6.18709,
+          "exitCode": 1,
+          "signal": null,
+          "stdout": "",
+          "stderr": "Uncaught (in promise) startup rejection sentinel\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      },
+      "candidate": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-unhandled-exit"
+        ],
+        "build": {
+          "wallMs": 778.192853,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /tmp/perry-objs-3626277-1789122405074035941/unhandled_exit_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-unhandled-exit\nBinary size: 18.1MB\n",
+          "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/unhandled-exit.ts name=unhandled-exit.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /tmp/perry-objs-3626277-1789122405074035941/unhandled_exit_ts.o -Wl,--gc-sections -Wl,--start-group /dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-unhandled-exit -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 229580,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-unhandled-exit",
+          "bytes": 18996352,
+          "sha256": "9ed3ef5278076dbbabb1ddaed3ca11365a5a2584b00f1d4311902caf8aa5ec69"
+        },
+        "run": {
+          "wallMs": 6.009649,
+          "exitCode": 1,
+          "signal": null,
+          "stdout": "",
+          "stderr": "Uncaught (in promise) startup rejection sentinel\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      }
+    },
+    "before-exit-code": {
+      "source": {
+        "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts",
+        "bytes": 137,
+        "sha256": "0958b7224b90a1fbf305f07a8459e31f89dfff0080ffaf3df244f1a42db9b0bd"
+      },
+      "oracle": {
+        "wallMs": 37.336419,
+        "exitCode": 7,
+        "signal": null,
+        "stdout": "before exit\nexit 7\n",
+        "stderr": "",
+        "timedOut": false,
+        "memExceeded": false,
+        "peakKb": 0,
+        "spawnError": null,
+        "ok": false
+      },
+      "baseline": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/baseline-build/baseline/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-before-exit-code"
+        ],
+        "build": {
+          "wallMs": 787.851574,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\nFound 1 module(s): 1 native, 0 JavaScript\nGenerating code...\nWrote object file: /tmp/perry-objs-3626361-1789122405912347984/before_exit_code_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-before-exit-code\nBinary size: 18.1MB\n",
+          "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /tmp/perry-objs-3626361-1789122405912347984/before_exit_code_ts.o -Wl,--gc-sections -Wl,--start-group /dev/shm/perry-startup-27c598181/results/baseline-build/baseline/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-before-exit-code -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 228872,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/baseline-before-exit-code",
+          "bytes": 18992432,
+          "sha256": "ea6fd656793d41855d8cacb1ab7b327a25e5158507afcdf277afe3751c5d8349"
+        },
+        "run": {
+          "wallMs": 6.207077,
+          "exitCode": 7,
+          "signal": null,
+          "stdout": "before exit\nexit 7\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      },
+      "candidate": {
+        "argv": [
+          "/dev/shm/perry-startup-27c598181/results/json-final/perry",
+          "compile",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts",
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize",
+          "-o",
+          "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-before-exit-code"
+        ],
+        "build": {
+          "wallMs": 784.08884,
+          "exitCode": 0,
+          "signal": null,
+          "stdout": "Collecting modules...\nFound 1 module(s): 1 native, 0 JavaScript\n  tiny program fallback: automatic optimization disabled\nGenerating code...\nWrote object file: /tmp/perry-objs-3626442-1789122406720481149/before_exit_code_ts.o\nAsset manifest: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/node_modules/.cache/perry/assets.json\nLinking (runtime-only)...\nWrote executable: /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-before-exit-code\nBinary size: 18.1MB\n",
+          "stderr": "[progress] stage=collect-module module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts visited=1 collected=0\n[progress] stage=parse module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=lower module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-deforest module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-functions module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-unroll-static-loops module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-inline-finally module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-async-to-generator module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-outline-entry module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=transform-generators module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=0\n[progress] stage=collected module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1 collected=1\n\nModule init order (0 modules):\n\n[progress] stage=codegen module=/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/before-exit-code.ts name=before-exit-code.ts visited=1/1 collected=1\nperry: in-process LLVM backend active (LLVM 22.1.8)\n[perry] codegen: modules finished 1/1 (100%; 0.0 min elapsed; ETA ~0.0 min)\n  auto-optimize: skipped; using prebuilt target/release/libperry_*.a\n[link] invoking: cc /tmp/perry-objs-3626442-1789122406720481149/before_exit_code_ts.o -Wl,--gc-sections -Wl,--start-group /dev/shm/perry-startup-27c598181/results/json-final/libperry_runtime.a -Wl,--end-group -o /dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-before-exit-code -lc -Wl,--allow-multiple-definition -lm -lpthread -ldl\n[link] linker exited: exit status: 0\n",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 229404,
+          "spawnError": null,
+          "ok": true
+        },
+        "binary": {
+          "file": "/dev/shm/perry-startup-27c598181/results/json-verification/fixtures/candidate-before-exit-code",
+          "bytes": 19004720,
+          "sha256": "66a3b5cc8d70ba731b665449df58c35467a0e214b5b4f16225373836ceb9b6b3"
+        },
+        "run": {
+          "wallMs": 4.91737,
+          "exitCode": 7,
+          "signal": null,
+          "stdout": "before exit\nexit 7\n",
+          "stderr": "",
+          "timedOut": false,
+          "memExceeded": false,
+          "peakKb": 0,
+          "spawnError": null,
+          "ok": false
+        },
+        "passed": true
+      }
+    }
+  }
+}

@@ -1,0 +1,1781 @@
+{
+  "startedAt": "2026-09-11T09:50:54.758Z",
+  "manifest": {
+    "schemaVersion": 1,
+    "createdAt": "2026-09-11T09:33:43.224Z",
+    "mode": "configured-comparison",
+    "harnessCommit": "66e92cd5eabe29eea003e1c7b6640f93957ed197",
+    "harnessDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration": {
+      "compileArgs": [
+        "--no-auto-optimize"
+      ],
+      "variants": {
+        "baseline": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+          },
+          "runtimeEnv": {}
+        },
+        "candidate": {
+          "compiler": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "buildEnv": {
+            "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+            "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+          },
+          "runtimeEnv": {
+            "PERRY_MEMORY_PROFILE": "small"
+          }
+        }
+      },
+      "scriptc": false,
+      "cases": [
+        "/dev/shm/perry-startup-27c598181/harness/benches/00-noop.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/01-hello.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/10-fib.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/11-loop-sum.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/12-mandelbrot.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/13-nbody.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/14-spectral-norm.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/15-crc32.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/20-sieve.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/21-matmul.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/22-array-sort.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/23-binary-trees.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/24-map-set.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/30-string-build.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/31-json.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/32-regex.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/40-classes.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/41-closures.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/42-async.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/43-generators.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/50-fs-io.ts",
+        "/dev/shm/perry-startup-27c598181/harness/benches/51-pipeline.ts"
+      ]
+    },
+    "node": {
+      "file": "/root/perry-toolchains/node-v26.5.1-linux-x64/bin/node",
+      "bytes": 148011296,
+      "sha256": "fb48e77df2f8e92fedfec39afa60a5f41563441f6b61316ada5fb295a431c2c6",
+      "version": "v26.5.1"
+    },
+    "npmPerryLauncher": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/@perryts/perry/bin/perry.js",
+      "bytes": 6131,
+      "sha256": "717e41c482dcaa4c01ab569c273de0e1ae32418fef6cd4aeb3008225f3ef1e58"
+    },
+    "packageLock": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/package-lock.json",
+      "bytes": 18370,
+      "sha256": "a3309a25a2b9d803d730b1af2d1d724e24ff74deda686ba98e0b6b8644b841d9"
+    },
+    "scriptc": {
+      "file": "/dev/shm/perry-startup-27c598181/harness/node_modules/scriptc/dist/bootstrap.js",
+      "bytes": 6662,
+      "sha256": "088d885c12ff5ed14dab210616f584e1601d2470db4b2ec4f038dba4d1120dc0",
+      "version": "0.0.36"
+    },
+    "ccVersion": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "variants": {
+      "baseline": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "bytes": 125056504,
+          "sha256": "73a55632d7a86cd44c1d3618ad427abf8883ddbb5234fe2aeb1e588adc619cb0",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+        },
+        "runtimeEnv": {},
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "f60d52b43ad0bb497bc7e5d83c2a3dde83a66a720984991a2b32accc5a032d99"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/perry",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": ""
+        }
+      },
+      "candidate": {
+        "compiler": {
+          "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/perry",
+          "bytes": 125056504,
+          "sha256": "73a55632d7a86cd44c1d3618ad427abf8883ddbb5234fe2aeb1e588adc619cb0",
+          "version": "perry 0.5.1532"
+        },
+        "compileArgs": [
+          "--no-cache",
+          "-v",
+          "--no-auto-optimize"
+        ],
+        "buildEnv": {
+          "PERRY_WORKSPACE_ROOT": "/dev/shm/perry-startup-27c598181/perry",
+          "PERRY_LIB_DIR": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline"
+        },
+        "runtimeEnv": {
+          "PERRY_MEMORY_PROFILE": "small"
+        },
+        "runtimeLibraries": [
+          {
+            "file": "/dev/shm/perry-startup-27c598181/results/candidate-build/baseline/libperry_runtime.a",
+            "bytes": 53318960,
+            "sha256": "f60d52b43ad0bb497bc7e5d83c2a3dde83a66a720984991a2b32accc5a032d99"
+          }
+        ],
+        "source": {
+          "root": "/dev/shm/perry-startup-27c598181/perry",
+          "commit": "27c598181dfb331d72a798754641082584028df0",
+          "trackedDiff": ""
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "00-noop",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/00-noop.ts",
+          "bytes": 59,
+          "sha256": "d8659d84d989e811ba79d9e48c3d58f43928ea03c60cb3671a3c634346f36719"
+        },
+        "expected": {
+          "stdout": "RESULT 0\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop",
+              "bytes": 19000784,
+              "sha256": "40e40c53a00a117f62aace049f8f4134e95d6ee9c86c3375cc31363a361b0066"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/00-noop",
+              "bytes": 19000784,
+              "sha256": "40e40c53a00a117f62aace049f8f4134e95d6ee9c86c3375cc31363a361b0066"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "01-hello",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/01-hello.ts",
+          "bytes": 126,
+          "sha256": "62132ab54e719137430bea7f7e944ff33a47b8c49bf0acbbc15e6a134c12a57c"
+        },
+        "expected": {
+          "stdout": "hello, world\nRESULT 1\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello",
+              "bytes": 19013096,
+              "sha256": "8bf8ab32e416a7cb7530684614f66ba04b4fbade8fd45e856322d7d30877fa0b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/01-hello",
+              "bytes": 19013096,
+              "sha256": "8bf8ab32e416a7cb7530684614f66ba04b4fbade8fd45e856322d7d30877fa0b"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "10-fib",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/10-fib.ts",
+          "bytes": 382,
+          "sha256": "cc1b796b2d9f8ddc97be1e46456082c80d7e0edf27832786d631584b82705ed9"
+        },
+        "expected": {
+          "stdout": "RESULT 96631268\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib",
+              "bytes": 19009048,
+              "sha256": "38e9df2b59a1b1502241db1afa2e65366bd1b76dd7195676f5904a886e32b479"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/10-fib",
+              "bytes": 19009048,
+              "sha256": "38e9df2b59a1b1502241db1afa2e65366bd1b76dd7195676f5904a886e32b479"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "11-loop-sum",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/11-loop-sum.ts",
+          "bytes": 142,
+          "sha256": "d99b82b07ed9221361ca9ce8a137e50cfe68331335a9866843580e6d63be8420"
+        },
+        "expected": {
+          "stdout": "RESULT 2999999997\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum",
+              "bytes": 19000792,
+              "sha256": "37060f4f1984e489dbb2d9dccb0ebaf7dbfafa6a0579be51924536d2412e5a3d"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/11-loop-sum",
+              "bytes": 19000792,
+              "sha256": "37060f4f1984e489dbb2d9dccb0ebaf7dbfafa6a0579be51924536d2412e5a3d"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "12-mandelbrot",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/12-mandelbrot.ts",
+          "bytes": 605,
+          "sha256": "914d8d4ca12d6e61855620c5e83329bfe5fa6a0644d090e64a18227fbf559279"
+        },
+        "expected": {
+          "stdout": "RESULT 1226150\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot",
+              "bytes": 19000792,
+              "sha256": "9b2c1a58858a4f7603ef034ccb4fccf16fd339a4178dcbf2cd36a368fa093bdb"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/12-mandelbrot",
+              "bytes": 19000792,
+              "sha256": "9b2c1a58858a4f7603ef034ccb4fccf16fd339a4178dcbf2cd36a368fa093bdb"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "13-nbody",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/13-nbody.ts",
+          "bytes": 2914,
+          "sha256": "e678e02bbba698c93176ddc928eea86cbf53ee1d7b977170b911770d096a7861"
+        },
+        "expected": {
+          "stdout": "RESULT -0.169048121\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody",
+              "bytes": 19030272,
+              "sha256": "168731628dfb487663e32e0ef5efc71cb996986c6a4a83702d6c49bba531b5da"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/13-nbody",
+              "bytes": 19030272,
+              "sha256": "168731628dfb487663e32e0ef5efc71cb996986c6a4a83702d6c49bba531b5da"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "14-spectral-norm",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/14-spectral-norm.ts",
+          "bytes": 1035,
+          "sha256": "fb18aa28e0f273495e337f9f2c89443b1838a3e83e84a6c7872ba384fd436682"
+        },
+        "expected": {
+          "stdout": "RESULT 1.274224153\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm",
+              "bytes": 19021704,
+              "sha256": "997b86a0a3f51fcddfef5dbb0faa1910ebcdc2cc717ff5c0e4cb88dc66300df4"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/14-spectral-norm",
+              "bytes": 19021704,
+              "sha256": "997b86a0a3f51fcddfef5dbb0faa1910ebcdc2cc717ff5c0e4cb88dc66300df4"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "15-crc32",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/15-crc32.ts",
+          "bytes": 960,
+          "sha256": "3e8aa4b2cd91ac4d1ad4b098ec3b89f0c110a98cda5b136189554108d7fe0a12"
+        },
+        "expected": {
+          "stdout": "RESULT 62051195\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32",
+              "bytes": 19013160,
+              "sha256": "8f7b5add82a4164d22a10a8cc50b3f67279082b54615a59e03ff47266875911b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/15-crc32",
+              "bytes": 19013160,
+              "sha256": "8f7b5add82a4164d22a10a8cc50b3f67279082b54615a59e03ff47266875911b"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "20-sieve",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/20-sieve.ts",
+          "bytes": 354,
+          "sha256": "9c9e8e8948b543fa227e5afe3042e73d8b7a7e709f764487aa977e74f8536376"
+        },
+        "expected": {
+          "stdout": "RESULT 5761455\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve",
+              "bytes": 19000800,
+              "sha256": "bc711a1cc9b436161b46bce08b76ec115c81dd247f5534a295d1a4b92bb469cf"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/20-sieve",
+              "bytes": 19000800,
+              "sha256": "bc711a1cc9b436161b46bce08b76ec115c81dd247f5534a295d1a4b92bb469cf"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "21-matmul",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/21-matmul.ts",
+          "bytes": 898,
+          "sha256": "b0f49212c4bec02d6a23209206394e8f2cf191936d990882f25f7583037ea1af"
+        },
+        "expected": {
+          "stdout": "RESULT 260042689.061880\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul",
+              "bytes": 19021552,
+              "sha256": "9d611d3fa834693dd184b5004fefb517ab9aded33d43c7c727781fd0370a86d5"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/21-matmul",
+              "bytes": 19021552,
+              "sha256": "9d611d3fa834693dd184b5004fefb517ab9aded33d43c7c727781fd0370a86d5"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "22-array-sort",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/22-array-sort.ts",
+          "bytes": 434,
+          "sha256": "da170a96641556267ae4cfbe28719880dc37f9d238f7e0c06e28c89998e17dd9"
+        },
+        "expected": {
+          "stdout": "RESULT 14490944\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort",
+              "bytes": 19004976,
+              "sha256": "e5ca12cbe46f8c0778461be54a1131fe388969ff7cb27868c1498e951da97375"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/22-array-sort",
+              "bytes": 19004976,
+              "sha256": "e5ca12cbe46f8c0778461be54a1131fe388969ff7cb27868c1498e951da97375"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "23-binary-trees",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/23-binary-trees.ts",
+          "bytes": 967,
+          "sha256": "30832fa254cf0f95843ca02872566d26305105fecf4c2cf3408f8f2a44cac69e"
+        },
+        "expected": {
+          "stdout": "RESULT 136664414\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees",
+              "bytes": 19025784,
+              "sha256": "861b379e3987987b772990d920e44ffc94433647c7d4211b8ffee0ba5566882c"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/23-binary-trees",
+              "bytes": 19025784,
+              "sha256": "861b379e3987987b772990d920e44ffc94433647c7d4211b8ffee0ba5566882c"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "24-map-set",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/24-map-set.ts",
+          "bytes": 509,
+          "sha256": "13194b6514154c335b47f1b43ccc9f544eab75d626f754a69841ef96b90cdaeb"
+        },
+        "expected": {
+          "stdout": "RESULT 125350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set",
+              "bytes": 19000928,
+              "sha256": "9f6ec148ffc1ad95f20bf196179effb9b9c15e81bc7d7adab83d28e4589675d6"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/24-map-set",
+              "bytes": 19000928,
+              "sha256": "9f6ec148ffc1ad95f20bf196179effb9b9c15e81bc7d7adab83d28e4589675d6"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "30-string-build",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/30-string-build.ts",
+          "bytes": 831,
+          "sha256": "7411345cc6acaa2de75f803cd89a210bab35bf49db59c8ebbe5a40b83fd224f4"
+        },
+        "expected": {
+          "stdout": "RESULT 60444505\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build",
+              "bytes": 19050856,
+              "sha256": "b308b848231646c6a3bf16bba4e0a08f9cd31dd7619f9da6269ed07a5d231b12"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/30-string-build",
+              "bytes": 19050856,
+              "sha256": "b308b848231646c6a3bf16bba4e0a08f9cd31dd7619f9da6269ed07a5d231b12"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "31-json",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/31-json.ts",
+          "bytes": 690,
+          "sha256": "6a7a2d495cff9004089ed69913541e316b45d672bf5583010baf1f2badae07ac"
+        },
+        "expected": {
+          "stdout": "RESULT 2204940400\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json",
+              "bytes": 19037856,
+              "sha256": "aa5c8755a52c4a086b130d0f118486c2051e40db70dd00503593e580247bbae3"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/31-json",
+              "bytes": 19037856,
+              "sha256": "aa5c8755a52c4a086b130d0f118486c2051e40db70dd00503593e580247bbae3"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "32-regex",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/32-regex.ts",
+          "bytes": 654,
+          "sha256": "dba9a37012ce0eca796acd170b043d5ae5bca37e5abf49d374b800c41ca52574"
+        },
+        "expected": {
+          "stdout": "RESULT 2986647000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex",
+              "bytes": 19009112,
+              "sha256": "583d0ee3765ceffbb76bc72902a0b30456419dabfe7f3ccf3cf6d86cf5fddd63"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/32-regex",
+              "bytes": 19009112,
+              "sha256": "583d0ee3765ceffbb76bc72902a0b30456419dabfe7f3ccf3cf6d86cf5fddd63"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "40-classes",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/40-classes.ts",
+          "bytes": 1169,
+          "sha256": "64e0537488ff00995e59b282011729051a00a5e4b18dc232958b7f5ef24568b3"
+        },
+        "expected": {
+          "stdout": "RESULT 3077873159.745\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes",
+              "bytes": 19038296,
+              "sha256": "50723012223b5399d3de655f2f594418e982ae7b48ac60bd25fccdba5c94d12b"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/40-classes",
+              "bytes": 19038296,
+              "sha256": "50723012223b5399d3de655f2f594418e982ae7b48ac60bd25fccdba5c94d12b"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "41-closures",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/41-closures.ts",
+          "bytes": 977,
+          "sha256": "d15f087c7be4a547c069a3c3d1c645e538bff343f3fa3db7dd187e74f80ce088"
+        },
+        "expected": {
+          "stdout": "RESULT 334583780076\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures",
+              "bytes": 19017576,
+              "sha256": "741aa686de549ae349e8c92b7cc0962057746702290bee63fa6ccd8490cb9067"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/41-closures",
+              "bytes": 19017576,
+              "sha256": "741aa686de549ae349e8c92b7cc0962057746702290bee63fa6ccd8490cb9067"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "42-async",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/42-async.ts",
+          "bytes": 655,
+          "sha256": "6f1b7007c57bd82919125bee1e0c509a546785a404f53bc86be284737982aa15"
+        },
+        "expected": {
+          "stdout": "RESULT 36249993500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async",
+              "bytes": 19075640,
+              "sha256": "519074a81adb7eb017383f76e57b879690c04ed21f748cc7f6fad2c921442050"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/42-async",
+              "bytes": 19075640,
+              "sha256": "519074a81adb7eb017383f76e57b879690c04ed21f748cc7f6fad2c921442050"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "43-generators",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/43-generators.ts",
+          "bytes": 517,
+          "sha256": "8bc8a997be3b713a1dfce5926a02bef04569607f9b52a0b10fcb3588e549b341"
+        },
+        "expected": {
+          "stdout": "RESULT 179997000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators",
+              "bytes": 19064680,
+              "sha256": "bab647873bc8b3da2b6031698bd67e2907bcc29ce65368ba32f03b0555a7a2da"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/43-generators",
+              "bytes": 19064680,
+              "sha256": "bab647873bc8b3da2b6031698bd67e2907bcc29ce65368ba32f03b0555a7a2da"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "50-fs-io",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/50-fs-io.ts",
+          "bytes": 605,
+          "sha256": "f8c4d9db5a34d640148e1519b6fe3358745b212734de085850e772a10838ed05"
+        },
+        "expected": {
+          "stdout": "RESULT 904500000\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io",
+              "bytes": 19045968,
+              "sha256": "4a16bc270a00c9406a3e8c64a9d5e164d339121b6856c26b2b49900f316155ff"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/50-fs-io",
+              "bytes": 19045968,
+              "sha256": "4a16bc270a00c9406a3e8c64a9d5e164d339121b6856c26b2b49900f316155ff"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      },
+      {
+        "name": "51-pipeline",
+        "source": {
+          "file": "/dev/shm/perry-startup-27c598181/harness/benches/51-pipeline.ts",
+          "bytes": 1056,
+          "sha256": "4d4882812ded9985f8287b43ef18dab3111976ad2b6c98459072ac844a9e42e9"
+        },
+        "expected": {
+          "stdout": "RESULT 99180339350\n",
+          "stderr": ""
+        },
+        "commands": {
+          "baseline": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline",
+              "bytes": 19071688,
+              "sha256": "b3890bce140e72959c5c42d6c17fbd384188455cafdbf4af32f5aba46ae6bfa1"
+            },
+            "env": {},
+            "runtimeProfile": "normal"
+          },
+          "candidate": {
+            "argv": [
+              "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline"
+            ],
+            "binary": {
+              "file": "/dev/shm/perry-startup-27c598181/results/final/workloads/candidate/51-pipeline",
+              "bytes": 19071688,
+              "sha256": "b3890bce140e72959c5c42d6c17fbd384188455cafdbf4af32f5aba46ae6bfa1"
+            },
+            "env": {
+              "PERRY_MEMORY_PROFILE": "small"
+            },
+            "runtimeProfile": "normal"
+          }
+        },
+        "gcStress": false
+      }
+    ]
+  },
+  "code": {
+    "file": "/dev/shm/perry-startup-27c598181/harness/diagnostics/startup/verify-workloads.mjs",
+    "bytes": 4473,
+    "sha256": "8927210a3898d7fec5d4c8791a891a94db8209a3425c9ab32bb4c9c2d44e4d13"
+  },
+  "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+    "kernel": "6.17.0-23-generic",
+    "loadBefore": [
+      2.1,
+      2.1,
+      2.37
+    ],
+    "loadAfter": [
+      2.47,
+      2.21,
+      2.32
+    ]
+  },
+  "settings": {
+    "initialPairedSamples": 5,
+    "confirmationPairedSamples": 10,
+    "slowdownThreshold": 0.03,
+    "timeoutMs": 300000,
+    "recordTradeoffs": true
+  },
+  "profileTradeoffs": [
+    {
+      "name": "23-binary-trees",
+      "baseline": {
+        "min": 2245.676578,
+        "max": 2328.649676,
+        "mean": 2269.7078831,
+        "median": 2264.998427,
+        "stddev": 23.842503958110555,
+        "runs": 10,
+        "p90": 2285.230088,
+        "samples": [
+          2250.926801,
+          2262.282738,
+          2267.714116,
+          2261.943613,
+          2269.609152,
+          2273.66379,
+          2251.382279,
+          2245.676578,
+          2328.649676,
+          2285.230088
+        ]
+      },
+      "candidate": {
+        "min": 2428.78533,
+        "max": 2481.125106,
+        "mean": 2451.4388464999997,
+        "median": 2449.8936734999997,
+        "stddev": 15.11535670108901,
+        "runs": 10,
+        "p90": 2466.847044,
+        "samples": [
+          2447.62169,
+          2459.095777,
+          2428.78533,
+          2481.125106,
+          2449.190126,
+          2454.170933,
+          2466.847044,
+          2437.482071,
+          2439.473167,
+          2450.597221
+        ]
+      },
+      "pairedDifference": {
+        "medianMs": 186.15631799999983,
+        "ci95Ms": [
+          165.3671330000002,
+          203.635129
+        ]
+      },
+      "initialMedianRatio": 1.082618933902682,
+      "medianRatio": 1.0816315120999418,
+      "assessment": "regression-needs-explanation"
+    },
+    {
+      "name": "31-json",
+      "baseline": {
+        "min": 2285.232761,
+        "max": 2444.336683,
+        "mean": 2318.2570161,
+        "median": 2305.8561565,
+        "stddev": 46.63299871584763,
+        "runs": 10,
+        "p90": 2329.881222,
+        "samples": [
+          2289.250813,
+          2444.336683,
+          2299.65344,
+          2329.881222,
+          2287.816955,
+          2303.962442,
+          2307.749871,
+          2320.462851,
+          2285.232761,
+          2314.223123
+        ]
+      },
+      "candidate": {
+        "min": 2526.220506,
+        "max": 2703.949926,
+        "mean": 2563.043565000001,
+        "median": 2551.7394145,
+        "stddev": 51.27467193294698,
+        "runs": 10,
+        "p90": 2565.934526,
+        "samples": [
+          2703.949926,
+          2554.368438,
+          2554.186047,
+          2530.89896,
+          2564.449905,
+          2565.934526,
+          2549.292782,
+          2526.220506,
+          2545.78802,
+          2535.34654
+        ]
+      },
+      "pairedDifference": {
+        "medianMs": 248.03775900000005,
+        "ci95Ms": [
+          205.75765500000034,
+          265.58277850000013
+        ]
+      },
+      "initialMedianRatio": 1.1107623407812266,
+      "medianRatio": 1.1066342570011911,
+      "assessment": "regression-needs-explanation"
+    },
+    {
+      "name": "42-async",
+      "baseline": {
+        "min": 1591.136956,
+        "max": 1673.411349,
+        "mean": 1613.0204846,
+        "median": 1602.0958375,
+        "stddev": 27.008924260519766,
+        "runs": 10,
+        "p90": 1645.36589,
+        "samples": [
+          1591.565147,
+          1596.628307,
+          1608.135697,
+          1673.411349,
+          1645.36589,
+          1599.353634,
+          1604.838041,
+          1596.341051,
+          1591.136956,
+          1623.428774
+        ]
+      },
+      "candidate": {
+        "min": 1680.061031,
+        "max": 1803.321577,
+        "mean": 1718.6939629,
+        "median": 1702.361362,
+        "stddev": 37.965807789900275,
+        "runs": 10,
+        "p90": 1747.543392,
+        "samples": [
+          1692.148685,
+          1688.408262,
+          1706.482129,
+          1742.437372,
+          1732.743678,
+          1698.240595,
+          1803.321577,
+          1695.552908,
+          1680.061031,
+          1747.543392
+        ]
+      },
+      "pairedDifference": {
+        "medianMs": 98.61669649999999,
+        "ci95Ms": [
+          88.9240749999999,
+          111.66323749999992
+        ]
+      },
+      "initialMedianRatio": 1.061155555581203,
+      "medianRatio": 1.062583974162532,
+      "assessment": "regression-needs-explanation"
+    }
+  ],
+  "cases": {
+    "00-noop": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 5.972509
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3.453015
+        }
+      },
+      "throughput": null
+    },
+    "01-hello": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3.759177
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3.417269
+        }
+      },
+      "throughput": null
+    },
+    "10-fib": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 349.847814
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 348.855452
+        }
+      },
+      "throughput": null
+    },
+    "11-loop-sum": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 717.139379
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 715.788577
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 717.152183,
+          "max": 735.096097,
+          "mean": 723.289667,
+          "median": 721.820216,
+          "stddev": 6.97855135069559,
+          "runs": 5,
+          "p90": 735.096097,
+          "samples": [
+            717.152183,
+            719.351027,
+            723.028812,
+            721.820216,
+            735.096097
+          ]
+        },
+        "candidate": {
+          "min": 717.945573,
+          "max": 722.04739,
+          "mean": 719.1612767999999,
+          "median": 718.728265,
+          "stddev": 1.6570265445654913,
+          "runs": 5,
+          "p90": 722.04739,
+          "samples": [
+            718.209196,
+            722.04739,
+            718.87596,
+            718.728265,
+            717.945573
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": -3.0919509999999946,
+          "ci95Ms": [
+            -17.15052400000002,
+            2.6963629999999057
+          ]
+        },
+        "initialMedianRatio": 0.9957164527517196,
+        "medianRatio": 0.9957164527517196,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "12-mandelbrot": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 727.940721
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 724.277132
+        }
+      },
+      "throughput": null
+    },
+    "13-nbody": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 9890.742218
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 9886.832486
+        }
+      },
+      "throughput": null
+    },
+    "14-spectral-norm": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1292.649753
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1301.697732
+        }
+      },
+      "throughput": null
+    },
+    "15-crc32": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3876.924695
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3819.190969
+        }
+      },
+      "throughput": null
+    },
+    "20-sieve": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 785.13012
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 816.243174
+        }
+      },
+      "throughput": null
+    },
+    "21-matmul": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 30406.698022
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 30454.533843
+        }
+      },
+      "throughput": null
+    },
+    "22-array-sort": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 3847.112469
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 3952.107321
+        }
+      },
+      "throughput": null
+    },
+    "23-binary-trees": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2240.089583
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2523.055154
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2245.676578,
+          "max": 2328.649676,
+          "mean": 2269.7078831,
+          "median": 2264.998427,
+          "stddev": 23.842503958110555,
+          "runs": 10,
+          "p90": 2285.230088,
+          "samples": [
+            2250.926801,
+            2262.282738,
+            2267.714116,
+            2261.943613,
+            2269.609152,
+            2273.66379,
+            2251.382279,
+            2245.676578,
+            2328.649676,
+            2285.230088
+          ]
+        },
+        "candidate": {
+          "min": 2428.78533,
+          "max": 2481.125106,
+          "mean": 2451.4388464999997,
+          "median": 2449.8936734999997,
+          "stddev": 15.11535670108901,
+          "runs": 10,
+          "p90": 2466.847044,
+          "samples": [
+            2447.62169,
+            2459.095777,
+            2428.78533,
+            2481.125106,
+            2449.190126,
+            2454.170933,
+            2466.847044,
+            2437.482071,
+            2439.473167,
+            2450.597221
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 186.15631799999983,
+          "ci95Ms": [
+            165.3671330000002,
+            203.635129
+          ]
+        },
+        "initialMedianRatio": 1.082618933902682,
+        "medianRatio": 1.0816315120999418,
+        "assessment": "regression-needs-explanation"
+      }
+    },
+    "24-map-set": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 527.676806
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 536.188514
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 521.16403,
+          "max": 531.243524,
+          "mean": 524.9992483999999,
+          "median": 524.254858,
+          "stddev": 3.73200726249591,
+          "runs": 5,
+          "p90": 531.243524,
+          "samples": [
+            531.243524,
+            524.356599,
+            521.16403,
+            524.254858,
+            523.977231
+          ]
+        },
+        "candidate": {
+          "min": 532.402448,
+          "max": 539.593931,
+          "mean": 535.7317717999999,
+          "median": 536.232787,
+          "stddev": 2.869724680654155,
+          "runs": 5,
+          "p90": 539.593931,
+          "samples": [
+            536.232787,
+            533.460542,
+            539.593931,
+            536.969151,
+            532.402448
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 9.103943000000072,
+          "ci95Ms": [
+            4.989263000000051,
+            18.429900999999973
+          ]
+        },
+        "initialMedianRatio": 1.0228475307709977,
+        "medianRatio": 1.0228475307709977,
+        "assessment": "no-slowdown-over-3pct-observed"
+      }
+    },
+    "30-string-build": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 892.504129
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1088.537824
+        }
+      },
+      "throughput": null
+    },
+    "31-json": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2365.115592
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2555.111415
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 2285.232761,
+          "max": 2444.336683,
+          "mean": 2318.2570161,
+          "median": 2305.8561565,
+          "stddev": 46.63299871584763,
+          "runs": 10,
+          "p90": 2329.881222,
+          "samples": [
+            2289.250813,
+            2444.336683,
+            2299.65344,
+            2329.881222,
+            2287.816955,
+            2303.962442,
+            2307.749871,
+            2320.462851,
+            2285.232761,
+            2314.223123
+          ]
+        },
+        "candidate": {
+          "min": 2526.220506,
+          "max": 2703.949926,
+          "mean": 2563.043565000001,
+          "median": 2551.7394145,
+          "stddev": 51.27467193294698,
+          "runs": 10,
+          "p90": 2565.934526,
+          "samples": [
+            2703.949926,
+            2554.368438,
+            2554.186047,
+            2530.89896,
+            2564.449905,
+            2565.934526,
+            2549.292782,
+            2526.220506,
+            2545.78802,
+            2535.34654
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 248.03775900000005,
+          "ci95Ms": [
+            205.75765500000034,
+            265.58277850000013
+          ]
+        },
+        "initialMedianRatio": 1.1107623407812266,
+        "medianRatio": 1.1066342570011911,
+        "assessment": "regression-needs-explanation"
+      }
+    },
+    "32-regex": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 6211.792642
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 6445.290977
+        }
+      },
+      "throughput": null
+    },
+    "40-classes": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 2700.882476
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 2715.886964
+        }
+      },
+      "throughput": null
+    },
+    "41-closures": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 5603.639759
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 5594.696415
+        }
+      },
+      "throughput": null
+    },
+    "42-async": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1863.143321
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1712.312291
+        }
+      },
+      "throughput": {
+        "baseline": {
+          "min": 1591.136956,
+          "max": 1673.411349,
+          "mean": 1613.0204846,
+          "median": 1602.0958375,
+          "stddev": 27.008924260519766,
+          "runs": 10,
+          "p90": 1645.36589,
+          "samples": [
+            1591.565147,
+            1596.628307,
+            1608.135697,
+            1673.411349,
+            1645.36589,
+            1599.353634,
+            1604.838041,
+            1596.341051,
+            1591.136956,
+            1623.428774
+          ]
+        },
+        "candidate": {
+          "min": 1680.061031,
+          "max": 1803.321577,
+          "mean": 1718.6939629,
+          "median": 1702.361362,
+          "stddev": 37.965807789900275,
+          "runs": 10,
+          "p90": 1747.543392,
+          "samples": [
+            1692.148685,
+            1688.408262,
+            1706.482129,
+            1742.437372,
+            1732.743678,
+            1698.240595,
+            1803.321577,
+            1695.552908,
+            1680.061031,
+            1747.543392
+          ]
+        },
+        "pairedDifference": {
+          "medianMs": 98.61669649999999,
+          "ci95Ms": [
+            88.9240749999999,
+            111.66323749999992
+          ]
+        },
+        "initialMedianRatio": 1.061155555581203,
+        "medianRatio": 1.062583974162532,
+        "assessment": "regression-needs-explanation"
+      }
+    },
+    "43-generators": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 21943.908156
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 22090.429051
+        }
+      },
+      "throughput": null
+    },
+    "50-fs-io": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 419.513147
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 488.939988
+        }
+      },
+      "throughput": null
+    },
+    "51-pipeline": {
+      "oracle": {
+        "baseline": {
+          "matchesNode": true,
+          "warmupMs": 1214.644669
+        },
+        "candidate": {
+          "matchesNode": true,
+          "warmupMs": 1304.541189
+        }
+      },
+      "throughput": null
+    }
+  },
+  "finishedAt": "2026-09-11T09:56:34.428Z",
+  "passed": true
+}

@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { timeRun } from '../../harness/exec.mjs';
 import { binaryRecord, checkedRun, experimentEnvironment, validateManifest } from './compare.mjs';
 
@@ -20,6 +21,29 @@ for (const fixture of manifest.cases) {
 }
 const candidateLibraries = manifest.variants.candidate.runtimeLibraries;
 if (!candidateLibraries.some(record => /libperry_runtime_core\.a$/.test(record.file))) throw new Error('No tiny program selected the core archive');
+
+// Inspect separate unstripped witnesses. Never substitute these larger,
+// instrumentable binaries for the ordinary binaries measured above.
+result.symbolInspection = {};
+const symbolSource = path.join(install, 'symbol-witness.ts');
+writeFileSync(symbolSource, 'console.log("symbols");\n');
+for (const label of ['baseline', 'candidate']) {
+  const binary = symbolSource + `.${label}`;
+  const variant = manifest.variants[label];
+  const build = await timeRun([compiler, 'compile', symbolSource, '--no-cache', '--debug-symbols', '-v', '-o', binary],
+    { env: experimentEnvironment(variant.buildEnv), timeoutMs: 120000 });
+  if (!build.ok) throw new Error(`Cannot build symbol witness: ${JSON.stringify(build)}`);
+  await checkedRun([binary], { stdout: 'symbols\n', stderr: '' });
+  const symbols = spawnSync('nm', [binary], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, timeout: 30000 });
+  if (symbols.status !== 0 || symbols.error) throw new Error(`Symbol inspection failed: ${symbols.error ?? symbols.stderr}`);
+  const log = path.join(path.dirname(outputFile), `symbols-${label}.log`);
+  writeFileSync(log, symbols.stdout + symbols.stderr);
+  result.symbolInspection[label] = { binary: binaryRecord(binary), build, log: binaryRecord(log),
+    symbolLines: symbols.stdout.split('\n').filter(Boolean).length,
+    regexEngineSymbols: (symbols.stdout.match(/regex_automata|regex_syntax/g) ?? []).length,
+    temporalEngineSymbols: (symbols.stdout.match(/temporal_rs/g) ?? []).length };
+}
+save();
 
 const fixtures = [
   { name: 'core-exceptions', core: true, source: 'try { throw new Error("caught"); } catch (e) { console.log(e.message); }\n' },

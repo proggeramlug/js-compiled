@@ -16,6 +16,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('baseline')
 parser.add_argument('candidate')
 parser.add_argument('output')
+parser.add_argument('--isolated-targets', action='store_true',
+                    help='Keep baseline/candidate Cargo outputs separate, including native build-script archives')
 args = parser.parse_args()
 root = pathlib.Path.cwd()
 out = pathlib.Path(args.output).resolve()
@@ -30,7 +32,7 @@ def save():
     (out / 'build-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
 
 def run(argv, cwd, name):
-    receipt['commands'].append({'argv': argv, 'cwd': str(cwd), 'log': name})
+    receipt['commands'].append({'argv': argv, 'cwd': str(cwd), 'cargoTargetDir': env['CARGO_TARGET_DIR'], 'log': name})
     save()
     print(name, flush=True)
     with (out / name).open('w') as log:
@@ -54,6 +56,9 @@ for label, directory in [('baseline', args.baseline), ('candidate', args.candida
     if subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'], cwd=source):
         raise RuntimeError(f'{label} checkout must be clean')
     receipt['variants'][label] = {'source': str(source), 'commit': commit, 'libraries': []}
+    target = out / 'cargo-target' / label if args.isolated_targets else out / 'cargo-target'
+    env['CARGO_TARGET_DIR'] = str(target)
+    receipt['variants'][label]['cargoTargetDir'] = str(target)
     reuse = label == 'candidate' and receipt['variants']['baseline']['source'] == str(source)
     if not reuse:
         run(['cargo', 'build', '--locked', '--profile', 'perry-dev', '-p', 'perry'], source, f'{label}-compiler.log')

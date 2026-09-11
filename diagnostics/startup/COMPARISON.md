@@ -61,3 +61,17 @@ different CPUs as an A/B experiment.
 The `startup comparison` workflow runs the unchanged check on Linux x64 and
 macOS ARM64; [GitHub documents the macos-15 label as ARM64](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
 Keep measurements in `results/`; the workflow uploads them as artifacts.
+
+For runtime changes, `startup-candidate.yml` checks out two pinned source
+commits and uses `build-candidate.py` to build matching compiler/runtime pairs.
+Perry checks the embedded runtime source identity, so substituting a changed
+archive into an unchanged compiler is deliberately rejected. Both variants
+use identical Cargo profiles and flags; their actual artifacts are hashed.
+
+The preparation configuration also accepts a `cases` array of source paths and
+`"scriptc": false` for correctness/throughput suites. Feed a manifest containing
+all 22 benchmarks to `verify-workloads.mjs MANIFEST OUTPUT`. It checks every
+execution against Node and measures the five throughput sentinels in alternating
+pairs. A slowdown above 3% expands from five to ten samples; an unresolved or
+confirmed slowdown fails the default-profile acceptance job. Report optional
+memory-profile tradeoffs separately rather than marking that job passed.

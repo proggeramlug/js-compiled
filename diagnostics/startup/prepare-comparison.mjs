@@ -37,7 +37,10 @@ function command(argv, env = {}, log) {
 
 const empty = path.join(out, 'empty.ts');
 writeFileSync(empty, '// No user code.\n');
-const cases = [['empty', empty], ['noop', path.join(root, 'benches/00-noop.ts')], ['hello', path.join(root, 'benches/01-hello.ts')]];
+const cases = config.cases
+  ? config.cases.map(source => [path.basename(source, path.extname(source)), realpathSync(source)])
+  : [['empty', empty], ['noop', path.join(root, 'benches/00-noop.ts')], ['hello', path.join(root, 'benches/01-hello.ts')]];
+if (!cases.length || new Set(cases.map(([name]) => name)).size !== cases.length) throw new Error('Cases must have unique, nonempty names');
 const manifest = {
   schemaVersion: 1, createdAt: new Date().toISOString(),
   mode: configuration ? 'configured-comparison' : 'unchanged-versus-unchanged',
@@ -95,10 +98,15 @@ for (const [name, source] of cases) {
     }
     fixture.commands[label] = { argv: [binary], binary: binaryRecord(binary), env: variant.runtimeEnv };
   }
-  const binary = path.join(out, `scriptc-${name}`);
-  command([scriptc, 'build', source, '-o', binary], {}, `scriptc-${name}-build.log`);
-  fixture.commands.scriptc = { argv: [binary], binary: binaryRecord(binary), env: {} };
+  if (config.scriptc !== false) {
+    const binary = path.join(out, `scriptc-${name}`);
+    command([scriptc, 'build', source, '-o', binary], {}, `scriptc-${name}-build.log`);
+    fixture.commands.scriptc = { argv: [binary], binary: binaryRecord(binary), env: {} };
+  }
   manifest.cases.push(fixture);
+  // Keep completed build receipts if a later, larger fixture fails.
+  writeFileSync(path.join(out, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+  console.log(`Prepared ${name}`);
 }
 writeFileSync(path.join(out, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 console.log(`Prepared ${manifest.mode}: ${path.join(out, 'manifest.json')}`);

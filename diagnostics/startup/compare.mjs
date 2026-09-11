@@ -45,11 +45,11 @@ export async function checkedRun(command, expected, env = {}, rss = false, timeo
   return result;
 }
 
-function validateManifest(manifest) {
+export function validateManifest(manifest, { labels = ['baseline', 'candidate', 'scriptc'] } = {}) {
   if (manifest.schemaVersion !== 1 || !manifest.cases?.length) throw new Error('Unsupported/empty manifest');
   for (const fixture of manifest.cases) {
     if (sha256(fixture.source.file) !== fixture.source.sha256) throw new Error(`Source changed: ${fixture.name}`);
-    for (const label of ['baseline', 'candidate', 'scriptc']) {
+    for (const label of labels) {
       const command = fixture.commands[label];
       if (sha256(command.argv[0]) !== command.binary.sha256) throw new Error(`Binary changed: ${fixture.name}/${label}`);
     }

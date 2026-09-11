@@ -16,8 +16,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('baseline')
 parser.add_argument('candidate')
 parser.add_argument('output')
-parser.add_argument('--isolated-targets', action='store_true',
-                    help='Keep baseline/candidate Cargo outputs separate, including native build-script archives')
+parser.add_argument('--isolated-targets', action='store_true', default=True,
+                    help='Explicitly request the default: separate baseline/candidate Cargo outputs')
 args = parser.parse_args()
 root = pathlib.Path.cwd()
 out = pathlib.Path(args.output).resolve()
@@ -56,7 +56,10 @@ for label, directory in [('baseline', args.baseline), ('candidate', args.candida
     if subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'], cwd=source):
         raise RuntimeError(f'{label} checkout must be clean')
     receipt['variants'][label] = {'source': str(source), 'commit': commit, 'libraries': []}
-    target = out / 'cargo-target' / label if args.isolated_targets else out / 'cargo-target'
+    # Worktrees with matching package IDs can reuse stale Cargo build-script
+    # outputs in one target directory, even while compiling changed Rust. A
+    # clean source/build ID alone does not detect that native-archive mixture.
+    target = out / 'cargo-target' / label
     env['CARGO_TARGET_DIR'] = str(target)
     receipt['variants'][label]['cargoTargetDir'] = str(target)
     reuse = label == 'candidate' and receipt['variants']['baseline']['source'] == str(source)

@@ -44,9 +44,9 @@ jobs:
       - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: results/runtime-candidate/cargo-target
-          key: startup-class-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-8516ab90b
+          key: startup-class-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-8516ab90b
           restore-keys: |
-            startup-class-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
+            startup-class-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
       - id: builds
         run: python3 diagnostics/startup/build-candidate.py .startup-baseline .startup-candidate results/runtime-candidate
       - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/startup results/runtime-candidate/startup-config.json
@@ -55,6 +55,19 @@ jobs:
       - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/fixtures results/runtime-candidate/class-fixtures-config.json
       - run: node diagnostics/startup/compare.mjs results/runtime-candidate/startup/manifest.json results/runtime-candidate/startup/measurements.json
       - run: node diagnostics/startup/verify-workloads.mjs results/runtime-candidate/workloads/manifest.json results/runtime-candidate/workloads/verification.json
+      - name: Check hot inherited-class throughput
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('results/runtime-candidate')
+          config = json.loads((p/'startup-config.json').read_text())
+          config['scriptc'] = False
+          config['cases'] = [str(Path('diagnostics/startup/class-parent-throughput.ts').resolve())]
+          (p/'class-throughput-config.json').write_text(json.dumps(config, indent=2)+'\n')
+          PY
+          node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/class-throughput results/runtime-candidate/class-throughput-config.json
+          node diagnostics/startup/verify-class-throughput.mjs results/runtime-candidate/class-throughput/manifest.json results/runtime-candidate/class-throughput/verification.json
       - if: ${{ !cancelled() && steps.builds.outcome == 'success' }}
         run: node diagnostics/startup/verify-fixtures.mjs results/runtime-candidate/fixtures/manifest.json results/runtime-candidate/fixtures/verification.json
       - name: Focused runtime tests
@@ -62,7 +75,7 @@ jobs:
         working-directory: .startup-candidate
         env:
           RUST_TEST_THREADS: '1'
-          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target/candidate
         run: cargo test --locked --profile perry-dev --lib -p perry-runtime -- object::class_image::tests class_meta_registry class_registry::tests gc::tests::host_safepoints --test-threads=1 > ../results/runtime-candidate/runtime-tests.log 2>&1
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()

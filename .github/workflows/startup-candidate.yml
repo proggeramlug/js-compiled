@@ -56,7 +56,7 @@ jobs:
         working-directory: .startup-candidate
         env:
           RUST_TEST_THREADS: '1'
-          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target/candidate
         run: cargo test --locked --profile perry-dev --lib -p perry-runtime -p perry-codegen -- promise::microtasks::empty::tests empty_checkpoint gc::tests::host_safepoints promise::native_async::tests bun_ffi::callback::tests codegen::entry::tests --test-threads=1 > ../results/runtime-candidate/runtime-tests.log 2>&1
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()

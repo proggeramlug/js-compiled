@@ -41,9 +41,9 @@ jobs:
       - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: results/runtime-candidate/cargo-target
-          key: startup-core-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-2ad26ee04
+          key: startup-core-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-2ad26ee04
           restore-keys: |
-            startup-core-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
+            startup-core-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
       - id: builds
         run: python3 diagnostics/startup/build-candidate.py .startup-candidate .startup-candidate results/runtime-candidate
       - name: Build core archive
@@ -65,7 +65,7 @@ jobs:
         working-directory: .startup-candidate
         env:
           RUST_TEST_THREADS: '1'
-          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target/baseline
         run: cargo test --locked --profile perry-dev --bin perry -p perry -- prebuilt_core::tests --test-threads=1 > ../results/runtime-candidate/runtime-tests.log 2>&1
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()

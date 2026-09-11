@@ -39,6 +39,7 @@ jobs:
       - if: runner.os == 'Linux'
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends clang libssl-dev pkg-config
       - run: npm ci
+      - uses: ./.startup-baseline/.github/actions/setup-llvm22
       - run: rustup toolchain install nightly-2026-08-20 --profile minimal
       - run: node --test harness/exec.test.mjs diagnostics/startup/compare.test.mjs
       - id: builds

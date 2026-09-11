@@ -41,6 +41,10 @@ def record(file):
             'sha256': hashlib.sha256(file.read_bytes()).hexdigest()}
 
 receipt['rustc'] = subprocess.check_output(['rustc', '-Vv'], cwd=args.baseline, env=env, text=True)
+llvm_prefix = env.get('LLVM_SYS_221_PREFIX')
+receipt['llvm'] = {'prefix': llvm_prefix, 'version': subprocess.check_output(
+    [str(pathlib.Path(llvm_prefix) / 'bin/llvm-config') if llvm_prefix else 'llvm-config', '--version'],
+    env=env, text=True).strip()}
 config = {'compileArgs': ['--no-auto-optimize'], 'variants': {}}
 for label, directory in [('baseline', args.baseline), ('candidate', args.candidate)]:
     source = pathlib.Path(directory).resolve()

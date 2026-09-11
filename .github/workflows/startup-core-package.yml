@@ -1,0 +1,77 @@
+name: startup core package
+on:
+  push:
+    branches: [perf/startup-verification]
+    paths:
+      - .github/workflows/startup-core-package.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  runtime:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-15]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: proggeramlug/perry
+          ref: b7e052029a1900e48186748440674f465d69ce29
+          path: .startup-candidate
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '26.5.1'
+          cache: npm
+      - if: runner.os == 'Linux'
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends clang libssl-dev pkg-config zstd
+      - if: runner.os == 'macOS'
+        run: command -v zstd || brew install zstd
+      - run: npm ci
+      - uses: ./.startup-candidate/.github/actions/setup-llvm22
+      - run: rustup toolchain install nightly-2026-08-20 --profile minimal
+      - run: node --test harness/exec.test.mjs diagnostics/startup/compare.test.mjs
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: results/runtime-candidate/cargo-target
+          key: startup-core-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-b7e052029
+          restore-keys: |
+            startup-core-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
+      - id: builds
+        run: python3 diagnostics/startup/build-candidate.py .startup-candidate .startup-candidate results/runtime-candidate
+      - name: Build core archive
+        working-directory: .startup-candidate
+        env:
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/core
+        run: |
+          triple=$(rustc -vV | sed -n 's/^host: //p')
+          bash scripts/build_core_runtime.sh "$triple" release > ../results/runtime-candidate/core-build.log 2>&1
+          cp "../results/runtime-candidate/core/$triple/release/libperry_runtime_core.a" ../results/runtime-candidate/candidate/
+      - run: python3 diagnostics/startup/prepare-core-package.py .startup-candidate results/runtime-candidate/candidate results/runtime-candidate/candidate/libperry_runtime_core.a results/runtime-candidate/package
+      - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/startup results/runtime-candidate/package/core-startup-config.json
+      - run: node diagnostics/startup/prepare-comparison.mjs results/runtime-candidate/workloads results/runtime-candidate/package/core-workloads-config.json
+      - run: node diagnostics/startup/verify-core-package.mjs results/runtime-candidate/startup/manifest.json results/runtime-candidate/package/package-receipt.json results/runtime-candidate/package/verification.json
+      - run: node diagnostics/startup/compare.mjs results/runtime-candidate/startup/manifest.json results/runtime-candidate/startup/measurements.json
+      - run: node diagnostics/startup/verify-workloads.mjs results/runtime-candidate/workloads/manifest.json results/runtime-candidate/workloads/verification.json
+      - name: Profile selection tests
+        if: ${{ !cancelled() && steps.builds.outcome == 'success' }}
+        working-directory: .startup-candidate
+        env:
+          RUST_TEST_THREADS: '1'
+          CARGO_TARGET_DIR: ${{ github.workspace }}/results/runtime-candidate/cargo-target
+        run: cargo test --locked --profile perry-dev --bin perry -p perry -- prebuilt_core::tests --test-threads=1 > ../results/runtime-candidate/runtime-tests.log 2>&1
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: runtime-candidate-${{ matrix.os }}
+          path: |
+            results/runtime-candidate/**/*.json
+            results/runtime-candidate/**/*.log
+            !results/runtime-candidate/cargo-target/**
+            !results/runtime-candidate/core*/**

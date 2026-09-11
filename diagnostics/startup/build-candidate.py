@@ -54,15 +54,18 @@ for label, directory in [('baseline', args.baseline), ('candidate', args.candida
     if subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'], cwd=source):
         raise RuntimeError(f'{label} checkout must be clean')
     receipt['variants'][label] = {'source': str(source), 'commit': commit, 'libraries': []}
-    run(['cargo', 'build', '--locked', '--profile', 'perry-dev', '-p', 'perry'], source, f'{label}-compiler.log')
+    reuse = label == 'candidate' and receipt['variants']['baseline']['source'] == str(source)
+    if not reuse:
+        run(['cargo', 'build', '--locked', '--profile', 'perry-dev', '-p', 'perry'], source, f'{label}-compiler.log')
     compiler = destination / 'perry'
-    shutil.copy2(target / 'perry-dev/perry', compiler)
+    shutil.copy2(out / 'baseline/perry' if reuse else target / 'perry-dev/perry', compiler)
     receipt['variants'][label]['compiler'] = record(compiler)
     # Separate Cargo invocations match packaging's runtime-only feature graph.
     # Copy the first archive before the stdlib invocation unifies its features.
     for package, archive in [('perry-runtime-static', 'libperry_runtime.a'), ('perry-stdlib-static', 'libperry_stdlib.a')]:
-        run(['cargo', 'build', '--locked', '--release', '-p', package], source, f'{label}-{package}.log')
-        shutil.copy2(target / 'release' / archive, destination / archive)
+        if not reuse:
+            run(['cargo', 'build', '--locked', '--release', '-p', package], source, f'{label}-{package}.log')
+        shutil.copy2(out / 'baseline' / archive if reuse else target / 'release' / archive, destination / archive)
         receipt['variants'][label]['libraries'].append(record(destination / archive))
         save()
     config['variants'][label] = {

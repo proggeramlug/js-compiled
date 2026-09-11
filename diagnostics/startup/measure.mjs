@@ -12,6 +12,13 @@ const variants = [
   ['scriptc-hello', 'scriptc-hello', 'hello, world\nRESULT 1\n'],
   ['perry-empty', 'perry-empty', ''],
   ['scriptc-empty', 'scriptc-empty', ''],
+  ['perry-noop-no-thp', 'perry-noop', 'RESULT 0\n', { MIMALLOC_ALLOW_THP: '0' }],
+  ['perry-hello-no-thp', 'perry-hello', 'hello, world\nRESULT 1\n', { MIMALLOC_ALLOW_THP: '0' }],
+  ['perry-empty-no-thp', 'perry-empty', '', { MIMALLOC_ALLOW_THP: '0' }],
+  ['perry-noop-no-arena', 'perry-noop', 'RESULT 0\n', { MIMALLOC_DISALLOW_ARENA_ALLOC: '1' }],
+  ['perry-noop-no-eager', 'perry-noop', 'RESULT 0\n', { MIMALLOC_ARENA_EAGER_COMMIT: '0' }],
+  ['perry-relr', 'perry-relr', 'RESULT 0\n'],
+  ['perry-relr-no-thp', 'perry-relr', 'RESULT 0\n', { MIMALLOC_ALLOW_THP: '0' }],
   ...[0, 1, 2, 4, 6, 8, 14].map(mode => [`probe-mode-${mode}`, 'perry-probe', 'RESULT 0\n', { PERRY_STARTUP_ABLATE: String(mode) }]),
 ].map(([name, file, output, env = {}]) => ({ name, file: path.join(dir, file), output, env }));
 

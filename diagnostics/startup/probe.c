@@ -18,7 +18,7 @@ static void record(const char *name, uint64_t start, long before) {
 static void snapshot(const char *stage) {
   char line[256]; FILE *f = fopen("/proc/self/smaps_rollup", "r");
   fprintf(stderr, "SNAPSHOT %s maxrss_kib=%ld\n", stage, rss());
-  if (f) { while (fgets(line, sizeof(line), f)) if (!strncmp(line, "Rss:", 4) || !strncmp(line, "Pss:", 4) || !strncmp(line, "Private_Dirty:", 14) || !strncmp(line, "Anonymous:", 10)) fputs(line, stderr); fclose(f); }
+  if (f) { while (fgets(line, sizeof(line), f)) if (!strncmp(line, "Rss:", 4) || !strncmp(line, "Pss:", 4) || !strncmp(line, "Private_Dirty:", 14) || !strncmp(line, "Anonymous:", 10) || !strncmp(line, "AnonHugePages:", 14)) fputs(line, stderr); fclose(f); }
 }
 __attribute__((constructor(101))) static void setup(void) {
   tracing = getenv("PERRY_STARTUP_TRACE") != NULL;

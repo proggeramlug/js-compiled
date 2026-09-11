@@ -30,6 +30,7 @@ names = re.findall(r'(?:VOID0|INT0)\((js_\w+),', source) + re.findall(r'__wrap_(
 run(['cc', '-O2', '-fno-omit-frame-pointer', '-c', ROOT / 'diagnostics/startup/probe.c', '-o', OUT / 'probe.o'], 'probe-build.log')
 extra = [str(OUT / 'probe.o')] + [f'-Wl,--wrap={name}' for name in names]
 run([PERRY, 'compile', ROOT / 'benches/00-noop.ts', '--no-cache', '--keep-intermediates', '--report-size', '-v', '-o', OUT / 'perry-probe'], 'probe-link.log', {'PERRY_EXTRA_LINK_ARGS': ' '.join(extra)})
+run([PERRY, 'compile', ROOT / 'benches/00-noop.ts', '--no-cache', '-v', '-o', OUT / 'perry-relr'], 'relr-link.log', {'PERRY_EXTRA_LINK_ARGS': '-Wl,-z,pack-relative-relocs'})
 
 for name in ['perry-noop', 'perry-hello', 'perry-empty', 'perry-probe', 'scriptc-noop', 'plain-c']:
     binary = OUT / name
@@ -42,6 +43,18 @@ for name in ['perry-noop', 'perry-hello', 'perry-empty', 'perry-probe', 'scriptc
 
 for mode in [0, 1, 2, 4, 6, 8, 14]:
     run([OUT / 'perry-probe'], f'probe-mode-{mode}.txt', {'PERRY_STARTUP_TRACE': '1', 'PERRY_STARTUP_ABLATE': str(mode)}, required=mode == 0)
+
+for name, env in [
+    ('no-thp', {'MIMALLOC_ALLOW_THP': '0'}),
+    ('no-arena', {'MIMALLOC_DISALLOW_ARENA_ALLOC': '1'}),
+    ('no-eager', {'MIMALLOC_ARENA_EAGER_COMMIT': '0'}),
+]:
+    run([OUT / 'perry-probe'], f'probe-{name}.txt', {'PERRY_STARTUP_TRACE': '1', **env})
+    run(['strace', '-f', '-o', OUT / f'perry-{name}-strace.txt', OUT / 'perry-noop'], f'perry-{name}-strace-output.txt', env)
+    run([OUT / 'perry-noop'], f'mimalloc-{name}.txt', {'MIMALLOC_VERBOSE': '1', 'MIMALLOC_SHOW_STATS': '1', **env})
+run([OUT / 'perry-noop'], 'mimalloc-default.txt', {'MIMALLOC_VERBOSE': '1', 'MIMALLOC_SHOW_STATS': '1'})
+run([OUT / 'perry-relr'], 'perry-relr-loader.txt', {'LD_DEBUG': 'statistics'})
+run(['readelf', '-dW', OUT / 'perry-relr'], 'perry-relr-elf.txt')
 
 (OUT / 'versions.json').write_text(json.dumps({
     'node': subprocess.check_output(['node', '--version'], text=True).strip(),

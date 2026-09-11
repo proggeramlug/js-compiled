@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: proggeramlug/perry
-          ref: 2ad26ee042cf8ddb84f42354db78d8517d90da8a
+          ref: 4c3753be56c7b17574caeb1f4949bb6e2e3e557f
           path: .startup-candidate
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: results/runtime-candidate/cargo-target
-          key: startup-core-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-2ad26ee04
+          key: startup-core-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-4c3753be5
           restore-keys: |
             startup-core-isolated-${{ runner.os }}-${{ runner.arch }}-nightly-2026-08-20-
       - id: builds

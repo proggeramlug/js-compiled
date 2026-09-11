@@ -51,6 +51,10 @@ const fixtures = [
   { name: 'intl', source: 'console.log(new Intl.NumberFormat("en-US").format(1234.5));\n' },
   { name: 'temporal', source: 'console.log(Temporal.PlainDate.from("2020-01-02").toString());\n' },
   { name: 'dynamic-eval', source: 'const body = process.argv[2] || "return n + 1"; console.log(new Function("n", body)(41));\n' },
+  ...['globalThis', 'global', 'Function("return this")()'].map((receiver, index) => ({
+    name: `computed-global-${index}`, args: ['RegExp'],
+    source: `const C: any = (${receiver} as any)[process.argv[2]]; const r: any = new C("a+"); console.log(r.test("aaa"));\n`,
+  })),
   { name: 'worker-module', source: 'import { isMainThread } from "node:worker_threads"; console.log(isMainThread);\n' },
   // Node does not provide bun:ffi. Require its known callable export and the
   // full-profile selection, recording this as a surface check, not an FFI ABI test.
@@ -62,7 +66,7 @@ for (const fixture of fixtures) {
     const source = path.join(install, `${fixture.name}.ts`);
     writeFileSync(source, fixture.source);
     row.source = binaryRecord(source);
-    const oracle = fixture.expected ?? await timeRun([process.execPath, source], { env: experimentEnvironment(), timeoutMs: 30000 });
+    const oracle = fixture.expected ?? await timeRun([process.execPath, source, ...(fixture.args ?? [])], { env: experimentEnvironment(), timeoutMs: 30000 });
     if (!fixture.expected && !oracle.ok) throw new Error(`Node oracle failed: ${JSON.stringify(oracle)}`);
     row.oracle = { ...oracle, kind: fixture.expected ? 'known-export-surface' : 'Node' };
     const binary = source + '.bin';
@@ -71,7 +75,7 @@ for (const fixture of fixtures) {
     const selectedCore = (build.stdout + build.stderr).includes('using prebuilt core runtime:');
     if (!build.ok || selectedCore !== (fixture.core === true)) throw new Error(`Wrong build/profile: ${JSON.stringify({ build, selectedCore, expectedCore: fixture.core === true })}`);
     row.binary = binaryRecord(binary);
-    row.run = await checkedRun([binary], oracle);
+    row.run = await checkedRun([binary, ...(fixture.args ?? [])], oracle);
   } catch (error) {
     row.error = error.message;
     result.passed = false;
